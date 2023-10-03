@@ -1,3 +1,18 @@
-1. fruit availability
-2. movie recommend
-3. road trip planner (hotels)
+2 ideas
+road trip planner (hotels)
+    Given two cities, find different routes between them that finds hotels to stay
+    at along the way. Will recommend 3 routes: the fastest route, least expensive route (hotel price), and
+    most eventful (most activities) route. Can also add gas/refueling stations as part of the route planning.
+movie recommend
+    give closest theater showing a movie. also recommend a movie based music playlist.
+
+Others:
+book to music playlist
+    given a text, generate music based off it.
+food availability
+    given seasonal foods/ingredients/user preference, recommend recipes, and where to get the ingredients.
+    can limit by budget, and add filters (vegan, gluten-free, etc.).
+neighborhood rater
+some music thing
+    guessing game. given a list of artists (genre, mood), play sound Wordle off of that
+    list of songs.
