@@ -1,8 +1,8 @@
 import requests
-import amadeus_api
+import amadeus_key
 
-AMADEUS_API_KEY = amadeus_api.amadeus_key
-AMADEUS_API_SECRET = amadeus_api.amadeus_secret
+AMADEUS_API_KEY = amadeus_key.amadeus_key
+AMADEUS_API_SECRET = amadeus_key.amadeus_secret
 
 AMADEUS_TOKEN_URL = 'https://test.api.amadeus.com/v1/security/oauth2/token'
 AMADEUS_API_ENDPOINT = 'https://test.api.amadeus.com/'
@@ -13,10 +13,6 @@ def get_amadeus_access_token():
     data = f"grant_type=client_credentials&client_id={AMADEUS_API_KEY}&client_secret={AMADEUS_API_SECRET}"
     token = requests.post(AMADEUS_TOKEN_URL, headers=headers, data=data).json()
     return token['access_token']
-
-
-def args_to_str(prefix, args):
-    return prefix + '&'.join([f"{key}={args[key]}" for key in args])
 
 
 def get_geocode_hotels(token, lat, long, radius):
@@ -31,9 +27,8 @@ def get_geocode_hotels(token, lat, long, radius):
         "radiusUnit": 'MILE',
         "hotelSource": "ALL"
     }
-    geocode_args_str = args_to_str(geocode_prefix, geocode_args)
     
-    response = requests.get(AMADEUS_API_ENDPOINT + geocode_args_str, headers=headers)
+    response = requests.get(AMADEUS_API_ENDPOINT + geocode_prefix, headers=headers, params=geocode_args)
 
     if response.status_code == 200:
         data = response.json()
@@ -59,9 +54,8 @@ def search_hotel_from_id(token, hotel_ids):
         "includeClosed": "false",
         "bestRateOnly": "true"
     }
-    search_args_str = args_to_str(search_prefix, search_args)
 
-    response = requests.get(AMADEUS_API_ENDPOINT + search_args_str, headers=headers)
+    response = requests.get(AMADEUS_API_ENDPOINT + search_prefix, headers=headers, params=search_args)
 
     if response.status_code == 200:
         data = response.json()
