@@ -27,7 +27,8 @@ def get_geocode_hotels(token, lat, long, radius):
     geocode_args = {
         "latitude": lat,
         "longitude": long,
-        "radiusUnit": radius,
+        "radius": radius,
+        "radiusUnit": 'MILE',
         "hotelSource": "ALL"
     }
     geocode_args_str = args_to_str(geocode_prefix, geocode_args)
@@ -51,7 +52,9 @@ def search_hotel_from_id(token, hotel_ids):
         "hotelIds": ','.join(hotel_ids),
         "adults": '1',
         "checkInDate": "2023-12-15",
+        "checkOutDate": "2023-12-16",
         "roomQuantity": '1',
+        "currency": 'USD',
         "paymentPolicy": "NONE",
         "includeClosed": "false",
         "bestRateOnly": "true"
@@ -68,14 +71,43 @@ def search_hotel_from_id(token, hotel_ids):
         raise Exception("Search Hotel From ID Error")
 
 
-if __name__ == '__main__':
-    # make API calls
-    access_token = get_amadeus_access_token()
-    lat, long, radius = 40.7128, -74.0060, 5
-    geocoded = get_geocode_hotels(access_token, lat, long, radius)
-    geocoded.sort(key=lambda x: x['distance']['value'])
+def get_hotels_around_point(token, lat, long, radius):
+    # make api calls
+    geocoded = get_geocode_hotels(token, lat, long, radius)
+    # geocoded.sort(key=lambda x: x['distance']['value'])
     ids = [key['hotelId'] for key in geocoded]
-    searched = search_hotel_from_id(access_token, ids)
-    
+    searched = search_hotel_from_id(token, ids)
+
     # extract values
-    
+    # first geocode to get hotels around a point
+    hotel_info = {}
+    for hotel in geocoded:
+        hotel_info[hotel['hotelId']] = {
+            'name': hotel['name'],
+            'distance': hotel['distance']['value']
+        } | hotel['geoCode']
+    # print(hotel_info)
+    # then use hotel ids to get offer details
+    for offer in searched:
+        offer_details = offer['offers'][0]
+        hotel_info[offer['hotel']['hotelId']] |= {
+            'checkInDate': offer_details['checkInDate'],
+            'checkOutDate': offer_details['checkOutDate'],
+            'roomInfo': offer_details['room']['typeEstimated'] | {
+                'description': offer_details['room']['description']['text']
+            },
+            'guestInfo': offer_details['guests'],
+            'price': {
+                'base': '$' + offer_details['price']['base'],
+                'total': '$' + offer_details['price']['total'],
+            }
+        }
+    # print(hotel_info)
+    valid_hotels = {hotel: hotel_info[hotel] for hotel in hotel_info if 'checkInDate' in hotel_info[hotel]}
+    return valid_hotels
+
+if __name__ == '__main__':
+    access_token = get_amadeus_access_token()
+    lat, long, radius = 40.7128, -74.0060, 1
+    nyc_hotels = get_hotels_around_point(access_token, lat, long, radius)
+    print(nyc_hotels)

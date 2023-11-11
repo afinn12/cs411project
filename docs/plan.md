@@ -3,7 +3,7 @@
 ## Backend
 - Python Django
 - HTTP Server
-- Make API requests to Google Maps, Hotels, Events (Amadeus, Yelp?)
+- Make API requests to Google Maps, Hotels (Amadeus), Events (Yelp?)
 - OAuth (Google probably)
 - Communicate with MySQL server for user info
 - Get two cities from frontend &rarr; ask Google Maps for the route
