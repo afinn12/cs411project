@@ -8,7 +8,7 @@ YELP_API_ENDPOINT = 'https://api.yelp.com/v3/events'
 
 def ymd_to_unix(date: str):
     date = datetime.datetime.fromisoformat(date)
-    return (date-datetime.datetime(1970,1,1)).total_seconds()
+    return int((date-datetime.datetime(1970,1,1)).total_seconds())
 
 
 def search_event_from_latlong(lat, long, radius):
@@ -19,6 +19,8 @@ def search_event_from_latlong(lat, long, radius):
         'latitude': lat,
         'longitude': long,
         'limit': '10',
+        'start_date': ymd_to_unix('2023-11-15'),
+        'end_date': ymd_to_unix('2024-01-15'),
         'radius': radius*1609 # roughly the conversion from mile to meter
     }
 
@@ -26,7 +28,7 @@ def search_event_from_latlong(lat, long, radius):
 
     if response.status_code == 200:
         data = response.json()
-        return data
+        return data['events']
     else:
         print(f"Error: {response.status_code} - {response.text}")
         raise Exception("Search Event From Lat Long Error")
@@ -35,6 +37,7 @@ def search_event_from_latlong(lat, long, radius):
 def get_events_around_point(lat, long, radius):
     # make api call
     events = search_event_from_latlong(lat, long, radius)
+    print(events)
 
     # extract relevant info
     event_info = {}
