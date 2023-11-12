@@ -29,7 +29,7 @@ def compute_split_points_on_daily_limit(route):
     # extract the list of steps
     steps = route['legs'][0]['steps']
     split_points = []
-    distances = []
+    # distances = []
     curr_distance = 0
 
     for step in steps:
@@ -38,22 +38,44 @@ def compute_split_points_on_daily_limit(route):
         else:
             # does adding yourself push the distances over the threshold?
             if curr_distance+step['distance']['value']>DAILY_DISTANCE_LIMIT:
-                distances.append(curr_distance)
+                # distances.append(curr_distance)
                 split_points.append((step['start_location']['lat'], step['start_location']['lng']))
                 curr_distance = 0
             curr_distance += step['distance']['value']
 
-    distances.append(curr_distance)
-    return split_points, distances
+    # distances.append(curr_distance)
+    return split_points
+
+
+# stops should be the split points returned by compute_split_points_on_daily_limit
+def get_route_with_stops(origin, destination, stops):
+    route_args = {
+        'origin': f'{origin[0]},{origin[1]}',
+        'destination': f'{destination[0]},{destination[1]}',
+        'waypoints': '|'.join(map(lambda x: f'{x[0]},{x[1]}', stops)),
+        'key': GOOGLEMAPS_API_KEY
+    }
+    response = requests.get(GOOGLEMAPS_DIRECTIONS_API_ENDPOINT, params=route_args)
+    data = response.json()
+
+    if response.status_code == 200 and data['status'] == 'OK':
+        return data['routes'][0]
+    else:
+        print(f"Error: {response.status_code} - {data.get('error_message', 'Unknown error')}")
 
 
 if __name__ == '__main__':
-    # # nyc coors
-    # origin = 40.7128, -74.0060
-    # # boston coors
-    # destination = 42.3601, -71.0589
+    # nyc coors
+    nyc = 40.7128, -74.0060
+    # boston coors
+    boston = 42.3601, -71.0589
+
     # f = open('sample_route.txt', 'w')
-    # json.dump(get_route(origin, destination), f)
-    
-    route = json.load(open('sample_route.txt'))
-    print(compute_split_points_on_daily_limit(route))
+    # route = get_route(nyc, boston)
+    # json.dump(route, f)
+
+    # split_points = compute_split_points_on_daily_limit(route)
+
+    # f = open('sample_route_with_stops.txt', 'w')
+    # new_route = get_route_with_stops(nyc, boston, split_points)
+    # json.dump(new_route, f)

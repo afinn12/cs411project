@@ -13,8 +13,8 @@
         - For fastest route, get closet hotel
         - For cheapest route, choose the cheapest from the closest 10
 - Recompute the route given these hotels
-- Find restaurants around each hotel
-- Give route, hotels, restaurants to front end
+- Find events around each hotel
+- Give route, hotels, events to front end
 - Store the computed route on DB
 
 ## Frontend
