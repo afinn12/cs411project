@@ -37,7 +37,7 @@ def search_event_from_latlong(lat, long, radius):
 def get_events_around_point(lat, long, radius):
     # make api call
     events = search_event_from_latlong(lat, long, radius)
-    print(events)
+    # print(events)
 
     # extract relevant info
     event_info = {}
