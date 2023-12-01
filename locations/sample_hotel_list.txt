@@ -1,1 +1,215 @@
-{"ALNYC647": {"name": "ALOFT MANHATTAN DOWNTOWN FINANCIAL DIST", "distance": 0.16, "latitude": 40.71041, "longitude": -74.00666, "checkInDate": "2023-12-15", "checkOutDate": "2023-12-16", "roomInfo": {"beds": 1, "bedType": "KING", "description": "Prepay Non-refundable Non-changeable, prepay in full\nSleeps 2, Fast & free WiFi throughout the\nhotel, 1 King, 210sqft/19sqm-230sqft/21sqm,"}, "guestInfo": {"adults": 1}, "price": {"base": "$303.63", "total": "$351.92"}}, "RCNYCRLR": {"name": "RESIDENCE INN WTC MARRIOTT", "distance": 0.3, "latitude": 40.70953, "longitude": -74.00981, "checkInDate": "2023-12-15", "checkOutDate": "2023-12-16", "roomInfo": {"beds": 1, "bedType": "KING", "description": "Marriott Senior Discount, includes\n1 King, Kitchenette, Microwave, 269sqft/24sqm,\nWireless internet, complimentary, Wired"}, "guestInfo": {"adults": 1}, "price": {"base": "$377.00", "total": "$438.11"}}, "FNNYCLMF": {"name": "FAIRFIELD INN FINANCL MARRIOTT", "distance": 0.46, "latitude": 40.70604, "longitude": -74.00502, "checkInDate": "2023-12-15", "checkOutDate": "2023-12-16", "roomInfo": {"beds": 2, "bedType": "TWIN", "description": "Marriott Senior Discount, includes\n2 Twins, Mini fridge, Wireless internet,\ncomplimentary, Wired internet, complimentary,"}, "guestInfo": {"adults": 1}, "price": {"base": "$254.00", "total": "$294.96"}}, "HINYC9C1": {"name": "HOLIDAY INN EXP NYC WALL ST", "distance": 0.51, "latitude": 40.70541, "longitude": -74.00705, "checkInDate": "2023-12-15", "checkOutDate": "2023-12-16", "roomInfo": {"category": "STANDARD_ROOM", "description": "BOOK EARLY AND  SAVE\nStandard Room When you arrive at the hotel, we\nwill do our best to meet your room type"}, "guestInfo": {"adults": 1}, "price": {"base": "$331.55", "total": "$401.16"}}, "FNNYCFMF": {"name": "FAIRFIELD INN N STES MARRIOTT", "distance": 0.68, "latitude": 40.71318, "longitude": -73.99299, "checkInDate": "2023-12-15", "checkOutDate": "2023-12-16", "roomInfo": {"beds": 1, "bedType": "KING", "description": "Marriott Senior Discount, includes\n1 King, Mini fridge, Microwave, 250sqft/23sqm,\nWireless internet, complimentary, Wired"}, "guestInfo": {"adults": 1}, "price": {"base": "$350.00", "total": "$405.12"}}}
+{
+    "ALNYC647": {
+        "name": "ALOFT MANHATTAN DOWNTOWN FINANCIAL DIST",
+        "distance": 0.16,
+        "latitude": 40.71041,
+        "longitude": -74.00666,
+        "checkInDate": "2023-12-15",
+        "checkOutDate": "2023-12-16",
+        "roomInfo": {
+            "beds": 1,
+            "bedType": "KING",
+            "description": "Prepay Non-refundable Non-changeable, prepay in full\nSleeps 2, Fast & free WiFi throughout the\nhotel, 1 King, 210sqft/19sqm-230sqft/21sqm,"
+        },
+        "guestInfo": {
+            "adults": 1
+        },
+        "price": {
+            "total": "$351.92"
+        }
+    },
+    "RCNYCRLR": {
+        "name": "RESIDENCE INN WTC MARRIOTT",
+        "distance": 0.3,
+        "latitude": 40.70953,
+        "longitude": -74.00981,
+        "checkInDate": "2023-12-15",
+        "checkOutDate": "2023-12-16",
+        "roomInfo": {
+            "beds": 1,
+            "bedType": "KING",
+            "description": "Marriott Senior Discount, includes\n1 King, Kitchenette, Microwave, 269sqft/24sqm,\nWireless internet, complimentary, Wired"
+        },
+        "guestInfo": {
+            "adults": 1
+        },
+        "price": {
+            "total": "$438.11"
+        }
+    },
+    "FNNYCLMF": {
+        "name": "FAIRFIELD INN FINANCL MARRIOTT",
+        "distance": 0.46,
+        "latitude": 40.70604,
+        "longitude": -74.00502,
+        "checkInDate": "2023-12-15",
+        "checkOutDate": "2023-12-16",
+        "roomInfo": {
+            "beds": 2,
+            "bedType": "TWIN",
+            "description": "Marriott Senior Discount, includes\n2 Twins, Mini fridge, Wireless internet,\ncomplimentary, Wired internet, complimentary,"
+        },
+        "guestInfo": {
+            "adults": 1
+        },
+        "price": {
+            "total": "$294.96"
+        }
+    },
+    "MCNYCWSM": {
+        "name": "NEW YORK MARRIOTT DOWNTOWN",
+        "distance": 0.5,
+        "latitude": 40.70975,
+        "longitude": -74.01468,
+        "checkInDate": "2023-12-15",
+        "checkOutDate": "2023-12-16",
+        "roomInfo": {
+            "category": "DELUXE_ROOM",
+            "beds": 1,
+            "bedType": "KING",
+            "description": "Prepay Non-refundable Non-changeable, prepay in full\nDeluxe Room, 1 King, Mini fridge,\n324sqft/29sqm, Wireless internet, for a fee,"
+        },
+        "guestInfo": {
+            "adults": 1
+        },
+        "price": {
+            "total": "$615.12"
+        }
+    },
+    "HINYC9C1": {
+        "name": "HOLIDAY INN EXP NYC WALL ST",
+        "distance": 0.51,
+        "latitude": 40.70541,
+        "longitude": -74.00705,
+        "checkInDate": "2023-12-15",
+        "checkOutDate": "2023-12-16",
+        "roomInfo": {
+            "category": "STANDARD_ROOM",
+            "description": "BOOK EARLY AND  SAVE\nStandard Room When you arrive at the hotel, we\nwill do our best to meet your room type"
+        },
+        "guestInfo": {
+            "adults": 1
+        },
+        "price": {
+            "total": "$401.16"
+        }
+    },
+    "HYNYCAWS": {
+        "name": "ANDAZ WALL STREET-A CONCEPT BY HYATT",
+        "distance": 0.51,
+        "latitude": 40.70541,
+        "longitude": -74.00783,
+        "checkInDate": "2023-12-15",
+        "checkOutDate": "2023-12-16",
+        "roomInfo": {
+            "category": "STANDARD_ROOM",
+            "beds": 1,
+            "bedType": "KING",
+            "description": "STANDARD RATE 1 KING BED\n1 KING:SPACIOUS 345 SF/32SM:NY LOFT-STYLE RM:"
+        },
+        "guestInfo": {
+            "adults": 1
+        },
+        "price": {
+            "total": "$237.60"
+        }
+    },
+    "SINYC052": {
+        "name": "SHERATON TRIBECA NEW YORK HTL",
+        "distance": 0.56,
+        "latitude": 40.72088,
+        "longitude": -74.00395,
+        "checkInDate": "2023-12-15",
+        "checkOutDate": "2023-12-16",
+        "roomInfo": {
+            "category": "STANDARD_ROOM",
+            "beds": 1,
+            "bedType": "KING",
+            "description": "Marriott Senior Discount, includes\nTraditional King, 1 King, Wireless internet,\nfor a fee, Wired internet, for a fee,"
+        },
+        "guestInfo": {
+            "adults": 1
+        },
+        "price": {
+            "total": "$401.69"
+        }
+    },
+    "GINYC212": {
+        "name": "HILTON GI NEW YORK -TRIBECA",
+        "distance": 0.56,
+        "latitude": 40.72101,
+        "longitude": -74.00523,
+        "checkInDate": "2023-12-15",
+        "checkOutDate": "2023-12-16",
+        "roomInfo": {
+            "category": "PREMIUM_ROOM",
+            "beds": 1,
+            "bedType": "KING",
+            "description": "BED N BREAKFAST NON-REFUNDABLE\n1 KING PREMIUM W/IN-ROOM DRINKS-SNACKS\nPREM WIFI- HDTV WITH HI-DEF CHANNELS\nREFRIGERATOR-MICROWAVE-POD COFFEE BRWR"
+        },
+        "guestInfo": {
+            "adults": 1
+        },
+        "price": {
+            "total": "$487.90"
+        }
+    },
+    "FNNYCFMF": {
+        "name": "FAIRFIELD INN N STES MARRIOTT",
+        "distance": 0.68,
+        "latitude": 40.71318,
+        "longitude": -73.99299,
+        "checkInDate": "2023-12-15",
+        "checkOutDate": "2023-12-16",
+        "roomInfo": {
+            "beds": 1,
+            "bedType": "KING",
+            "description": "Marriott Senior Discount, includes\n1 King, Mini fridge, Microwave, 250sqft/23sqm,\nWireless internet, complimentary, Wired"
+        },
+        "guestInfo": {
+            "adults": 1
+        },
+        "price": {
+            "total": "$405.12"
+        }
+    },
+    "WVNYCNHO": {
+        "name": "THE NOLITAN",
+        "distance": 0.78,
+        "latitude": 40.72066,
+        "longitude": -73.99521,
+        "checkInDate": "2023-12-15",
+        "checkOutDate": "2023-12-16",
+        "roomInfo": {
+            "category": "STANDARD_ROOM",
+            "beds": 1,
+            "bedType": "QUEEN",
+            "description": "Advance Purchase\n1 KNG OR QUEEN BED RAIN SHWR HDWD FLR NON SMOKE\n10 PCT COMM 10PCT DISC PREPAY NO CXL 21day adv"
+        },
+        "guestInfo": {
+            "adults": 1
+        },
+        "price": {
+            "total": "$431.52"
+        }
+    },
+    "CYNYCMTC": {
+        "name": "COURTYARD SOHO MARRIOTT",
+        "distance": 1.02,
+        "latitude": 40.72758,
+        "longitude": -74.00548,
+        "checkInDate": "2023-12-15",
+        "checkOutDate": "2023-12-16",
+        "roomInfo": {
+            "beds": 1,
+            "bedType": "KING",
+            "description": "Prepay Non-refundable, prepay in full, non-refundable\n1 King, Mini fridge,\n285sqft/26sqm-315sqft/28sqm, Wireless"
+        },
+        "guestInfo": {
+            "adults": 1
+        },
+        "price": {
+            "total": "$828.56"
+        }
+    }
+}

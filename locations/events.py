@@ -1,6 +1,7 @@
 import requests
 import yelp_key
 import datetime
+import json
 
 YELP_API_KEY = yelp_key.yelp_key
 YELP_API_ENDPOINT = 'https://api.yelp.com/v3/events'
@@ -18,7 +19,7 @@ def search_event_from_latlong(lat, long, radius):
     event_args = {
         'latitude': lat,
         'longitude': long,
-        'limit': '10',
+        'limit': '15',
         'start_date': ymd_to_unix('2023-11-15'),
         'end_date': ymd_to_unix('2024-01-15'),
         'radius': radius*1609 # roughly the conversion from mile to meter
@@ -54,4 +55,6 @@ def get_events_around_point(lat, long, radius):
 if __name__ == '__main__':
     lat, long, radius = 40.7128, -74.0060, 1
     nyc_events = get_events_around_point(lat, long, radius)
-    print(nyc_events)
+    
+    f = open('sample_event_list.txt', 'w')
+    json.dump(nyc_events, f, indent=4)

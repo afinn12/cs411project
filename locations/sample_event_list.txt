@@ -1,1 +1,167 @@
-{"new-york-unconventional-wisdom": {"name": "Unconventional Wisdom", "description": "TENET rings in the holiday season by resurrecting the voices of 17th century Italian nuns for Unconventional Wisdom. Held at St. Paul's Chapel on Thursday,...", "category": "music", "cost": 15.0, "event_site_url": "https://www.yelp.com/events/new-york-unconventional-wisdom?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ", "latitude": 40.7113202, "longitude": -74.0091849, "time_start": "2023-12-07T19:00:00-05:00", "time_end": null}, "new-york-nyfos-next-series-at-the-rubin-museum-of-art-2": {"name": "NYFOS Next Series at the Rubin Museum of Art", "description": "NYFOS' series for new song, the NYFOS Next Festival at the Rubin Museum of Art with concerts on Sunday, October 15, 2023 at 3:00 p.m. and Sunday, November...", "category": "music", "cost": null, "event_site_url": "https://www.yelp.com/events/new-york-nyfos-next-series-at-the-rubin-museum-of-art-2?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ", "latitude": 40.74005390000001, "longitude": -73.997863, "time_start": "2023-11-19T15:00:00-05:00", "time_end": null}, "jersey-city-geeks-who-drink-trivia-night-at-o-haras-downtown-9": {"name": "Geeks Who Drink Trivia Night at O'Hara's Downtown", "description": "Modeled after pub quizzes in Ireland and the U.K., Geeks Who Drink is an authentic homegrown trivia quiz. It's a great way to drink with friends, without...", "category": "food-and-drink", "cost": null, "event_site_url": "https://www.yelp.com/events/jersey-city-geeks-who-drink-trivia-night-at-o-haras-downtown-9?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ", "latitude": 40.7216698, "longitude": -74.04080669999999, "time_start": "2023-11-07T20:00:00-05:00", "time_end": "2023-11-28T22:00:00-05:00"}, "brooklyn-its-a-wonderful-5k-run-walk": {"name": "It's A Wonderful 5K Run/Walk", "description": "\u200d What a wonderful race! \u200dIt's a Wonderful 5K is such a wonderful race! Run through the scenic pedestrian paths of Prospect Park. Take home some merry swag...", "category": "sports-active-life", "cost": 35.0, "event_site_url": "https://www.yelp.com/events/brooklyn-its-a-wonderful-5k-run-walk?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ", "latitude": 40.6531635, "longitude": -73.9661976, "time_start": "2023-12-10T10:00:00-05:00", "time_end": null}, "new-york-the-pepsi-125-diner": {"name": "The Pepsi 125 Diner", "description": "Step into The Pepsi 125 Diner, a unique pop-up restaurant experience by Pepsi in celebration of its very special 125th birthday! After taking some...", "category": "food-and-drink", "cost": null, "event_site_url": "https://www.yelp.com/events/new-york-the-pepsi-125-diner?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ", "latitude": 40.72158599999999, "longitude": -74.0006787, "time_start": "2023-10-28T00:00:00-04:00", "time_end": "2023-11-27T00:00:00-05:00"}, "new-york-face-workout-class-at-arlo-nomad": {"name": "Face Workout Class at Arlo NoMad", "description": "Join celebrity esthetician and Haute Living Beauty Expert Lana Mar for a Face Workout Class at Arlo NoMad on Sunday, November 19 from 11 a.m. - 12 p.m....", "category": "other", "cost": 70.0, "event_site_url": "https://www.yelp.com/events/new-york-face-workout-class-at-arlo-nomad?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ", "latitude": 40.7462362583167, "longitude": -73.9849619480591, "time_start": "2023-11-19T11:00:00-05:00", "time_end": "2023-11-19T12:00:00-05:00"}, "new-york-south-street-seaport-museum-bowne-and-co-announces-wayzgoose-holiday-kick-off": {"name": "South Street Seaport Museum  Bowne & Co. Announces Wayzgoose Holiday Kick Off", "description": "Step into the South Street Seaport Museum's 19th century-style letterpress printing shop Bowne & Co. to kick off the holiday season at our annual...", "category": "other", "cost": null, "event_site_url": "https://www.yelp.com/events/new-york-south-street-seaport-museum-bowne-and-co-announces-wayzgoose-holiday-kick-off?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ", "latitude": 40.7066419, "longitude": -74.00366869999999, "time_start": "2023-11-16T18:00:00-05:00", "time_end": "2023-11-16T21:00:00-05:00"}, "new-york-wine-and-truffle-fall-foraging-festa": {"name": "Wine & Truffle Fall Foraging Festa", "description": "It's truffle season, amici! Join us for our Wine & Truffle Fall Foraging Festa where you can indulge in aromatic, fresh white truffles straight from...", "category": "food-and-drink", "cost": 85.0, "event_site_url": "https://www.yelp.com/events/new-york-wine-and-truffle-fall-foraging-festa?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ", "latitude": 40.7100805, "longitude": -74.0117621, "time_start": "2023-11-17T18:00:00-05:00", "time_end": "2023-11-17T20:00:00-05:00"}, "new-york-rhonda-hansome-funny-women-of-a-certain-age-live-comedy-show-at-the-kraine-theater": {"name": "Rhonda Hansome @ \"Funny Women of A Certain Age\" Live Comedy Show at  The KRAINE Theater", "description": "Actor / comedian Rhonda \"Passion\" Hansome, (SiriusXM \"John Fugelsang's Tell Me Everything\") will be among the performers featured at the \"Funny Women Of A...", "category": "performing-arts", "cost": 15.0, "event_site_url": "https://www.yelp.com/events/new-york-rhonda-hansome-funny-women-of-a-certain-age-live-comedy-show-at-the-kraine-theater?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ", "latitude": 40.7266236, "longitude": -73.989775, "time_start": "2023-11-15T19:00:00-05:00", "time_end": null}, "brooklyn-belly-full-of-brooklyn-community-week-at-7th-street-burger": {"name": "Belly Full of Brooklyn: Community Week at 7th Street Burger", "description": "***RSVP REQUIRED with confirmation sent to those selected to participate.***\n\nDo you or someone you know love supporting local businesses, trying new spots,...", "category": "food-and-drink", "cost": null, "event_site_url": "https://www.yelp.com/events/brooklyn-belly-full-of-brooklyn-community-week-at-7th-street-burger?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ", "latitude": 40.7179633, "longitude": -73.9573664, "time_start": "2023-12-01T00:00:00-05:00", "time_end": "2023-12-07T00:00:00-05:00"}}
+{
+    "new-york-the-friends-experience-the-one-in-new-york-city-12": {
+        "name": "The FRIENDS Experience: The One in New York City",
+        "description": "The FRIENDS Experience: The One in New York City offers fans of the globally beloved television show, FRIENDS, an interactive experience featuring 18 rooms...",
+        "category": "kids-family",
+        "cost": 39.5,
+        "event_site_url": "https://www.yelp.com/events/new-york-the-friends-experience-the-one-in-new-york-city-12?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+        "latitude": 40.739418117830645,
+        "longitude": -73.98516699999999,
+        "time_start": "2023-11-30T10:00:00-05:00",
+        "time_end": "2023-12-30T19:00:00-05:00"
+    },
+    "new-york-lim\u00f3n-dance-company-presents-womens-stories": {
+        "name": "Lim\u00f3n Dance Company presents Women's Stories",
+        "description": "Lim\u00f3n Dance Company (LDC)\u00a0presents\u00a0Women's Stories\u00a0from Thu-Sat, Dec 7-9, 2023 at 8pm at New York Live Arts, 219 W. 19th\u00a0Street, NYC. Tickets are $45 ($25...",
+        "category": "performing-arts",
+        "cost": null,
+        "event_site_url": "https://www.yelp.com/events/new-york-lim%C3%B3n-dance-company-presents-womens-stories?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+        "latitude": 40.7422303,
+        "longitude": -73.9982715,
+        "time_start": "2023-12-07T20:00:00-05:00",
+        "time_end": "2023-12-09T22:00:00-05:00"
+    },
+    "new-york-the-pepsi-125-diner": {
+        "name": "The Pepsi 125 Diner",
+        "description": "Step into The Pepsi 125 Diner, a unique pop-up restaurant experience by Pepsi in celebration of its very special 125th birthday! After taking some...",
+        "category": "food-and-drink",
+        "cost": null,
+        "event_site_url": "https://www.yelp.com/events/new-york-the-pepsi-125-diner?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+        "latitude": 40.72158599999999,
+        "longitude": -74.0006787,
+        "time_start": "2023-10-28T00:00:00-04:00",
+        "time_end": "2023-11-27T00:00:00-05:00"
+    },
+    "new-york-south-street-seaport-museum-bowne-and-co-announces-opportunities-to-explore-letterpress-printing-in-action": {
+        "name": "South Street Seaport Museum Bowne & Co. Announces Opportunities to Explore Letterpress Printing in Action",
+        "description": "South Street Seaport Museum's 19th century-style letterpress printers, Bowne & Co. offers Fresh Prints open houses and Print Your Own Stationery workshops...",
+        "category": "kids-family",
+        "cost": 0.0,
+        "event_site_url": "https://www.yelp.com/events/new-york-south-street-seaport-museum-bowne-and-co-announces-opportunities-to-explore-letterpress-printing-in-action?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+        "latitude": 40.7066419,
+        "longitude": -74.00366869999999,
+        "time_start": "2023-10-28T12:00:00-04:00",
+        "time_end": "2023-11-27T19:30:00-05:00"
+    },
+    "new-york-battery-dance-accepting-applications-for-the-43rd-annual-battery-dance-festival": {
+        "name": "Battery Dance Accepting Applications for the 43rd Annual Battery Dance Festival",
+        "description": "Battery Dance is accepting applications for the 43rd Annual Battery Dance Festival, with free performances on August 11-17, 2024 at Rockefeller Park, NYC....",
+        "category": "performing-arts",
+        "cost": null,
+        "event_site_url": "https://www.yelp.com/events/new-york-battery-dance-accepting-applications-for-the-43rd-annual-battery-dance-festival?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+        "latitude": 40.713,
+        "longitude": -74.0072,
+        "time_start": "2023-11-01T00:00:00-04:00",
+        "time_end": "2023-11-30T23:30:00-05:00"
+    },
+    "new-york-south-street-seaport-museum-bowne-and-co-announces-wayzgoose-holiday-kick-off": {
+        "name": "South Street Seaport Museum  Bowne & Co. Announces Wayzgoose Holiday Kick Off",
+        "description": "Step into the South Street Seaport Museum's 19th century-style letterpress printing shop Bowne & Co. to kick off the holiday season at our annual...",
+        "category": "other",
+        "cost": null,
+        "event_site_url": "https://www.yelp.com/events/new-york-south-street-seaport-museum-bowne-and-co-announces-wayzgoose-holiday-kick-off?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+        "latitude": 40.7066419,
+        "longitude": -74.00366869999999,
+        "time_start": "2023-11-16T18:00:00-05:00",
+        "time_end": "2023-11-16T21:00:00-05:00"
+    },
+    "new-york-wine-and-truffle-fall-foraging-festa": {
+        "name": "Wine & Truffle Fall Foraging Festa",
+        "description": "It's truffle season, amici! Join us for our Wine & Truffle Fall Foraging Festa where you can indulge in aromatic, fresh white truffles straight from...",
+        "category": "food-and-drink",
+        "cost": 85.0,
+        "event_site_url": "https://www.yelp.com/events/new-york-wine-and-truffle-fall-foraging-festa?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+        "latitude": 40.7100805,
+        "longitude": -74.0117621,
+        "time_start": "2023-11-17T18:00:00-05:00",
+        "time_end": "2023-11-17T20:00:00-05:00"
+    },
+    "brooklyn-belly-full-of-brooklyn-community-week-at-7th-street-burger": {
+        "name": "Belly Full of Brooklyn: Community Week at 7th Street Burger",
+        "description": "***RSVP REQUIRED with confirmation sent to those selected to participate.***\n\nDo you or someone you know love supporting local businesses, trying new spots,...",
+        "category": "food-and-drink",
+        "cost": null,
+        "event_site_url": "https://www.yelp.com/events/brooklyn-belly-full-of-brooklyn-community-week-at-7th-street-burger?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+        "latitude": 40.7179633,
+        "longitude": -73.9573664,
+        "time_start": "2023-12-01T00:00:00-05:00",
+        "time_end": "2023-12-07T00:00:00-05:00"
+    },
+    "new-york-poster-house-poster-kids": {
+        "name": "Poster House Poster Kids",
+        "description": "Poster House, the first museum in the United States dedicated to the global history of posters, will host a \"Poster Kids\" event on November 19, 2023 from...",
+        "category": "kids-family",
+        "cost": null,
+        "event_site_url": "https://www.yelp.com/events/new-york-poster-house-poster-kids?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+        "latitude": 40.7433885071265,
+        "longitude": -73.9935075903394,
+        "time_start": "2023-11-19T10:30:00-05:00",
+        "time_end": "2023-11-19T12:00:00-05:00"
+    },
+    "new-york-bourbon-brew-and-bbq": {
+        "name": "Bourbon Brew and BBQ",
+        "description": "Your ticket includes:\n\n- UNLIMITED food and drink tastings for 3 hours and\n- Free souvenir tasting glass! \n- Access to \"The Upstairs at 66\" game lounge!\n-...",
+        "category": "food-and-drink",
+        "cost": 75.0,
+        "event_site_url": "https://www.yelp.com/events/new-york-bourbon-brew-and-bbq?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+        "latitude": 40.7041771,
+        "longitude": -74.0104846,
+        "time_start": "2023-11-18T13:00:00-05:00",
+        "time_end": "2023-11-18T17:00:00-05:00"
+    },
+    "new-york-south-street-seaport-museum-presents-all-hands-on-deck-film-screening": {
+        "name": "South Street Seaport Museum Presents All Hands on Deck Film Screening",
+        "description": "Join the South Street Seaport Museum for a live-narrated screening of the documentary All Hands on Deck: A Modern-Day High Seas Adventure to the Far Side of...",
+        "category": "film",
+        "cost": null,
+        "event_site_url": "https://www.yelp.com/events/new-york-south-street-seaport-museum-presents-all-hands-on-deck-film-screening?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+        "latitude": 40.7066419,
+        "longitude": -74.00366869999999,
+        "time_start": "2023-12-02T14:30:00-05:00",
+        "time_end": "2023-12-02T17:00:00-05:00"
+    },
+    "new-york-asian-speed-dating-in-ktown": {
+        "name": "Asian Speed Dating in Ktown",
+        "description": "If you're tired of wasting time on dating apps that don't lead anywhere, why not try something different and exciting? Come to our upcoming speed dating...",
+        "category": "other",
+        "cost": 30.0,
+        "event_site_url": "https://www.yelp.com/events/new-york-asian-speed-dating-in-ktown?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+        "latitude": 40.7484352,
+        "longitude": -73.99177639999999,
+        "time_start": "2023-12-09T13:00:00-05:00",
+        "time_end": null
+    },
+    "new-york-matzoball-2023": {
+        "name": "MatzoBall 2023",
+        "description": "MatzoBall, the nations #1 holiday party is back and coming to NYC. Nobody can do it bigger or better than Matzoball and this year will prove to be no...",
+        "category": "festivals-fairs",
+        "cost": 50.0,
+        "event_site_url": "https://www.yelp.com/events/new-york-matzoball-2023?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+        "latitude": 40.71855680430088,
+        "longitude": -73.98932023287509,
+        "time_start": "2023-12-24T22:00:00-05:00",
+        "time_end": "2023-12-25T04:00:00-05:00"
+    },
+    "new-york-ama-animal-rescues-holiday-soir\u00e9e": {
+        "name": "AMA Animal Rescue's Holiday Soir\u00e9e",
+        "description": "Jingle bells, wagging tails - it's The AMA Animal Rescue's Holiday Soir\u00e9e! This annually sold-out charity f\u00eate is all about raising funds to support furry...",
+        "category": "other",
+        "cost": 103.0,
+        "event_site_url": "https://www.yelp.com/events/new-york-ama-animal-rescues-holiday-soir%C3%A9e?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+        "latitude": 40.7096229,
+        "longitude": -74.0093323,
+        "time_start": "2023-12-02T19:00:00-05:00",
+        "time_end": "2023-12-02T23:00:00-05:00"
+    },
+    "new-york-versailles-73-american-runway-revolution-50th-anniversary": {
+        "name": "\"Versailles '73: American Runway Revolution - 50th Anniversary\"",
+        "description": "\"In an era known for protests and sit-ins, the 1973 Grand Divertissement at Versailles, made a fashion statement of its own...pulling off the biggest coup....",
+        "category": "fashion",
+        "cost": null,
+        "event_site_url": "https://www.yelp.com/events/new-york-versailles-73-american-runway-revolution-50th-anniversary?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+        "latitude": 40.7354976,
+        "longitude": -73.9935015,
+        "time_start": "2023-11-28T18:00:00-05:00",
+        "time_end": null
+    }
+}

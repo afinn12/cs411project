@@ -1,5 +1,6 @@
 import requests
 import amadeus_key
+import json
 
 AMADEUS_API_KEY = amadeus_key.amadeus_key
 AMADEUS_API_SECRET = amadeus_key.amadeus_secret
@@ -92,7 +93,7 @@ def get_hotels_around_point(token, lat, long, radius):
             },
             'guestInfo': offer_details['guests'],
             'price': {
-                'base': '$' + offer_details['price']['base'],
+                # 'base': '$' + offer_details['price']['base'],
                 'total': '$' + offer_details['price']['total'],
             }
         }
@@ -104,4 +105,6 @@ if __name__ == '__main__':
     access_token = get_amadeus_access_token()
     lat, long, radius = 40.7128, -74.0060, 1
     nyc_hotels = get_hotels_around_point(access_token, lat, long, radius)
-    print(nyc_hotels)
+    
+    f = open('sample_hotel_list.txt', 'w')
+    json.dump(nyc_hotels, f, indent=4)
