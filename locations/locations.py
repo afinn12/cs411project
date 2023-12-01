@@ -7,8 +7,10 @@ HOTEL_SEARCH_RADIUS = 10
 EVENT_SEARCH_RADIUS = 10
 DAILY_DISTANCE_LIMIT_MILES = 100
 
-# origin and detination: tuples of lat-longs
-# fast_flag: flag to indicate if this is the "fast" route or "cheaper" route
+# combine the 3 APIs ti get a roudtrip plan
+# origin and detination are tuples of lat-long coordinates
+# fast_flag is a bool flag to indicate if this is the "fast" route or "cheaper" route
+# return a JSON
 def get_roadtrip(origin, destination, fast_flag=True):
     # get the route and split points
     route = maps.get_route(origin, destination)
@@ -62,6 +64,8 @@ def get_roadtrip(origin, destination, fast_flag=True):
 
     return roadtrip_info
 
+
+# test the functionality on the lat-longs for NYC and Boston
 if __name__ == '__main__':
     # nyc coors
     nyc = 40.7128, -74.0060

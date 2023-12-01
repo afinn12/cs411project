@@ -7,11 +7,16 @@ YELP_API_KEY = yelp_key.yelp_key
 YELP_API_ENDPOINT = 'https://api.yelp.com/v3/events'
 
 
+# convert YYYY-MM-DD to unix time (total seconds since epoch)
 def ymd_to_unix(date: str):
     date = datetime.datetime.fromisoformat(date)
     return int((date-datetime.datetime(1970,1,1)).total_seconds())
 
 
+# use the Event Search API to get events around a lat-long within a radius
+# radius is in miles
+# TODO: add start and end dates as params
+# returns a JSON
 def search_event_from_latlong(lat, long, radius):
     headers = {
         'Authorization': f'Bearer {YELP_API_KEY}',
@@ -35,10 +40,13 @@ def search_event_from_latlong(lat, long, radius):
         raise Exception("Search Event From Lat Long Error")
 
 
+# use search_event_from_lat_long to reformat the JSON for our needs
+# radius is in miles
+# TODO: add start and end dates as params
+# return a JSON
 def get_events_around_point(lat, long, radius):
     # make api call
     events = search_event_from_latlong(lat, long, radius)
-    # print(events)
 
     # extract relevant info
     event_info = {}
@@ -52,6 +60,7 @@ def get_events_around_point(lat, long, radius):
     return event_info
 
 
+# test the functionality on lat-long of NYC
 if __name__ == '__main__':
     lat, long, radius = 40.7128, -74.0060, 1
     nyc_events = get_events_around_point(lat, long, radius)

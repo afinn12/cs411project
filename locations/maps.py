@@ -7,7 +7,9 @@ GOOGLEMAPS_API_KEY = googlemaps_key.googlemaps_key
 GOOGLEMAPS_DIRECTIONS_API_ENDPOINT = 'https://maps.googleapis.com/maps/api/directions/json'
 
 
-# origin and destination are a tuple of lat-long coordinates
+# use the Routes API to get a route from origin to destination
+# origin and destination are tuples of lat-long coordinates
+# returns a JSON
 def get_route(origin, destination):
     route_args = {
         'origin': f'{origin[0]},{origin[1]}',
@@ -22,12 +24,14 @@ def get_route(origin, destination):
     else:
         print(f"Error: {response.status_code} - {data.get('error_message', 'Unknown error')}")
 
-# route is route computed by get_route: it should contain just 1 leg
+
+# compute suitable split points along the route so that the number of legs < distance_limit is minimized
+# route is a route computed by get_route: it should contain just 1 leg
+# distance_limit is in miles
 def compute_split_points_on_daily_limit(route, distance_limit):
     # extract the list of steps
     steps = route['legs'][0]['steps']
     split_points = []
-    # distances = []
     curr_distance = 0
 
     for step in steps:
@@ -35,16 +39,16 @@ def compute_split_points_on_daily_limit(route, distance_limit):
             curr_distance += step['distance']['value']
         else:
             # does adding yourself push the distances over the threshold?
-            if curr_distance+step['distance']['value']>distance_limit:
-                # distances.append(curr_distance)
+            if curr_distance+step['distance']['value']>distance_limit*1609:
                 split_points.append((step['start_location']['lat'], step['start_location']['lng']))
                 curr_distance = 0
             curr_distance += step['distance']['value']
 
-    # distances.append(curr_distance)
     return split_points
 
 
+# use the Routes API to get a route from origin to destination, taking the stops into account
+# origin and destination are tuples of lat-long coordinates
 # stops should be a list of lat-longs, i.e. the coordinates of hotels
 def get_route_with_stops(origin, destination, stops):
     route_args = {
@@ -62,6 +66,7 @@ def get_route_with_stops(origin, destination, stops):
         print(f"Error: {response.status_code} - {data.get('error_message', 'Unknown error')}")
 
 
+# test the functionality with lat-longs for NYC and Boston
 if __name__ == '__main__':
     # nyc coors
     nyc = 40.7128, -74.0060
@@ -72,7 +77,7 @@ if __name__ == '__main__':
     route = get_route(nyc, boston)
     # json.dump(route, f)
 
-    split_points = compute_split_points_on_daily_limit(route, 160900)
+    split_points = compute_split_points_on_daily_limit(route, 100)
     new_route = get_route_with_stops(nyc, boston, split_points)
 
     f = open('sample_route_with_stops.txt', 'w')

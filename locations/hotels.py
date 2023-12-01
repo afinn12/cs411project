@@ -9,6 +9,7 @@ AMADEUS_TOKEN_URL = 'https://test.api.amadeus.com/v1/security/oauth2/token'
 AMADEUS_API_ENDPOINT = 'https://test.api.amadeus.com/'
 
 
+# return an access token needed for Amadeus API calls
 def get_amadeus_access_token():
     headers = {"Content-Type": "application/x-www-form-urlencoded"}
     data = f"grant_type=client_credentials&client_id={AMADEUS_API_KEY}&client_secret={AMADEUS_API_SECRET}"
@@ -16,6 +17,10 @@ def get_amadeus_access_token():
     return token['access_token']
 
 
+# use the HotelList API to get basic hotel info around a lat-long within some radius
+# token should be a token returned by get_amadeus_access_token
+# radius is in miles
+# returns a JSON
 def get_geocode_hotels(token, lat, long, radius):
     headers = {
         'Authorization': f'Bearer {token}'
@@ -39,6 +44,10 @@ def get_geocode_hotels(token, lat, long, radius):
         raise Exception("Geocode Hotel ID Error")
 
 
+# use hotel search to get basic booking info given a list of hotel ids
+# token should be a token returned by get_amadeus_access_token
+# TODO: add check-in and check-out dates as params
+# return a JSON
 def search_hotel_from_id(token, hotel_ids):
     headers = {
         'Authorization': f'Bearer {token}'
@@ -66,10 +75,14 @@ def search_hotel_from_id(token, hotel_ids):
         raise Exception("Search Hotel From ID Error")
 
 
+# uses get_geocode_hotels and search_hotel_from_id to get basic booking info around a lat-long
+# token should be a token returned by get_amadeus_access_token
+# radius is in miles
+# TODO: add check-in and check-out dates as params
+# return a JSON
 def get_hotels_around_point(token, lat, long, radius):
     # make api calls
     geocoded = get_geocode_hotels(token, lat, long, radius)
-    # geocoded.sort(key=lambda x: x['distance']['value'])
     ids = [key['hotelId'] for key in geocoded]
     searched = search_hotel_from_id(token, ids)
 
@@ -81,7 +94,7 @@ def get_hotels_around_point(token, lat, long, radius):
             'name': hotel['name'],
             'distance': hotel['distance']['value']
         } | hotel['geoCode']
-    # print(hotel_info)
+
     # then use hotel ids to get offer details
     for offer in searched:
         offer_details = offer['offers'][0]
@@ -93,14 +106,14 @@ def get_hotels_around_point(token, lat, long, radius):
             },
             'guestInfo': offer_details['guests'],
             'price': {
-                # 'base': '$' + offer_details['price']['base'],
                 'total': '$' + offer_details['price']['total'],
             }
         }
-    # print(hotel_info)
+
     valid_hotels = {hotel: hotel_info[hotel] for hotel in hotel_info if 'checkInDate' in hotel_info[hotel]}
     return valid_hotels
 
+# test the functionality on lat-long of NYC
 if __name__ == '__main__':
     access_token = get_amadeus_access_token()
     lat, long, radius = 40.7128, -74.0060, 1
