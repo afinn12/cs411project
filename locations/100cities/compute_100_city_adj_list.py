@@ -45,5 +45,5 @@ if __name__ == '__main__':
     #     print(i, False)
     adj_list = make_adj_list(6)
     f = open('100cities_closest_n_adj_list.json', 'w')
-    json.dump (adj_list, f)
+    json.dump(adj_list, f, indent=4)
     
