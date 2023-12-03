@@ -46,9 +46,10 @@ def get_geocode_hotels(token, lat, long, radius):
 
 # use hotel search to get basic booking info given a list of hotel ids
 # token should be a token returned by get_amadeus_access_token
+# check_in_date and check_out_date are python datetime objects
 # TODO: add check-in and check-out dates as params
 # return a JSON
-def search_hotel_from_id(token, hotel_ids):
+def search_hotel_from_id(token, hotel_ids, check_in_date, check_out_date):
     headers = {
         'Authorization': f'Bearer {token}'
     }
@@ -56,8 +57,8 @@ def search_hotel_from_id(token, hotel_ids):
     search_args = {
         "hotelIds": ','.join(hotel_ids),
         "adults": '1',
-        "checkInDate": "2023-12-15",
-        "checkOutDate": "2023-12-16",
+        "checkInDate": check_in_date.isoformat(),
+        "checkOutDate": check_out_date.isoformat(),
         "roomQuantity": '1',
         "currency": 'USD',
         "paymentPolicy": "NONE",
@@ -78,13 +79,15 @@ def search_hotel_from_id(token, hotel_ids):
 # uses get_geocode_hotels and search_hotel_from_id to get basic booking info around a lat-long
 # token should be a token returned by get_amadeus_access_token
 # radius is in miles
+# check_in_date and check_out_date are python datetime objects
+# use only the first 10 hotel results
 # TODO: add check-in and check-out dates as params
 # return a JSON
-def get_hotels_around_point(token, lat, long, radius):
+def get_hotels_around_point(token, lat, long, radius, check_in_date, check_out_date):
     # make api calls
     geocoded = get_geocode_hotels(token, lat, long, radius)
-    ids = [key['hotelId'] for key in geocoded]
-    searched = search_hotel_from_id(token, ids)
+    ids = [key['hotelId'] for key in geocoded][:10]
+    searched = search_hotel_from_id(token, ids, check_in_date, check_out_date)
 
     # extract values
     # first geocode to get hotels around a point

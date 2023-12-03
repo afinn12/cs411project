@@ -2,6 +2,7 @@ import events
 import hotels
 import maps
 import json
+import datetime
 
 HOTEL_SEARCH_RADIUS = 10
 EVENT_SEARCH_RADIUS = 10
@@ -10,8 +11,9 @@ EVENT_SEARCH_RADIUS = 10
 # origin and destination are names of cities in the list of 100
 # is_direct_route is a boolean for if the returned route should be direct (True) or city-based (False)
 # distance_limit is the daily distance limit in miles
+# start_date is a date in YYYY-MM-DD format
 # return a JSON
-def get_roadtrip(origin, destination, is_direct_route, distance_limit):
+def get_roadtrip(origin, destination, is_direct_route, distance_limit, start_date):
     ret = {}
 
     # get the route and split points
@@ -24,9 +26,23 @@ def get_roadtrip(origin, destination, is_direct_route, distance_limit):
 
     # find hotels around each split point
     amadeus_token = hotels.get_amadeus_access_token()
-    hotel_list_per_point = [
-        hotels.get_hotels_around_point(amadeus_token, x, y, HOTEL_SEARCH_RADIUS) for x,y in split_points
-    ]
+    start_date = datetime.date.fromisoformat(start_date)
+    # for the direct route, you check in to a hotel on a day, and then check out the next day
+    if is_direct_route:
+        hotel_list_per_point = [
+            hotels.get_hotels_around_point(amadeus_token, x, y, HOTEL_SEARCH_RADIUS, 
+                                            start_date + datetime.timedelta(days=i),
+                                            start_date + datetime.timedelta(days=i+1)) 
+            for i,(x,y) in enumerate(split_points)
+        ]
+    # for the city route, you check in to a hotel on a day, and then check out 2 days after
+    else:
+        hotel_list_per_point = [
+            hotels.get_hotels_around_point(amadeus_token, x, y, HOTEL_SEARCH_RADIUS, 
+                                            start_date + datetime.timedelta(days=2*i),
+                                            start_date + datetime.timedelta(days=2*(i+1))) 
+            for i,(x,y) in enumerate(split_points)
+        ]
 
     hotel_per_point_fast = []
     hotel_per_point_cheap = []
@@ -49,9 +65,23 @@ def get_roadtrip(origin, destination, is_direct_route, distance_limit):
 
 
     # find events around each split point
-    event_list_per_point = [
-        events.get_events_around_point(x, y, EVENT_SEARCH_RADIUS) for x,y in split_points
-    ]
+    # the start and end date used for the events are one week before and one week after the "event-day"
+    # for the direct route, the "event-day" for a split point is the same day as the check in date for the hotel
+    if is_direct_route:
+        event_list_per_point = [
+            events.get_events_around_point(x, y, EVENT_SEARCH_RADIUS, 
+                                           start_date + datetime.timedelta(days=i-7),
+                                           start_date + datetime.timedelta(days=i+7)) 
+            for i,(x,y) in enumerate(split_points)
+        ]
+    # for the city route, the "event-day" for a split point is the day after the check in date for the hotel
+    else:
+        event_list_per_point = [
+            events.get_events_around_point(x, y, EVENT_SEARCH_RADIUS,
+                                           start_date + datetime.timedelta(days=2*i+1 - 7),
+                                           start_date + datetime.timedelta(days=2*i+1 + 7)) 
+            for i,(x,y) in enumerate(split_points)
+        ]
 
 
     # recompute the route based on the fast hotels
@@ -92,6 +122,10 @@ if __name__ == '__main__':
     boston = 'Boston, MA'
     miami = 'Miami, FL'
 
+    # f = open('sample_direct_roadtrip.txt', 'w')
+    # roadtrip = get_roadtrip(nyc, boston, True, 100, '2023-12-15')
+    # json.dump(roadtrip, f, indent=4)
+
     f = open('sample_city_roadtrip.txt', 'w')
-    roadtrip = get_roadtrip(nyc, miami, False, 500)
+    roadtrip = get_roadtrip(nyc, miami, False, 500, '2023-12-15')
     json.dump(roadtrip, f, indent=4)

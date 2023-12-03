@@ -15,9 +15,10 @@ def ymd_to_unix(date: str):
 
 # use the Event Search API to get events around a lat-long within a radius
 # radius is in miles
+# start_date and end_date are python datetime objects
 # TODO: add start and end dates as params
 # returns a JSON
-def search_event_from_latlong(lat, long, radius):
+def search_event_from_latlong(lat, long, radius, start_date, end_date):
     headers = {
         'Authorization': f'Bearer {YELP_API_KEY}',
     }
@@ -25,8 +26,8 @@ def search_event_from_latlong(lat, long, radius):
         'latitude': lat,
         'longitude': long,
         'limit': '15',
-        'start_date': ymd_to_unix('2023-11-15'),
-        'end_date': ymd_to_unix('2024-01-15'),
+        'start_date': ymd_to_unix(start_date.isoformat()),
+        'end_date': ymd_to_unix(start_date.isoformat()),
         'radius': radius*1609 # roughly the conversion from mile to meter
     }
 
@@ -42,11 +43,12 @@ def search_event_from_latlong(lat, long, radius):
 
 # use search_event_from_lat_long to reformat the JSON for our needs
 # radius is in miles
+# start_date and end_date are python datetime objects
 # TODO: add start and end dates as params
 # return a JSON
-def get_events_around_point(lat, long, radius):
+def get_events_around_point(lat, long, radius, start_date, end_date):
     # make api call
-    events = search_event_from_latlong(lat, long, radius)
+    events = search_event_from_latlong(lat, long, radius, start_date, end_date)
 
     # extract relevant info
     event_info = {}

@@ -1680,17 +1680,17 @@
         },
         {
             "distance": {
-                "text": "347 mi",
-                "value": 558568
+                "text": "345 mi",
+                "value": 555433
             },
             "duration": {
-                "text": "5 hours 6 mins",
-                "value": 18350
+                "text": "5 hours 0 mins",
+                "value": 18015
             },
-            "end_address": "Miami, FL, USA",
+            "end_address": "0 N Miami Ave, Miami, FL 33132, USA",
             "end_location": {
-                "lat": 25.7617059,
-                "lng": -80.1918211
+                "lat": 25.7741612,
+                "lng": -80.19359209999999
             },
             "start_address": "44 E Union St, Jacksonville, FL 32202, USA",
             "start_location": {
@@ -2126,21 +2126,21 @@
                 },
                 {
                     "distance": {
-                        "text": "0.7 mi",
-                        "value": 1173
+                        "text": "2.1 mi",
+                        "value": 3339
                     },
                     "duration": {
-                        "text": "1 min",
-                        "value": 48
+                        "text": "2 mins",
+                        "value": 144
                     },
                     "end_location": {
-                        "lat": 25.7928956,
-                        "lng": -80.2054576
+                        "lat": 25.7744896,
+                        "lng": -80.1995379
                     },
-                    "html_instructions": "Merge onto <b>I-95 S</b>",
+                    "html_instructions": "Merge onto <b>I-95 S</b><div style=\"font-size:0.9em\">Parts of this road may be closed at certain times or days</div>",
                     "maneuver": "merge",
                     "polyline": {
-                        "points": "ovn|CtephNh@?RAr@AxACTApAC`ACh@Av@ApAC^Cv@AvAC~CEbDChAAF?V?jA?@?vA?p@A@?@?^?@?DAxAApAEd@Ah@AP?^AP?ZAdDE^AlCE"
+                        "points": "ovn|CtephNh@?RAr@AxACTApAC`ACh@Av@ApAC^Cv@AvAC~CEbDChAAF?V?jA?@?vA?p@A@?@?^?@?DAxAApAEd@Ah@AP?^AP?ZAdDE^AlCEf@Cj@Af@Cv@Ed@CTCVCZGXE|B_@bCo@TGp@WLG\\Op@WdDsAt@Yr@[bAc@jAe@nAi@h@Sr@[f@U^Q^Od@Uf@U\\Qj@Yn@[RKPKRKRMx@a@HEHGHEbAi@~@e@t@a@b@UPIRKNGVKRITIhA]FCh@MTETEd@Ih@GLCt@I\\EL?TCPAf@Aj@Al@AnBC`@Ah@An@A`AA^?`@AfBCj@A`AAT?FA|@Az@Ad@An@GPCVEDAHA`@KJCh@Mh@M"
                     },
                     "start_location": {
                         "lat": 25.8034391,
@@ -2150,265 +2150,264 @@
                 },
                 {
                     "distance": {
-                        "text": "0.3 mi",
-                        "value": 533
-                    },
-                    "duration": {
-                        "text": "1 min",
-                        "value": 26
-                    },
-                    "end_location": {
-                        "lat": 25.789086,
-                        "lng": -80.207471
-                    },
-                    "html_instructions": "Take exit <b>3A</b> for <b>FL-836 W</b> toward <b>Miami Int'l Airport</b>",
-                    "maneuver": "ramp-right",
-                    "polyline": {
-                        "points": "stl|CbcphNHP?@lB@N?jA@\\@B?L?H@^?N?B?T?z@@\\?X@TBb@DLBB@F@RFPHLHNHFFNLFFJLPVJTLZHXDPLf@D\\DPFPJl@"
-                    },
-                    "start_location": {
-                        "lat": 25.7928956,
-                        "lng": -80.2054576
-                    },
-                    "travel_mode": "DRIVING"
-                },
-                {
-                    "distance": {
                         "text": "0.4 mi",
-                        "value": 578
+                        "value": 693
                     },
                     "duration": {
                         "text": "1 min",
-                        "value": 27
+                        "value": 52
                     },
                     "end_location": {
-                        "lat": 25.7865737,
-                        "lng": -80.21246390000002
+                        "lat": 25.7718714,
+                        "lng": -80.1939127
                     },
-                    "html_instructions": "Keep <b>left</b> and merge onto <b>FL-836 W</b><div style=\"font-size:0.9em\">Toll road</div>",
-                    "maneuver": "keep-left",
+                    "html_instructions": "Take exit <b>2C</b> on the <b>left</b> for <b>Miami Ave</b>",
+                    "maneuver": "ramp-left",
                     "polyline": {
-                        "points": "y|k|CtophNDRFTFXHTDPHVDLBFFPHTTh@FNJRRf@JTRb@JTTh@@BN^Vl@@@P@b@hAFNd@nA`@dAN\\HPFN`A`CTj@"
+                        "points": "qai|Cb~nhNH[@?n@Sf@Qh@QFARIXIBAXKRIJG@?DCJIRODGBCFI@G@?@C?ADKFQ@IDQBQ?A@Q?M?C?C?C?C?E@S?Q?A@E?ABi@Bk@@A?GD_@@GBS@AFYH[BGFS?A@E@CDKBI@C@E@??AFODOLc@BKRm@HaA@MBe@D_AB[JoADg@"
                     },
                     "start_location": {
-                        "lat": 25.789086,
-                        "lng": -80.207471
+                        "lat": 25.7744896,
+                        "lng": -80.1995379
                     },
                     "travel_mode": "DRIVING"
                 },
                 {
                     "distance": {
                         "text": "0.2 mi",
-                        "value": 259
+                        "value": 282
                     },
                     "duration": {
                         "text": "1 min",
-                        "value": 49
+                        "value": 54
                     },
                     "end_location": {
-                        "lat": 25.785753,
-                        "lng": -80.21485659999999
+                        "lat": 25.7714841,
+                        "lng": -80.19621819999999
                     },
-                    "html_instructions": "Take the <b>FL-933 S</b>/<wbr/><b>NW 12th Ave</b> exit<div style=\"font-size:0.9em\">Toll road</div>",
-                    "maneuver": "ramp-right",
+                    "html_instructions": "Keep <b>right</b> at the fork and merge onto <b>SW 3rd St</b>",
+                    "maneuver": "fork-right",
                     "polyline": {
-                        "points": "amk|CznqhN?\\@JDPL\\Nl@BHFZF\\Hd@Hb@F\\Hh@Lh@JNDHb@|@"
+                        "points": "eqh|C|zmhNFMBEBCBC@A@??A@?@?B?@?@?@?@@BBB@@B@B?@@@?@?@@H?J?@@@?@DD@`C?NBlB@bA?F@N?@@R@`A"
                     },
                     "start_location": {
-                        "lat": 25.7865737,
-                        "lng": -80.21246390000002
-                    },
-                    "travel_mode": "DRIVING"
-                },
-                {
-                    "distance": {
-                        "text": "466 ft",
-                        "value": 142
-                    },
-                    "duration": {
-                        "text": "1 min",
-                        "value": 41
-                    },
-                    "end_location": {
-                        "lat": 25.7845525,
-                        "lng": -80.21471470000002
-                    },
-                    "html_instructions": "Turn <b>left</b> onto <b>FL-933 S</b>/<wbr/><b>NW 12th Ave</b>",
-                    "maneuver": "turn-left",
-                    "polyline": {
-                        "points": "}gk|Cz}qhNRVb@GTE@?VE?AB?NCJCt@Op@G"
-                    },
-                    "start_location": {
-                        "lat": 25.785753,
-                        "lng": -80.21485659999999
-                    },
-                    "travel_mode": "DRIVING"
-                },
-                {
-                    "distance": {
-                        "text": "0.2 mi",
-                        "value": 376
-                    },
-                    "duration": {
-                        "text": "1 min",
-                        "value": 33
-                    },
-                    "end_location": {
-                        "lat": 25.7857996,
-                        "lng": -80.2137651
-                    },
-                    "html_instructions": "Turn <b>right</b> onto the <b>FL-836 E</b>/<wbr/><b>I-395 E</b> ramp to <b>I-95 E</b><div style=\"font-size:0.9em\">Toll road</div>",
-                    "maneuver": "ramp-right",
-                    "polyline": {
-                        "points": "m`k|C||qhNJJDBJDDBFFDFFF?@BB@B@BBF@J?H?F?HADADCLEHGHEDIHGDIBI@G?C?K?KCGACAKIKKGKMSEICGCICICEAAGQ?AEKAAACAEACCIEIK[Sk@ACEKQe@CICIKWAEYU"
-                    },
-                    "start_location": {
-                        "lat": 25.7845525,
-                        "lng": -80.21471470000002
-                    },
-                    "travel_mode": "DRIVING"
-                },
-                {
-                    "distance": {
-                        "text": "0.4 mi",
-                        "value": 635
-                    },
-                    "duration": {
-                        "text": "1 min",
-                        "value": 34
-                    },
-                    "end_location": {
-                        "lat": 25.7884423,
-                        "lng": -80.2081463
-                    },
-                    "html_instructions": "Merge onto <b>FL-836 E</b><div style=\"font-size:0.9em\">Toll road</div>",
-                    "maneuver": "merge",
-                    "polyline": {
-                        "points": "ghk|C`wqhNWu@ISYw@o@uBkAgDSk@[w@k@}Ak@mAm@wAk@yAUk@Wm@Qc@Sm@Oe@Qo@"
-                    },
-                    "start_location": {
-                        "lat": 25.7857996,
-                        "lng": -80.2137651
-                    },
-                    "travel_mode": "DRIVING"
-                },
-                {
-                    "distance": {
-                        "text": "1.2 mi",
-                        "value": 1858
-                    },
-                    "duration": {
-                        "text": "2 mins",
-                        "value": 90
-                    },
-                    "end_location": {
-                        "lat": 25.7756724,
-                        "lng": -80.1998665
-                    },
-                    "html_instructions": "Take the exit onto <b>I-95 S</b> toward <b>Downtown</b>",
-                    "maneuver": "ramp-right",
-                    "polyline": {
-                        "points": "wxk|C|sphNFi@?AUeBCUAk@A}@?{@BY@SBWBWBUDWBM@EDUFSHSDKFKHQJSLUPWNWNUNQNQJKBCLMFG@?NMPOVQFEFGLI|AeAZSPM\\Uj@a@^U`BgAVQd@]d@[ZQp@a@@?DYx@a@HEHGHEbAi@~@e@t@a@b@UPIRKNGVKRITIhA]FCh@MTETEd@Ih@GLCt@I\\EL?TCPAf@Aj@Al@AnBC`@Ah@An@A`AA^?`@AfBCj@A`AAT?FA|@Az@Ad@A"
-                    },
-                    "start_location": {
-                        "lat": 25.7884423,
-                        "lng": -80.2081463
-                    },
-                    "travel_mode": "DRIVING"
-                },
-                {
-                    "distance": {
-                        "text": "0.6 mi",
-                        "value": 986
-                    },
-                    "duration": {
-                        "text": "2 mins",
-                        "value": 100
-                    },
-                    "end_location": {
-                        "lat": 25.7671644,
-                        "lng": -80.200789
-                    },
-                    "html_instructions": "Take exit <b>1B</b> for <b>US-41</b>/<wbr/><b>SW 7th St</b> toward <b>Brickell Ave</b>",
-                    "maneuver": "ramp-right",
-                    "polyline": {
-                        "points": "}hi|Cd`ohNPL@?^@b@@R?B?B?B?N?TAN?F?HA@?^CLAHA@?@?FABAB?@?FC\\K`@K@AZIf@OXI?AB?\\MZI@?NG\\K\\IRCHCXCLA@?BADADAD?N?F?N?^?B?ZDVDB@ZFTFNDVHNDVJZHVHJD\\L@@F@v@XVHXJv@TF@VF^H\\FHBZDF@dAR~@PXFF@L@RBn@JRDVFJBH@j@R"
-                    },
-                    "start_location": {
-                        "lat": 25.7756724,
-                        "lng": -80.1998665
-                    },
-                    "travel_mode": "DRIVING"
-                },
-                {
-                    "distance": {
-                        "text": "0.3 mi",
-                        "value": 509
-                    },
-                    "duration": {
-                        "text": "1 min",
-                        "value": 86
-                    },
-                    "end_location": {
-                        "lat": 25.7625909,
-                        "lng": -80.2006251
-                    },
-                    "html_instructions": "Continue straight onto <b>SW 4th Ave</b>",
-                    "maneuver": "straight",
-                    "polyline": {
-                        "points": "wsg|C|eohNZApAAd@Aj@AlA?pBE~DE~DEpCE"
-                    },
-                    "start_location": {
-                        "lat": 25.7671644,
-                        "lng": -80.200789
+                        "lat": 25.7718714,
+                        "lng": -80.1939127
                     },
                     "travel_mode": "DRIVING"
                 },
                 {
                     "distance": {
                         "text": "0.1 mi",
-                        "value": 187
+                        "value": 196
                     },
                     "duration": {
                         "text": "1 min",
-                        "value": 32
+                        "value": 44
                     },
                     "end_location": {
-                        "lat": 25.761636,
-                        "lng": -80.1993473
+                        "lat": 25.7732422,
+                        "lng": -80.1962416
                     },
-                    "html_instructions": "Turn <b>left</b> onto <b>SW 15th Rd</b>",
-                    "maneuver": "turn-left",
+                    "html_instructions": "Turn <b>right</b> onto <b>SW 1st Ct</b>",
+                    "maneuver": "turn-right",
                     "polyline": {
-                        "points": "ewf|C|dohNRVp@uAf@eATa@@C@A?A@A?ANYBEBCHSPU"
+                        "points": "wnh|CjinhN[?G?k@?[@c@?E?W?A?Q?I?K?E?G?I@I?G?E?A?I?G?E?G?O?G?O?M?"
                     },
                     "start_location": {
-                        "lat": 25.7625909,
-                        "lng": -80.2006251
+                        "lat": 25.7714841,
+                        "lng": -80.19621819999999
+                    },
+                    "travel_mode": "DRIVING"
+                },
+                {
+                    "distance": {
+                        "text": "230 ft",
+                        "value": 70
+                    },
+                    "duration": {
+                        "text": "1 min",
+                        "value": 22
+                    },
+                    "end_location": {
+                        "lat": 25.7732657,
+                        "lng": -80.1955459
+                    },
+                    "html_instructions": "Turn <b>right</b> onto <b>SW 1st St</b>",
+                    "maneuver": "turn-right",
+                    "polyline": {
+                        "points": "wyh|CninhNCs@AuA"
+                    },
+                    "start_location": {
+                        "lat": 25.7732422,
+                        "lng": -80.1962416
+                    },
+                    "travel_mode": "DRIVING"
+                },
+                {
+                    "distance": {
+                        "text": "305 ft",
+                        "value": 93
+                    },
+                    "duration": {
+                        "text": "1 min",
+                        "value": 34
+                    },
+                    "end_location": {
+                        "lat": 25.774101,
+                        "lng": -80.19557929999999
+                    },
+                    "html_instructions": "Turn <b>left</b> onto <b>SW 1st Ave</b>",
+                    "maneuver": "turn-left",
+                    "polyline": {
+                        "points": "}yh|CdenhNU?u@?yAD"
+                    },
+                    "start_location": {
+                        "lat": 25.7732657,
+                        "lng": -80.1955459
+                    },
+                    "travel_mode": "DRIVING"
+                },
+                {
+                    "distance": {
+                        "text": "0.1 mi",
+                        "value": 199
+                    },
+                    "duration": {
+                        "text": "1 min",
+                        "value": 54
+                    },
+                    "end_location": {
+                        "lat": 25.7741612,
+                        "lng": -80.19359209999999
+                    },
+                    "html_instructions": "Turn <b>right</b> at the 1st cross street onto <b>W Flagler St</b>",
+                    "maneuver": "turn-right",
+                    "polyline": {
+                        "points": "c_i|CjenhNA_AAuBGwE"
+                    },
+                    "start_location": {
+                        "lat": 25.774101,
+                        "lng": -80.19557929999999
+                    },
+                    "travel_mode": "DRIVING"
+                }
+            ],
+            "traffic_speed_entry": [],
+            "via_waypoint": []
+        },
+        {
+            "distance": {
+                "text": "1.1 mi",
+                "value": 1762
+            },
+            "duration": {
+                "text": "8 mins",
+                "value": 476
+            },
+            "end_address": "Miami, FL, USA",
+            "end_location": {
+                "lat": 25.7617059,
+                "lng": -80.1918211
+            },
+            "start_address": "0 N Miami Ave, Miami, FL 33132, USA",
+            "start_location": {
+                "lat": 25.7741612,
+                "lng": -80.19359209999999
+            },
+            "steps": [
+                {
+                    "distance": {
+                        "text": "0.4 mi",
+                        "value": 595
+                    },
+                    "duration": {
+                        "text": "2 mins",
+                        "value": 142
+                    },
+                    "end_location": {
+                        "lat": 25.7688175,
+                        "lng": -80.1935275
+                    },
+                    "html_instructions": "Head <b>south</b> on <b>S Miami Ave</b> toward <b>SW 1st St</b>",
+                    "polyline": {
+                        "points": "o_i|C|xmhNrAAVAz@A~AAn@?NARAj@?\\A\\?@?PAJ?B?F?B?PAVDb@BB?^B@?\\@LANAh@?dA@NAR?r@Ab@?b@Ab@Ab@?LA`@@"
+                    },
+                    "start_location": {
+                        "lat": 25.7741612,
+                        "lng": -80.19359209999999
+                    },
+                    "travel_mode": "DRIVING"
+                },
+                {
+                    "distance": {
+                        "text": "177 ft",
+                        "value": 54
+                    },
+                    "duration": {
+                        "text": "1 min",
+                        "value": 7
+                    },
+                    "end_location": {
+                        "lat": 25.7683411,
+                        "lng": -80.19356669999999
+                    },
+                    "html_instructions": "Keep <b>left</b> to stay on <b>S Miami Ave</b>",
+                    "maneuver": "keep-left",
+                    "polyline": {
+                        "points": "c~g|CpxmhNt@EF@D?H@PH"
+                    },
+                    "start_location": {
+                        "lat": 25.7688175,
+                        "lng": -80.1935275
+                    },
+                    "travel_mode": "DRIVING"
+                },
+                {
+                    "distance": {
+                        "text": "0.2 mi",
+                        "value": 377
+                    },
+                    "duration": {
+                        "text": "2 mins",
+                        "value": 107
+                    },
+                    "end_location": {
+                        "lat": 25.7679889,
+                        "lng": -80.19032849999999
+                    },
+                    "html_instructions": "At the traffic circle, take the <b>2nd</b> exit onto <b>SE 6th St</b>",
+                    "maneuver": "roundabout-right",
+                    "polyline": {
+                        "points": "c{g|CxxmhN@@?@@@@@?@@??@@?@@@?@@@?@?@?@@@?@A@?@?@A@?@A@A@A@A?A@??A?A@A?A?A?A?A?A?A?A?A?AAA?AAA?AAAAAAAA?AAC?AAA?A?C?A?EGCGAE?E?GEe@CU?}@CsAf@uDL}@D_@BOLkA"
+                    },
+                    "start_location": {
+                        "lat": 25.7683411,
+                        "lng": -80.19356669999999
                     },
                     "travel_mode": "DRIVING"
                 },
                 {
                     "distance": {
                         "text": "0.5 mi",
-                        "value": 771
+                        "value": 736
                     },
                     "duration": {
-                        "text": "3 mins",
-                        "value": 173
+                        "text": "4 mins",
+                        "value": 220
                     },
                     "end_location": {
                         "lat": 25.7617059,
                         "lng": -80.1918211
                     },
-                    "html_instructions": "At the traffic circle, continue straight onto <b>SW 13th St</b><div style=\"font-size:0.9em\">Pass by Chase Bank (on the left)</div>",
-                    "maneuver": "roundabout-right",
+                    "html_instructions": "Turn <b>right</b> onto <b>Brickell Ave</b>",
+                    "maneuver": "turn-right",
                     "polyline": {
-                        "points": "gqf|C||nhNJ?FA@A@A@?@A@A@A@A?A@A@C?A?A@C?C?A?A?C?A?A?CAABQ?K@U?W@u@?IAO?CCGACAC?CAyAAcBAs@EaDA}B?MCiAAsAA{@EaFCiAAk@CqAAMCi@E]"
+                        "points": "}xg|CpdmhN~@Nv@Lz@NjARTDlARdC^PBZFl@HfDl@bANhDl@r@LXDd@D\\Ff@Jp@Nd@JE]"
                     },
                     "start_location": {
-                        "lat": 25.761636,
-                        "lng": -80.1993473
+                        "lat": 25.7679889,
+                        "lng": -80.19032849999999
                     },
                     "travel_mode": "DRIVING"
                 }
@@ -2418,13 +2417,14 @@
         }
     ],
     "overview_polyline": {
-        "points": "gunwFblubM~cEyFjkFlvApiE~lAxNdaJm}CbqSeEteBdbHtqD`uKnmTvrPpuOlpU~oIp}N|uHniI`~N~|P`uUnlPz`Vv`M`uRbzGphHxsCl|KhxLfh[toM~nXr`ElbTyeBviYztA~jJ~jC~{@bkJ_NbdQ}Ff|E{CxyBdhCbjLy`@|zJogGndJycGriIu~BhhIulL`yIkyD``VggAbfHy`DhdE|iBf~MoYfeSorB~_OuhIdsMioNfoRykIrnOqaElkMlw@n{L`|LvwG|fN`wG~dBhdD|hJxmGjsPzfEblB~oIuEjjKz@~pJtpA`|RxqIvfMzePlwPp_Lv{w@tac@xsFvvDfgJqw@nrP_Zl`GfVx|C`oJ|rKphL|pI~eCnaHj_AtnBlvHbbFrjBpl@n{FvmAb{K`oGflRdvCjuOmN`fJbwA|`L`zEnmHpcG|fWhiEz}Uo{FxwTesB~pPjF`rj@xhB~s`@urExdOgfIve[udAdmMjgD~sElaCfhMbeBruLdkAznLsl@jfLlzLjmCjx[~vOdjWboZhoFhtNxnBhmSjxRpmWrv\\lnVlnGjfMwx@zhOkiGjje@yHrgj@bv@|en@ldB|jNhfBxdFpcDlnK`r@haOjtHrfEheHxjLjdGtnXb}It|SjyIbn\\t{JrlHnfErbK|eG||H`dM`eIlnHsEbrGtiH~tDhdJtaGxkEhcO|tJ|gB~`L`wBld@bjG~bEroSpxInyRhgG`tMxJxf[fsK`}Zi_Atke@y}Ez}_@d]`mc@g`HvyFabD~sEvyCfwGfZx`Cj~CjfC|oHcExhFzxA}b@nhGk{C`cHymBfdNytM~jRysJf|WirPxzSyeW~aI{dMtzH{oG||YlgK|uWvpIlnTriBfiKdhEfjWluTlyL~gIdjO|vDh_\\x_Opza@d_Q~cJ|}P|nInjId{Hbh@djQdtFxvMrfJ~aRl}At`[tfGp{Ud|F~qY|mAjlVrsDdy]zyN~oP`yKv{RhnIr~Rr}@ppGyhBjhSmKlxXcwBrh`@zbAp}Ofv@|_Km~Hd{NefJbnRmqJzuQkzDftg@ypSlpU_fJbvNi_Ktuo@o~TrrX}_EtnPwjIv}g@m{Tltp@}lLdeRizA|{Ni|DlqMgKxiOk~Hx`IcqFdhQmrCv_R\\hdJ}wJ|o]_rIxtKmfGt{Pwm@x_To}Ef~N}eJlbRsuJlpGcYttWkgFhlXy|LpgRewHz{TekOt`^wp@|mOvuFjcj@vA~hY{[doRtaDhiGruCbyKeJfeVjiAj_T{bCxrPnc@`rCunC"
+        "points": "gunwFblubM~cEyFjkFlvApiE~lAxNdaJm}CbqSeEteBdbHtqD`uKnmTvrPpuOlpU~oIp}N|uHniI`~N~|P`uUnlPz`Vv`M`uRbzGphHxsCl|KhxLfh[toM~nXr`ElbTyeBviYztA~jJ~jC~{@bkJ_NbdQ}Ff|E{CxyBdhCbjLy`@|zJogGndJycGriIu~BhhIulL`yIkyD``VggAbfHy`DhdE|iBf~MoYfeSorB~_OuhIdsMioNfoRykIrnOqaElkMlw@n{L`|LvwG|fN`wG~dBhdD|hJxmGjsPzfEblB~oIuEjjKz@~pJtpA`|RxqIvfMzePlwPp_Lv{w@tac@xsFvvDfgJqw@nrP_Zl`GfVx|C`oJ|rKphL|pI~eCnaHj_AtnBlvHbbFrjBpl@n{FvmAb{K`oGflRdvCjuOmN`fJbwA|`L`zEnmHpcG|fWhiEz}Uo{FxwTesB~pPjF`rj@xhB~s`@urExdOgfIve[udAdmMjgD~sElaCfhMbeBruLdkAznLsl@jfLlzLjmCjx[~vOdjWboZhoFhtNxnBhmSjxRpmWrv\\lnVlnGjfMwx@zhOkiGjje@yHrgj@bv@|en@ldB|jNhfBxdFpcDlnK`r@haOjtHrfEheHxjLjdGtnXb}It|Sz|C`lTn{D`aGt{JrlHnfErbK|eG||H`dM`eIlnHsEbrGtiH~tDhdJtaGxkEhcO|tJ|gB~`L`wBld@bjG~bEroSpxInyRhgG`tMxJxf[fsK`}Zi_Atke@y}Ez}_@d]`mc@g`HvyFabD~sEvyCfwGfZx`Cj~CjfC|oHcExhFzxA}b@nhGk{C`cHymBfdNytM~jRysJf|WirPxzSyeW~aI{dMtzH{oG||YlgK|uWvpIlnTriBfiKdhEfjWluTlyL~gIdjO|vDh_\\x_Opza@d_Q~cJ|}P|nInjId{Hbh@djQdtFxvMrfJ~aRl}At`[tfGp{Ud|F~qY|mAjlVrsDdy]zyN~oP`yKv{RhnIr~Rr}@ppGyhBjhSmKlxXcwBrh`@zbAp}Ofv@|_Km~Hd{NefJbnRmqJzuQkzDftg@ypSlpU_fJbvNi_Ktuo@o~TrrX}_EtnPwjIv}g@m{Tltp@}lLdeRizA|{Ni|DlqMgKxiOk~Hx`IcqFdhQmrCv_R\\hdJ}wJ|o]_rIxtKmfGt{Pwm@x_To}Ef~N}eJlbRsuJlpGcYttWkgFhlXy|LpgRewHz{TekOt`^wp@|mOvuFjcj@vA~hY{[doRtaDhiGruCbyKeJfeVjiAvch@wrEnaAiZ"
     },
     "summary": "US-13 S",
     "warnings": [],
     "waypoint_order": [
         0,
         1,
-        2
+        2,
+        3
     ]
 }

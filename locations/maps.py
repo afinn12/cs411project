@@ -28,6 +28,7 @@ def get_direct_route(origin, destination):
 
 
 # compute suitable split points along the route so that the number of legs < distance_limit is minimized
+# also include the destination as a point
 # route is a route computed by get_route: it should contain just 1 leg
 # distance_limit is in miles
 # returns a list of tuples of lat-long coordinates
@@ -47,11 +48,13 @@ def compute_split_points_on_daily_limit(route, distance_limit):
                 curr_distance = 0
             curr_distance += step['distance']['value']
 
+    split_points.append((steps[-1]['end_location']['lat'], steps[-1]['end_location']['lng']))
     return split_points
 
 
 # compute the shortest path from irigin to destination, only traversing the graph of 100 cities,
 # not allowing edges with distance greater than the daily limit
+# also include the destination as a point
 # origin and destination are names of cities in the list of 100
 # return a list of tuples of lat-long coordinates for each split city (each city in between the ends)
 def get_city_route(origin, destination, distance_limit):
@@ -71,7 +74,7 @@ def get_city_route(origin, destination, distance_limit):
     if origin in G and destination in G and nx.has_path(G, origin, destination):
         path = nx.shortest_path(G, origin, destination)
         # print(path)
-        split_cities = path[1:-1]
+        split_cities = path[1:]
         distance_matrix_file_path = os.path.join(curr_dir, '100cities/DistanceMatrix.json')
         distance_matrix = json.load(open(distance_matrix_file_path))
         city_name_to_index = distance_matrix['index']
