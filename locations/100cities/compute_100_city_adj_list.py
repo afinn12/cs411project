@@ -2,6 +2,7 @@ import json
 import networkx as nx
 
 
+# make an adjacency list for the cities, only including the n closest other cities
 def make_adj_list(n):
     data = json.load(open('DistanceMatrix.json'))
     distance_matrix = data['distances']
@@ -28,6 +29,7 @@ def make_adj_list(n):
     return ans
 
 
+# return if the adjacency list gives a connected graph and the connected components
 def check_if_connected(adj_list):
     G = nx.Graph()
     for city1 in adj_list:
@@ -37,6 +39,7 @@ def check_if_connected(adj_list):
     return nx.is_connected(G), nx.connected_components(G)
 
 
+# export the adjacency list for n=6 to JSON
 if __name__ == '__main__':
     # for i in range(1, 101):
     #     test = make_adj_list(i)
