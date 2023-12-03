@@ -2143,38 +2143,6 @@
             "duration": "6 hours 22 mins"
         }
     ],
-    "Anchorage, AK": [
-        {
-            "name": "Vancouver, BC",
-            "distanceInMeters": 3536081,
-            "duration": "1 day 19 hours"
-        },
-        {
-            "name": "Seattle, WA",
-            "distanceInMeters": 3646797,
-            "duration": "1 day 20 hours"
-        },
-        {
-            "name": "Portland, OR",
-            "distanceInMeters": 3925888,
-            "duration": "1 day 23 hours"
-        },
-        {
-            "name": "Reno, NV",
-            "distanceInMeters": 4782767,
-            "duration": "2 days 8 hours"
-        },
-        {
-            "name": "Sacramento, CA",
-            "distanceInMeters": 4857095,
-            "duration": "2 days 8 hours"
-        },
-        {
-            "name": "Stockton, CA",
-            "distanceInMeters": 4932896,
-            "duration": "2 days 8 hours"
-        }
-    ],
     "Newark, NJ": [
         {
             "name": "Jersey City, NJ",
