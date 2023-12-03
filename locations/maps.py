@@ -66,10 +66,29 @@ def compute_city_path(origin, destination, distance_limit):
         for entry in adj_list[city1]:
             city2 = entry['name']
             if entry['distanceInMeters'] <= distance_limit * 1609:
-                G.add(city1, city2, weight=entry['distanceInMeters'])
+                G.add_edge(city1, city2, weight=entry['distanceInMeters'])
     
-    
+    if origin in G and destination in G and nx.has_path(G, origin, destination):
+        path = nx.shortest_path(G, origin, destination)
+        print(path)
+        split_cities = path[1:-1]
+        distance_matrix_file_path = os.path.join(curr_dir, '100cities/DistanceMatrix.json')
+        distance_matrix = json.load(open(distance_matrix_file_path))
+        city_name_to_index = distance_matrix['index']
+        city_index_to_info = distance_matrix['cities']
 
+        split_points = [
+            (city_index_to_info[city_name_to_index[city]]['lat'],
+            city_index_to_info[city_name_to_index[city]]['long'])
+            for city in split_cities
+        ]
+
+        return split_points
+    
+    else:
+        print('No path between {} and {}; try using a larger distance limit'.format(origin, destination))
+        return []
+    
 
 # use the Routes API to get a route from origin to destination, taking the stops into account
 # origin and destination are names of cities in the list of 100
@@ -90,18 +109,23 @@ def get_route_with_stops(origin, destination, stops):
         print(f"Error: {response.status_code} - {data.get('error_message', 'Unknown error')}")
 
 
-# test the functionality with lat-longs for NYC and Boston
+# test the functionality with lat-longs
 if __name__ == '__main__':
     nyc = 'New York, NY'
     boston = 'Boston, MA'
+    la = 'Los Angeles, CA'
+    miami = "Miami, FL"
+
+    compute_city_path(nyc, miami, 500)
 
     # f = open('sample_route.txt', 'w')
-    route = get_route(nyc, boston)
+    # route = get_route(nyc, boston)
     # json.dump(route, f)
 
-    split_points = compute_split_points_on_daily_limit(route, 100)
-    new_route = get_route_with_stops(nyc, boston, split_points)
+    # split_points = compute_split_points_on_daily_limit(route, 100)
+    # new_route = get_route_with_stops(nyc, boston, split_points)
 
-    f = open('sample_route_with_stops.txt', 'w')
-    json.dump(new_route, f, indent=4)
+    # f = open('sample_route_with_stops.txt', 'w')
+    # json.dump(new_route, f, indent=4)
+    
     

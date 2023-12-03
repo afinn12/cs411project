@@ -39,7 +39,7 @@ def check_if_connected(adj_list):
     return nx.is_connected(G), nx.connected_components(G)
 
 
-# export the adjacency list for n=6 to JSON
+# export the adjacency list for n=10 to JSON
 if __name__ == '__main__':
     # for i in range(1, 101):
     #     test = make_adj_list(i)
@@ -50,6 +50,6 @@ if __name__ == '__main__':
     #     print(i, False)
     #     for comp in components:
     #         print(comp)
-    adj_list = make_adj_list(6)
+    adj_list = make_adj_list(10)
     f = open('100cities_closest_n_adj_list.json', 'w')
     json.dump(adj_list, f, indent=4)

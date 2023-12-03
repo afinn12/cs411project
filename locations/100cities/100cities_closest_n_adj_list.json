@@ -29,6 +29,26 @@
             "name": "Washington, DC",
             "distanceInMeters": 363731,
             "duration": "3 hours 52 mins"
+        },
+        {
+            "name": "Arlington, VA",
+            "distanceInMeters": 375457,
+            "duration": "3 hours 57 mins"
+        },
+        {
+            "name": "Norfolk, VA",
+            "distanceInMeters": 584377,
+            "duration": "6 hours 21 mins"
+        },
+        {
+            "name": "Virginia Beach, VA",
+            "distanceInMeters": 584523,
+            "duration": "6 hours 26 mins"
+        },
+        {
+            "name": "Chesapeake, VA",
+            "distanceInMeters": 591929,
+            "duration": "6 hours 26 mins"
         }
     ],
     "Los Angeles, CA": [
@@ -61,6 +81,26 @@
             "name": "Bakersfield, CA",
             "distanceInMeters": 179563,
             "duration": "1 hour 50 mins"
+        },
+        {
+            "name": "San Diego, CA",
+            "distanceInMeters": 193625,
+            "duration": "2 hours 1 min"
+        },
+        {
+            "name": "Chula Vista, CA",
+            "distanceInMeters": 204665,
+            "duration": "2 hours 9 mins"
+        },
+        {
+            "name": "Fresno, CA",
+            "distanceInMeters": 352367,
+            "duration": "3 hours 21 mins"
+        },
+        {
+            "name": "Henderson, NV",
+            "distanceInMeters": 430147,
+            "duration": "4 hours 1 min"
         }
     ],
     "Chicago, IL": [
@@ -93,6 +133,26 @@
             "name": "Detroit, MI",
             "distanceInMeters": 454851,
             "duration": "4 hours 16 mins"
+        },
+        {
+            "name": "St. Louis, MO",
+            "distanceInMeters": 477818,
+            "duration": "4 hours 24 mins"
+        },
+        {
+            "name": "Cincinnati, OH",
+            "distanceInMeters": 478995,
+            "duration": "4 hours 31 mins"
+        },
+        {
+            "name": "Louisville, KY",
+            "distanceInMeters": 482458,
+            "duration": "4 hours 38 mins"
+        },
+        {
+            "name": "Cleveland, OH",
+            "distanceInMeters": 556287,
+            "duration": "5 hours 15 mins"
         }
     ],
     "Toronto, ON": [
@@ -125,6 +185,26 @@
             "name": "Pittsburgh, PA",
             "distanceInMeters": 510722,
             "duration": "5 hours 2 mins"
+        },
+        {
+            "name": "Fort Wayne, IN",
+            "distanceInMeters": 629347,
+            "duration": "6 hours 17 mins"
+        },
+        {
+            "name": "Columbus, OH",
+            "distanceInMeters": 687642,
+            "duration": "6 hours 37 mins"
+        },
+        {
+            "name": "Baltimore, MD",
+            "distanceInMeters": 738999,
+            "duration": "7 hours 57 mins"
+        },
+        {
+            "name": "Washington, DC",
+            "distanceInMeters": 767469,
+            "duration": "8 hours 34 mins"
         }
     ],
     "Houston, TX": [
@@ -157,6 +237,26 @@
             "name": "Arlington, TX",
             "distanceInMeters": 411355,
             "duration": "3 hours 44 mins"
+        },
+        {
+            "name": "Plano, TX",
+            "distanceInMeters": 413065,
+            "duration": "3 hours 43 mins"
+        },
+        {
+            "name": "Fort Worth, TX",
+            "distanceInMeters": 421689,
+            "duration": "3 hours 48 mins"
+        },
+        {
+            "name": "Baton Rouge, LA",
+            "distanceInMeters": 437495,
+            "duration": "4 hours 2 mins"
+        },
+        {
+            "name": "Laredo, TX",
+            "distanceInMeters": 501128,
+            "duration": "4 hours 53 mins"
         }
     ],
     "Phoenix, AZ": [
@@ -189,6 +289,26 @@
             "name": "Tucson, AZ",
             "distanceInMeters": 186994,
             "duration": "1 hour 50 mins"
+        },
+        {
+            "name": "Henderson, NV",
+            "distanceInMeters": 452429,
+            "duration": "4 hours 23 mins"
+        },
+        {
+            "name": "Las Vegas, NV",
+            "distanceInMeters": 477452,
+            "duration": "4 hours 37 mins"
+        },
+        {
+            "name": "North Las Vegas, NV",
+            "distanceInMeters": 477753,
+            "duration": "4 hours 37 mins"
+        },
+        {
+            "name": "Riverside, CA",
+            "distanceInMeters": 517478,
+            "duration": "4 hours 41 mins"
         }
     ],
     "Philadelphia, PA": [
@@ -221,6 +341,26 @@
             "name": "Arlington, VA",
             "distanceInMeters": 235616,
             "duration": "2 hours 35 mins"
+        },
+        {
+            "name": "Norfolk, VA",
+            "distanceInMeters": 444536,
+            "duration": "4 hours 59 mins"
+        },
+        {
+            "name": "Virginia Beach, VA",
+            "distanceInMeters": 444682,
+            "duration": "5 hours 5 mins"
+        },
+        {
+            "name": "Chesapeake, VA",
+            "distanceInMeters": 452088,
+            "duration": "5 hours 5 mins"
+        },
+        {
+            "name": "Pittsburgh, PA",
+            "distanceInMeters": 490753,
+            "duration": "4 hours 47 mins"
         }
     ],
     "San Antonio, TX": [
@@ -253,6 +393,26 @@
             "name": "Dallas, TX",
             "distanceInMeters": 440501,
             "duration": "4 hours 7 mins"
+        },
+        {
+            "name": "Arlington, TX",
+            "distanceInMeters": 446383,
+            "duration": "4 hours 15 mins"
+        },
+        {
+            "name": "Garland, TX",
+            "distanceInMeters": 470363,
+            "duration": "4 hours 27 mins"
+        },
+        {
+            "name": "Plano, TX",
+            "distanceInMeters": 471551,
+            "duration": "4 hours 28 mins"
+        },
+        {
+            "name": "Lubbock, TX",
+            "distanceInMeters": 619960,
+            "duration": "5 hours 46 mins"
         }
     ],
     "Dallas, TX": [
@@ -285,6 +445,26 @@
             "name": "Oklahoma City, OK",
             "distanceInMeters": 332060,
             "duration": "3 hours 12 mins"
+        },
+        {
+            "name": "Houston, TX",
+            "distanceInMeters": 384654,
+            "duration": "3 hours 26 mins"
+        },
+        {
+            "name": "Tulsa, OK",
+            "distanceInMeters": 415162,
+            "duration": "4 hours 11 mins"
+        },
+        {
+            "name": "San Antonio, TX",
+            "distanceInMeters": 440909,
+            "duration": "4 hours 7 mins"
+        },
+        {
+            "name": "Lubbock, TX",
+            "distanceInMeters": 555789,
+            "duration": "5 hours 3 mins"
         }
     ],
     "San Diego, CA": [
@@ -317,6 +497,26 @@
             "name": "Long Beach, CA",
             "distanceInMeters": 170822,
             "duration": "1 hour 50 mins"
+        },
+        {
+            "name": "Los Angeles, CA",
+            "distanceInMeters": 193867,
+            "duration": "2 hours 6 mins"
+        },
+        {
+            "name": "Bakersfield, CA",
+            "distanceInMeters": 372634,
+            "duration": "3 hours 51 mins"
+        },
+        {
+            "name": "Henderson, NV",
+            "distanceInMeters": 529070,
+            "duration": "4 hours 55 mins"
+        },
+        {
+            "name": "Las Vegas, NV",
+            "distanceInMeters": 532698,
+            "duration": "4 hours 54 mins"
         }
     ],
     "San Jose, CA": [
@@ -349,6 +549,26 @@
             "name": "Bakersfield, CA",
             "distanceInMeters": 388027,
             "duration": "3 hours 42 mins"
+        },
+        {
+            "name": "Reno, NV",
+            "distanceInMeters": 403066,
+            "duration": "3 hours 56 mins"
+        },
+        {
+            "name": "Los Angeles, CA",
+            "distanceInMeters": 548822,
+            "duration": "5 hours 11 mins"
+        },
+        {
+            "name": "Long Beach, CA",
+            "distanceInMeters": 583701,
+            "duration": "5 hours 34 mins"
+        },
+        {
+            "name": "Anaheim, CA",
+            "distanceInMeters": 587863,
+            "duration": "5 hours 41 mins"
         }
     ],
     "Detroit, MI": [
@@ -381,6 +601,26 @@
             "name": "Toronto, ON",
             "distanceInMeters": 371822,
             "duration": "3 hours 51 mins"
+        },
+        {
+            "name": "Buffalo, NY",
+            "distanceInMeters": 410862,
+            "duration": "4 hours 11 mins"
+        },
+        {
+            "name": "Cincinnati, OH",
+            "distanceInMeters": 423670,
+            "duration": "4 hours 7 mins"
+        },
+        {
+            "name": "Chicago, IL",
+            "distanceInMeters": 453391,
+            "duration": "4 hours 20 mins"
+        },
+        {
+            "name": "Pittsburgh, PA",
+            "distanceInMeters": 460001,
+            "duration": "4 hours 19 mins"
         }
     ],
     "San Francisco, CA": [
@@ -413,6 +653,26 @@
             "name": "Reno, NV",
             "distanceInMeters": 351454,
             "duration": "3 hours 30 mins"
+        },
+        {
+            "name": "Bakersfield, CA",
+            "distanceInMeters": 455833,
+            "duration": "4 hours 15 mins"
+        },
+        {
+            "name": "Los Angeles, CA",
+            "distanceInMeters": 616627,
+            "duration": "5 hours 43 mins"
+        },
+        {
+            "name": "Long Beach, CA",
+            "distanceInMeters": 651506,
+            "duration": "6 hours 6 mins"
+        },
+        {
+            "name": "Anaheim, CA",
+            "distanceInMeters": 655669,
+            "duration": "6 hours 13 mins"
         }
     ],
     "Jacksonville, FL": [
@@ -445,6 +705,26 @@
             "name": "Atlanta, GA",
             "distanceInMeters": 556464,
             "duration": "4 hours 53 mins"
+        },
+        {
+            "name": "Charlotte, NC",
+            "distanceInMeters": 617135,
+            "duration": "5 hours 28 mins"
+        },
+        {
+            "name": "Raleigh, NC",
+            "distanceInMeters": 730979,
+            "duration": "6 hours 20 mins"
+        },
+        {
+            "name": "Greensboro, NC",
+            "distanceInMeters": 734264,
+            "duration": "6 hours 37 mins"
+        },
+        {
+            "name": "Winston-Salem, NC",
+            "distanceInMeters": 741650,
+            "duration": "6 hours 36 mins"
         }
     ],
     "Indianapolis, IN": [
@@ -477,6 +757,26 @@
             "name": "Lexington, KY",
             "distanceInMeters": 310473,
             "duration": "3 hours 0 mins"
+        },
+        {
+            "name": "Toledo, OH",
+            "distanceInMeters": 366084,
+            "duration": "3 hours 27 mins"
+        },
+        {
+            "name": "St. Louis, MO",
+            "distanceInMeters": 390206,
+            "duration": "3 hours 46 mins"
+        },
+        {
+            "name": "Milwaukee, WI",
+            "distanceInMeters": 449742,
+            "duration": "4 hours 15 mins"
+        },
+        {
+            "name": "Detroit, MI",
+            "distanceInMeters": 461055,
+            "duration": "4 hours 22 mins"
         }
     ],
     "Austin, TX": [
@@ -509,6 +809,26 @@
             "name": "Garland, TX",
             "distanceInMeters": 344266,
             "duration": "3 hours 16 mins"
+        },
+        {
+            "name": "Plano, TX",
+            "distanceInMeters": 345455,
+            "duration": "3 hours 16 mins"
+        },
+        {
+            "name": "Corpus Christi, TX",
+            "distanceInMeters": 349701,
+            "duration": "3 hours 8 mins"
+        },
+        {
+            "name": "Laredo, TX",
+            "distanceInMeters": 377578,
+            "duration": "3 hours 34 mins"
+        },
+        {
+            "name": "Lubbock, TX",
+            "distanceInMeters": 599852,
+            "duration": "5 hours 48 mins"
         }
     ],
     "Columbus, OH": [
@@ -541,6 +861,26 @@
             "name": "Indianapolis, IN",
             "distanceInMeters": 282559,
             "duration": "2 hours 39 mins"
+        },
+        {
+            "name": "Pittsburgh, PA",
+            "distanceInMeters": 297419,
+            "duration": "2 hours 53 mins"
+        },
+        {
+            "name": "Lexington, KY",
+            "distanceInMeters": 305030,
+            "duration": "2 hours 57 mins"
+        },
+        {
+            "name": "Louisville, KY",
+            "distanceInMeters": 331430,
+            "duration": "3 hours 9 mins"
+        },
+        {
+            "name": "Detroit, MI",
+            "distanceInMeters": 333528,
+            "duration": "3 hours 23 mins"
         }
     ],
     "Fort Worth, TX": [
@@ -573,6 +913,26 @@
             "name": "Oklahoma City, OK",
             "distanceInMeters": 322711,
             "duration": "3 hours 0 mins"
+        },
+        {
+            "name": "Houston, TX",
+            "distanceInMeters": 421370,
+            "duration": "3 hours 49 mins"
+        },
+        {
+            "name": "San Antonio, TX",
+            "distanceInMeters": 431824,
+            "duration": "4 hours 3 mins"
+        },
+        {
+            "name": "Tulsa, OK",
+            "distanceInMeters": 486766,
+            "duration": "4 hours 25 mins"
+        },
+        {
+            "name": "Lubbock, TX",
+            "distanceInMeters": 505495,
+            "duration": "4 hours 32 mins"
         }
     ],
     "Charlotte, NC": [
@@ -605,6 +965,26 @@
             "name": "Norfolk, VA",
             "distanceInMeters": 522538,
             "duration": "5 hours 6 mins"
+        },
+        {
+            "name": "Chesapeake, VA",
+            "distanceInMeters": 523677,
+            "duration": "5 hours 7 mins"
+        },
+        {
+            "name": "Virginia Beach, VA",
+            "distanceInMeters": 550335,
+            "duration": "5 hours 24 mins"
+        },
+        {
+            "name": "Jacksonville, FL",
+            "distanceInMeters": 616770,
+            "duration": "5 hours 27 mins"
+        },
+        {
+            "name": "Birmingham, AL",
+            "distanceInMeters": 628322,
+            "duration": "5 hours 50 mins"
         }
     ],
     "Memphis, TN": [
@@ -637,6 +1017,26 @@
             "name": "Louisville, KY",
             "distanceInMeters": 617711,
             "duration": "5 hours 40 mins"
+        },
+        {
+            "name": "New Orleans, LA",
+            "distanceInMeters": 635721,
+            "duration": "5 hours 38 mins"
+        },
+        {
+            "name": "Tulsa, OK",
+            "distanceInMeters": 646272,
+            "duration": "5 hours 47 mins"
+        },
+        {
+            "name": "Lexington, KY",
+            "distanceInMeters": 680315,
+            "duration": "6 hours 19 mins"
+        },
+        {
+            "name": "Garland, TX",
+            "distanceInMeters": 716231,
+            "duration": "6 hours 31 mins"
         }
     ],
     "Baltimore, MD": [
@@ -669,6 +1069,26 @@
             "name": "New York, NY",
             "distanceInMeters": 308159,
             "duration": "3 hours 6 mins"
+        },
+        {
+            "name": "Norfolk, VA",
+            "distanceInMeters": 386272,
+            "duration": "3 hours 54 mins"
+        },
+        {
+            "name": "Pittsburgh, PA",
+            "distanceInMeters": 398093,
+            "duration": "3 hours 55 mins"
+        },
+        {
+            "name": "Chesapeake, VA",
+            "distanceInMeters": 403902,
+            "duration": "3 hours 58 mins"
+        },
+        {
+            "name": "Virginia Beach, VA",
+            "distanceInMeters": 409380,
+            "duration": "4 hours 4 mins"
         }
     ],
     "El Paso, TX": [
@@ -701,6 +1121,26 @@
             "name": "Phoenix, AZ",
             "distanceInMeters": 692036,
             "duration": "6 hours 7 mins"
+        },
+        {
+            "name": "Mesa, AZ",
+            "distanceInMeters": 692966,
+            "duration": "6 hours 8 mins"
+        },
+        {
+            "name": "Scottsdale, AZ",
+            "distanceInMeters": 694635,
+            "duration": "6 hours 11 mins"
+        },
+        {
+            "name": "Glendale, AZ",
+            "distanceInMeters": 707750,
+            "duration": "6 hours 18 mins"
+        },
+        {
+            "name": "San Antonio, TX",
+            "distanceInMeters": 886911,
+            "duration": "7 hours 33 mins"
         }
     ],
     "Boston, MA": [
@@ -733,6 +1173,26 @@
             "name": "Washington, DC",
             "distanceInMeters": 706459,
             "duration": "7 hours 14 mins"
+        },
+        {
+            "name": "Arlington, VA",
+            "distanceInMeters": 718186,
+            "duration": "7 hours 18 mins"
+        },
+        {
+            "name": "Buffalo, NY",
+            "distanceInMeters": 731801,
+            "duration": "6 hours 49 mins"
+        },
+        {
+            "name": "Toronto, ON",
+            "distanceInMeters": 884727,
+            "duration": "8 hours 25 mins"
+        },
+        {
+            "name": "Pittsburgh, PA",
+            "distanceInMeters": 919907,
+            "duration": "9 hours 10 mins"
         }
     ],
     "Milwaukee, WI": [
@@ -765,6 +1225,26 @@
             "name": "Minneapolis, MN",
             "distanceInMeters": 542537,
             "duration": "4 hours 56 mins"
+        },
+        {
+            "name": "Toledo, OH",
+            "distanceInMeters": 557204,
+            "duration": "5 hours 13 mins"
+        },
+        {
+            "name": "St. Louis, MO",
+            "distanceInMeters": 600043,
+            "duration": "5 hours 31 mins"
+        },
+        {
+            "name": "Detroit, MI",
+            "distanceInMeters": 614277,
+            "duration": "5 hours 42 mins"
+        },
+        {
+            "name": "Cincinnati, OH",
+            "distanceInMeters": 630240,
+            "duration": "5 hours 54 mins"
         }
     ],
     "Vancouver, BC": [
@@ -797,6 +1277,26 @@
             "name": "Oakland, CA",
             "distanceInMeters": 1519009,
             "duration": "14 hours 48 mins"
+        },
+        {
+            "name": "San Francisco, CA",
+            "distanceInMeters": 1528711,
+            "duration": "14 hours 58 mins"
+        },
+        {
+            "name": "San Jose, CA",
+            "distanceInMeters": 1580477,
+            "duration": "15 hours 20 mins"
+        },
+        {
+            "name": "Fresno, CA",
+            "distanceInMeters": 1714978,
+            "duration": "16 hours 36 mins"
+        },
+        {
+            "name": "Bakersfield, CA",
+            "distanceInMeters": 1897453,
+            "duration": "18 hours 5 mins"
         }
     ],
     "Denver, CO": [
@@ -829,6 +1329,26 @@
             "name": "Omaha, NE",
             "distanceInMeters": 863971,
             "duration": "7 hours 30 mins"
+        },
+        {
+            "name": "Lubbock, TX",
+            "distanceInMeters": 876699,
+            "duration": "8 hours 7 mins"
+        },
+        {
+            "name": "Kansas City, MO",
+            "distanceInMeters": 972333,
+            "duration": "8 hours 28 mins"
+        },
+        {
+            "name": "El Paso, TX",
+            "distanceInMeters": 1022109,
+            "duration": "9 hours 30 mins"
+        },
+        {
+            "name": "Oklahoma City, OK",
+            "distanceInMeters": 1092664,
+            "duration": "9 hours 33 mins"
         }
     ],
     "Seattle, WA": [
@@ -861,6 +1381,26 @@
             "name": "Oakland, CA",
             "distanceInMeters": 1290296,
             "duration": "12 hours 16 mins"
+        },
+        {
+            "name": "San Francisco, CA",
+            "distanceInMeters": 1299998,
+            "duration": "12 hours 26 mins"
+        },
+        {
+            "name": "San Jose, CA",
+            "distanceInMeters": 1351764,
+            "duration": "12 hours 48 mins"
+        },
+        {
+            "name": "Fresno, CA",
+            "distanceInMeters": 1486265,
+            "duration": "14 hours 5 mins"
+        },
+        {
+            "name": "Bakersfield, CA",
+            "distanceInMeters": 1668739,
+            "duration": "15 hours 34 mins"
         }
     ],
     "Nashville, TN": [
@@ -893,6 +1433,26 @@
             "name": "Cincinnati, OH",
             "distanceInMeters": 438472,
             "duration": "4 hours 7 mins"
+        },
+        {
+            "name": "Indianapolis, IN",
+            "distanceInMeters": 464278,
+            "duration": "4 hours 24 mins"
+        },
+        {
+            "name": "St. Louis, MO",
+            "distanceInMeters": 497493,
+            "duration": "4 hours 30 mins"
+        },
+        {
+            "name": "Columbus, OH",
+            "distanceInMeters": 609670,
+            "duration": "5 hours 41 mins"
+        },
+        {
+            "name": "Fort Wayne, IN",
+            "distanceInMeters": 658185,
+            "duration": "6 hours 13 mins"
         }
     ],
     "Washington, DC": [
@@ -925,6 +1485,26 @@
             "name": "Virginia Beach, VA",
             "distanceInMeters": 336347,
             "duration": "3 hours 25 mins"
+        },
+        {
+            "name": "Newark, NJ",
+            "distanceInMeters": 348393,
+            "duration": "3 hours 39 mins"
+        },
+        {
+            "name": "Jersey City, NJ",
+            "distanceInMeters": 352680,
+            "duration": "3 hours 39 mins"
+        },
+        {
+            "name": "New York, NY",
+            "distanceInMeters": 361714,
+            "duration": "3 hours 50 mins"
+        },
+        {
+            "name": "Pittsburgh, PA",
+            "distanceInMeters": 393806,
+            "duration": "4 hours 1 min"
         }
     ],
     "Las Vegas, NV": [
@@ -957,6 +1537,26 @@
             "name": "Santa Ana, CA",
             "distanceInMeters": 431693,
             "duration": "4 hours 3 mins"
+        },
+        {
+            "name": "Los Angeles, CA",
+            "distanceInMeters": 435080,
+            "duration": "4 hours 4 mins"
+        },
+        {
+            "name": "Glendale, AZ",
+            "distanceInMeters": 445244,
+            "duration": "4 hours 30 mins"
+        },
+        {
+            "name": "Long Beach, CA",
+            "distanceInMeters": 456211,
+            "duration": "4 hours 16 mins"
+        },
+        {
+            "name": "Bakersfield, CA",
+            "distanceInMeters": 459908,
+            "duration": "4 hours 17 mins"
         }
     ],
     "Portland, OR": [
@@ -989,6 +1589,26 @@
             "name": "Oakland, CA",
             "distanceInMeters": 1013568,
             "duration": "9 hours 39 mins"
+        },
+        {
+            "name": "San Francisco, CA",
+            "distanceInMeters": 1023270,
+            "duration": "9 hours 49 mins"
+        },
+        {
+            "name": "San Jose, CA",
+            "distanceInMeters": 1075036,
+            "duration": "10 hours 11 mins"
+        },
+        {
+            "name": "Fresno, CA",
+            "distanceInMeters": 1209537,
+            "duration": "11 hours 27 mins"
+        },
+        {
+            "name": "Bakersfield, CA",
+            "distanceInMeters": 1392012,
+            "duration": "12 hours 56 mins"
         }
     ],
     "Louisville, KY": [
@@ -1021,6 +1641,26 @@
             "name": "Fort Wayne, IN",
             "distanceInMeters": 378574,
             "duration": "3 hours 41 mins"
+        },
+        {
+            "name": "St. Louis, MO",
+            "distanceInMeters": 418334,
+            "duration": "3 hours 49 mins"
+        },
+        {
+            "name": "Chicago, IL",
+            "distanceInMeters": 477232,
+            "duration": "4 hours 39 mins"
+        },
+        {
+            "name": "Toledo, OH",
+            "distanceInMeters": 487062,
+            "duration": "4 hours 41 mins"
+        },
+        {
+            "name": "Akron, OH",
+            "distanceInMeters": 533550,
+            "duration": "4 hours 58 mins"
         }
     ],
     "Oklahoma City, OK": [
@@ -1053,6 +1693,26 @@
             "name": "Garland, TX",
             "distanceInMeters": 341031,
             "duration": "3 hours 14 mins"
+        },
+        {
+            "name": "Arlington, TX",
+            "distanceInMeters": 342008,
+            "duration": "3 hours 14 mins"
+        },
+        {
+            "name": "Lubbock, TX",
+            "distanceInMeters": 556782,
+            "duration": "5 hours 12 mins"
+        },
+        {
+            "name": "Kansas City, MO",
+            "distanceInMeters": 569771,
+            "duration": "4 hours 57 mins"
+        },
+        {
+            "name": "Austin, TX",
+            "distanceInMeters": 624807,
+            "duration": "5 hours 46 mins"
         }
     ],
     "Tucson, AZ": [
@@ -1085,6 +1745,26 @@
             "name": "Glendale, AZ",
             "distanceInMeters": 205192,
             "duration": "2 hours 0 mins"
+        },
+        {
+            "name": "El Paso, TX",
+            "distanceInMeters": 508389,
+            "duration": "4 hours 33 mins"
+        },
+        {
+            "name": "Henderson, NV",
+            "distanceInMeters": 641959,
+            "duration": "6 hours 3 mins"
+        },
+        {
+            "name": "San Diego, CA",
+            "distanceInMeters": 663026,
+            "duration": "5 hours 51 mins"
+        },
+        {
+            "name": "Chula Vista, CA",
+            "distanceInMeters": 664872,
+            "duration": "5 hours 51 mins"
         }
     ],
     "Atlanta, GA": [
@@ -1117,6 +1797,26 @@
             "name": "Jacksonville, FL",
             "distanceInMeters": 556219,
             "duration": "4 hours 52 mins"
+        },
+        {
+            "name": "Lexington, KY",
+            "distanceInMeters": 615264,
+            "duration": "5 hours 41 mins"
+        },
+        {
+            "name": "Durham, NC",
+            "distanceInMeters": 615270,
+            "duration": "5 hours 37 mins"
+        },
+        {
+            "name": "Memphis, TN",
+            "distanceInMeters": 617665,
+            "duration": "5 hours 41 mins"
+        },
+        {
+            "name": "Raleigh, NC",
+            "distanceInMeters": 652209,
+            "duration": "6 hours 1 min"
         }
     ],
     "Albuquerque, NM": [
@@ -1149,6 +1849,26 @@
             "name": "Gilbert, AZ",
             "distanceInMeters": 660946,
             "duration": "6 hours 29 mins"
+        },
+        {
+            "name": "Chandler, AZ",
+            "distanceInMeters": 677156,
+            "duration": "6 hours 33 mins"
+        },
+        {
+            "name": "Phoenix, AZ",
+            "distanceInMeters": 677557,
+            "duration": "6 hours 33 mins"
+        },
+        {
+            "name": "Aurora, CO",
+            "distanceInMeters": 718893,
+            "duration": "6 hours 19 mins"
+        },
+        {
+            "name": "Denver, CO",
+            "distanceInMeters": 721981,
+            "duration": "6 hours 23 mins"
         }
     ],
     "Fresno, CA": [
@@ -1181,6 +1901,26 @@
             "name": "San Francisco, CA",
             "distanceInMeters": 303182,
             "duration": "3 hours 2 mins"
+        },
+        {
+            "name": "Los Angeles, CA",
+            "distanceInMeters": 355019,
+            "duration": "3 hours 23 mins"
+        },
+        {
+            "name": "Long Beach, CA",
+            "distanceInMeters": 389898,
+            "duration": "3 hours 47 mins"
+        },
+        {
+            "name": "Anaheim, CA",
+            "distanceInMeters": 394060,
+            "duration": "3 hours 54 mins"
+        },
+        {
+            "name": "Santa Ana, CA",
+            "distanceInMeters": 404011,
+            "duration": "4 hours 0 mins"
         }
     ],
     "Sacramento, CA": [
@@ -1213,6 +1953,26 @@
             "name": "Fresno, CA",
             "distanceInMeters": 275413,
             "duration": "2 hours 43 mins"
+        },
+        {
+            "name": "Bakersfield, CA",
+            "distanceInMeters": 460383,
+            "duration": "4 hours 12 mins"
+        },
+        {
+            "name": "Los Angeles, CA",
+            "distanceInMeters": 621178,
+            "duration": "5 hours 40 mins"
+        },
+        {
+            "name": "Long Beach, CA",
+            "distanceInMeters": 656057,
+            "duration": "6 hours 4 mins"
+        },
+        {
+            "name": "Anaheim, CA",
+            "distanceInMeters": 660219,
+            "duration": "6 hours 11 mins"
         }
     ],
     "Long Beach, CA": [
@@ -1245,6 +2005,26 @@
             "name": "San Diego, CA",
             "distanceInMeters": 170622,
             "duration": "1 hour 50 mins"
+        },
+        {
+            "name": "Chula Vista, CA",
+            "distanceInMeters": 181662,
+            "duration": "1 hour 58 mins"
+        },
+        {
+            "name": "Bakersfield, CA",
+            "distanceInMeters": 217092,
+            "duration": "2 hours 17 mins"
+        },
+        {
+            "name": "Fresno, CA",
+            "distanceInMeters": 389896,
+            "duration": "3 hours 48 mins"
+        },
+        {
+            "name": "Henderson, NV",
+            "distanceInMeters": 450567,
+            "duration": "4 hours 14 mins"
         }
     ],
     "Mesa, AZ": [
@@ -1277,6 +2057,26 @@
             "name": "Tucson, AZ",
             "distanceInMeters": 189414,
             "duration": "1 hour 50 mins"
+        },
+        {
+            "name": "Henderson, NV",
+            "distanceInMeters": 478988,
+            "duration": "4 hours 41 mins"
+        },
+        {
+            "name": "Las Vegas, NV",
+            "distanceInMeters": 504012,
+            "duration": "4 hours 55 mins"
+        },
+        {
+            "name": "North Las Vegas, NV",
+            "distanceInMeters": 504312,
+            "duration": "4 hours 55 mins"
+        },
+        {
+            "name": "Riverside, CA",
+            "distanceInMeters": 544037,
+            "duration": "4 hours 59 mins"
         }
     ],
     "Kansas City, MO": [
@@ -1309,6 +2109,26 @@
             "name": "Oklahoma City, OK",
             "distanceInMeters": 568827,
             "duration": "4 hours 58 mins"
+        },
+        {
+            "name": "Minneapolis, MN",
+            "distanceInMeters": 702460,
+            "duration": "6 hours 24 mins"
+        },
+        {
+            "name": "St. Paul, MN",
+            "distanceInMeters": 710464,
+            "duration": "6 hours 26 mins"
+        },
+        {
+            "name": "Memphis, TN",
+            "distanceInMeters": 725569,
+            "duration": "7 hours 12 mins"
+        },
+        {
+            "name": "Indianapolis, IN",
+            "distanceInMeters": 775577,
+            "duration": "7 hours 13 mins"
         }
     ],
     "Omaha, NE": [
@@ -1341,6 +2161,26 @@
             "name": "St. Paul, MN",
             "distanceInMeters": 620829,
             "duration": "5 hours 39 mins"
+        },
+        {
+            "name": "Madison, WI",
+            "distanceInMeters": 694709,
+            "duration": "6 hours 32 mins"
+        },
+        {
+            "name": "St. Louis, MO",
+            "distanceInMeters": 705167,
+            "duration": "6 hours 25 mins"
+        },
+        {
+            "name": "Oklahoma City, OK",
+            "distanceInMeters": 734627,
+            "duration": "6 hours 48 mins"
+        },
+        {
+            "name": "Chicago, IL",
+            "distanceInMeters": 758220,
+            "duration": "7 hours 9 mins"
         }
     ],
     "Cleveland, OH": [
@@ -1373,6 +2213,26 @@
             "name": "Buffalo, NY",
             "distanceInMeters": 304821,
             "duration": "2 hours 59 mins"
+        },
+        {
+            "name": "Fort Wayne, IN",
+            "distanceInMeters": 328164,
+            "duration": "3 hours 15 mins"
+        },
+        {
+            "name": "Cincinnati, OH",
+            "distanceInMeters": 400225,
+            "duration": "3 hours 45 mins"
+        },
+        {
+            "name": "Toronto, ON",
+            "distanceInMeters": 469555,
+            "duration": "4 hours 38 mins"
+        },
+        {
+            "name": "Indianapolis, IN",
+            "distanceInMeters": 507486,
+            "duration": "4 hours 42 mins"
         }
     ],
     "Virginia Beach, VA": [
@@ -1405,6 +2265,26 @@
             "name": "Washington, DC",
             "distanceInMeters": 336030,
             "duration": "3 hours 24 mins"
+        },
+        {
+            "name": "Baltimore, MD",
+            "distanceInMeters": 405414,
+            "duration": "4 hours 6 mins"
+        },
+        {
+            "name": "Greensboro, NC",
+            "distanceInMeters": 407994,
+            "duration": "4 hours 9 mins"
+        },
+        {
+            "name": "Philadelphia, PA",
+            "distanceInMeters": 445353,
+            "duration": "5 hours 4 mins"
+        },
+        {
+            "name": "Winston-Salem, NC",
+            "distanceInMeters": 450848,
+            "duration": "4 hours 31 mins"
         }
     ],
     "Miami, FL": [
@@ -1437,6 +2317,26 @@
             "name": "Atlanta, GA",
             "distanceInMeters": 1066709,
             "duration": "9 hours 14 mins"
+        },
+        {
+            "name": "Charlotte, NC",
+            "distanceInMeters": 1174686,
+            "duration": "10 hours 20 mins"
+        },
+        {
+            "name": "Raleigh, NC",
+            "distanceInMeters": 1288529,
+            "duration": "11 hours 13 mins"
+        },
+        {
+            "name": "Greensboro, NC",
+            "distanceInMeters": 1291815,
+            "duration": "11 hours 29 mins"
+        },
+        {
+            "name": "Winston-Salem, NC",
+            "distanceInMeters": 1299201,
+            "duration": "11 hours 29 mins"
         }
     ],
     "Oakland, CA": [
@@ -1469,6 +2369,26 @@
             "name": "Reno, NV",
             "distanceInMeters": 341696,
             "duration": "3 hours 21 mins"
+        },
+        {
+            "name": "Bakersfield, CA",
+            "distanceInMeters": 437506,
+            "duration": "4 hours 3 mins"
+        },
+        {
+            "name": "Los Angeles, CA",
+            "distanceInMeters": 598300,
+            "duration": "5 hours 31 mins"
+        },
+        {
+            "name": "Long Beach, CA",
+            "distanceInMeters": 633179,
+            "duration": "5 hours 55 mins"
+        },
+        {
+            "name": "Anaheim, CA",
+            "distanceInMeters": 637342,
+            "duration": "6 hours 2 mins"
         }
     ],
     "Raleigh, NC": [
@@ -1501,6 +2421,26 @@
             "name": "Chesapeake, VA",
             "distanceInMeters": 298438,
             "duration": "2 hours 54 mins"
+        },
+        {
+            "name": "Virginia Beach, VA",
+            "distanceInMeters": 325097,
+            "duration": "3 hours 12 mins"
+        },
+        {
+            "name": "Arlington, VA",
+            "distanceInMeters": 445272,
+            "duration": "4 hours 10 mins"
+        },
+        {
+            "name": "Washington, DC",
+            "distanceInMeters": 448180,
+            "duration": "4 hours 16 mins"
+        },
+        {
+            "name": "Baltimore, MD",
+            "distanceInMeters": 517564,
+            "duration": "4 hours 58 mins"
         }
     ],
     "Tulsa, OK": [
@@ -1533,6 +2473,26 @@
             "name": "Kansas City, MO",
             "distanceInMeters": 437421,
             "duration": "3 hours 58 mins"
+        },
+        {
+            "name": "Arlington, TX",
+            "distanceInMeters": 443204,
+            "duration": "4 hours 25 mins"
+        },
+        {
+            "name": "Fort Worth, TX",
+            "distanceInMeters": 486678,
+            "duration": "4 hours 24 mins"
+        },
+        {
+            "name": "Omaha, NE",
+            "distanceInMeters": 614275,
+            "duration": "6 hours 25 mins"
+        },
+        {
+            "name": "Lincoln, NE",
+            "distanceInMeters": 620729,
+            "duration": "6 hours 33 mins"
         }
     ],
     "Minneapolis, MN": [
@@ -1565,6 +2525,26 @@
             "name": "Lincoln, NE",
             "distanceInMeters": 692978,
             "duration": "6 hours 21 mins"
+        },
+        {
+            "name": "Kansas City, MO",
+            "distanceInMeters": 701594,
+            "duration": "6 hours 23 mins"
+        },
+        {
+            "name": "St. Louis, MO",
+            "distanceInMeters": 900211,
+            "duration": "8 hours 27 mins"
+        },
+        {
+            "name": "Fort Wayne, IN",
+            "distanceInMeters": 925289,
+            "duration": "8 hours 58 mins"
+        },
+        {
+            "name": "Indianapolis, IN",
+            "distanceInMeters": 951187,
+            "duration": "8 hours 45 mins"
         }
     ],
     "Colorado Springs, CO": [
@@ -1597,6 +2577,26 @@
             "name": "Lincoln, NE",
             "distanceInMeters": 896372,
             "duration": "7 hours 44 mins"
+        },
+        {
+            "name": "El Paso, TX",
+            "distanceInMeters": 911624,
+            "duration": "8 hours 25 mins"
+        },
+        {
+            "name": "Kansas City, MO",
+            "distanceInMeters": 944502,
+            "duration": "8 hours 24 mins"
+        },
+        {
+            "name": "Oklahoma City, OK",
+            "distanceInMeters": 952155,
+            "duration": "8 hours 58 mins"
+        },
+        {
+            "name": "Omaha, NE",
+            "distanceInMeters": 974860,
+            "duration": "8 hours 23 mins"
         }
     ],
     "Arlington, TX": [
@@ -1629,6 +2629,26 @@
             "name": "Oklahoma City, OK",
             "distanceInMeters": 342692,
             "duration": "3 hours 14 mins"
+        },
+        {
+            "name": "Houston, TX",
+            "distanceInMeters": 411569,
+            "duration": "3 hours 44 mins"
+        },
+        {
+            "name": "Tulsa, OK",
+            "distanceInMeters": 445388,
+            "duration": "4 hours 26 mins"
+        },
+        {
+            "name": "San Antonio, TX",
+            "distanceInMeters": 446702,
+            "duration": "4 hours 18 mins"
+        },
+        {
+            "name": "Lubbock, TX",
+            "distanceInMeters": 528599,
+            "duration": "4 hours 47 mins"
         }
     ],
     "Wichita, KS": [
@@ -1661,6 +2681,26 @@
             "name": "Fort Worth, TX",
             "distanceInMeters": 574483,
             "duration": "5 hours 12 mins"
+        },
+        {
+            "name": "Plano, TX",
+            "distanceInMeters": 579866,
+            "duration": "5 hours 17 mins"
+        },
+        {
+            "name": "Dallas, TX",
+            "distanceInMeters": 585285,
+            "duration": "5 hours 23 mins"
+        },
+        {
+            "name": "Garland, TX",
+            "distanceInMeters": 593473,
+            "duration": "5 hours 25 mins"
+        },
+        {
+            "name": "Arlington, TX",
+            "distanceInMeters": 594450,
+            "duration": "5 hours 25 mins"
         }
     ],
     "St. Louis, MO": [
@@ -1693,6 +2733,26 @@
             "name": "Nashville, TN",
             "distanceInMeters": 498060,
             "duration": "4 hours 32 mins"
+        },
+        {
+            "name": "Lexington, KY",
+            "distanceInMeters": 543109,
+            "duration": "5 hours 4 mins"
+        },
+        {
+            "name": "Cincinnati, OH",
+            "distanceInMeters": 577502,
+            "duration": "5 hours 19 mins"
+        },
+        {
+            "name": "Madison, WI",
+            "distanceInMeters": 579205,
+            "duration": "5 hours 20 mins"
+        },
+        {
+            "name": "Fort Wayne, IN",
+            "distanceInMeters": 592507,
+            "duration": "5 hours 41 mins"
         }
     ],
     "Tampa, FL": [
@@ -1725,6 +2785,26 @@
             "name": "Atlanta, GA",
             "distanceInMeters": 734085,
             "duration": "6 hours 23 mins"
+        },
+        {
+            "name": "Charlotte, NC",
+            "distanceInMeters": 932263,
+            "duration": "8 hours 34 mins"
+        },
+        {
+            "name": "Birmingham, AL",
+            "distanceInMeters": 968994,
+            "duration": "8 hours 28 mins"
+        },
+        {
+            "name": "Raleigh, NC",
+            "distanceInMeters": 1046106,
+            "duration": "9 hours 26 mins"
+        },
+        {
+            "name": "Greensboro, NC",
+            "distanceInMeters": 1049391,
+            "duration": "9 hours 43 mins"
         }
     ],
     "Santa Ana, CA": [
@@ -1757,6 +2837,26 @@
             "name": "San Diego, CA",
             "distanceInMeters": 143156,
             "duration": "1 hour 28 mins"
+        },
+        {
+            "name": "Chula Vista, CA",
+            "distanceInMeters": 154197,
+            "duration": "1 hour 35 mins"
+        },
+        {
+            "name": "Bakersfield, CA",
+            "distanceInMeters": 231059,
+            "duration": "2 hours 32 mins"
+        },
+        {
+            "name": "Fresno, CA",
+            "distanceInMeters": 403863,
+            "duration": "4 hours 3 mins"
+        },
+        {
+            "name": "Henderson, NV",
+            "distanceInMeters": 426833,
+            "duration": "4 hours 1 min"
         }
     ],
     "Anaheim, CA": [
@@ -1789,6 +2889,26 @@
             "name": "San Diego, CA",
             "distanceInMeters": 153244,
             "duration": "1 hour 36 mins"
+        },
+        {
+            "name": "Chula Vista, CA",
+            "distanceInMeters": 164284,
+            "duration": "1 hour 44 mins"
+        },
+        {
+            "name": "Bakersfield, CA",
+            "distanceInMeters": 221018,
+            "duration": "2 hours 25 mins"
+        },
+        {
+            "name": "Fresno, CA",
+            "distanceInMeters": 393822,
+            "duration": "3 hours 56 mins"
+        },
+        {
+            "name": "Henderson, NV",
+            "distanceInMeters": 420091,
+            "duration": "3 hours 57 mins"
         }
     ],
     "Cincinnati, OH": [
@@ -1821,6 +2941,26 @@
             "name": "Toledo, OH",
             "distanceInMeters": 328027,
             "duration": "3 hours 12 mins"
+        },
+        {
+            "name": "Akron, OH",
+            "distanceInMeters": 373100,
+            "duration": "3 hours 28 mins"
+        },
+        {
+            "name": "Cleveland, OH",
+            "distanceInMeters": 401596,
+            "duration": "3 hours 48 mins"
+        },
+        {
+            "name": "Detroit, MI",
+            "distanceInMeters": 422998,
+            "duration": "4 hours 7 mins"
+        },
+        {
+            "name": "Nashville, TN",
+            "distanceInMeters": 439739,
+            "duration": "4 hours 6 mins"
         }
     ],
     "Bakersfield, CA": [
@@ -1853,6 +2993,26 @@
             "name": "Irvine, CA",
             "distanceInMeters": 243817,
             "duration": "2 hours 37 mins"
+        },
+        {
+            "name": "Riverside, CA",
+            "distanceInMeters": 268799,
+            "duration": "2 hours 42 mins"
+        },
+        {
+            "name": "San Diego, CA",
+            "distanceInMeters": 373253,
+            "duration": "3 hours 48 mins"
+        },
+        {
+            "name": "Stockton, CA",
+            "distanceInMeters": 374839,
+            "duration": "3 hours 32 mins"
+        },
+        {
+            "name": "Chula Vista, CA",
+            "distanceInMeters": 384293,
+            "duration": "3 hours 56 mins"
         }
     ],
     "Aurora, CO": [
@@ -1885,6 +3045,26 @@
             "name": "Omaha, NE",
             "distanceInMeters": 864860,
             "duration": "7 hours 29 mins"
+        },
+        {
+            "name": "Lubbock, TX",
+            "distanceInMeters": 876314,
+            "duration": "8 hours 3 mins"
+        },
+        {
+            "name": "Kansas City, MO",
+            "distanceInMeters": 957993,
+            "duration": "8 hours 16 mins"
+        },
+        {
+            "name": "El Paso, TX",
+            "distanceInMeters": 1021724,
+            "duration": "9 hours 25 mins"
+        },
+        {
+            "name": "Oklahoma City, OK",
+            "distanceInMeters": 1078324,
+            "duration": "9 hours 20 mins"
         }
     ],
     "New Orleans, LA": [
@@ -1917,6 +3097,26 @@
             "name": "Garland, TX",
             "distanceInMeters": 811285,
             "duration": "7 hours 22 mins"
+        },
+        {
+            "name": "Dallas, TX",
+            "distanceInMeters": 813109,
+            "duration": "7 hours 19 mins"
+        },
+        {
+            "name": "Austin, TX",
+            "distanceInMeters": 822943,
+            "duration": "7 hours 37 mins"
+        },
+        {
+            "name": "Plano, TX",
+            "distanceInMeters": 829258,
+            "duration": "7 hours 30 mins"
+        },
+        {
+            "name": "Arlington, TX",
+            "distanceInMeters": 847564,
+            "duration": "7 hours 42 mins"
         }
     ],
     "Pittsburgh, PA": [
@@ -1949,6 +3149,26 @@
             "name": "Washington, DC",
             "distanceInMeters": 389216,
             "duration": "4 hours 1 min"
+        },
+        {
+            "name": "Arlington, VA",
+            "distanceInMeters": 393776,
+            "duration": "3 hours 55 mins"
+        },
+        {
+            "name": "Baltimore, MD",
+            "distanceInMeters": 399560,
+            "duration": "3 hours 57 mins"
+        },
+        {
+            "name": "Detroit, MI",
+            "distanceInMeters": 459614,
+            "duration": "4 hours 19 mins"
+        },
+        {
+            "name": "Cincinnati, OH",
+            "distanceInMeters": 465108,
+            "duration": "4 hours 26 mins"
         }
     ],
     "Riverside, CA": [
@@ -1981,6 +3201,26 @@
             "name": "San Diego, CA",
             "distanceInMeters": 162657,
             "duration": "1 hour 36 mins"
+        },
+        {
+            "name": "Chula Vista, CA",
+            "distanceInMeters": 172174,
+            "duration": "1 hour 42 mins"
+        },
+        {
+            "name": "Bakersfield, CA",
+            "distanceInMeters": 268528,
+            "duration": "2 hours 40 mins"
+        },
+        {
+            "name": "Henderson, NV",
+            "distanceInMeters": 378774,
+            "duration": "3 hours 30 mins"
+        },
+        {
+            "name": "Las Vegas, NV",
+            "distanceInMeters": 382402,
+            "duration": "3 hours 29 mins"
         }
     ],
     "Toledo, OH": [
@@ -2013,6 +3253,26 @@
             "name": "Cincinnati, OH",
             "distanceInMeters": 327292,
             "duration": "3 hours 13 mins"
+        },
+        {
+            "name": "Indianapolis, IN",
+            "distanceInMeters": 367329,
+            "duration": "3 hours 31 mins"
+        },
+        {
+            "name": "Pittsburgh, PA",
+            "distanceInMeters": 372999,
+            "duration": "3 hours 31 mins"
+        },
+        {
+            "name": "Chicago, IL",
+            "distanceInMeters": 393348,
+            "duration": "3 hours 49 mins"
+        },
+        {
+            "name": "Lexington, KY",
+            "distanceInMeters": 458617,
+            "duration": "4 hours 30 mins"
         }
     ],
     "Stockton, CA": [
@@ -2045,6 +3305,26 @@
             "name": "Reno, NV",
             "distanceInMeters": 293850,
             "duration": "2 hours 50 mins"
+        },
+        {
+            "name": "Bakersfield, CA",
+            "distanceInMeters": 384557,
+            "duration": "3 hours 29 mins"
+        },
+        {
+            "name": "Los Angeles, CA",
+            "distanceInMeters": 545351,
+            "duration": "4 hours 57 mins"
+        },
+        {
+            "name": "Long Beach, CA",
+            "distanceInMeters": 580230,
+            "duration": "5 hours 21 mins"
+        },
+        {
+            "name": "Anaheim, CA",
+            "distanceInMeters": 584393,
+            "duration": "5 hours 28 mins"
         }
     ],
     "Corpus Christi, TX": [
@@ -2077,6 +3357,26 @@
             "name": "Dallas, TX",
             "distanceInMeters": 661286,
             "duration": "5 hours 53 mins"
+        },
+        {
+            "name": "Arlington, TX",
+            "distanceInMeters": 667169,
+            "duration": "6 hours 2 mins"
+        },
+        {
+            "name": "Garland, TX",
+            "distanceInMeters": 691148,
+            "duration": "6 hours 14 mins"
+        },
+        {
+            "name": "Plano, TX",
+            "distanceInMeters": 692337,
+            "duration": "6 hours 14 mins"
+        },
+        {
+            "name": "Baton Rouge, LA",
+            "distanceInMeters": 772801,
+            "duration": "7 hours 7 mins"
         }
     ],
     "Lexington, KY": [
@@ -2109,6 +3409,26 @@
             "name": "Fort Wayne, IN",
             "distanceInMeters": 419712,
             "duration": "4 hours 25 mins"
+        },
+        {
+            "name": "Toledo, OH",
+            "distanceInMeters": 459344,
+            "duration": "4 hours 30 mins"
+        },
+        {
+            "name": "Akron, OH",
+            "distanceInMeters": 505832,
+            "duration": "4 hours 47 mins"
+        },
+        {
+            "name": "Cleveland, OH",
+            "distanceInMeters": 534328,
+            "duration": "5 hours 6 mins"
+        },
+        {
+            "name": "St. Louis, MO",
+            "distanceInMeters": 542716,
+            "duration": "5 hours 3 mins"
         }
     ],
     "St. Paul, MN": [
@@ -2141,6 +3461,26 @@
             "name": "Lincoln, NE",
             "distanceInMeters": 700149,
             "duration": "6 hours 22 mins"
+        },
+        {
+            "name": "Kansas City, MO",
+            "distanceInMeters": 708766,
+            "duration": "6 hours 24 mins"
+        },
+        {
+            "name": "St. Louis, MO",
+            "distanceInMeters": 849047,
+            "duration": "8 hours 14 mins"
+        },
+        {
+            "name": "Fort Wayne, IN",
+            "distanceInMeters": 909835,
+            "duration": "8 hours 44 mins"
+        },
+        {
+            "name": "Indianapolis, IN",
+            "distanceInMeters": 935734,
+            "duration": "8 hours 32 mins"
         }
     ],
     "Newark, NJ": [
@@ -2173,6 +3513,26 @@
             "name": "Boston, MA",
             "distanceInMeters": 360564,
             "duration": "3 hours 51 mins"
+        },
+        {
+            "name": "Arlington, VA",
+            "distanceInMeters": 360930,
+            "duration": "3 hours 43 mins"
+        },
+        {
+            "name": "Norfolk, VA",
+            "distanceInMeters": 569850,
+            "duration": "6 hours 7 mins"
+        },
+        {
+            "name": "Virginia Beach, VA",
+            "distanceInMeters": 569997,
+            "duration": "6 hours 12 mins"
+        },
+        {
+            "name": "Chesapeake, VA",
+            "distanceInMeters": 577402,
+            "duration": "6 hours 12 mins"
         }
     ],
     "Buffalo, NY": [
@@ -2205,6 +3565,26 @@
             "name": "Toledo, OH",
             "distanceInMeters": 489985,
             "duration": "4 hours 42 mins"
+        },
+        {
+            "name": "Columbus, OH",
+            "distanceInMeters": 523365,
+            "duration": "4 hours 54 mins"
+        },
+        {
+            "name": "Baltimore, MD",
+            "distanceInMeters": 581382,
+            "duration": "6 hours 15 mins"
+        },
+        {
+            "name": "Newark, NJ",
+            "distanceInMeters": 584052,
+            "duration": "5 hours 54 mins"
+        },
+        {
+            "name": "Jersey City, NJ",
+            "distanceInMeters": 593949,
+            "duration": "6 hours 2 mins"
         }
     ],
     "Plano, TX": [
@@ -2237,6 +3617,26 @@
             "name": "Austin, TX",
             "distanceInMeters": 345684,
             "duration": "3 hours 19 mins"
+        },
+        {
+            "name": "Tulsa, OK",
+            "distanceInMeters": 384718,
+            "duration": "3 hours 51 mins"
+        },
+        {
+            "name": "Houston, TX",
+            "distanceInMeters": 413532,
+            "duration": "3 hours 45 mins"
+        },
+        {
+            "name": "San Antonio, TX",
+            "distanceInMeters": 472551,
+            "duration": "4 hours 31 mins"
+        },
+        {
+            "name": "Lubbock, TX",
+            "distanceInMeters": 532268,
+            "duration": "5 hours 11 mins"
         }
     ],
     "Henderson, NV": [
@@ -2269,6 +3669,26 @@
             "name": "Irvine, CA",
             "distanceInMeters": 437296,
             "duration": "4 hours 6 mins"
+        },
+        {
+            "name": "Santa Ana, CA",
+            "distanceInMeters": 438425,
+            "duration": "4 hours 7 mins"
+        },
+        {
+            "name": "Los Angeles, CA",
+            "distanceInMeters": 441813,
+            "duration": "4 hours 8 mins"
+        },
+        {
+            "name": "Phoenix, AZ",
+            "distanceInMeters": 460737,
+            "duration": "4 hours 29 mins"
+        },
+        {
+            "name": "Long Beach, CA",
+            "distanceInMeters": 462943,
+            "duration": "4 hours 20 mins"
         }
     ],
     "Lincoln, NE": [
@@ -2301,6 +3721,26 @@
             "name": "St. Paul, MN",
             "distanceInMeters": 700639,
             "duration": "6 hours 24 mins"
+        },
+        {
+            "name": "Oklahoma City, OK",
+            "distanceInMeters": 705294,
+            "duration": "6 hours 28 mins"
+        },
+        {
+            "name": "St. Louis, MO",
+            "distanceInMeters": 715746,
+            "duration": "6 hours 43 mins"
+        },
+        {
+            "name": "Madison, WI",
+            "distanceInMeters": 774520,
+            "duration": "7 hours 17 mins"
+        },
+        {
+            "name": "Aurora, CO",
+            "distanceInMeters": 785872,
+            "duration": "6 hours 50 mins"
         }
     ],
     "Fort Wayne, IN": [
@@ -2333,6 +3773,26 @@
             "name": "Cincinnati, OH",
             "distanceInMeters": 288213,
             "duration": "3 hours 6 mins"
+        },
+        {
+            "name": "Cleveland, OH",
+            "distanceInMeters": 328930,
+            "duration": "3 hours 18 mins"
+        },
+        {
+            "name": "Akron, OH",
+            "distanceInMeters": 339729,
+            "duration": "3 hours 18 mins"
+        },
+        {
+            "name": "Louisville, KY",
+            "distanceInMeters": 379302,
+            "duration": "3 hours 40 mins"
+        },
+        {
+            "name": "Milwaukee, WI",
+            "distanceInMeters": 407146,
+            "duration": "4 hours 27 mins"
         }
     ],
     "Glendale, AZ": [
@@ -2365,6 +3825,26 @@
             "name": "Tucson, AZ",
             "distanceInMeters": 203812,
             "duration": "2 hours 3 mins"
+        },
+        {
+            "name": "Henderson, NV",
+            "distanceInMeters": 419891,
+            "duration": "4 hours 15 mins"
+        },
+        {
+            "name": "Las Vegas, NV",
+            "distanceInMeters": 444915,
+            "duration": "4 hours 29 mins"
+        },
+        {
+            "name": "North Las Vegas, NV",
+            "distanceInMeters": 445215,
+            "duration": "4 hours 29 mins"
+        },
+        {
+            "name": "Riverside, CA",
+            "distanceInMeters": 516342,
+            "duration": "4 hours 42 mins"
         }
     ],
     "Greensboro, NC": [
@@ -2397,6 +3877,26 @@
             "name": "Chesapeake, VA",
             "distanceInMeters": 380064,
             "duration": "3 hours 50 mins"
+        },
+        {
+            "name": "Virginia Beach, VA",
+            "distanceInMeters": 406722,
+            "duration": "4 hours 8 mins"
+        },
+        {
+            "name": "Arlington, VA",
+            "distanceInMeters": 495763,
+            "duration": "4 hours 40 mins"
+        },
+        {
+            "name": "Washington, DC",
+            "distanceInMeters": 498671,
+            "duration": "4 hours 47 mins"
+        },
+        {
+            "name": "Atlanta, GA",
+            "distanceInMeters": 533809,
+            "duration": "4 hours 58 mins"
         }
     ],
     "Chandler, AZ": [
@@ -2429,6 +3929,26 @@
             "name": "Tucson, AZ",
             "distanceInMeters": 159738,
             "duration": "1 hour 40 mins"
+        },
+        {
+            "name": "Henderson, NV",
+            "distanceInMeters": 488597,
+            "duration": "4 hours 45 mins"
+        },
+        {
+            "name": "Las Vegas, NV",
+            "distanceInMeters": 513621,
+            "duration": "4 hours 59 mins"
+        },
+        {
+            "name": "North Las Vegas, NV",
+            "distanceInMeters": 513921,
+            "duration": "4 hours 59 mins"
+        },
+        {
+            "name": "Riverside, CA",
+            "distanceInMeters": 553646,
+            "duration": "5 hours 3 mins"
         }
     ],
     "St. Petersburg, FL": [
@@ -2461,6 +3981,26 @@
             "name": "Atlanta, GA",
             "distanceInMeters": 772699,
             "duration": "6 hours 51 mins"
+        },
+        {
+            "name": "Charlotte, NC",
+            "distanceInMeters": 970877,
+            "duration": "9 hours 2 mins"
+        },
+        {
+            "name": "Birmingham, AL",
+            "distanceInMeters": 1007608,
+            "duration": "8 hours 55 mins"
+        },
+        {
+            "name": "Raleigh, NC",
+            "distanceInMeters": 1084721,
+            "duration": "9 hours 54 mins"
+        },
+        {
+            "name": "Greensboro, NC",
+            "distanceInMeters": 1088006,
+            "duration": "10 hours 11 mins"
         }
     ],
     "Jersey City, NJ": [
@@ -2493,6 +4033,26 @@
             "name": "Boston, MA",
             "distanceInMeters": 362214,
             "duration": "3 hours 53 mins"
+        },
+        {
+            "name": "Arlington, VA",
+            "distanceInMeters": 366488,
+            "duration": "3 hours 45 mins"
+        },
+        {
+            "name": "Norfolk, VA",
+            "distanceInMeters": 575408,
+            "duration": "6 hours 10 mins"
+        },
+        {
+            "name": "Virginia Beach, VA",
+            "distanceInMeters": 575555,
+            "duration": "6 hours 15 mins"
+        },
+        {
+            "name": "Chesapeake, VA",
+            "distanceInMeters": 582960,
+            "duration": "6 hours 15 mins"
         }
     ],
     "Scottsdale, AZ": [
@@ -2525,6 +4085,26 @@
             "name": "Tucson, AZ",
             "distanceInMeters": 189697,
             "duration": "1 hour 54 mins"
+        },
+        {
+            "name": "Henderson, NV",
+            "distanceInMeters": 470149,
+            "duration": "4 hours 34 mins"
+        },
+        {
+            "name": "Las Vegas, NV",
+            "distanceInMeters": 495173,
+            "duration": "4 hours 48 mins"
+        },
+        {
+            "name": "North Las Vegas, NV",
+            "distanceInMeters": 495473,
+            "duration": "4 hours 48 mins"
+        },
+        {
+            "name": "Riverside, CA",
+            "distanceInMeters": 533951,
+            "duration": "4 hours 54 mins"
         }
     ],
     "Norfolk, VA": [
@@ -2557,6 +4137,26 @@
             "name": "Washington, DC",
             "distanceInMeters": 314166,
             "duration": "3 hours 16 mins"
+        },
+        {
+            "name": "Greensboro, NC",
+            "distanceInMeters": 380154,
+            "duration": "3 hours 51 mins"
+        },
+        {
+            "name": "Baltimore, MD",
+            "distanceInMeters": 383551,
+            "duration": "3 hours 59 mins"
+        },
+        {
+            "name": "Winston-Salem, NC",
+            "distanceInMeters": 423008,
+            "duration": "4 hours 13 mins"
+        },
+        {
+            "name": "Philadelphia, PA",
+            "distanceInMeters": 445471,
+            "duration": "4 hours 59 mins"
         }
     ],
     "Madison, WI": [
@@ -2589,6 +4189,26 @@
             "name": "Indianapolis, IN",
             "distanceInMeters": 531126,
             "duration": "5 hours 6 mins"
+        },
+        {
+            "name": "St. Louis, MO",
+            "distanceInMeters": 578475,
+            "duration": "5 hours 19 mins"
+        },
+        {
+            "name": "Toledo, OH",
+            "distanceInMeters": 638786,
+            "duration": "6 hours 3 mins"
+        },
+        {
+            "name": "Omaha, NE",
+            "distanceInMeters": 691262,
+            "duration": "6 hours 32 mins"
+        },
+        {
+            "name": "Detroit, MI",
+            "distanceInMeters": 695859,
+            "duration": "6 hours 32 mins"
         }
     ],
     "Orlando, FL": [
@@ -2621,6 +4241,26 @@
             "name": "Atlanta, GA",
             "distanceInMeters": 704610,
             "duration": "6 hours 6 mins"
+        },
+        {
+            "name": "Charlotte, NC",
+            "distanceInMeters": 844341,
+            "duration": "7 hours 28 mins"
+        },
+        {
+            "name": "Birmingham, AL",
+            "distanceInMeters": 939519,
+            "duration": "8 hours 11 mins"
+        },
+        {
+            "name": "Raleigh, NC",
+            "distanceInMeters": 958185,
+            "duration": "8 hours 20 mins"
+        },
+        {
+            "name": "Greensboro, NC",
+            "distanceInMeters": 961470,
+            "duration": "8 hours 37 mins"
         }
     ],
     "Birmingham, AL": [
@@ -2653,6 +4293,26 @@
             "name": "Charlotte, NC",
             "distanceInMeters": 629451,
             "duration": "5 hours 47 mins"
+        },
+        {
+            "name": "Baton Rouge, LA",
+            "distanceInMeters": 641653,
+            "duration": "5 hours 46 mins"
+        },
+        {
+            "name": "Lexington, KY",
+            "distanceInMeters": 652908,
+            "duration": "5 hours 59 mins"
+        },
+        {
+            "name": "Cincinnati, OH",
+            "distanceInMeters": 746378,
+            "duration": "6 hours 48 mins"
+        },
+        {
+            "name": "Winston-Salem, NC",
+            "distanceInMeters": 748218,
+            "duration": "6 hours 51 mins"
         }
     ],
     "Baton Rouge, LA": [
@@ -2685,6 +4345,26 @@
             "name": "Dallas, TX",
             "distanceInMeters": 691632,
             "duration": "6 hours 13 mins"
+        },
+        {
+            "name": "Austin, TX",
+            "distanceInMeters": 699888,
+            "duration": "6 hours 32 mins"
+        },
+        {
+            "name": "Plano, TX",
+            "distanceInMeters": 707781,
+            "duration": "6 hours 23 mins"
+        },
+        {
+            "name": "Arlington, TX",
+            "distanceInMeters": 726088,
+            "duration": "6 hours 35 mins"
+        },
+        {
+            "name": "Fort Worth, TX",
+            "distanceInMeters": 747055,
+            "duration": "6 hours 42 mins"
         }
     ],
     "Durham, NC": [
@@ -2717,6 +4397,26 @@
             "name": "Chesapeake, VA",
             "distanceInMeters": 297178,
             "duration": "3 hours 3 mins"
+        },
+        {
+            "name": "Virginia Beach, VA",
+            "distanceInMeters": 323836,
+            "duration": "3 hours 21 mins"
+        },
+        {
+            "name": "Arlington, VA",
+            "distanceInMeters": 412877,
+            "duration": "3 hours 54 mins"
+        },
+        {
+            "name": "Washington, DC",
+            "distanceInMeters": 415785,
+            "duration": "4 hours 0 mins"
+        },
+        {
+            "name": "Baltimore, MD",
+            "distanceInMeters": 485170,
+            "duration": "4 hours 42 mins"
         }
     ],
     "Laredo, TX": [
@@ -2749,6 +4449,26 @@
             "name": "Dallas, TX",
             "distanceInMeters": 690153,
             "duration": "6 hours 21 mins"
+        },
+        {
+            "name": "Arlington, TX",
+            "distanceInMeters": 696036,
+            "duration": "6 hours 30 mins"
+        },
+        {
+            "name": "Garland, TX",
+            "distanceInMeters": 720015,
+            "duration": "6 hours 42 mins"
+        },
+        {
+            "name": "Plano, TX",
+            "distanceInMeters": 721204,
+            "duration": "6 hours 42 mins"
+        },
+        {
+            "name": "Lubbock, TX",
+            "distanceInMeters": 835862,
+            "duration": "7 hours 53 mins"
         }
     ],
     "Lubbock, TX": [
@@ -2781,6 +4501,26 @@
             "name": "Oklahoma City, OK",
             "distanceInMeters": 550216,
             "duration": "5 hours 14 mins"
+        },
+        {
+            "name": "Dallas, TX",
+            "distanceInMeters": 556265,
+            "duration": "5 hours 0 mins"
+        },
+        {
+            "name": "El Paso, TX",
+            "distanceInMeters": 557779,
+            "duration": "5 hours 30 mins"
+        },
+        {
+            "name": "Austin, TX",
+            "distanceInMeters": 600349,
+            "duration": "5 hours 48 mins"
+        },
+        {
+            "name": "San Antonio, TX",
+            "distanceInMeters": 619442,
+            "duration": "5 hours 44 mins"
         }
     ],
     "Chesapeake, VA": [
@@ -2813,6 +4553,26 @@
             "name": "Washington, DC",
             "distanceInMeters": 332691,
             "duration": "3 hours 18 mins"
+        },
+        {
+            "name": "Greensboro, NC",
+            "distanceInMeters": 382780,
+            "duration": "3 hours 51 mins"
+        },
+        {
+            "name": "Baltimore, MD",
+            "distanceInMeters": 402076,
+            "duration": "4 hours 0 mins"
+        },
+        {
+            "name": "Winston-Salem, NC",
+            "distanceInMeters": 425634,
+            "duration": "4 hours 13 mins"
+        },
+        {
+            "name": "Philadelphia, PA",
+            "distanceInMeters": 452865,
+            "duration": "5 hours 2 mins"
         }
     ],
     "Chula Vista, CA": [
@@ -2845,6 +4605,26 @@
             "name": "Long Beach, CA",
             "distanceInMeters": 181764,
             "duration": "1 hour 57 mins"
+        },
+        {
+            "name": "Los Angeles, CA",
+            "distanceInMeters": 204809,
+            "duration": "2 hours 13 mins"
+        },
+        {
+            "name": "Bakersfield, CA",
+            "distanceInMeters": 383576,
+            "duration": "3 hours 58 mins"
+        },
+        {
+            "name": "Henderson, NV",
+            "distanceInMeters": 537676,
+            "duration": "5 hours 0 mins"
+        },
+        {
+            "name": "Las Vegas, NV",
+            "distanceInMeters": 541303,
+            "duration": "4 hours 59 mins"
         }
     ],
     "Garland, TX": [
@@ -2877,6 +4657,26 @@
             "name": "Austin, TX",
             "distanceInMeters": 343752,
             "duration": "3 hours 18 mins"
+        },
+        {
+            "name": "Tulsa, OK",
+            "distanceInMeters": 402127,
+            "duration": "4 hours 3 mins"
+        },
+        {
+            "name": "Houston, TX",
+            "distanceInMeters": 405577,
+            "duration": "3 hours 43 mins"
+        },
+        {
+            "name": "San Antonio, TX",
+            "distanceInMeters": 470620,
+            "duration": "4 hours 30 mins"
+        },
+        {
+            "name": "Lubbock, TX",
+            "distanceInMeters": 581625,
+            "duration": "5 hours 20 mins"
         }
     ],
     "Winston-Salem, NC": [
@@ -2909,6 +4709,26 @@
             "name": "Chesapeake, VA",
             "distanceInMeters": 424377,
             "duration": "4 hours 13 mins"
+        },
+        {
+            "name": "Virginia Beach, VA",
+            "distanceInMeters": 451036,
+            "duration": "4 hours 31 mins"
+        },
+        {
+            "name": "Atlanta, GA",
+            "distanceInMeters": 513627,
+            "duration": "4 hours 47 mins"
+        },
+        {
+            "name": "Arlington, VA",
+            "distanceInMeters": 540077,
+            "duration": "5 hours 3 mins"
+        },
+        {
+            "name": "Washington, DC",
+            "distanceInMeters": 542984,
+            "duration": "5 hours 10 mins"
         }
     ],
     "North Las Vegas, NV": [
@@ -2941,6 +4761,26 @@
             "name": "Santa Ana, CA",
             "distanceInMeters": 435579,
             "duration": "4 hours 7 mins"
+        },
+        {
+            "name": "Los Angeles, CA",
+            "distanceInMeters": 438966,
+            "duration": "4 hours 8 mins"
+        },
+        {
+            "name": "Glendale, AZ",
+            "distanceInMeters": 446813,
+            "duration": "4 hours 36 mins"
+        },
+        {
+            "name": "Long Beach, CA",
+            "distanceInMeters": 460097,
+            "duration": "4 hours 20 mins"
+        },
+        {
+            "name": "Bakersfield, CA",
+            "distanceInMeters": 463795,
+            "duration": "4 hours 21 mins"
         }
     ],
     "Reno, NV": [
@@ -2973,6 +4813,26 @@
             "name": "Fresno, CA",
             "distanceInMeters": 483026,
             "duration": "4 hours 39 mins"
+        },
+        {
+            "name": "Bakersfield, CA",
+            "distanceInMeters": 652926,
+            "duration": "6 hours 12 mins"
+        },
+        {
+            "name": "Las Vegas, NV",
+            "distanceInMeters": 721385,
+            "duration": "6 hours 56 mins"
+        },
+        {
+            "name": "North Las Vegas, NV",
+            "distanceInMeters": 724543,
+            "duration": "6 hours 58 mins"
+        },
+        {
+            "name": "Henderson, NV",
+            "distanceInMeters": 745817,
+            "duration": "7 hours 10 mins"
         }
     ],
     "Gilbert, AZ": [
@@ -3005,6 +4865,26 @@
             "name": "Tucson, AZ",
             "distanceInMeters": 169046,
             "duration": "1 hour 49 mins"
+        },
+        {
+            "name": "Henderson, NV",
+            "distanceInMeters": 487663,
+            "duration": "4 hours 44 mins"
+        },
+        {
+            "name": "Las Vegas, NV",
+            "distanceInMeters": 512687,
+            "duration": "4 hours 58 mins"
+        },
+        {
+            "name": "North Las Vegas, NV",
+            "distanceInMeters": 512987,
+            "duration": "4 hours 59 mins"
+        },
+        {
+            "name": "Riverside, CA",
+            "distanceInMeters": 552713,
+            "duration": "5 hours 2 mins"
         }
     ],
     "Hialeah, FL": [
@@ -3037,6 +4917,26 @@
             "name": "Atlanta, GA",
             "distanceInMeters": 1061288,
             "duration": "9 hours 18 mins"
+        },
+        {
+            "name": "Charlotte, NC",
+            "distanceInMeters": 1169265,
+            "duration": "10 hours 24 mins"
+        },
+        {
+            "name": "Raleigh, NC",
+            "distanceInMeters": 1283108,
+            "duration": "11 hours 16 mins"
+        },
+        {
+            "name": "Greensboro, NC",
+            "distanceInMeters": 1286394,
+            "duration": "11 hours 33 mins"
+        },
+        {
+            "name": "Winston-Salem, NC",
+            "distanceInMeters": 1293780,
+            "duration": "11 hours 32 mins"
         }
     ],
     "Arlington, VA": [
@@ -3069,6 +4969,26 @@
             "name": "Virginia Beach, VA",
             "distanceInMeters": 333612,
             "duration": "3 hours 19 mins"
+        },
+        {
+            "name": "Newark, NJ",
+            "distanceInMeters": 359725,
+            "duration": "3 hours 42 mins"
+        },
+        {
+            "name": "Jersey City, NJ",
+            "distanceInMeters": 364011,
+            "duration": "3 hours 42 mins"
+        },
+        {
+            "name": "New York, NY",
+            "distanceInMeters": 373046,
+            "duration": "3 hours 53 mins"
+        },
+        {
+            "name": "Pittsburgh, PA",
+            "distanceInMeters": 392876,
+            "duration": "3 hours 55 mins"
         }
     ],
     "Akron, OH": [
@@ -3101,6 +5021,26 @@
             "name": "Fort Wayne, IN",
             "distanceInMeters": 339826,
             "duration": "3 hours 18 mins"
+        },
+        {
+            "name": "Buffalo, NY",
+            "distanceInMeters": 340965,
+            "duration": "3 hours 20 mins"
+        },
+        {
+            "name": "Cincinnati, OH",
+            "distanceInMeters": 373962,
+            "duration": "3 hours 29 mins"
+        },
+        {
+            "name": "Indianapolis, IN",
+            "distanceInMeters": 481222,
+            "duration": "4 hours 27 mins"
+        },
+        {
+            "name": "Toronto, ON",
+            "distanceInMeters": 505699,
+            "duration": "4 hours 59 mins"
         }
     ],
     "Irvine, CA": [
@@ -3133,6 +5073,26 @@
             "name": "San Diego, CA",
             "distanceInMeters": 135542,
             "duration": "1 hour 24 mins"
+        },
+        {
+            "name": "Chula Vista, CA",
+            "distanceInMeters": 146582,
+            "duration": "1 hour 32 mins"
+        },
+        {
+            "name": "Bakersfield, CA",
+            "distanceInMeters": 243612,
+            "duration": "2 hours 40 mins"
+        },
+        {
+            "name": "Fresno, CA",
+            "distanceInMeters": 416416,
+            "duration": "4 hours 11 mins"
+        },
+        {
+            "name": "Henderson, NV",
+            "distanceInMeters": 425975,
+            "duration": "4 hours 2 mins"
         }
     ]
 }
