@@ -5,15 +5,21 @@ import json
 
 HOTEL_SEARCH_RADIUS = 10
 EVENT_SEARCH_RADIUS = 10
-DAILY_DISTANCE_LIMIT_MILES = 100
 
 # combine the 3 APIs to get a roudtrip plan
-# origin and destination are names of cities in the list of 100]
+# origin and destination are names of cities in the list of 100
+# is_direct_route is a boolean for if the returned route should be direct (True) or city-based (False)
+# distance_limit is the daily distance limit in miles
 # return a JSON
-def get_roadtrip(origin, destination):
+def get_roadtrip(origin, destination, is_direct_route, distance_limit):
+    ret = {}
+
     # get the route and split points
-    route = maps.get_direct_route(origin, destination)
-    split_points = maps.compute_split_points_on_daily_limit(route, DAILY_DISTANCE_LIMIT_MILES * 1609)
+    if is_direct_route:
+        route = maps.get_direct_route(origin, destination)
+        split_points = maps.compute_split_points_on_daily_limit(route, distance_limit)
+    else:
+        split_points = maps.get_city_route(origin, destination, distance_limit)
 
 
     # find hotels around each split point
@@ -73,18 +79,19 @@ def get_roadtrip(origin, destination):
         'hotels': [id_info_pair[1] for id_info_pair in hotel_per_point_cheap],
         'events': event_list_per_point
     }
+    
+    ret['close_hotel_route'] = roadtrip_info_fast
+    ret['cheap_hotel_route'] = roadtrip_info_cheap
+    
+    return ret
 
-    return {
-        'close_hotel_route': roadtrip_info_fast,
-        'cheap_hotel_route': roadtrip_info_cheap
-    }
 
-
-# test the functionality on the lat-longs for NYC and Boston
+# test the functionality on the lat-longs for NYC and Miami
 if __name__ == '__main__':
     nyc = 'New York, NY'
     boston = 'Boston, MA'
+    miami = 'Miami, FL'
 
-    f = open('sample_roadtrip.txt', 'w')
-    roadtrip = get_roadtrip(nyc, boston)
+    f = open('sample_city_roadtrip.txt', 'w')
+    roadtrip = get_roadtrip(nyc, miami, False, 500)
     json.dump(roadtrip, f, indent=4)

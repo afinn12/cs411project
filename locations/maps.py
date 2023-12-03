@@ -70,7 +70,7 @@ def get_city_route(origin, destination, distance_limit):
     
     if origin in G and destination in G and nx.has_path(G, origin, destination):
         path = nx.shortest_path(G, origin, destination)
-        print(path)
+        # print(path)
         split_cities = path[1:-1]
         distance_matrix_file_path = os.path.join(curr_dir, '100cities/DistanceMatrix.json')
         distance_matrix = json.load(open(distance_matrix_file_path))
