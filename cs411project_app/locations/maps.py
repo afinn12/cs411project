@@ -1,5 +1,6 @@
 import requests
-import googlemaps_key
+from ..locations import googlemaps_key
+# import googlemaps_key
 import json
 import os
 import networkx as nx

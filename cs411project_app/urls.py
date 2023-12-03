@@ -15,9 +15,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import include, path
+from django.urls import path
+from .views import get_roadtrip_APIView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('cs411project_app/', include('cs411project_app.urls'))
+    path('get_roadtrip/', get_roadtrip_APIView.as_view(), name='get_roadtrip')
 ]

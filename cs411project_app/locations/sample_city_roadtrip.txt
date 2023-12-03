@@ -3,24 +3,24 @@
         "route": {
             "bounds": {
                 "northeast": {
-                    "lat": 40.7126802,
-                    "lng": -74.00533159999999
+                    "lat": 40.7310203,
+                    "lng": -74.00657629999999
                 },
                 "southwest": {
                     "lat": 25.7617059,
-                    "lng": -81.68635619999999
+                    "lng": -81.6865355
                 }
             },
             "copyrights": "Map data \u00a92023 Google, INEGI",
             "legs": [
                 {
                     "distance": {
-                        "text": "366 mi",
-                        "value": 588871
+                        "text": "363 mi",
+                        "value": 584184
                     },
                     "duration": {
-                        "text": "6 hours 25 mins",
-                        "value": 23113
+                        "text": "6 hours 22 mins",
+                        "value": 22947
                     },
                     "end_address": "999 Waterside Dr # 107, Norfolk, VA 23510, USA",
                     "end_location": {
@@ -58,20 +58,20 @@
                         },
                         {
                             "distance": {
-                                "text": "0.4 mi",
-                                "value": 566
+                                "text": "0.1 mi",
+                                "value": 158
                             },
                             "duration": {
-                                "text": "4 mins",
-                                "value": 213
+                                "text": "1 min",
+                                "value": 52
                             },
                             "end_location": {
-                                "lat": 40.7152239,
-                                "lng": -74.0132173
+                                "lat": 40.7138037,
+                                "lng": -74.00882589999999
                             },
                             "html_instructions": "Continue onto <b>Murray Street</b>",
                             "polyline": {
-                                "points": "ownwFjpubMONA@eCfHGNQf@_@dAs@pBGPY|@GRQd@Ul@M\\IREPELAHAVC\\KlAGn@Eh@Gr@Eb@CXCR?D"
+                                "points": "ownwFjpubMONA@eCfH"
                             },
                             "start_location": {
                                 "lat": 40.7130435,
@@ -81,216 +81,192 @@
                         },
                         {
                             "distance": {
+                                "text": "0.1 mi",
+                                "value": 211
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 75
+                            },
+                            "end_location": {
+                                "lat": 40.715428,
+                                "lng": -74.0075398
+                            },
+                            "html_instructions": "Turn <b>right</b> onto <b>Church St</b>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "g|nwFdzubMg@_@q@g@UOcAu@m@c@s@i@o@e@"
+                            },
+                            "start_location": {
+                                "lat": 40.7138037,
+                                "lng": -74.00882589999999
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.1 mi",
+                                "value": 164
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 55
+                            },
+                            "end_location": {
+                                "lat": 40.7161836,
+                                "lng": -74.0092035
+                            },
+                            "html_instructions": "Turn <b>left</b> at the 3rd cross street onto <b>Reade St</b>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "mfowFbrubMITSf@w@zBa@hA]fA"
+                            },
+                            "start_location": {
+                                "lat": 40.715428,
+                                "lng": -74.0075398
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
                                 "text": "0.4 mi",
-                                "value": 677
+                                "value": 570
                             },
                             "duration": {
                                 "text": "2 mins",
-                                "value": 127
+                                "value": 125
                             },
                             "end_location": {
-                                "lat": 40.7095715,
-                                "lng": -74.015107
+                                "lat": 40.7212691,
+                                "lng": -74.0083674
                             },
-                            "html_instructions": "Turn <b>left</b> onto <b>Hudson River Greenway</b>/<wbr/><b>West St</b><div style=\"font-size:0.9em\">Continue to follow West St</div>",
-                            "maneuver": "turn-left",
+                            "html_instructions": "Turn <b>right</b> onto <b>Hudson St</b>",
+                            "maneuver": "turn-right",
                             "polyline": {
-                                "points": "ceowFruvbMK~@fARrATN@RDl@Lx@ThB^b@Hn@NPBPBH@D@RB@@v@L`@FTDr@FjANZFZHFBZHXDPB@@J@L@TDx@RTFVDZDJ@JB"
+                                "points": "ckowFn|ubMuAG_AEc@E_@EaAKaAMcAKkAMmAMu@Gw@IiAKOA}@Ku@IMAsBQ"
                             },
                             "start_location": {
-                                "lat": 40.7152239,
-                                "lng": -74.0132173
+                                "lat": 40.7161836,
+                                "lng": -74.0092035
                             },
                             "travel_mode": "DRIVING"
                         },
                         {
                             "distance": {
                                 "text": "0.3 mi",
-                                "value": 483
-                            },
-                            "duration": {
-                                "text": "1 min",
-                                "value": 46
-                            },
-                            "end_location": {
-                                "lat": 40.7056674,
-                                "lng": -74.01512799999999
-                            },
-                            "html_instructions": "Take the <b>Hugh L Carey Tun</b> ramp on the <b>left</b> to <b>I-278</b>/<wbr/><b>Brooklyn</b>",
-                            "maneuver": "ramp-left",
-                            "polyline": {
-                                "points": "yanwFlawbMBC@?BAD?H?NB@?B?J@H@L?J@JBJBRDB@`@L`@JFBXHJB`@L`@L`@L@?B@F@D@HAH?HAHAFCBADCFEFGFE?ABEBEBE@E@EBIBU@GBG@E@CDKFGFEFGDCDCHCJEDAD?FCJAH?H?H?H?D@@?F@H@@@D?DBHBVJTHJDJFPNHH"
-                            },
-                            "start_location": {
-                                "lat": 40.7095715,
-                                "lng": -74.015107
-                            },
-                            "travel_mode": "DRIVING"
-                        },
-                        {
-                            "distance": {
-                                "text": "1.8 mi",
-                                "value": 2915
+                                "value": 414
                             },
                             "duration": {
                                 "text": "2 mins",
-                                "value": 141
+                                "value": 98
                             },
                             "end_location": {
-                                "lat": 40.6811634,
-                                "lng": -74.00533159999999
+                                "lat": 40.7247052,
+                                "lng": -74.00700599999999
                             },
-                            "html_instructions": "Continue onto <b>I-478</b><div style=\"font-size:0.9em\">Toll road</div>",
+                            "html_instructions": "Keep <b>right</b> to stay on <b>Hudson St</b>",
+                            "maneuver": "keep-right",
                             "polyline": {
-                                "points": "mimwFpawbMXHd@LjBf@PFNBb@HfB^lANXBl@DB?X@h@@j@?V?B?J?~A?fAIh@KLCD?h@MvA]l@QrCmA@AhCiAzBo@|EqAhCs@~@Wf@M`@MhCq@rFuA`@Mb@K`@K^Kd@M`@MbA[b@M`@KbA[RGLG`@Q^Q`@S^Q`Ac@DCxBsA~@k@ZQBC\\[Z[\\[tAsABC~@g@@?LIPIZQ^SBA|Ay@BAZW\\W\\Y\\YvC_CZW@AjEyBVONG|BcAv@SDA`@KlA[`BWLC^K|@YFCh@WBALILEHELIHE@AFCFEROf@_@"
+                                "points": "}jpwFhwubMKI_@E]Cy@KOAk@GaAKOAkAK_AI]C]ESECAEACACAAAAAGIACCEMWW_@EGOSCGGGEECCACACKGKCGAEAIAEAGAIE"
                             },
                             "start_location": {
-                                "lat": 40.7056674,
-                                "lng": -74.01512799999999
-                            },
-                            "travel_mode": "DRIVING"
-                        },
-                        {
-                            "distance": {
-                                "text": "0.5 mi",
-                                "value": 752
-                            },
-                            "duration": {
-                                "text": "1 min",
-                                "value": 46
-                            },
-                            "end_location": {
-                                "lat": 40.6752958,
-                                "lng": -74.0009555
-                            },
-                            "html_instructions": "Keep <b>right</b> at the fork to stay on <b>I-478</b><div style=\"font-size:0.9em\">Toll road</div>",
-                            "maneuver": "fork-right",
-                            "polyline": {
-                                "points": "gphwFhdubM|@q@TSLK^[LKVSj@g@h@e@VSz@s@pAiATQTSROh@c@j@a@nA{@lAu@JGfBaAf@YZQp@a@VQRKRMXOXQt@a@HA\\C"
-                            },
-                            "start_location": {
-                                "lat": 40.6811634,
-                                "lng": -74.00533159999999
+                                "lat": 40.7212691,
+                                "lng": -74.0083674
                             },
                             "travel_mode": "DRIVING"
                         },
                         {
                             "distance": {
                                 "text": "2.2 mi",
-                                "value": 3593
+                                "value": 3521
                             },
                             "duration": {
-                                "text": "3 mins",
-                                "value": 188
+                                "text": "6 mins",
+                                "value": 350
                             },
                             "end_location": {
-                                "lat": 40.6483981,
-                                "lng": -74.0139947
+                                "lat": 40.7319276,
+                                "lng": -74.04635809999999
                             },
-                            "html_instructions": "Merge onto <b>I-278 W</b>",
-                            "maneuver": "merge",
+                            "html_instructions": "Continue onto <b>I-78 W</b>/<wbr/><b>Holland Tunnel</b><div style=\"font-size:0.9em\">Continue to follow I-78 W</div><div style=\"font-size:0.9em\">Entering New Jersey</div>",
                             "polyline": {
-                                "points": "skgwF~htbM^S\\Sf@Yf@[LIXOd@WhAm@ZQ^Sf@Wn@]TO`Ag@f@Wx@c@^Wd@YZQHGd@WNKRMj@]~HcEt@_@bAi@`@Sd@UVOh@Sb@M^KBAREJA\\EJATEVA`@CZARAb@@f@@b@DVD^Fb@JZHPHNDVLVLZR`@ZNNPNVVPRNNPRb@d@`@b@`@^NR`@b@PP`@b@`@`@b@d@RRRRPRPPPRVVVVXZTVRTXXd@f@d@d@\\^d@f@d@d@\\^PPRTXXXZ^^`@b@^^PR`@b@bAdATT^`@NPdAfABB\\\\@@x@|@XXn@r@PPPPr@t@NNtAxAr@t@`@b@r@r@NPPPb@d@TTDDd@h@^`@JHPRBBHJJHLNLLb@d@j@l@^`@`@`@RTHHRPPRVXXXPPDF@@j@j@h@l@JJLJJNLLRTj@j@HHHHBB@BDB`AdAJJLLJJXXz@~@JLLLXZZZLLLNLLJJ@@bBfBdBhBpArAnAtAXZXZ"
+                                "points": "m`qwFxnubMKAOA?AG?K?A?IAK?I?MDUFKFSJ[\\ILKPIRITCPCNGfAIrBMpB?JEz@Q`D[xDK|AEx@GtAEl@?BCl@Ch@Ep@[pGIfAGn@[xDGl@Gl@El@Gn@MzAGl@M|AMzAy@rJAHYnDGl@q@dIGl@Gn@[xDGl@UjCEl@UjCIrBCn@En@Cl@KlCCl@YzGG|AEz@GpA?DAb@Eb@G`@I\\Qp@UdAs@|CuAbGOp@CHKZEPGPELMTGJMPe@l@W`@KNKPOTKRKPABKTIPCFKVOd@ADCHCJCHCLATGhACb@SzD?PCZAPCh@Ab@ItBGlACp@Ab@Cf@AXC\\Cj@Cr@Cr@Cn@Ex@GzAKvBAXGjA?F?N?P?N@B?X@f@BX@ZBb@Dh@BP@V"
                             },
                             "start_location": {
-                                "lat": 40.6752958,
-                                "lng": -74.0009555
+                                "lat": 40.7247052,
+                                "lng": -74.00700599999999
                             },
                             "travel_mode": "DRIVING"
                         },
                         {
                             "distance": {
-                                "text": "2.7 mi",
-                                "value": 4266
+                                "text": "7.9 mi",
+                                "value": 12746
                             },
                             "duration": {
-                                "text": "3 mins",
-                                "value": 194
+                                "text": "9 mins",
+                                "value": 530
                             },
                             "end_location": {
-                                "lat": 40.6157198,
-                                "lng": -74.02678159999999
+                                "lat": 40.7070336,
+                                "lng": -74.1528428
                             },
-                            "html_instructions": "Keep <b>right</b> at the fork to stay on <b>I-278 W</b>, follow signs for <b>Verrazano Brg</b>/<wbr/><b>Staten Island</b><div style=\"font-size:0.9em\">Toll road</div>",
-                            "maneuver": "fork-right",
+                            "html_instructions": "Slight <b>right</b> onto <b>I-78 W</b>/<wbr/><b>New Jersey Turnpike Newark Bay Ext</b> (signs for <b>Interstate 78</b>/<wbr/><b>Interstate 95</b>/<wbr/><b>Turnpike</b>)<div style=\"font-size:0.9em\">Toll road</div>",
+                            "maneuver": "turn-slight-right",
                             "polyline": {
-                                "points": "ocbwFlzvbMNRPPrBvBr@t@NNPRNNRRNNRRNPRRVXHH^`@t@v@NNPRb@b@TVTVTTBBNPPRFDHJHHVXJJ@@RTJJJLJJJLLLX\\Z\\t@v@BBn@r@b@d@PPJLPPTTNNRTPPTVPRHHXXVVPRLL\\\\XVRPXZf@\\PLXPFBZPPJRHNHF@NFXJXHNBVDf@HJ@b@@P?^A\\AXELCREVGNGNEJEDCTKRKLKNIZW`@c@NOTUFKHKHMV]JSFI^o@Xi@JU\\o@`AqBNWVi@Vc@P_@Tc@Tc@Xk@\\m@LUNULUPSDIHIb@e@Z[VSZSVORITKTGNENCNC\\Ej@CXAf@?b@DTBD?ZDVDb@DXFNBJBH@d@J\\FPD\\Jd@Lj@Ph@NB@bA\\~@XF@l@Nd@Lb@J`@JdATXF@?NDNDPDn@NVFPDTHF@lA\\h@Nr@RZJ`@LTF`AZHB\\J`@Ld@N\\JZJDBh@PfA`@ZNn@VhAh@DDLFd@X@@VN^TPLh@\\f@^TPd@^^Zd@^n@h@DDXRb@^TPHFPNz@r@d@^v@p@@?h@b@|@v@NLn@f@XTj@d@hA~@HFvAjA|@t@TPNLDB|@t@h@b@NJPNZV\\XJHVRPLFDTPHFNJVTNJXRPPt@h@`ChB"
+                                "points": "qmrwFvd}bMEPAB?D?DAF?F?H@L?~@?T?\\E`CCr@CdACx@Al@?P?@?T?R@ZB^@JBRHf@DTDPHVJVLXJRLPLNHJRRdAv@NLD@LJJDJFJFJFPJRH`@Pr@Xl@TPFNFPFLDNDNBRFTFTFJBLDJB`@J`@JXH\\FRFhEfAd@Ld@JhAZf@JPDTFHBJBvA\\\\HZHD@~@VLBLDPFbATVFTFRFrCp@xElAzEjAXHTFl@NVFXHTDTFf@LTFF@HBH@LDD@XFXFXDXDZDZDZD`@DZBV@T@Z@T@N?T?X?ZAVA^CLA\\Ep@MXGVIz@UbAc@|DgBHGJEv@_@v@]VKXKXKXGZIFARCNCHAXCXAH?P?P?H?X@ZBZBLBB?H@VDB?XFB@@?TDZFXHZHVJXLXLZNVNVPRNTRRRPPNPTXRVPZRZR^JRJTLVP^HTnA|CPd@p@`BHPXr@Xr@^z@Pf@Zt@Zr@FRHRRf@?@Rl@LZf@pAb@dAz@lBd@jADJN\\\\t@FNd@dAXl@Xh@b@n@f@r@d@n@f@r@|@dABDTVVVJLZZFFLJFHPNDDJJDDLLPPB@DDBBJJBDBBNLDD@@DD@@\\\\FD@BDD@@JHBDLJBBFFJJRRFFDDFDDD@BDBFF@BDDPNBDJJDDBBHJBB@@@@@@JL@@DFLNDDLNRVDFJL@@FHHLDDBDHJ@DDDHLHJHN@BDDHN@@BDR\\PXLVBB@DHNBD?@BDFHDH@BXn@HPDFP`@FNDJDJJVBFHRBHFNBF@DFNDJHXBDBH@FDNFN@B@DFTDL@DDNBFDN@D@FFTBH@BDRBHDR@DBHDTBF?@DP@F@FDP@FFVBNDP?@@DBP@FBJBH@FBJH`@DR?@BHF\\@H@@BPBLDPBJ@FDP?@FX@HBLBHFZDPBJBL?@DP@FBHDPDNDR@DDPDLDPDNJZ@DHXHT?BFNDNDLFPDLBHFPHT@BBFFNBF@FFNBD@B@BFN@DBDFNBD@BHR@BDHBHBDBF@BFN@?BFBDJTBDFNBFBBFNBDBDHNBDBFFLFJDHDFDHHLBDHLBDBDBFHLDD@D@?FJDFBDHLBD@?@DHJDFBDHJ@@@BDDHLDDBDDF@BDDBBHL@@DDJNDDBB?@JJBBBD@?HJDFBB@@HHBBDDHJ@@@@@@BDJHDFBB@@FFDDBDJHDFBBJHDDBD@?HH@@@BDBHJBBDDLLFFDB^`@@@@@DDFFj@j@HHFHJJZ\\JHBBBB@BJHFFBBBDFD@@BB@BHHBBB@?@B@FHFD@@BBHJFF@@JJBBDDJJ@@BB@BDBFF@@DDLLDD@BFFB@FF@BJJDBBBFFBDDDB@HJHHFFBBDDBBLLDDFFDDFHNLDDJJDD@@NPDDLLB@BDTRBDHF?@FFLLFFJJTTFFDDHH@BNNLLJJTTTTTTTTRRTVTTBDNNXZ@@RTDDLPJLn@x@PXNRBBPXRXPXPXHLFJPZPZNXNZPZNZJTBDLXFNNZLZBDJXJTL^JVL^L^@BHTL`@J^J\\L`@H\\J^BHDTJ^Jb@H`@Lr@BNH^Fb@Lz@@HD`@Fh@BZD^Bb@D~@@J@`@?Z@J?f@?^Ab@Ad@A\\?FC\\C`@Cb@EZEf@G`@CNETG`@I^Ib@K\\I^M^MZIVEHMZQZKTGJILS\\U\\SXSVIJIJQVUXMPEDQTILKJSXMNEFSVSTEFCDCBABOPGHABOPSVm@v@EFEFCDA?ABA@CBCDA@A@A@GJC@EHEDEFCBEFCBEFABGFA@ILA@CDCBILEDCBILA@CDABKLCDCDCDEDGLIJEHABILCDCDILADCBKREHGLCFKRABEFGNABA?CFGPA@KXEFABGPEH?BCBCHABCHA@ENIRCHCFADGNAFGRADCDCJENADEJGTGXCFADEP?@AHCF?BABAFADAB?BCD?DGXEN?@A@AFCPADADA@ETADCJCLCJ?@Ml@I`@IZKj@CHEVCHAFELId@I\\CJGXEVKd@I`@I\\?@ADAFGXCFG\\Kb@GXEVAFIZI^?BI\\CJETCLEPCNIZEVCLERADAFEPCJ?@I\\EVADGXCLEPCLERELCPELGZGXCJER]bBADAFERCLEPCLERAFA?EXCJGXERAFCFCPEPGTERCLETEPCNCHGXAFCLCFCNKd@Kf@CNI`@GRMl@Kh@UhAIh@Mh@Ml@GXMn@]`BGTGVIb@CHSbAQz@I^_@fBYrA_@lBKh@GVK`@Kj@Mj@Ml@AFQx@EPG\\ENIb@I\\?@CLGXIZI`@UbAEVA@AHAFwMnn@Or@?@Mh@?@IZOx@i@dCGZQx@CNGXYpAMv@CDUjACJMj@Mj@Mj@I`@Ot@[vAYvAS|@ABS~@eHtZ[pAER[hAiB|EQ`@_EzJKXM\\Qj@_@rAYlAYlAYdAo@`C_CjJIZSv@g@tB]vAWlACFMp@"
                             },
                             "start_location": {
-                                "lat": 40.6483981,
-                                "lng": -74.0139947
+                                "lat": 40.7319276,
+                                "lng": -74.04635809999999
                             },
                             "travel_mode": "DRIVING"
                         },
                         {
                             "distance": {
-                                "text": "10.7 mi",
-                                "value": 17279
-                            },
-                            "duration": {
-                                "text": "13 mins",
-                                "value": 752
-                            },
-                            "end_location": {
-                                "lat": 40.6420868,
-                                "lng": -74.2068525
-                            },
-                            "html_instructions": "Keep <b>left</b> at the fork to stay on <b>I-278 W</b><div style=\"font-size:0.9em\">Toll road</div><div style=\"font-size:0.9em\">Entering New Jersey</div>",
-                            "maneuver": "fork-left",
-                            "polyline": {
-                                "points": "gw{vFjjybMJJNJJHBBHFJJDBHFb@^VR\\X\\Xt@l@VRJHHHFDFFFFDDLLNRFHd@n@Xb@f@x@LPLRPTLRNRLRNRNRPPPR`@^d@^RLRNn@b@VRf@d@PRJNNTLPLRBDVh@LVJXPl@Pj@L`@Nj@Tt@DRDNDPLh@XnATdAVbA?DDLH\\Lj@Lj@Lj@Jb@FXDRNj@FV?@Jd@Np@J`@@FDLDRNr@Lj@Nj@Lj@Lj@Lh@VlARx@Ln@J`@Nr@FVT`ALl@Ld@DRFV?@@JFTLj@Nn@Jh@Lf@FZDNNl@Lj@H`@Pt@Lh@f@xBJb@h@`CH^Ll@Rz@FZdAxELj@XlAj@dCVlAR|@XjAThANp@d@rBPt@d@tBb@nBb@rBPr@Np@j@jCFZNp@@BBJDXFVBJFTHZ@HHXHZJd@Jd@Nn@f@~B`@jBVjAH^DPDRJd@H^Lj@Jf@VpAFXH^DTDZDZDZ@R@FB\\@Z@X?@@r@?JA\\?T?PCn@?DCj@Ez@Cl@Eh@AVGv@C\\KdAE`@Ip@EZE\\Kr@GZKp@?BI^Kj@Kl@Kd@GZMj@e@pBIZGXQv@Or@Qr@Qx@YfA]rAq@bCMb@AFENSp@CHCDGRGXKZOh@CF]hA?@O`@Oj@Sn@IZITIVIZMd@Mb@IZMd@I^GTI^Kb@Q~@Kf@Mx@Mt@EZEZKt@E\\CXMjAM|ACZC\\AZEt@C\\?BCt@APCx@Af@Ah@A~ACbD?v@AtAAhAAtA?f@?PAx@Ad@Af@A^?ZAXEr@E|@G~@El@Gj@MlAE\\It@EVMt@EZEXMt@Mn@On@Mj@Sx@u@hCY~@Qf@Oh@Wt@Y|@Ut@g@~AO`@Oh@M\\Wz@]dAg@~AMb@[|@Od@ENg@|AM`@]hAM`@GP?@Of@Uv@Qt@UjAQ|@E\\CRGb@EXGn@Gh@C^CZC\\G~@Cp@Av@A`@?^?P@r@?`@@f@@h@@^?\\@j@@dA@x@@p@BjA?h@BdBBtA@fA@lA?F?nA@d@@t@@nB@r@@dA?@?x@BdA@|@BpB?F@fA@`@?ZBdA@dA@b@@nA@l@@h@@l@?VBnA?d@?P@R?Z?@?NAt@?f@Ad@ATAP?NCx@Ch@ANEd@I|@CPCVCPKz@ETUzACJO`AADKn@Id@CNO|@AJGd@Il@E`@C^Ef@APAVCb@Cf@?TA`@AL?\\?X@h@?H@`@@b@?RBr@Bb@@L@XFv@Fj@@H@NDZF\\D`@Jf@Jn@BHFZNt@J`@H`@Hb@H\\Ll@HZH^Ln@?BNn@FXVlATjARhAThATpAF`@?DXjB@BDZFb@@?BTF`@?BXrBJ|@LfA?@L~@LhABVDd@LrAFv@H`AJdA@VFx@LjBDx@LzBLfCBz@Dn@F|BB~@@b@@p@BbA?@@n@@ZBz@DjCBlA@ZBvAFjCFlC@p@F`C?ZDpB?HBrAFlCFlC?PBfAFfCBhABxA@XDjBDfCBr@@f@?^@d@?P?^?XAn@ElBCn@?NC^C`@C\\Eh@ARE`@[dCAFCTGZG^I`@Q~@Qt@GTW~@Md@Yz@Wt@Wn@Ul@KTSb@Q\\MTe@z@Wd@SXOV_@h@W^]f@MPY`@g@p@g@t@}@nAc@j@W^QVY^k@z@UZyB|CaAtAEDSXSXQVk@v@SXg@r@q@~@u@fA]f@_@f@e@p@ORg@p@Yb@W^[d@sAlBSZ_@l@g@v@QZMPWd@g@x@?@U`@e@x@OV?@GJU`@OXUd@?@Yh@Wf@Sb@CDUd@[p@_@v@Yr@k@nAQd@IP]z@IN_@`ASj@Qd@Qd@Ob@Q`@q@tB[|@ADUt@Sl@_AzCa@fAIXOb@K\\ADAFCHAJCFAD?@CPOv@G`@Kz@KbAA\\CZCZAZC^IlAEz@Ej@E`AGz@AXC^CXEXC\\EZEZEZGX?BETQ|@ENI\\IXGVGPCHIXIRIXMVKX?@KRKTKVMTINCF]j@CDILOTMRMNMNUXMN]^GFa@b@WXWXCBMNQPa@d@QREDUVGFML[\\QNGFGFEDGFST[ZMLWX]b@MPA@A@KPMNMPS\\c@r@QZWb@m@nAIPOZWd@IPMXOZQZMTS^KRWd@_@r@MVKTUb@Q^g@dA]x@]v@c@jAa@bAENEJMZSj@Sj@ADGRKXo@xBO`@g@vAGP[|@Of@M^]bASj@Od@Sj@Sh@CHOd@Sf@Sj@O`@Sh@O`@Wn@Sd@EJ_@~@g@lAa@~@O\\GLSd@Q^O^IN_@~@GJUj@Q`@Wh@Qb@Sd@ABQ`@Wh@Qb@a@~@]v@Sf@S`@w@jBc@bA}@vBYn@Yn@[r@i@nAMTu@fBo@zAe@hAs@~AcA~B_@z@Q`@Q`@g@jAINYp@MVYl@MV[j@MTMTYd@KPSZSZMPMP_@h@a@f@_@h@a@d@_@d@_@b@QRGHEDCDEDA@u@z@a@f@c@f@[\\Y^e@l@e@n@KLMP[`@SZe@r@CDa@n@GHS\\OV"
-                            },
-                            "start_location": {
-                                "lat": 40.6157198,
-                                "lng": -74.02678159999999
-                            },
-                            "travel_mode": "DRIVING"
-                        },
-                        {
-                            "distance": {
-                                "text": "0.8 mi",
-                                "value": 1209
+                                "text": "0.6 mi",
+                                "value": 1006
                             },
                             "duration": {
                                 "text": "1 min",
-                                "value": 86
+                                "value": 59
                             },
                             "end_location": {
-                                "lat": 40.6389242,
-                                "lng": -74.2084355
+                                "lat": 40.7005799,
+                                "lng": -74.1557693
                             },
-                            "html_instructions": "Take exit <b>3 A</b> on the <b>left</b> for <b>I-95 S</b><div style=\"font-size:0.9em\">Toll road</div>",
-                            "maneuver": "ramp-left",
+                            "html_instructions": "Take the <b>I-95 S</b>/<wbr/><b>NJ Turnpike</b> exit toward <b>Trenton</b><div style=\"font-size:0.9em\">Toll road</div>",
+                            "maneuver": "ramp-right",
                             "polyline": {
-                                "points": "a|`wFxo|cMGZMTKTMVKTMVWn@Wh@OXWn@Yj@ABKTGPCFKVGRA@GXGXABEXCZCZAV?BA\\?V?@?X?Z@`@Bf@@R@H?D@P@H@FBP@H?DBPBF?D@@@F@H@B@D@DDNBH@DBF@?BFBF@DDDDFFHDFFDB@FDDBDBD@LDJBJ@N@J?L?D?F?LCF?DAFADAFCBAFCDADCDCLGDC@ABAJIFGLM@CBC@CDE@EBCBE@EJWHOJ_@\\WFM@Ej@yADYDWDWDa@Di@JoABw@@e@@Y@Q@Y@Q@ORo@@CDIDINSBE@AJILKHEJELCDAHAB?@?D?L?JBLBF@DBJB?@JFJFb@X~@l@"
+                                "points": "}qmwFf~qcMMFKPC@GFEDCBEBEBA?C@C?E@A?C?E?E?AAA?C?CAEAAACAECCCCEACEEAEA?AEACAEAC?AACAG?E?G?E?G?G?E@E?C@A@GBMBC@E@ABEDCBEBABADCJCDAFAL?P@TBFBb@L`@N`@LRHzAf@l@VB?d@R@?VJNFJHpFbCVLpEpBdBv@jAh@jAj@nAn@n@\\RLjAp@"
                             },
                             "start_location": {
-                                "lat": 40.6420868,
-                                "lng": -74.2068525
+                                "lat": 40.7070336,
+                                "lng": -74.1528428
                             },
                             "travel_mode": "DRIVING"
                         },
                         {
                             "distance": {
-                                "text": "47.7 mi",
-                                "value": 76782
+                                "text": "52.8 mi",
+                                "value": 85045
                             },
                             "duration": {
-                                "text": "41 mins",
-                                "value": 2473
+                                "text": "46 mins",
+                                "value": 2756
                             },
                             "end_location": {
                                 "lat": 40.1025896,
                                 "lng": -74.7244216
                             },
-                            "html_instructions": "Keep <b>left</b> at the fork and merge onto <b>I-95 S</b><div style=\"font-size:0.9em\">Toll road</div>",
+                            "html_instructions": "Keep <b>left</b> at the fork and merge onto <b>I-95 S</b>/<wbr/><b>NJ Turnpike S</b><div style=\"font-size:0.9em\">Toll road</div>",
                             "maneuver": "fork-left",
                             "polyline": {
-                                "points": "gh`wFvy|cMRDLFHBJDRFNBF@H@NBJ@@?T@T@Z?T@L?b@@NBRBNB@@JBPDTHb@T`@Rl@Zl@\\`@R^P^R`@RDBVJb@T^Ph@VJDb@RzBfANHb@PXNRHPJ@?ZA~Az@vAr@XNRJ\\PBBb@Td@TdAj@xC`Bx@b@VN^RRJ^RZPb@V^RJFfAj@JFJFDBTLb@RFDZPRL^RHDv@b@f@VVNZNBB^R\\PVLj@Zl@Zj@ZB?\\PLHbAf@x@b@`@RzAv@JDv@b@h@VB@LHn@ZPJVLpAp@bBz@ZPRJRJPH\\PNH\\Pn@\\@?b@TVLb@TRJ\\Ph@XnAn@FDr@^~Ax@VLf@VXNPJHD\\PXNFBd@Tn@\\z@b@LHPHHDTLz@b@NHb@RNHVLNJ`@Rl@Zr@^j@Xv@`@ZNXNl@ZVL`@T^Pd@V^Rl@ZLFVLdAj@p@\\zAv@x@`@@?n@\\t@`@l@Xz@d@VLj@XRJVJ`@T\\PlAn@JDNH~@f@^Pb@V\\Px@b@jB~@j@ZRHdB~@`@RZNh@X`@RLFRLhExB~Ax@hAl@VL`@Tv@`@B@dAn@l@ZJFj@\\XPPJ|@h@x@d@bBbAVPXNXPVNB@JHB@B@BBB@JFJFbAf@RNFB`@T^RtAr@b@Vx@`@B@t@b@tAr@lB`AXNVNbBz@d@VtAr@bAh@nAl@r@^TNj@XZPJF`@TdAj@B@`@Tp@^~@f@RLt@`@jBdAPHTLf@XXPVLTLRLZPXNVLLH^RXNVLXNFDNF\\PRLDBf@V^P^RXLXPLFTJZPPH\\PRLTJv@`@b@R^Rn@\\NHj@VXPXLPJb@TJFRJb@VVNXNTLJFZPTL@@RJJF^TFBVP^RVNt@`@NHr@`@XPTLTLnBhAXNd@XLFVNXNVNVNRLVLVNTNXNVNXNVNVNXPTNVNVNXPVNLH\\TB@VPVPVPVNXPVPTNVPVP^VRNRLTPVPXPVRRN@@VPVRVNTRVPVRdAv@TRTPVPVTVRDDNJVRxAlATRVRVTVRRPbA|@pAjAJHJJl@j@XTv@t@f@d@t@r@LJVTn@l@^\\r@n@dA`Ab@`@NLv@v@t@n@f@d@x@v@x@r@^^JJbA|@~@|@~@z@v@r@HHPNZXf@d@z@v@\\\\LJFFFFd@b@`@^PNHH`@^FF|@v@JJ`@^^\\TRVTt@p@ZZ@@hAdA`@`@^\\b@`@VRj@j@f@d@JHx@t@ZZ^ZTTl@j@j@f@`A|@l@j@x@v@t@p@FDZZf@b@FHNLXV`A|@LL^\\d@b@VVZVZXLLHH`@\\h@f@x@t@BDXTZZ\\ZDDb@^r@r@\\\\NNHH~@`Af@f@VVFHb@f@t@v@FHHJ^`@TVTXBBj@n@DHRTn@x@JLd@n@t@`AV\\v@dA`@l@d@n@b@p@JPt@fAXd@NRXd@b@t@PVJRbAdBV`@FN~@`Bv@vA|@`Br@tAr@tAFHXj@`AjBl@hAfBhDdCtE`B`DXf@bAlB~@hBrAfCBF^r@R`@LV`@|@v@bBP`@P^\\v@DLb@bAn@~ABFjA`DTj@Rj@t@xBL^L\\f@~A\\bATv@FRL`@J`@Pl@Ld@Nf@Nj@f@lBDPNj@\\vA\\zAXlALp@DP\\`BBHVrA\\dBVvAN|@Lp@DRDVHj@Jl@BN`@nCLbABLDVFd@Hl@R|ADb@Hv@VxBBRBTPdB@LFt@JhADd@V~C@LBZBZFdAL|APtBFz@Fp@PzBL`BL`BJtAHfADf@Db@Bb@Dj@F|@Dj@BXHfA@RBb@Ft@B`@BXDj@Dj@@XDn@BVFdAHfADf@Bj@BZB^?@D`@B`@B`@?DBZDd@B`@?DB^D`@Bb@@PBRVnDDd@D`@JhA?BD\\B`@D`@Db@Fb@D`@LdAD`@Fd@Fh@?@Hl@F`@T|ANfAHf@Jr@Jl@BJFd@RlARjARfAP`AR~@RdANv@RbALn@TfAHZXtALl@Pr@XrAT`APt@Nl@FRNj@DNPp@Pn@\\nAV`ABDHZX|@V|@L`@Z~@Nd@FRZ~@d@tA|@bC\\|@\\z@\\|@FLbAhCDFXp@Tf@h@nAHNTh@^t@P`@HLh@fA?@r@rANZ\\p@h@~@HNj@bAXf@d@z@v@pAn@fAXd@Xd@t@nAJRXb@\\n@T^RZR\\`@p@PXp@hAp@hAV`@FHNV|@xABDZf@|@|Af@z@~ArC@B|@`B@BDHp@lAR`@b@x@z@bBz@dBZn@f@fAf@fA^|@Zv@\\z@Rf@N`@p@hBf@xAN`@X~@Vv@Z~@X|@r@~BX`Ad@|Ax@jCRt@`@rANd@ZfARt@Vv@XdANh@L`@Nj@d@~AJ^hChJHTV~@^vALb@~@bDPr@d@`B^vAf@hBLf@Rt@Pn@Nh@ZhARt@Rr@FVh@pBRr@Tr@Rn@Vz@FPL^^hAPb@^hA`@fATh@BHZt@Zt@t@lBJV`@|@JXTj@`@z@^z@\\t@Xp@Tb@p@vAdAtBXh@r@rAr@nAr@pAFJNTZh@T^v@nAd@v@X`@r@fAHLTZh@v@j@v@dAxAd@l@`@f@f@p@h@p@VZJJf@l@TVVZHHV\\|CnDxCjDZ^FHdDvDX\\@@`AhAlGlHbDvDdGdH^d@`@b@RTpCbDt@z@b@f@jAtAZ\\rJ`LVXf@j@f@l@HJzAdBz@bAJL`BjBn@v@pAzA|CnD^b@NP~@fA^b@b@f@dBpB~AjBFHRR\\b@fF`GPR^b@TVHJNP^b@nAxA\\^Z`@bAjAt@z@t@z@b@f@l@p@j@r@Z\\tA`BLLl@t@PRLLf@l@d@h@vAbBfAnA`@f@r@v@PT`AdATXr@x@r@x@JL`@f@PPVXFJXZ\\b@hAnAJLh@j@b@f@p@r@BBtAvAnAnAb@`@LLVTXVVVRPj@f@r@n@XVf@`@ZVjA`AbAv@bBlALH`Ar@n@b@f@Zd@Zx@h@lAv@r@b@p@b@b@Xl@^XPPLjAt@p@b@XPr@b@^Tj@^r@d@dC~A`@T\\T~@n@RL^VNHVPVRXPVRXPVRXR\\TRPTPXPVTXRFDNLTNBBVRZRXTZVHDLJRNZVh@`@f@\\NLFDDBPLLJHFB@TNn@b@VNXPFDNJXNXPXNjAn@?@VLXNZNXNXNZPVLXNJFLHXLXPVLLFJFZNVNXNVNXLZPVLZPFDPHXNXNZPVLp@\\HFJDXNVNVLZPVLVLVLt@`@VNVL\\RZNZPXNr@^ZPRJZPHBPJVLTLXNr@^XNXNVN@?VNLFHDB@XNXNXNZPVLHFJDVNXNTLLFHDXNXNLDJFVNXLXNVLXNVLZNVLZNHDJFZNTLZNHDLFVNVJVNXLVLVNXLXNXLVN\\PNHdBx@bAf@~@d@B@j@Xj@ZZN\\Ph@VJF^P`@Rp@\\n@ZpAn@l@Zl@ZVLLF\\Pf@TNHb@T`@Rj@Xj@Xf@Tf@Xb@RJFj@Xz@`@r@^LFh@V~@d@j@XLFTJPJhB|@fAh@^RRJTLf@T|At@hAj@TLl@Zn@ZvAp@DBn@Zv@`@x@`@b@Tf@Tb@TZNRJz@b@j@Xb@TTJx@b@h@VVLh@Vd@V`@Rj@Xp@Zx@`@XNx@`@XNZNd@TXN`Af@rAp@TLjAn@TLr@`@`@T|@j@p@`@j@\\ZRXPVNXPVPRNFBPLJHLFVPRNXPRLXRZRh@\\ZTl@^HFLHPJDDVPRLZR^VRLRLTNVPVNVRVNVPVNVPTPZRTNTNVNVRRLXRXPXRVNTNTNXRNJFDTLXRVPVNRNXPVPNJFBVPXRRLVPTNVPFDRLTNZRRNVPVPVPXRTNVPFDNLXRTNTPTPVRVPTPVPVRVPVRRNVPXTTPXPTPTPVRJFLJNJTPTPXRRNVPTPTPTPVPTPXRLJVPVRTPVPl@b@TPTPRNVPTPRNZVVPRLNL\\VZTTPVRVPTPVPVRVPVRTNRNTN^VVPTPVPXRVPVNTPh@\\JHPLTLVP@?RNp@b@VNVPVNJHJFVNVPVNXPVNVNVNh@Z|@f@FBLHVNVNTLB@TNTLZNVNVNVNTLTL@@TLXNXNVNXNXNJFJDVNZNJFJDVLXN\\NTLXLXNVLXLXNXLVLVJRJTJ^PXLNFFBZNZLVLXJVLHDPFVJZLVJZNVJZLXJXL\\LTH\\NVHVJTHXJXJXJXHz@Vh@Pt@TVHZJXHXHXHVHZJH@NFZHXHVHVFZJXHXHXFn@Pr@PXHLBJDXFXHZJXF^JPFZHn@PB@ZFXJXFVHZHZHt@R@?VFXHZHXHXFXHXHXHXF@@VFZHVHXFZHVH\\HJDLBXHXHXFZHXHLDJBXHNDJBXHt@TVFXHJBLDXHXFHBPFVFXH@@TFHBRFH@hA^@?zDjAdAZ`@LdBh@B@n@P`Bh@h@NxAb@B@lCx@bAZtEtA^LXH|@XlBj@LDrCz@ZJdCt@rC|@~Br@nDdApLpD|EzAx@TtAb@jA^hCv@fEnAhHxBXHRFbAZt@TND`@Lj@PHBx@VdBh@XHJDnIfCtBn@h@Nh@PRFlDfAbJnCbCv@x@Vf@NRFvBp@\\JdBf@vDjAlBj@tC|@`Bf@jBj@zBp@nHxB~Af@l@RRFJBRFVHdAZJDTFJDbFzAVH~C~@VHVH^JXJb@LLDx@V~Af@@?jA^p@RXJZHXJXHZLVHVHXJZJTHXJ`@Lj@RTHn@TXJVHLDLD\\LRFz@Xr@VLDTHj@Rj@Rn@Tt@Vt@Vv@Xl@T|@Z\\JTHHDbA\\p@Tb@NxCdA|DrA~FrBr@Vr@TVJNFf@PZJb@Pl@RdA^XHb@NtFnBx@XVJNDNFpBr@`@LZL`@Nf@PRFXJn@TNDf@Pr@VD@lBp@FBVHn@T`A\\^LnBp@fDjA~Aj@nAb@pE|AdCz@rAd@fA^fBn@fBl@bBl@rAd@vAf@d@N~Bx@xCdAf@Pj@RnAb@n@THBhFhBJBPFl@TlBp@`AZzBx@~@Z`A\\D@hA`@FBRFZLp@TZJp@TFBTHv@Xn@Tx@XvAd@~@Z`@Lr@Rr@TdBd@|A`@bBb@z@TPFzA`@lAZhBd@vA^|@VbAXnA\\|@XfA\\bAZ`AZzAf@lA`@`A\\f@P\\LlAd@|@\\v@Zx@ZnAd@lAd@`Bj@pAf@t@XjA`@\\Nd@PfBp@jBr@z@Z~EhBlAd@nDnAvFnBRHlBp@tCbA|@ZtFdBfEtA`A\\~Bt@fDfA~Bv@jA`@x@VXJJBRHj@PxBr@lA`@`AZJDvBt@j@P~@ZrAb@l@RjBn@f@Ph@PnA`@r@T\\LbBj@~@Zf@N~Aj@~@XfA^x@XvAf@zAf@`@NbA\\lGtBhA^x@Xz@Xb@NrAd@PF~@Z|Af@tDpA~@Zr@VPFn@R^LD@fJ~CRFnAb@|IzCpEzAbFdBND`Bj@jA`@tAd@xCbAf@PzPzF`A\\xBt@fA^~@ZjFfBvDpAXJtAb@`@ND@z@X`@LjA\\B@hA\\l@PfAZvCx@^Jr@RLD`AVXJx@TbAX\\HPD\\JlBj@|Ab@l@PZH|@V|Bn@PDnA^bAXb@Jz@VfCr@vBl@jAZPFLDr@R|Cz@LDv@RnBj@`@JLDJBr@RJBd@LXJJBD@zAb@jAZt@T\\J@?dBf@\\H~C|@l@PZHfA\\HBdA\\HDb@Nj@R`A\\nAf@bAb@LFp@Z@?l@Xd@Tf@Tj@Zb@RRLl@ZfAl@@@XPl@\\@@hAp@XR@?~@p@XPLJp@d@n@b@XTVRv@l@l@f@PLr@j@\\Xb@`@XVRPf@d@^\\TTt@t@h@h@r@r@\\^Z^JJ\\`@`AfAVXZ`@RVHHRVfAvAX^|@lARZRVhAbBv@lAb@r@b@r@b@t@`@r@d@v@`@v@v@xAl@lAP\\\\r@N\\h@hAFL^v@rArCBFHNrBjEVl@P\\FN\\r@^v@~@pBp@vA`@x@pApCl@rApAnC`@x@^z@x@bBVh@vCnG^t@|@nB@DVf@n@rAn@tA~AhDb@~@dAxB`@z@FNLVHPTd@^x@P^R`@rFlLjAfCP^pAlCHRLVd@`AJV`@x@^r@`@v@f@~@n@jA^t@^l@Vf@b@t@r@nAh@|@BB`@p@~EbInAtBt@lAj@~@^n@f@x@dAdBp@fAXd@`EvGR\\b@t@l@~@Zh@vDlGzAbCp@hAx@rAp@fAl@`AVb@V`@lApB^l@Zh@DHXd@@@V`@|BvDV`@h@z@\\l@Zd@Vb@d@t@R\\`@p@T^Zf@V`@t@nANT\\l@HJVd@T\\PV\\l@p@fAlB`Dx@pAPXVb@l@bAV`@T^RZn@dAPXfCdEPZx@pAXd@dBtCbA`BfAhBpBbD\\l@V`@T\\Xf@p@dAVb@h@|@p@fAr@jAV`@PX`A`BfBtCR\\DFBDZf@@BRZb@r@^n@`@n@V`@fCdEfAhBb@r@`A~An@dA|@xAx@tA\\h@b@r@\\l@f@v@tCxE|@zAdAbBvA~Bt@lABDFLd@v@b@r@R\\d@r@b@v@DD\\j@`@n@v@lAv@rAv@nA`@p@@@d@v@NTPZRZz@xAtAzBNXPXZf@hAhBb@p@jAlBfBvCHLr@hAhBxCpBdDXf@T^d@r@JR`@n@x@rABFb@p@f@|@`A|An@dAFHNXFHjDxFh@|@PXn@hAd@z@HLz@`BR\\LVDFNX^v@Vf@P\\Xh@P`@f@`A\\v@v@bBTf@LVn@rAj@lALXDFp@zArArCN\\`ArBl@pAd@bA`@x@JTTf@b@`AvA|CfBxDnAnCj@nALTlAhCr@xAr@zAFNJTHNJTx@bBt@`BRd@`@x@DLVl@b@|@Tf@P\\Th@\\r@JRTf@n@tAXl@d@bA\\t@BDl@pAx@fBXl@d@~@|@nBN\\Td@FNVj@P\\`@z@d@bA^v@Tf@`@|@^v@b@~@d@`ATf@`@|@l@pAf@bAh@lAl@lA^z@nAlC~@pBv@`BJR|@nBb@`AXl@n@rA^x@P\\`@~@h@fAZr@vAzCTf@\\p@jAfC\\t@p@xAZp@|@lBTd@Th@\\t@LVp@tAj@lAnAfCZn@JT\\p@n@pA@BHPVd@NZf@~@R`@R^NZRXJPz@~ADJ~@`B\\p@t@rAh@~@`A`B@B`AdBhAjB`A`B`C|Dj@|@^j@vAxBRZj@z@h@x@h@z@Zb@rBzCNTd@n@zAvBPXnAfBB@~@pANPz@jA~AvBX^LP~@nAd@p@`ApAHLHJz@jAxHhKj@t@l@v@`ArAVZ@BlA`BV\\zLjP?@TZrCxDxBxC`C`DNRzCbEZb@DFLP`@h@d@n@PTPVRVzErGRVV^LPNPRXTZf@p@r@`ANRX^TXRZNRRVV\\\\d@BDTX@@@BNPf@r@JLFJZ`@\\b@RZLNDFTXLRRVPVZ`@X`@~@lAPVTXLPn@|@DDHJNTHHFJTX^h@VZPTPVRXV\\RVRXPTlBhC`ApApBnCVZTZTZTZ\\d@V^RVPTRXRVRXPRX`@\\d@RXRVPVb@l@pAdBb@l@RVNRHLHHNTBDj@t@FHPTb@l@f@p@NRPTPVPT`@h@JNLPX^HJTZFHPT^f@V\\^f@RXX`@BBPTLPPVTXTZX^V\\V\\b@l@bArAZb@FHh@r@x@hAlBhCtAnBpAdBf@r@HJZb@xAjBrEhG`GbIvBtChEzFr@`AzCdETX^f@~@pAt@bAn@z@FHbArAHJhDtEl@v@j@v@r@~@~@nAv@hAzApBnA`BrBrCJNLLj@x@`@h@l@x@Zb@h@r@l@x@j@t@d@l@tAlBlCpDvBvCNPvC~DRTx@hARXd@n@dAvAb@l@JN^f@RVVXHJJLRVFJJJLP@?LPTXPR?@VXLPZ^h@p@VZj@r@`@f@@BVXd@l@JLX\\LPTVLNVXZ^PTRTTVPTTVTXPRTVRVPRVXVZNPHJb@f@PRRTRTNPNPFFRTLLFJPRDBLNFHFHb@h@RTHHHJTTHJRRNNFFXXPTn@t@rAzAFFNP\\ZLLRRPPp@p@XXTT`@b@\\^HHRR\\`@TTVVZZf@j@VVJJXXTTZ\\@?PPXVRTJHt@r@^\\PPDDNNRRXXDFz@|@h@j@b@f@d@d@tArA\\\\BBVTTT`@^NNBBTTTTLLHHVXZXJHPPVVXVFHVTXXb@b@JJVTNNXZ\\Zb@b@PPPPJJDD~@|@l@n@XV"
+                                "points": "silwFpprcMJ@@?h@Z^RZRz@f@\\PRLPHRLDBNHNJXNDBHDNJRJPLZNZR\\PHFJFLFJDJDHBD@J@PBH@J@JBTBJ@PBB?L@LBD@FBD@@?DBJDFBHDJF@@LH`@VPJLHBBLHj@`@B@NHJHPJPLXRNJ@?VPXPz@f@f@ZbAl@DBPJr@b@VNDBPJ\\TDBTC^Vn@`@f@\\ZRLFVRZRNJh@\\XPp@d@l@^fAp@LHHFbAn@p@b@RLr@`@HFrAx@BBn@^BB^T`@V\\RTNZPl@^hAr@hAp@fAr@hAp@bAn@lAt@n@`@|A~@p@`@nDxB~AbAxBrAlDvBZRXPDBh@\\`BbAjDtBXPJFHFhAp@n@`@`BbATNr@b@lBjAx@f@DBFDtAz@hAr@n@`@f@\\B@t@f@l@d@TPXRTPXTj@f@VR^Zx@r@\\\\d@`@VVj@f@j@f@j@j@h@d@n@l@d@`@\\Zh@f@n@j@l@j@t@r@v@r@VTVTVV^Z^\\j@h@l@j@j@f@j@h@@@VT|@x@n@j@b@`@jAfAVT\\\\b@^XXt@p@ZX@@^\\PNvApAz@v@XXNNt@n@XVj@h@l@h@l@h@h@b@^ZBBd@^j@b@TR\\V`@ZB@b@\\JH`@XNJ^VZTr@d@r@d@h@\\d@XLHv@d@DBXP~@j@DBjAr@^Rx@f@h@\\d@XHDf@ZB@f@XTNx@d@@@^T`@TB@^T^Td@X@@RJLJTLLHPJHDXPNJz@f@`@VTNDBRNZTPLRPXVXTLLLLJHHJFDZ\\@@RRDD^b@@B^b@`@h@JLV`@HJDFJNJNJPV`@DFFJXh@Zj@P\\Tf@P\\Zr@NZJVHPJRHRXn@FJJXNXN\\JVLXh@hADJFLFNDHDJTf@Th@BFVh@BFFLHPJVRb@NZDJHNN\\BFJTLVJVRb@N\\NZP`@LXNZP`@N^NZNZN^LXP\\N\\P^N\\LXNZN\\Xl@Vj@Zj@Tf@JNDHR\\JPFJLTNTT\\NTV^^f@X\\V\\VZTVLNRRBBRTRRPPZXVVVRDDNLTPDBt@l@bAp@v@f@b@XTJh@Xf@Vv@\\JDt@Z@?h@TVLp@V|@`@fAb@dAd@n@X\\N@@`@P|@b@dBz@PJXLd@V`@T`@RFBj@Zh@Vj@X?@XLNHf@VRJRJ@@l@XhAl@NHRJNHRJNFRLZPFBVLbAf@^RZP`@Rf@VVLb@TXNd@VLFRJDBZN^R\\PVLJF^RB@@?XNZPZNn@\\^R~BlA\\Np@^VLdAh@@@~BlA~Az@vAr@XNRJ\\PBBb@Td@TdAj@xC`Bx@b@VN^RRJ^RZPb@V^RJFfAj@JFJFDBTLb@RFDZPRL^RHDv@b@f@VVNZNBB^R\\PVLj@Zl@Zj@ZB?\\PLHbAf@x@b@`@RzAv@JDv@b@h@VB@LHn@ZPJVLpAp@bBz@ZPRJRJPH\\PNH\\Pn@\\@?b@TVLb@TRJ\\Ph@XnAn@FDr@^~Ax@VLf@VXNPJHD\\PXNFBd@Tn@\\z@b@LHPHHDTLz@b@NHb@RNHVLNJ`@Rl@Zr@^j@Xv@`@ZNXNl@ZVL`@T^Pd@V^Rl@ZLFVLdAj@p@\\zAv@x@`@@?n@\\t@`@l@Xz@d@VLj@XRJVJ`@T\\PlAn@JDNH~@f@^Pb@V\\Px@b@jB~@j@ZRHdB~@`@RZNh@X`@RLFRLhExB~Ax@hAl@VL`@Tv@`@B@dAn@l@ZJFj@\\XPPJ|@h@x@d@bBbAVPXNXPVNB@JHB@B@BBB@JFJFbAf@RNFB`@T^RtAr@b@Vx@`@B@t@b@tAr@lB`AXNVNbBz@d@VtAr@bAh@nAl@r@^TNj@XZPJF`@TdAj@B@`@Tp@^~@f@RLt@`@jBdAPHTLf@XXPVLTLRLZPXNVLLH^RXNVLXNFDNF\\PRLDBf@V^P^RXLXPLFTJZPPH\\PRLTJv@`@b@R^Rn@\\NHj@VXPXLPJb@TJFRJb@VVNXNTLJFZPTL@@RJJF^TFBVP^RVNt@`@NHr@`@XPTLTLnBhAXNd@XLFVNXNVNVNRLVLVNTNXNVNXNVNVNXPTNVNVNXPVNLH\\TB@VPVPVPVNXPVPTNVPVP^VRNRLTPVPXPVRRN@@VPVRVNTRVPVRdAv@TRTPVPVTVRDDNJVRxAlATRVRVTVRRPbA|@pAjAJHJJl@j@XTv@t@f@d@t@r@LJVTn@l@^\\r@n@dA`Ab@`@NLv@v@t@n@f@d@x@v@x@r@^^JJbA|@~@|@~@z@v@r@HHPNZXf@d@z@v@\\\\LJFFFFd@b@`@^PNHH`@^FF|@v@JJ`@^^\\TRVTt@p@ZZ@@hAdA`@`@^\\b@`@VRj@j@f@d@JHx@t@ZZ^ZTTl@j@j@f@`A|@l@j@x@v@t@p@FDZZf@b@FHNLXV`A|@LL^\\d@b@VVZVZXLLHH`@\\h@f@x@t@BDXTZZ\\ZDDb@^r@r@\\\\NNHH~@`Af@f@VVFHb@f@t@v@FHHJ^`@TVTXBBj@n@DHRTn@x@JLd@n@t@`AV\\v@dA`@l@d@n@b@p@JPt@fAXd@NRXd@b@t@PVJRbAdBV`@FN~@`Bv@vA|@`Br@tAr@tAFHXj@`AjBl@hAfBhDdCtE`B`DXf@bAlB~@hBrAfCBF^r@R`@LV`@|@v@bBP`@P^\\v@DLb@bAn@~ABFjA`DTj@Rj@t@xBL^L\\f@~A\\bATv@FRL`@J`@Pl@Ld@Nf@Nj@f@lBDPNj@\\vA\\zAXlALp@DP\\`BBHVrA\\dBVvAN|@Lp@DRDVHj@Jl@BN`@nCLbABLDVFd@Hl@R|ADb@Hv@VxBBRBTPdB@LFt@JhADd@V~C@LBZBZFdAL|APtBFz@Fp@PzBL`BL`BJtAHfADf@Db@Bb@Dj@F|@Dj@BXHfA@RBb@Ft@B`@BXDj@Dj@@XDn@BVFdAHfADf@Bj@BZB^?@D`@B`@B`@?DBZDd@B`@?DB^D`@Bb@@PBRVnDDd@D`@JhA?BD\\B`@D`@Db@Fb@D`@LdAD`@Fd@Fh@?@Hl@F`@T|ANfAHf@Jr@Jl@BJFd@RlARjARfAP`AR~@RdANv@RbALn@TfAHZXtALl@Pr@XrAT`APt@Nl@FRNj@DNPp@Pn@\\nAV`ABDHZX|@V|@L`@Z~@Nd@FRZ~@d@tA|@bC\\|@\\z@\\|@FLbAhCDFXp@Tf@h@nAHNTh@^t@P`@HLh@fA?@r@rANZ\\p@h@~@HNj@bAXf@d@z@v@pAn@fAXd@Xd@t@nAJRXb@\\n@T^RZR\\`@p@PXp@hAp@hAV`@FHNV|@xABDZf@|@|Af@z@~ArC@B|@`B@BDHp@lAR`@b@x@z@bBz@dBZn@f@fAf@fA^|@Zv@\\z@Rf@N`@p@hBf@xAN`@X~@Vv@Z~@X|@r@~BX`Ad@|Ax@jCRt@`@rANd@ZfARt@Vv@XdANh@L`@Nj@d@~AJ^hChJHTV~@^vALb@~@bDPr@d@`B^vAf@hBLf@Rt@Pn@Nh@ZhARt@Rr@FVh@pBRr@Tr@Rn@Vz@FPL^^hAPb@^hA`@fATh@BHZt@Zt@t@lBJV`@|@JXTj@`@z@^z@\\t@Xp@Tb@p@vAdAtBXh@r@rAr@nAr@pAFJNTZh@T^v@nAd@v@X`@r@fAHLTZh@v@j@v@dAxAd@l@`@f@f@p@h@p@VZJJf@l@TVVZHHV\\|CnDxCjDZ^FHdDvDX\\@@`AhAlGlHbDvDdGdH^d@`@b@RTpCbDt@z@b@f@jAtAZ\\rJ`LVXf@j@f@l@HJzAdBz@bAJL`BjBn@v@pAzA|CnD^b@NP~@fA^b@b@f@dBpB~AjBFHRR\\b@fF`GPR^b@TVHJNP^b@nAxA\\^Z`@bAjAt@z@t@z@b@f@l@p@j@r@Z\\tA`BLLl@t@PRLLf@l@d@h@vAbBfAnA`@f@r@v@PT`AdATXr@x@r@x@JL`@f@PPVXFJXZ\\b@hAnAJLh@j@b@f@p@r@BBtAvAnAnAb@`@LLVTXVVVRPj@f@r@n@XVf@`@ZVjA`AbAv@bBlALH`Ar@n@b@f@Zd@Zx@h@lAv@r@b@p@b@b@Xl@^XPPLjAt@p@b@XPr@b@^Tj@^r@d@dC~A`@T\\T~@n@RL^VNHVPVRXPVRXPVRXR\\TRPTPXPVTXRFDNLTNBBVRZRXTZVHDLJRNZVh@`@f@\\NLFDDBPLLJHFB@TNn@b@VNXPFDNJXNXPXNjAn@?@VLXNZNXNXNZPVLXNJFLHXLXPVLLFJFZNVNXNVNXLZPVLZPFDPHXNXNZPVLp@\\HFJDXNVNVLZPVLVLVLt@`@VNVL\\RZNZPXNr@^ZPRJZPHBPJVLTLXNr@^XNXNVN@?VNLFHDB@XNXNXNZPVLHFJDVNXNTLLFHDXNXNLDJFVNXLXNVLXNVLZNVLZNHDJFZNTLZNHDLFVNVJVNXLVLVNXLXNXLVN\\PNHdBx@bAf@~@d@B@j@Xj@ZZN\\Ph@VJF^P`@Rp@\\n@ZpAn@l@Zl@ZVLLF\\Pf@TNHb@T`@Rj@Xj@Xf@Tf@Xb@RJFj@Xz@`@r@^LFh@V~@d@j@XLFTJPJhB|@fAh@^RRJTLf@T|At@hAj@TLl@Zn@ZvAp@DBn@Zv@`@x@`@b@Tf@Tb@TZNRJz@b@j@Xb@TTJx@b@h@VVLh@Vd@V`@Rj@Xp@Zx@`@XNx@`@XNZNd@TXN`Af@rAp@TLjAn@TLr@`@`@T|@j@p@`@j@\\ZRXPVNXPVPRNFBPLJHLFVPRNXPRLXRZRh@\\ZTl@^HFLHPJDDVPRLZR^VRLRLTNVPVNVRVNVPVNVPTPZRTNTNVNVRRLXRXPXRVNTNTNXRNJFDTLXRVPVNRNXPVPNJFBVPXRRLVPTNVPFDRLTNZRRNVPVPVPXRTNVPFDNLXRTNTPTPVRVPTPVPVRVPVRRNVPXTTPXPTPTPVRJFLJNJTPTPXRRNVPTPTPTPVPTPXRLJVPVRTPVPl@b@TPTPRNVPTPRNZVVPRLNL\\VZTTPVRVPTPVPVRVPVRTNRNTN^VVPTPVPXRVPVNTPh@\\JHPLTLVP@?RNp@b@VNVPVNJHJFVNVPVNXPVNVNVNh@Z|@f@FBLHVNVNTLB@TNTLZNVNVNVNTLTL@@TLXNXNVNXNXNJFJDVNZNJFJDVLXN\\NTLXLXNVLXLXNXLVLVJRJTJ^PXLNFFBZNZLVLXJVLHDPFVJZLVJZNVJZLXJXL\\LTH\\NVHVJTHXJXJXJXHz@Vh@Pt@TVHZJXHXHXHVHZJH@NFZHXHVHVFZJXHXHXFn@Pr@PXHLBJDXFXHZJXF^JPFZHn@PB@ZFXJXFVHZHZHt@R@?VFXHZHXHXFXHXHXHXF@@VFZHVHXFZHVH\\HJDLBXHXHXFZHXHLDJBXHNDJBXHt@TVFXHJBLDXHXFHBPFVFXH@@TFHBRFH@hA^@?zDjAdAZ`@LdBh@B@n@P`Bh@h@NxAb@B@lCx@bAZtEtA^LXH|@XlBj@LDrCz@ZJdCt@rC|@~Br@nDdApLpD|EzAx@TtAb@jA^hCv@fEnAhHxBXHRFbAZt@TND`@Lj@PHBx@VdBh@XHJDnIfCtBn@h@Nh@PRFlDfAbJnCbCv@x@Vf@NRFvBp@\\JdBf@vDjAlBj@tC|@`Bf@jBj@zBp@nHxB~Af@l@RRFJBRFVHdAZJDTFJDbFzAVH~C~@VHVH^JXJb@LLDx@V~Af@@?jA^p@RXJZHXJXHZLVHVHXJZJTHXJ`@Lj@RTHn@TXJVHLDLD\\LRFz@Xr@VLDTHj@Rj@Rn@Tt@Vt@Vv@Xl@T|@Z\\JTHHDbA\\p@Tb@NxCdA|DrA~FrBr@Vr@TVJNFf@PZJb@Pl@RdA^XHb@NtFnBx@XVJNDNFpBr@`@LZL`@Nf@PRFXJn@TNDf@Pr@VD@lBp@FBVHn@T`A\\^LnBp@fDjA~Aj@nAb@pE|AdCz@rAd@fA^fBn@fBl@bBl@rAd@vAf@d@N~Bx@xCdAf@Pj@RnAb@n@THBhFhBJBPFl@TlBp@`AZzBx@~@Z`A\\D@hA`@FBRFZLp@TZJp@TFBTHv@Xn@Tx@XvAd@~@Z`@Lr@Rr@TdBd@|A`@bBb@z@TPFzA`@lAZhBd@vA^|@VbAXnA\\|@XfA\\bAZ`AZzAf@lA`@`A\\f@P\\LlAd@|@\\v@Zx@ZnAd@lAd@`Bj@pAf@t@XjA`@\\Nd@PfBp@jBr@z@Z~EhBlAd@nDnAvFnBRHlBp@tCbA|@ZtFdBfEtA`A\\~Bt@fDfA~Bv@jA`@x@VXJJBRHj@PxBr@lA`@`AZJDvBt@j@P~@ZrAb@l@RjBn@f@Ph@PnA`@r@T\\LbBj@~@Zf@N~Aj@~@XfA^x@XvAf@zAf@`@NbA\\lGtBhA^x@Xz@Xb@NrAd@PF~@Z|Af@tDpA~@Zr@VPFn@R^LD@fJ~CRFnAb@|IzCpEzAbFdBND`Bj@jA`@tAd@xCbAf@PzPzF`A\\xBt@fA^~@ZjFfBvDpAXJtAb@`@ND@z@X`@LjA\\B@hA\\l@PfAZvCx@^Jr@RLD`AVXJx@TbAX\\HPD\\JlBj@|Ab@l@PZH|@V|Bn@PDnA^bAXb@Jz@VfCr@vBl@jAZPFLDr@R|Cz@LDv@RnBj@`@JLDJBr@RJBd@LXJJBD@zAb@jAZt@T\\J@?dBf@\\H~C|@l@PZHfA\\HBdA\\HDb@Nj@R`A\\nAf@bAb@LFp@Z@?l@Xd@Tf@Tj@Zb@RRLl@ZfAl@@@XPl@\\@@hAp@XR@?~@p@XPLJp@d@n@b@XTVRv@l@l@f@PLr@j@\\Xb@`@XVRPf@d@^\\TTt@t@h@h@r@r@\\^Z^JJ\\`@`AfAVXZ`@RVHHRVfAvAX^|@lARZRVhAbBv@lAb@r@b@r@b@t@`@r@d@v@`@v@v@xAl@lAP\\\\r@N\\h@hAFL^v@rArCBFHNrBjEVl@P\\FN\\r@^v@~@pBp@vA`@x@pApCl@rApAnC`@x@^z@x@bBVh@vCnG^t@|@nB@DVf@n@rAn@tA~AhDb@~@dAxB`@z@FNLVHPTd@^x@P^R`@rFlLjAfCP^pAlCHRLVd@`AJV`@x@^r@`@v@f@~@n@jA^t@^l@Vf@b@t@r@nAh@|@BB`@p@~EbInAtBt@lAj@~@^n@f@x@dAdBp@fAXd@`EvGR\\b@t@l@~@Zh@vDlGzAbCp@hAx@rAp@fAl@`AVb@V`@lApB^l@Zh@DHXd@@@V`@|BvDV`@h@z@\\l@Zd@Vb@d@t@R\\`@p@T^Zf@V`@t@nANT\\l@HJVd@T\\PV\\l@p@fAlB`Dx@pAPXVb@l@bAV`@T^RZn@dAPXfCdEPZx@pAXd@dBtCbA`BfAhBpBbD\\l@V`@T\\Xf@p@dAVb@h@|@p@fAr@jAV`@PX`A`BfBtCR\\DFBDZf@@BRZb@r@^n@`@n@V`@fCdEfAhBb@r@`A~An@dA|@xAx@tA\\h@b@r@\\l@f@v@tCxE|@zAdAbBvA~Bt@lABDFLd@v@b@r@R\\d@r@b@v@DD\\j@`@n@v@lAv@rAv@nA`@p@@@d@v@NTPZRZz@xAtAzBNXPXZf@hAhBb@p@jAlBfBvCHLr@hAhBxCpBdDXf@T^d@r@JR`@n@x@rABFb@p@f@|@`A|An@dAFHNXFHjDxFh@|@PXn@hAd@z@HLz@`BR\\LVDFNX^v@Vf@P\\Xh@P`@f@`A\\v@v@bBTf@LVn@rAj@lALXDFp@zArArCN\\`ArBl@pAd@bA`@x@JTTf@b@`AvA|CfBxDnAnCj@nALTlAhCr@xAr@zAFNJTHNJTx@bBt@`BRd@`@x@DLVl@b@|@Tf@P\\Th@\\r@JRTf@n@tAXl@d@bA\\t@BDl@pAx@fBXl@d@~@|@nBN\\Td@FNVj@P\\`@z@d@bA^v@Tf@`@|@^v@b@~@d@`ATf@`@|@l@pAf@bAh@lAl@lA^z@nAlC~@pBv@`BJR|@nBb@`AXl@n@rA^x@P\\`@~@h@fAZr@vAzCTf@\\p@jAfC\\t@p@xAZp@|@lBTd@Th@\\t@LVp@tAj@lAnAfCZn@JT\\p@n@pA@BHPVd@NZf@~@R`@R^NZRXJPz@~ADJ~@`B\\p@t@rAh@~@`A`B@B`AdBhAjB`A`B`C|Dj@|@^j@vAxBRZj@z@h@x@h@z@Zb@rBzCNTd@n@zAvBPXnAfBB@~@pANPz@jA~AvBX^LP~@nAd@p@`ApAHLHJz@jAxHhKj@t@l@v@`ArAVZ@BlA`BV\\zLjP?@TZrCxDxBxC`C`DNRzCbEZb@DFLP`@h@d@n@PTPVRVzErGRVV^LPNPRXTZf@p@r@`ANRX^TXRZNRRVV\\\\d@BDTX@@@BNPf@r@JLFJZ`@\\b@RZLNDFTXLRRVPVZ`@X`@~@lAPVTXLPn@|@DDHJNTHHFJTX^h@VZPTPVRXV\\RVRXPTlBhC`ApApBnCVZTZTZTZ\\d@V^RVPTRXRVRXPRX`@\\d@RXRVPVb@l@pAdBb@l@RVNRHLHHNTBDj@t@FHPTb@l@f@p@NRPTPVPT`@h@JNLPX^HJTZFHPT^f@V\\^f@RXX`@BBPTLPPVTXTZX^V\\V\\b@l@bArAZb@FHh@r@x@hAlBhCtAnBpAdBf@r@HJZb@xAjBrEhG`GbIvBtChEzFr@`AzCdETX^f@~@pAt@bAn@z@FHbArAHJhDtEl@v@j@v@r@~@~@nAv@hAzApBnA`BrBrCJNLLj@x@`@h@l@x@Zb@h@r@l@x@j@t@d@l@tAlBlCpDvBvCNPvC~DRTx@hARXd@n@dAvAb@l@JN^f@RVVXHJJLRVFJJJLP@?LPTXPR?@VXLPZ^h@p@VZj@r@`@f@@BVXd@l@JLX\\LPTVLNVXZ^PTRTTVPTTVTXPRTVRVPRVXVZNPHJb@f@PRRTRTNPNPFFRTLLFJPRDBLNFHFHb@h@RTHHHJTTHJRRNNFFXXPTn@t@rAzAFFNP\\ZLLRRPPp@p@XXTT`@b@\\^HHRR\\`@TTVVZZf@j@VVJJXXTTZ\\@?PPXVRTJHt@r@^\\PPDDNNRRXXDFz@|@h@j@b@f@d@d@tArA\\\\BBVTTT`@^NNBBTTTTLLHHVXZXJHPPVVXVFHVTXXb@b@JJVTNNXZ\\Zb@b@PPPPJJDD~@|@l@n@XV"
                             },
                             "start_location": {
-                                "lat": 40.6389242,
-                                "lng": -74.2084355
+                                "lat": 40.7005799,
+                                "lng": -74.1557693
                             },
                             "travel_mode": "DRIVING"
                         },
@@ -307,7 +283,7 @@
                                 "lat": 39.6865392,
                                 "lng": -75.44401549999999
                             },
-                            "html_instructions": "Continue onto <b>NJ Tpke S</b><div style=\"font-size:0.9em\">Toll road</div>",
+                            "html_instructions": "Continue onto <b>NJ Tpke S</b>/<wbr/><b>NJ Turnpike S</b><div style=\"font-size:0.9em\">Toll road</div>",
                             "polyline": {
                                 "points": "epwsFrragMPP|AzARRXZh@d@n@n@~A~ApCnCZZrBrBNNf@d@NPpAnAf@f@BBb@b@pAnAl@l@JJdAdAVVJJd@d@j@h@LNr@p@PPf@d@DFn@n@FF`@`@^^^^PNd@d@^\\FHt@t@d@d@NN|@|@B@|@|@DDXXVTp@r@p@n@z@|@v@t@x@x@|@z@^`@p@n@BB@@XXrBrBl@j@pAtAbCdCd@f@jBnBrBxBDFdAhAxA~A~BlC^b@Z\\bAjAHJrA~ANNX\\d@j@dBtB\\b@RV|@fATVd@l@h@p@b@h@@@DFb@j@j@r@TZnBhCRVTXDDr@bAt@`Ap@|@|@nAj@v@n@z@p@~@RXH`@\\h@d@l@PT`@j@z@pAbAvA`AtAp@`ATZX`@JNf@r@h@v@d@p@n@|@r@`ArAlBPVt@fAz@nA@@z@lAn@|@l@|@dA|AV\\X`@~@tAdAzA~@tAnAjB~@tAz@lAhA`Bb@p@f@t@d@p@jEnGdCpDhG~IdEfGfBfC`AvAPVd@r@~A|BbCnDfCrDbAxAv@jAjAbBxB`DXd@\\f@`@h@V`@lAhBpBzCdAfBzAdCpAxB`BrClBlDhAvBfAxBp@rAx@`Bx@dBt@~Ar@|AP^LZNZNZN\\pChGN\\HNx@lBP\\N\\NZJTFPBDlAlCd@dAp@|AVh@Xp@NZP^NZN\\P^LZP\\N\\NZ^z@N^NZNZN\\P\\LZNZ`DfHN\\N\\P^LVP^^|@NXN\\LZ@?pBpEnApCp@zAVj@FN@?JTzAhDDFBHTd@r@|An@vAz@hB|@jBt@zAz@fB`B~C`@v@t@tAp@lAr@nABDrA`ChB|CjAhB|AbClAjBJNRXf@v@NRr@bA\\f@NRZd@LN`@j@NRFHDFRVDFr@`ATXb@j@NR~@lAJJ\\b@h@p@nCdD\\`@`AfATVz@`A@B`AdALLl@n@j@j@VZNLTTh@j@b@b@XZh@h@v@v@|@|@t@t@LLj@l@Z\\h@f@^^v@v@j@j@tBvBfAhARRVVTRPRj@j@DDNNRRTTRRVVRR`JdJ\\\\dAfArArADDv@v@lAnAv@v@ZZFHRPPPnAnAlAnARRx@x@XXPRDDNNPP^\\BBTTRTNNNN@@DDFFHH\\\\NNv@v@DD`EbETTLLJJ\\^^^`@`@NNPPRPRTJJfBfBJJbAbArCtCl@l@|@~@RRLJf@h@PPHHv@v@JJ^^Z\\r@r@JJf@f@`@`@n@n@^`@jAjAh@h@bAbAz@z@DDx@z@pApA\\\\jAlA~@~@TTJHJJRTp@p@XXNNpArA|A|A`@`@VVHHHHTTTTTTVVDDRRTVTT`A~@XZNNTTRTVTRTTTRTTTTT@BPRTTRTRTHJJJTVRTRVRVRTTVFHJLPTVXPVDDLPTXPRRXRXJNDFRVRXRVX`@JPb@l@R\\@?PXPXRXPVPZLPV`@NXRXPXPZPZPXNV@@PZNXPZPXNZPZNXNXP\\BDJRR^JTT`@LXNZP\\NZNZLXFLHPNZN\\FLFLN\\Th@HNL\\N\\N\\L\\N\\N`@LXN^JZN\\L^L\\N^L^L\\FNDLL^L^L\\L^L^J\\L^L\\J^DNFLJ`@L^J\\J^L`@L`@HZL`@L`@HZLb@FPDN?@BFBJ@BDNPl@L`@L`@Tv@L`@Lb@J\\@BHXL`@J^L`@J^@DJXHZJ\\@@?@J^L^J\\J^J\\Lb@BJFTL\\?@J^L`@L^J^HZL`@DJDNFNBJJ\\L\\Nd@JXL^L`@L^N^J\\LZv@tBN`@JZLXLZ@DLZN\\L\\N\\N^N\\Tf@f@fAd@bAfA~BT`@LXP\\NXHPDHPZP\\BDJPNZPZPZZh@lBbDFJNXRZPXb@r@PXPZPX`@p@FJLTLRR\\tAzBFJPZRZPZPXR\\RZPZJNZj@v@pAR\\RXVd@n@fARXj@bAr@jAv@pALRl@bAFJb@r@x@rA`@r@b@t@d@t@b@p@P\\RXb@t@b@t@Vb@FHBFBDBDDFHLFJDHPXNVNXNV^r@T`@PZNXPZPXNZP\\PZNXNZPZ@@NZNZZj@BHP\\BFJRNZPZNXN\\P\\N\\LXBD@@JTN\\\\v@`@x@LZP^N\\^x@^z@Rb@FPZr@`@bATf@HPL\\N\\N^LXLZFNbB`EP`@DJDLN\\L\\f@jADJ\\x@N\\\\z@^|@Zv@N\\N\\Zt@L\\NZFPHPlFnMBHNZ~BzFt@fBN\\LZNZ@BNZLZNZN\\NZNZNZLVJRNX^t@`@t@`AlBXf@Tb@NXRZPZPXP\\PXPXNVR^LPPV\\j@NTNTPXRXRZPVPXRVRXFJHLPTFH?@`@f@lA`Br@~@~AnBt@|@fCrCzBbClJjKt@x@zBbClBvBvB~BNPPRHHPR|GrHnAtAJLrAvA\\`@lApA|ChDd@f@\\`@f@j@PRTVt@|@t@z@f@l@h@p@d@h@\\`@b@j@|@dANPNRZ^d@l@X\\f@n@b@j@b@l@TXNRTZX^@@z@hAX^X^V^d@l@b@j@Z`@b@l@VZPTBFNR`@f@V\\PTRVTZRXRVFHJNRTPVPTDDp@z@^j@TXHJx@fAPTHJ^f@Z`@LNh@t@l@v@f@p@`ArAb@h@RZJL`@h@|@hATZlA~ABB|AtBj@t@h@p@@BX^X^?@z@hAPTj@t@pAdBHJLNt@`Af@r@Z`@fAvAb@l@FFj@v@h@t@BDj@v@PVpAhBdAzAd@p@v@jAJPRXZd@RZRXf@r@PXbAxAj@z@`@l@\\f@V`@p@bAV\\r@dA`AvA\\h@HLNRRXDHT\\PTHLnAlBf@r@PXHJJN^l@x@jAX`@@BRZt@fAPVT\\JPRXLPHJNVTZHJZd@PXhCvDNTRXPXj@x@\\h@HJ^h@pBxC`@l@p@`ALRNTNTDDPVPVDHLRPVPVZd@HLh@v@BBJPV^@@V`@X^v@jAd@p@RVLRHLd@l@^h@DDDHRV`@j@d@l@Zb@X\\DHv@bA~@jAz@hALP\\b@f@n@NR@Bh@n@LRVZLNj@t@^d@V^@@VZb@l@l@v@TX^d@TZ^d@LPx@dAd@l@LRX\\|@jAh@r@l@t@vAjBX\\RX\\b@l@v@d@h@RVLLDHNPt@`AX^HJj@t@^d@`@h@`@h@TZ`@f@BDb@j@@@d@l@n@x@BDbApARVJNr@~@DDLPRVf@n@RXl@v@b@h@f@n@lCjDz@hARVRVd@n@TZvBpCLNX^dBzBf@n@RVPVZ^JPf@n@RVVZf@n@d@n@^d@@@DFxBrCV\\NPRXRVRVf@p@f@n@X^vBrC`@f@nBfCp@z@`@j@n@x@VZRVRVTZPTPTLPDDTXLRRTX^NPTXRXXZJN@@TVRVVXPTPRVXRVj@p@PRTVRTTTVXJNHFNPRTTVRTTTTVVXPPTTVVZZNPDDPNPRRRVTRTJJLLj@h@TT`A`ATRVT~@~@TTj@j@HHLJRTVTRRVTRTRRXVRRTTTRVTTTRTl@j@TTvAtA~BzBBBj@j@n@l@NPj@h@~@~@RPl@l@TRPPDFf@b@xAxADDrCnCnBjBTVh@h@RPn@n@j@h@l@l@VVRPRRl@j@`A`AVTrArAvAtAVTRRVVTTTTvAtARPpCnCb@b@PPj@h@l@l@RRl@j@TRRR\\\\z@x@h@h@RRpBlBTTTTVVRRVV`@^JJNNn@l@TTj@h@JL`@^PPvAtAj@j@BBvAtAVTx@x@j@j@bA~@BBj@j@^^j@h@lBjBfAdAt@t@JJ`@`@XVd@d@\\ZlAlA\\ZXX`@`@jAjAnAnAn@n@b@b@TRZZXVZ\\ZXVTJJBBd@d@dAbAPNx@v@TTRPd@b@hDfD\\\\f@d@bA`ADD`C~Bt@r@j@h@`A`ANNf@d@pClCZZt@r@lAjALNx@t@r@r@XXp@n@ZZTTl@l@^^ZZFFv@x@\\`@DD\\\\VZ`@d@Z^^b@\\`@^b@RTh@r@b@h@PTPTHJz@hA^h@Z`@V^NVl@|@b@l@PXLPPXFJDHh@x@`@p@`@p@h@~@`AdBDHf@|@Vf@d@|@l@lAVf@Xl@Tb@HRd@`Ab@~@JT^x@@BLZLX\\v@^|@HTP`@Pf@Xp@JXZx@Zz@Vv@N`@Xx@Rl@HRL^J^Vv@Nd@Tv@J^~@`Dh@dB~AtFXbAJ\\jBlGpGtTd@`Bd@~AX|@Lb@Tv@Lf@V|@T|@V`ATx@Jd@T~@J`@^~ATbAP|@TbAP~@H^Hb@^nBVvAFb@H^F`@Fb@N|@Hd@D\\F`@F`@Fb@F\\Fb@F`@D^@LJt@Fh@P~AFb@BXLdADd@Hz@D^Db@XnCVbC?BFl@?BP|A\\jDVhCDf@D`@BRFj@LpAPbBVfCDb@Db@JbAJbA^pDVhCDXJnAD\\D^LjAFn@@Fj@~Fl@lGNtADb@D^Ff@B\\D^D\\@LBXPfBDb@Db@J`ADb@D`@Db@D`@Dd@D^Ff@J`AD`@BV?D@JBRBN@P@DBZ@HD^BZBN@P@HBV@HDb@D^Db@D`@Ff@B\\F`@B`@F`@?FD^DZDd@BZBLD^B\\D^D^@HDf@BN@JD^TdCFh@D`@JdAD^PhBLfAJbAJdAFh@Fv@XnCHv@DZJjARnBBVBT@JJ`ADb@J~@D`@@N@ND`@RlBBVD^H|@LlADb@D^JdAD`@JdAVdCLjAD`@D`@Db@JdALhAD^Db@Db@D^Db@D^JjAFl@Hv@Db@Hr@@RBTJx@Ft@D^Fd@BVNvAJfAHz@BPT~BFp@D\\Dd@Hn@JdAD^B^D`@P`BD`@@FBVVlCJdADXD`@Hx@B^J`AD`@D`@D^D\\x@jIJdAJ|@JbABXDf@@BFj@Fp@J~@NbBPbBFn@Hp@N|AFh@H~@\\zCHv@@DLjAZbCTbBHh@Ff@DVPdAPfALz@P~@N~@P~@Nz@R|@Jl@@@TfAPz@BJLl@h@`C@FRz@Pl@FT^zAn@~BTx@\\nAHVZdA`@tA\\dAVt@@Bf@xAXx@Z~@l@~A@@d@pADHj@vAh@rA\\t@BFJV^|@Zn@b@bA^x@\\p@`@x@P\\\\p@NXR^T`@JTd@z@`@p@`@r@^p@BBf@x@b@t@t@lAv@lAf@r@jAdBTXr@bALP`ArANTh@t@lAbBZ`@r@dAzAtBRVBDd@p@f@r@PTb@l@RVf@t@pAfBt@dATZf@r@^h@BBh@t@t@dANRDHb@l@lAbBx@fAf@r@x@jAnAdBjA`BpAhBTZr@bAf@p@PXfCnDlCrDhA~Ah@t@rBtCf@p@f@r@t@dA`GjIf@r@d@n@hBhCp@~@fBdC|@nAtAlBHLt@bA`@j@|@nA|AxBX^RZr@`AhAfBFJl@`AV`@DFXb@Xf@FJV`@Vd@FJl@hAZj@\\l@\\n@BFTb@^t@@B\\p@`@z@P\\~@rB^v@HTd@bARf@Rd@@Dj@tA^dAj@vA\\~@Rh@`@fA^`Af@tAjA|Ch@tA^bA`BlEj@~Ah@tAl@`BZz@N`@JXFLb@hAN`@JXz@|B^bAVn@Z|@Xt@\\|@Xx@Rh@L\\N\\DJxB`Gl@|Aj@~Al@|A\\~@l@~ADLTl@HR?@Xt@hAzChAvCtBxFpAlDFNx@xBd@lAXv@@Dp@fBDHL^Rf@fDbJ\\z@L^L\\Rf@HRHTBJ|@`Ct@nBL\\N^Pd@Vr@N\\L^L\\\\z@L^Rf@r@nBvAtD`@dAr@pBx@vBPf@~BhGPd@dApCZz@\\|@h@xA`@dAx@vBf@rAv@vBRf@N^bAlCZ|@Pf@fBvEZx@l@`Bf@pAj@zAj@|A\\|@Xt@Rh@FNJVTl@Xt@N`@N^`@fAFRZx@N`@Zz@\\|@N\\j@|Ah@xA\\z@Zz@N^Zz@\\|@Zz@\\~@j@zAh@tA\\|@j@|Aj@|Ah@vA\\|@Zz@^|@\\z@Zt@BFXp@LZDF\\x@Zn@BHNZ^x@r@|ALT^x@Vf@HPNZJTBFR`@Pb@NZHPP^NX`@|@FJTh@R^\\v@NZR`@NZN^^r@N\\N\\NXP`@^t@N^P\\JV@@LVFLHPNZ\\t@P^\\t@P\\?@b@|@R`@P`@Vj@Tb@HPN\\P^JTR`@P^^x@d@~@LZNZ^x@^v@P^LXP\\N\\NZP\\N\\NZNZN\\P\\~@pBNZNZNZN\\NZP^FLrAtCd@bALXTd@tAtClAjCNXP^n@rALZP\\N^NZNZP^JRd@`AJVP\\n@tA^v@FJFPJRBFNZP\\N\\LXPZZr@P`@P\\^x@`@x@j@lAN^Tb@?@JRb@~@l@nA^x@p@vAN\\LT^z@P\\NZN\\NZl@pANZP^N\\LX`@z@NXp@xALVN\\NX@B^x@^t@N\\LVP^LX@@N\\P^LX`BlDBDJRLV?@jCvFTd@hDlH`Q~^fCpFTd@fJ|RLVN\\NZNZR`@N\\P\\LZP\\@BTd@Tf@`@x@`@z@JVBDNZDHVj@^v@^v@P^?@^v@R`@l@pA^v@b@~@Zr@LVR`@LX`@x@p@xA`@z@LVN\\LX`@x@P`@NZNXP`@DFFNR`@JRBHHPDJHPFHLXP^LXBBZp@NZp@zA^v@P\\NZLXP^NZN\\NXP`@NZNXNZP^?@HNt@~ANZN\\dAxBTd@`@|@\\r@xA~C~AfDN\\P\\LXN\\NZP\\P\\LZP\\NZLXP^NZN\\DFFNP`@NXP\\N\\HLFLNZNZ^v@LVBD`@t@P\\NZPZP\\^v@LXPXNZR^PZ`@x@n@nAP\\NXPZNZPZR^LVLTR^NZPZP^Xj@DFN\\NVR^p@pANZLVBBLVNXBDNZLRDHLXPZP\\^t@NZb@z@HNR\\P^R^NZNZPXR`@LXNXr@tAtAlCpIlPPZP\\BDLVT`@bBdDr@vA^t@z@`BNXNZLV`@t@f@~@FNNXPZNXNZ^r@Zj@Xj@?@\\p@HN`@v@Tb@R^@DPZVd@Td@p@pA^r@Vd@Td@Vh@f@`A~AxCv@|A`@x@LTPZb@|@DFr@tADF|@fBx@|AtApCHN|@dBPZb@z@t@xAd@~@Vd@r@rARb@Xh@l@jA^r@FJ\\p@DH?@FJJRPZLVTd@b@x@l@jAP^^p@d@`AJPR`@Tb@HN@BT`@xArCXl@NXXh@NXZl@R`@P\\NXDHTb@?@v@zABBFLRb@@?Xj@R`@b@x@Xj@bAlBd@|@lAbCBBn@nAv@|AFJ`@v@z@bBHNFJVf@JRNXDJn@lAb@x@DHXj@f@`A?@Tb@f@~@`AjBZn@^r@JTVd@j@hAVd@zC`GZl@NXbCxE@B`B`D`@t@bApB~A~CdBfD^p@`AlBn@nArAhCh@bAN\\b@v@pAhCP\\JRBDR^JRR^\\r@P\\NVLXPZBFLVPXN\\LTTb@LTJRVf@FNFJNVLXJPNZNXPZNZVf@PZNXXh@NZFLFLT`@LXNVR`@LVPZNXP^NXZj@DHNVN\\NXP\\NXb@v@?B`@r@FNDHHNDHLTP\\z@bBR^r@rAR`@Zl@P\\P\\n@pANTR`@N\\LT`@v@^r@`@x@R^Td@LRHPNXr@rAJRBDP^HNDFz@bBf@`Aj@fAnCrFBBP`@NZNZ\\t@N\\Xl@@BPb@Zr@\\|@b@dAz@zBj@xA\\~@Pb@JZVt@p@lB`@dARj@nAnD`@jAn@dBx@`C~AnEnBvF\\`ApBxFlDzJZ|@\\`Af@vAjBjFTn@`@jAPb@dB~E~C|I\\`AJZL\\N`@Vt@Xx@Zz@\\|@Tr@N`@Pd@Z~@Z|@Zx@Tr@FNd@pAj@`Bh@zAf@rAPf@JX\\`AbAvCZx@Nd@Zz@Vt@BDZz@JZN`@Xx@N`@HV\\~@L^@Bf@tAL^DJRn@L^L^J\\@@L`@HXL`@L^JZL`@J^J\\J`@L^J^J^J`@L`@H\\J^@DFVLd@H\\@@BLDLJ^Jb@HZ?@J^J`@J\\@HHVH\\J`@J^DRFRHXJ^HZBLFTJ`@J^DNDLJb@J\\FX@DLb@J`@HZH\\J`@J^@@H\\J`@J^J^H^L`@H\\J^J^J`@H^J^J^Jb@HXJb@J\\?@J^J^H\\L`@H^J`@J^@@HZJ`@J`@Nl@tApF~AdGvCdLLh@FRFXLf@J^XdAHXLj@b@bBHVFVLd@t@tCNh@Nj@Lf@^zAv@nC@FHXJ`@J`@DLFVLh@BHNn@HZJ\\H\\J\\@BH^@BHZH\\H^HTPn@Lf@Pt@V|@@DDRFR@FDNJ\\@DH\\HX@D@FFRBHBHDPJ^?@J^DTDHH^FXHZPr@Nj@@F@HNl@R~@FVJ`@DRR~@@HTdA\\|ABNTbA@BBNJb@H^@DDTH^FZBHJd@Lp@BJZxAZzAZ|AZtATfAH^Nr@ThA^dBNt@FVZtABNZzAPr@R~@BL@D\\~ANn@Jh@ZvAZrATfA\\bBl@tCr@fDTbALn@Lj@ZvAf@bCLn@FRH`@BLBNTfAVlA\\xADVLn@T~@BLP~@J^RfA\\zAPx@RdAZtA?@Z~Ab@nBR`AZzAThAb@pB\\dBXpAVlAVlATfATdADNLl@DPNp@H`@Jh@FXLj@VlAJb@Hb@FZz@~D\\dBDVNt@\\~AThAR|@Nv@@DJd@Jf@Lj@Lh@Jh@BJFVRfADL@JBHFXF\\RfA@@BPJf@F\\F^BN@HP~@@FJr@BLF`@Fb@BLHh@F\\L|@D\\Hh@@H@F@HDZDXBTHl@?BD^F^@HHr@@RBNJ`A@HJdAJnABRNrB@BFx@BTJhAFl@?BBXB\\?@Hv@@JBZJlAFp@Dh@@JLtADj@Hv@BZ@PFr@BVBV?@Fn@Fn@@RD`@?@Ft@Hx@Hz@H|@Db@@TBVDb@Hz@H~@B\\Fl@Fz@Fj@@PJfAH~@@LH~@?@D^BX@FFx@Fr@BTDf@@PFh@BZNbBHbAB^Db@H`AJbAFx@Hz@HbAD`@Df@BZFh@Bb@BRB^Ff@B`@Dd@Fh@Dh@Hz@BZJnABXDd@?@Dd@D\\Dh@Dd@D^BZDd@BXFp@BXB\\Db@Db@@RDb@LzAJhAPtBNbBDzAFbCJbC"
                             },
@@ -2258,7 +2234,7 @@
                                 "lat": 25.7744896,
                                 "lng": -80.1995379
                             },
-                            "html_instructions": "Merge onto <b>I-95 S</b><div style=\"font-size:0.9em\">Parts of this road may be closed at certain times or days</div>",
+                            "html_instructions": "Merge onto <b>I-95 S</b>",
                             "maneuver": "merge",
                             "polyline": {
                                 "points": "ovn|CtephNh@?RAr@AxACTApAC`ACh@Av@ApAC^Cv@AvAC~CEbDChAAF?V?jA?@?vA?p@A@?@?^?@?DAxAApAEd@Ah@AP?^AP?ZAdDE^AlCEf@Cj@Af@Cv@Ed@CTCVCZGXE|B_@bCo@TGp@WLG\\Op@WdDsAt@Yr@[bAc@jAe@nAi@h@Sr@[f@U^Q^Od@Uf@U\\Qj@Yn@[RKPKRKRMx@a@HEHGHEbAi@~@e@t@a@b@UPIRKNGVKRITIhA]FCh@MTETEd@Ih@GLCt@I\\EL?TCPAf@Aj@Al@AnBC`@Ah@An@A`AA^?`@AfBCj@A`AAT?FA|@Az@Ad@An@GPCVEDAHA`@KJCh@Mh@M"
@@ -2489,7 +2465,7 @@
                 }
             ],
             "overview_polyline": {
-                "points": "gunwFblubM~cEyFjkFlvApiE~lAxNdaJm}CbqSeEteBdbHtqD`uKnmTvrPpuOlpU~oIp}N|uHniI`~N~|P`uUnlPz`Vv`M`uRbzGphHxsCl|KhxLfh[toM~nXr`ElbTyeBviYztA~jJ~jC~{@bkJ_NbdQ}Ff|E{CxyBdhCbjLy`@|zJogGndJycGriIu~BhhIulLhiEtNvnCaiE``VggAbfHy`DhdE|iBf~MoYfeSorB~_OuhIdsMioNfoRykIrnOqaElkMlw@buFr`CjeElzHvwG|fN`wG~dBhdD|hJxmGjsPzfEblB~oIuEjjKz@~pJtpA`|RxqIvfMzePlwPp_Lv{w@tac@xsFvvDfgJqw@nrP_Zl`GfVx|C`oJ|rKphL|pI~eCnaHj_AtnBlvHbbFrjBpl@n{Fbc@r|H`_HhwSluDhzZwBl}LzdFdzCxgGj`ZftF`fT{~E|eUufBdeQgd@l}a@|hCdqf@}kCdkOufJdrWwcBdbZzuEtcM~bCjkLbcBbfLo{@pkPd}KldCr{[|sNnnWtjZ`}FlpNtiBxnR~_SbyXjs[f`U`nHn|Mio@jxN}`Evjd@seB~kXbj@fyNpi@d|m@|ZnwR`bD`eElvExgIqObyQhbRzgQlwG~~X~oHnqQ`mJ~{_@`kQzrTrgGrgIj}LdgJduH{Z|{GhqF~xB|wJfkHjsFpiMdrIdwG`qNznDvt@tnA~aCvdRrsHrcSlqH|dIl{Az~DwlAhmIpsDhvPhmFddYyx@t|e@i_Fdp_@dX~xRwuA|kQqiD~hE{rEjiFpeCtnMxuCdlDvyRvrPkkHbaNibMndRgzJ~_XaaPtnTgcWn`RalWrrZlrJrkWpnIdgRzvA~lM||EraXndTtwJjrIxkQpqCbzK`tItlNtzDrib@b~PpkItuP|uIl_HdbHvuC|{QliE`nMztK|_R~f@bsZpjHp|UnuEnhZ`aCboTlnBxy^n|Nled@vtV`iRf|Bp_IseBxjSeeAntH||A|dNijDzcMww@pkRvrB`vQtlA`iBdkAh{@e{Bn|@cmBpwLqgK|~SioI~lQybFrpg@otTtlVwtHlhMwmKhyl@gbUz{m@oxMpjTgpL~~Q}`Jlck@k_KhjOwyDheUem@|tI}}DjuO{v@jt[wwPpd`@mnB~bTm{PboTq{Df`Nk`Eh`YugEhcSqrIr|Nu`Kp|Jor@zaU{_EfnZwaM|bi@mrZnd[gmBd~NzbB`oHx_DdlYmH~`\\aJbbX|@lcObnH~`[_j@`dHhgBt}HiwBvnTyZ~kGsvA"
+                "points": "gunwFblubMsqBvvGnyDziBnfAnqEeeApvEfoCjuEpjNh|Jf|FjfEhbD~aLjbQdeR~aSh{HdlPjxF`tIr~NlqPzzVdbRfxVbzZdgh@dxKfa[voL``V`_GxmVgy@rcYdLz|HpkCvaEh~Isr@ljIrkBhmGsgAteJjbA`sK|TpjKepEfvIizGpyImtB~yHcxLlhErAvaDatDfaCguAxyMxd@hnPcwDbg_@re@`{P{bIfrNimNpeNwlLxvScaD`jLl@zfOnjHfgGn{O`tLrsKnbIt~PlxBflF~eI`Cd|GggAlqI~oB~sTbuGtyNtyLpaEfeIdsIxxDjkU~nOfq]zkQz}M`_HhnFbLrpRiNt_GiJp}CvrB``LlzR~dJ~lCvsLx{EfwI|nNyM`hJx}F|pOrfHpr^shAfvLntE|rCfuFnrShuGdwVyoBjwTm~C|qOmgAhs^xfCdvi@}cCnpSejHl}TyoD~a]rwEvnLzmCjwLpcCbrMa[tnPtc@rwAtxG|_Bv~KflDvzN`nH|rWp}YvnGv~NtiBl`QtxRn`ZrfZxoSrxI|qOmTjbMm}Drsc@cpBhiZn~@b|Mnc@xpk@xIndUrjDh}E|dEjqGwRrdR`tDjrGdgJvrIxyGf|K`bAplL`nGdoQ~oJjx_@t~QfpTjlGn_J`~Kh_K`iIko@fmHdtEvyAllJbzGdcHdoMnfIzyFxqH|j@daGrfGdfBbwPxfHprSroInnI`{CzqEeyAt|InrClbP|uFhcXcn@`if@}kE|j`@tClzRsfA`qQm`DzvDgfEjpF|`AldNhjBzhDjuTxnO}dG|~`@}`XbtXehPplUejWf{QmqWraK`wAxfNxfFvdVr_Irqa@v_IpiXrgSlpJl_Jj`Q`qCfeJvcI~`Pv|Dp{b@nbQz{Hn{OluQtjOjyR|~Cp}MjvKnwP~WrwZlpIplp@niJ|eVzsAdf\\ttMhv`@hhVznSbcExiNkuA|mRw|BnrHzvCfbMqwC|hLubA`bRbo@jySjwBnqFhLl^ukCxvLinK|~QwjGbtHgoGfoHgGzmR{gKp|Rc_HtkVs~H`eOy~Kz`l@k}Td{WmkExxU}oGhrRiaMdsSosIrej@orLbm^cpEbaR_zDhmMuHdkYeqPhuc@auCdpTi{Pn{S_mChbKoiG`e\\uzCdpTs{IhgN_uHdrGy{D~zBbt@zoHimCxbKeg@rcZ}tLzhNc{H`fYc|Pha[ctCbiOfi@zrGtyE~hTs@vfa@uLhuYwVncNfhIhhY{f@fqH`dBplJgnBvbTya@|aJczA"
             },
             "summary": "US-13 S",
             "warnings": [],
@@ -2782,24 +2758,24 @@
         "route": {
             "bounds": {
                 "northeast": {
-                    "lat": 40.7126802,
-                    "lng": -74.00533159999999
+                    "lat": 40.7310203,
+                    "lng": -74.00657629999999
                 },
                 "southwest": {
                     "lat": 25.7617059,
-                    "lng": -81.6830604
+                    "lng": -81.6848043
                 }
             },
             "copyrights": "Map data \u00a92023 Google, INEGI",
             "legs": [
                 {
                     "distance": {
-                        "text": "366 mi",
-                        "value": 588788
+                        "text": "363 mi",
+                        "value": 584101
                     },
                     "duration": {
-                        "text": "6 hours 25 mins",
-                        "value": 23085
+                        "text": "6 hours 22 mins",
+                        "value": 22919
                     },
                     "end_address": "500 Court St, Norfolk, VA 23510, USA",
                     "end_location": {
@@ -2837,20 +2813,20 @@
                         },
                         {
                             "distance": {
-                                "text": "0.4 mi",
-                                "value": 566
+                                "text": "0.1 mi",
+                                "value": 158
                             },
                             "duration": {
-                                "text": "4 mins",
-                                "value": 213
+                                "text": "1 min",
+                                "value": 52
                             },
                             "end_location": {
-                                "lat": 40.7152239,
-                                "lng": -74.0132173
+                                "lat": 40.7138037,
+                                "lng": -74.00882589999999
                             },
                             "html_instructions": "Continue onto <b>Murray Street</b>",
                             "polyline": {
-                                "points": "ownwFjpubMONA@eCfHGNQf@_@dAs@pBGPY|@GRQd@Ul@M\\IREPELAHAVC\\KlAGn@Eh@Gr@Eb@CXCR?D"
+                                "points": "ownwFjpubMONA@eCfH"
                             },
                             "start_location": {
                                 "lat": 40.7130435,
@@ -2860,216 +2836,192 @@
                         },
                         {
                             "distance": {
+                                "text": "0.1 mi",
+                                "value": 211
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 75
+                            },
+                            "end_location": {
+                                "lat": 40.715428,
+                                "lng": -74.0075398
+                            },
+                            "html_instructions": "Turn <b>right</b> onto <b>Church St</b>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "g|nwFdzubMg@_@q@g@UOcAu@m@c@s@i@o@e@"
+                            },
+                            "start_location": {
+                                "lat": 40.7138037,
+                                "lng": -74.00882589999999
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.1 mi",
+                                "value": 164
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 55
+                            },
+                            "end_location": {
+                                "lat": 40.7161836,
+                                "lng": -74.0092035
+                            },
+                            "html_instructions": "Turn <b>left</b> at the 3rd cross street onto <b>Reade St</b>",
+                            "maneuver": "turn-left",
+                            "polyline": {
+                                "points": "mfowFbrubMITSf@w@zBa@hA]fA"
+                            },
+                            "start_location": {
+                                "lat": 40.715428,
+                                "lng": -74.0075398
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
                                 "text": "0.4 mi",
-                                "value": 677
+                                "value": 570
                             },
                             "duration": {
                                 "text": "2 mins",
-                                "value": 127
+                                "value": 125
                             },
                             "end_location": {
-                                "lat": 40.7095715,
-                                "lng": -74.015107
+                                "lat": 40.7212691,
+                                "lng": -74.0083674
                             },
-                            "html_instructions": "Turn <b>left</b> onto <b>Hudson River Greenway</b>/<wbr/><b>West St</b><div style=\"font-size:0.9em\">Continue to follow West St</div>",
-                            "maneuver": "turn-left",
+                            "html_instructions": "Turn <b>right</b> onto <b>Hudson St</b>",
+                            "maneuver": "turn-right",
                             "polyline": {
-                                "points": "ceowFruvbMK~@fARrATN@RDl@Lx@ThB^b@Hn@NPBPBH@D@RB@@v@L`@FTDr@FjANZFZHFBZHXDPB@@J@L@TDx@RTFVDZDJ@JB"
+                                "points": "ckowFn|ubMuAG_AEc@E_@EaAKaAMcAKkAMmAMu@Gw@IiAKOA}@Ku@IMAsBQ"
                             },
                             "start_location": {
-                                "lat": 40.7152239,
-                                "lng": -74.0132173
+                                "lat": 40.7161836,
+                                "lng": -74.0092035
                             },
                             "travel_mode": "DRIVING"
                         },
                         {
                             "distance": {
                                 "text": "0.3 mi",
-                                "value": 483
-                            },
-                            "duration": {
-                                "text": "1 min",
-                                "value": 46
-                            },
-                            "end_location": {
-                                "lat": 40.7056674,
-                                "lng": -74.01512799999999
-                            },
-                            "html_instructions": "Take the <b>Hugh L Carey Tun</b> ramp on the <b>left</b> to <b>I-278</b>/<wbr/><b>Brooklyn</b>",
-                            "maneuver": "ramp-left",
-                            "polyline": {
-                                "points": "yanwFlawbMBC@?BAD?H?NB@?B?J@H@L?J@JBJBRDB@`@L`@JFBXHJB`@L`@L`@L@?B@F@D@HAH?HAHAFCBADCFEFGFE?ABEBEBE@E@EBIBU@GBG@E@CDKFGFEFGDCDCHCJEDAD?FCJAH?H?H?H?D@@?F@H@@@D?DBHBVJTHJDJFPNHH"
-                            },
-                            "start_location": {
-                                "lat": 40.7095715,
-                                "lng": -74.015107
-                            },
-                            "travel_mode": "DRIVING"
-                        },
-                        {
-                            "distance": {
-                                "text": "1.8 mi",
-                                "value": 2915
+                                "value": 414
                             },
                             "duration": {
                                 "text": "2 mins",
-                                "value": 141
+                                "value": 98
                             },
                             "end_location": {
-                                "lat": 40.6811634,
-                                "lng": -74.00533159999999
+                                "lat": 40.7247052,
+                                "lng": -74.00700599999999
                             },
-                            "html_instructions": "Continue onto <b>I-478</b><div style=\"font-size:0.9em\">Toll road</div>",
+                            "html_instructions": "Keep <b>right</b> to stay on <b>Hudson St</b>",
+                            "maneuver": "keep-right",
                             "polyline": {
-                                "points": "mimwFpawbMXHd@LjBf@PFNBb@HfB^lANXBl@DB?X@h@@j@?V?B?J?~A?fAIh@KLCD?h@MvA]l@QrCmA@AhCiAzBo@|EqAhCs@~@Wf@M`@MhCq@rFuA`@Mb@K`@K^Kd@M`@MbA[b@M`@KbA[RGLG`@Q^Q`@S^Q`Ac@DCxBsA~@k@ZQBC\\[Z[\\[tAsABC~@g@@?LIPIZQ^SBA|Ay@BAZW\\W\\Y\\YvC_CZW@AjEyBVONG|BcAv@SDA`@KlA[`BWLC^K|@YFCh@WBALILEHELIHE@AFCFEROf@_@"
+                                "points": "}jpwFhwubMKI_@E]Cy@KOAk@GaAKOAkAK_AI]C]ESECAEACACAAAAAGIACCEMWW_@EGOSCGGGEECCACACKGKCGAEAIAEAGAIE"
                             },
                             "start_location": {
-                                "lat": 40.7056674,
-                                "lng": -74.01512799999999
-                            },
-                            "travel_mode": "DRIVING"
-                        },
-                        {
-                            "distance": {
-                                "text": "0.5 mi",
-                                "value": 752
-                            },
-                            "duration": {
-                                "text": "1 min",
-                                "value": 46
-                            },
-                            "end_location": {
-                                "lat": 40.6752958,
-                                "lng": -74.0009555
-                            },
-                            "html_instructions": "Keep <b>right</b> at the fork to stay on <b>I-478</b><div style=\"font-size:0.9em\">Toll road</div>",
-                            "maneuver": "fork-right",
-                            "polyline": {
-                                "points": "gphwFhdubM|@q@TSLK^[LKVSj@g@h@e@VSz@s@pAiATQTSROh@c@j@a@nA{@lAu@JGfBaAf@YZQp@a@VQRKRMXOXQt@a@HA\\C"
-                            },
-                            "start_location": {
-                                "lat": 40.6811634,
-                                "lng": -74.00533159999999
+                                "lat": 40.7212691,
+                                "lng": -74.0083674
                             },
                             "travel_mode": "DRIVING"
                         },
                         {
                             "distance": {
                                 "text": "2.2 mi",
-                                "value": 3593
+                                "value": 3521
                             },
                             "duration": {
-                                "text": "3 mins",
-                                "value": 188
+                                "text": "6 mins",
+                                "value": 350
                             },
                             "end_location": {
-                                "lat": 40.6483981,
-                                "lng": -74.0139947
+                                "lat": 40.7319276,
+                                "lng": -74.04635809999999
                             },
-                            "html_instructions": "Merge onto <b>I-278 W</b>",
-                            "maneuver": "merge",
+                            "html_instructions": "Continue onto <b>I-78 W</b>/<wbr/><b>Holland Tunnel</b><div style=\"font-size:0.9em\">Continue to follow I-78 W</div><div style=\"font-size:0.9em\">Entering New Jersey</div>",
                             "polyline": {
-                                "points": "skgwF~htbM^S\\Sf@Yf@[LIXOd@WhAm@ZQ^Sf@Wn@]TO`Ag@f@Wx@c@^Wd@YZQHGd@WNKRMj@]~HcEt@_@bAi@`@Sd@UVOh@Sb@M^KBAREJA\\EJATEVA`@CZARAb@@f@@b@DVD^Fb@JZHPHNDVLVLZR`@ZNNPNVVPRNNPRb@d@`@b@`@^NR`@b@PP`@b@`@`@b@d@RRRRPRPPPRVVVVXZTVRTXXd@f@d@d@\\^d@f@d@d@\\^PPRTXXXZ^^`@b@^^PR`@b@bAdATT^`@NPdAfABB\\\\@@x@|@XXn@r@PPPPr@t@NNtAxAr@t@`@b@r@r@NPPPb@d@TTDDd@h@^`@JHPRBBHJJHLNLLb@d@j@l@^`@`@`@RTHHRPPRVXXXPPDF@@j@j@h@l@JJLJJNLLRTj@j@HHHHBB@BDB`AdAJJLLJJXXz@~@JLLLXZZZLLLNLLJJ@@bBfBdBhBpArAnAtAXZXZ"
+                                "points": "m`qwFxnubMKAOA?AG?K?A?IAK?I?MDUFKFSJ[\\ILKPIRITCPCNGfAIrBMpB?JEz@Q`D[xDK|AEx@GtAEl@?BCl@Ch@Ep@[pGIfAGn@[xDGl@Gl@El@Gn@MzAGl@M|AMzAy@rJAHYnDGl@q@dIGl@Gn@[xDGl@UjCEl@UjCIrBCn@En@Cl@KlCCl@YzGG|AEz@GpA?DAb@Eb@G`@I\\Qp@UdAs@|CuAbGOp@CHKZEPGPELMTGJMPe@l@W`@KNKPOTKRKPABKTIPCFKVOd@ADCHCJCHCLATGhACb@SzD?PCZAPCh@Ab@ItBGlACp@Ab@Cf@AXC\\Cj@Cr@Cr@Cn@Ex@GzAKvBAXGjA?F?N?P?N@B?X@f@BX@ZBb@Dh@BP@V"
                             },
                             "start_location": {
-                                "lat": 40.6752958,
-                                "lng": -74.0009555
+                                "lat": 40.7247052,
+                                "lng": -74.00700599999999
                             },
                             "travel_mode": "DRIVING"
                         },
                         {
                             "distance": {
-                                "text": "2.7 mi",
-                                "value": 4266
+                                "text": "7.9 mi",
+                                "value": 12746
                             },
                             "duration": {
-                                "text": "3 mins",
-                                "value": 194
+                                "text": "9 mins",
+                                "value": 530
                             },
                             "end_location": {
-                                "lat": 40.6157198,
-                                "lng": -74.02678159999999
+                                "lat": 40.7070336,
+                                "lng": -74.1528428
                             },
-                            "html_instructions": "Keep <b>right</b> at the fork to stay on <b>I-278 W</b>, follow signs for <b>Verrazano Brg</b>/<wbr/><b>Staten Island</b><div style=\"font-size:0.9em\">Toll road</div>",
-                            "maneuver": "fork-right",
+                            "html_instructions": "Slight <b>right</b> onto <b>I-78 W</b>/<wbr/><b>New Jersey Turnpike Newark Bay Ext</b> (signs for <b>Interstate 78</b>/<wbr/><b>Interstate 95</b>/<wbr/><b>Turnpike</b>)<div style=\"font-size:0.9em\">Toll road</div>",
+                            "maneuver": "turn-slight-right",
                             "polyline": {
-                                "points": "ocbwFlzvbMNRPPrBvBr@t@NNPRNNRRNNRRNPRRVXHH^`@t@v@NNPRb@b@TVTVTTBBNPPRFDHJHHVXJJ@@RTJJJLJJJLLLX\\Z\\t@v@BBn@r@b@d@PPJLPPTTNNRTPPTVPRHHXXVVPRLL\\\\XVRPXZf@\\PLXPFBZPPJRHNHF@NFXJXHNBVDf@HJ@b@@P?^A\\AXELCREVGNGNEJEDCTKRKLKNIZW`@c@NOTUFKHKHMV]JSFI^o@Xi@JU\\o@`AqBNWVi@Vc@P_@Tc@Tc@Xk@\\m@LUNULUPSDIHIb@e@Z[VSZSVORITKTGNENCNC\\Ej@CXAf@?b@DTBD?ZDVDb@DXFNBJBH@d@J\\FPD\\Jd@Lj@Ph@NB@bA\\~@XF@l@Nd@Lb@J`@JdATXF@?NDNDPDn@NVFPDTHF@lA\\h@Nr@RZJ`@LTF`AZHB\\J`@Ld@N\\JZJDBh@PfA`@ZNn@VhAh@DDLFd@X@@VN^TPLh@\\f@^TPd@^^Zd@^n@h@DDXRb@^TPHFPNz@r@d@^v@p@@?h@b@|@v@NLn@f@XTj@d@hA~@HFvAjA|@t@TPNLDB|@t@h@b@NJPNZV\\XJHVRPLFDTPHFNJVTNJXRPPt@h@`ChB"
+                                "points": "qmrwFvd}bMEPAB?D?DAF?F?H@L?~@?T?\\E`CCr@CdACx@Al@?P?@?T?R@ZB^@JBRHf@DTDPHVJVLXJRLPLNHJRRdAv@NLD@LJJDJFJFJFPJRH`@Pr@Xl@TPFNFPFLDNDNBRFTFTFJBLDJB`@J`@JXH\\FRFhEfAd@Ld@JhAZf@JPDTFHBJBvA\\\\HZHD@~@VLBLDPFbATVFTFRFrCp@xElAzEjAXHTFl@NVFXHTDTFf@LTFF@HBH@LDD@XFXFXDXDZDZDZD`@DZBV@T@Z@T@N?T?X?ZAVA^CLA\\Ep@MXGVIz@UbAc@|DgBHGJEv@_@v@]VKXKXKXGZIFARCNCHAXCXAH?P?P?H?X@ZBZBLBB?H@VDB?XFB@@?TDZFXHZHVJXLXLZNVNVPRNTRRRPPNPTXRVPZRZR^JRJTLVP^HTnA|CPd@p@`BHPXr@Xr@^z@Pf@Zt@Zr@FRHRRf@?@Rl@LZf@pAb@dAz@lBd@jADJN\\\\t@FNd@dAXl@Xh@b@n@f@r@d@n@f@r@|@dABDTVVVJLZZFFLJFHPNDDJJDDLLPPB@DDBBJJBDBBNLDD@@DD@@\\\\FD@BDD@@JHBDLJBBFFJJRRFFDDFDDD@BDBFF@BDDPNBDJJDDBBHJBB@@@@@@JL@@DFLNDDLNRVDFJL@@FHHLDDBDHJ@DDDHLHJHN@BDDHN@@BDR\\PXLVBB@DHNBD?@BDFHDH@BXn@HPDFP`@FNDJDJJVBFHRBHFNBF@DFNDJHXBDBH@FDNFN@B@DFTDL@DDNBFDN@D@FFTBH@BDRBHDR@DBHDTBF?@DP@F@FDP@FFVBNDP?@@DBP@FBJBH@FBJH`@DR?@BHF\\@H@@BPBLDPBJ@FDP?@FX@HBLBHFZDPBJBL?@DP@FBHDPDNDR@DDPDLDPDNJZ@DHXHT?BFNDNDLFPDLBHFPHT@BBFFNBF@FFNBD@B@BFN@DBDFNBD@BHR@BDHBHBDBF@BFN@?BFBDJTBDFNBFBBFNBDBDHNBDBFFLFJDHDFDHHLBDHLBDBDBFHLDD@D@?FJDFBDHLBD@?@DHJDFBDHJ@@@BDDHLDDBDDF@BDDBBHL@@DDJNDDBB?@JJBBBD@?HJDFBB@@HHBBDDHJ@@@@@@BDJHDFBB@@FFDDBDJHDFBBJHDDBD@?HH@@@BDBHJBBDDLLFFDB^`@@@@@DDFFj@j@HHFHJJZ\\JHBBBB@BJHFFBBBDFD@@BB@BHHBBB@?@B@FHFD@@BBHJFF@@JJBBDDJJ@@BB@BDBFF@@DDLLDD@BFFB@FF@BJJDBBBFFBDDDB@HJHHFFBBDDBBLLDDFFDDFHNLDDJJDD@@NPDDLLB@BDTRBDHF?@FFLLFFJJTTFFDDHH@BNNLLJJTTTTTTTTRRTVTTBDNNXZ@@RTDDLPJLn@x@PXNRBBPXRXPXPXHLFJPZPZNXNZPZNZJTBDLXFNNZLZBDJXJTL^JVL^L^@BHTL`@J^J\\L`@H\\J^BHDTJ^Jb@H`@Lr@BNH^Fb@Lz@@HD`@Fh@BZD^Bb@D~@@J@`@?Z@J?f@?^Ab@Ad@A\\?FC\\C`@Cb@EZEf@G`@CNETG`@I^Ib@K\\I^M^MZIVEHMZQZKTGJILS\\U\\SXSVIJIJQVUXMPEDQTILKJSXMNEFSVSTEFCDCBABOPGHABOPSVm@v@EFEFCDA?ABA@CBCDA@A@A@GJC@EHEDEFCBEFCBEFABGFA@ILA@CDCBILEDCBILA@CDABKLCDCDCDEDGLIJEHABILCDCDILADCBKREHGLCFKRABEFGNABA?CFGPA@KXEFABGPEH?BCBCHABCHA@ENIRCHCFADGNAFGRADCDCJENADEJGTGXCFADEP?@AHCF?BABAFADAB?BCD?DGXEN?@A@AFCPADADA@ETADCJCLCJ?@Ml@I`@IZKj@CHEVCHAFELId@I\\CJGXEVKd@I`@I\\?@ADAFGXCFG\\Kb@GXEVAFIZI^?BI\\CJETCLEPCNIZEVCLERADAFEPCJ?@I\\EVADGXCLEPCLERELCPELGZGXCJER]bBADAFERCLEPCLERAFA?EXCJGXERAFCFCPEPGTERCLETEPCNCHGXAFCLCFCNKd@Kf@CNI`@GRMl@Kh@UhAIh@Mh@Ml@GXMn@]`BGTGVIb@CHSbAQz@I^_@fBYrA_@lBKh@GVK`@Kj@Mj@Ml@AFQx@EPG\\ENIb@I\\?@CLGXIZI`@UbAEVA@AHAFwMnn@Or@?@Mh@?@IZOx@i@dCGZQx@CNGXYpAMv@CDUjACJMj@Mj@Mj@I`@Ot@[vAYvAS|@ABS~@eHtZ[pAER[hAiB|EQ`@_EzJKXM\\Qj@_@rAYlAYlAYdAo@`C_CjJIZSv@g@tB]vAWlACFMp@"
                             },
                             "start_location": {
-                                "lat": 40.6483981,
-                                "lng": -74.0139947
+                                "lat": 40.7319276,
+                                "lng": -74.04635809999999
                             },
                             "travel_mode": "DRIVING"
                         },
                         {
                             "distance": {
-                                "text": "10.7 mi",
-                                "value": 17279
-                            },
-                            "duration": {
-                                "text": "13 mins",
-                                "value": 752
-                            },
-                            "end_location": {
-                                "lat": 40.6420868,
-                                "lng": -74.2068525
-                            },
-                            "html_instructions": "Keep <b>left</b> at the fork to stay on <b>I-278 W</b><div style=\"font-size:0.9em\">Toll road</div><div style=\"font-size:0.9em\">Entering New Jersey</div>",
-                            "maneuver": "fork-left",
-                            "polyline": {
-                                "points": "gw{vFjjybMJJNJJHBBHFJJDBHFb@^VR\\X\\Xt@l@VRJHHHFDFFFFDDLLNRFHd@n@Xb@f@x@LPLRPTLRNRLRNRNRPPPR`@^d@^RLRNn@b@VRf@d@PRJNNTLPLRBDVh@LVJXPl@Pj@L`@Nj@Tt@DRDNDPLh@XnATdAVbA?DDLH\\Lj@Lj@Lj@Jb@FXDRNj@FV?@Jd@Np@J`@@FDLDRNr@Lj@Nj@Lj@Lj@Lh@VlARx@Ln@J`@Nr@FVT`ALl@Ld@DRFV?@@JFTLj@Nn@Jh@Lf@FZDNNl@Lj@H`@Pt@Lh@f@xBJb@h@`CH^Ll@Rz@FZdAxELj@XlAj@dCVlAR|@XjAThANp@d@rBPt@d@tBb@nBb@rBPr@Np@j@jCFZNp@@BBJDXFVBJFTHZ@HHXHZJd@Jd@Nn@f@~B`@jBVjAH^DPDRJd@H^Lj@Jf@VpAFXH^DTDZDZDZ@R@FB\\@Z@X?@@r@?JA\\?T?PCn@?DCj@Ez@Cl@Eh@AVGv@C\\KdAE`@Ip@EZE\\Kr@GZKp@?BI^Kj@Kl@Kd@GZMj@e@pBIZGXQv@Or@Qr@Qx@YfA]rAq@bCMb@AFENSp@CHCDGRGXKZOh@CF]hA?@O`@Oj@Sn@IZITIVIZMd@Mb@IZMd@I^GTI^Kb@Q~@Kf@Mx@Mt@EZEZKt@E\\CXMjAM|ACZC\\AZEt@C\\?BCt@APCx@Af@Ah@A~ACbD?v@AtAAhAAtA?f@?PAx@Ad@Af@A^?ZAXEr@E|@G~@El@Gj@MlAE\\It@EVMt@EZEXMt@Mn@On@Mj@Sx@u@hCY~@Qf@Oh@Wt@Y|@Ut@g@~AO`@Oh@M\\Wz@]dAg@~AMb@[|@Od@ENg@|AM`@]hAM`@GP?@Of@Uv@Qt@UjAQ|@E\\CRGb@EXGn@Gh@C^CZC\\G~@Cp@Av@A`@?^?P@r@?`@@f@@h@@^?\\@j@@dA@x@@p@BjA?h@BdBBtA@fA@lA?F?nA@d@@t@@nB@r@@dA?@?x@BdA@|@BpB?F@fA@`@?ZBdA@dA@b@@nA@l@@h@@l@?VBnA?d@?P@R?Z?@?NAt@?f@Ad@ATAP?NCx@Ch@ANEd@I|@CPCVCPKz@ETUzACJO`AADKn@Id@CNO|@AJGd@Il@E`@C^Ef@APAVCb@Cf@?TA`@AL?\\?X@h@?H@`@@b@?RBr@Bb@@L@XFv@Fj@@H@NDZF\\D`@Jf@Jn@BHFZNt@J`@H`@Hb@H\\Ll@HZH^Ln@?BNn@FXVlATjARhAThATpAF`@?DXjB@BDZFb@@?BTF`@?BXrBJ|@LfA?@L~@LhABVDd@LrAFv@H`AJdA@VFx@LjBDx@LzBLfCBz@Dn@F|BB~@@b@@p@BbA?@@n@@ZBz@DjCBlA@ZBvAFjCFlC@p@F`C?ZDpB?HBrAFlCFlC?PBfAFfCBhABxA@XDjBDfCBr@@f@?^@d@?P?^?XAn@ElBCn@?NC^C`@C\\Eh@ARE`@[dCAFCTGZG^I`@Q~@Qt@GTW~@Md@Yz@Wt@Wn@Ul@KTSb@Q\\MTe@z@Wd@SXOV_@h@W^]f@MPY`@g@p@g@t@}@nAc@j@W^QVY^k@z@UZyB|CaAtAEDSXSXQVk@v@SXg@r@q@~@u@fA]f@_@f@e@p@ORg@p@Yb@W^[d@sAlBSZ_@l@g@v@QZMPWd@g@x@?@U`@e@x@OV?@GJU`@OXUd@?@Yh@Wf@Sb@CDUd@[p@_@v@Yr@k@nAQd@IP]z@IN_@`ASj@Qd@Qd@Ob@Q`@q@tB[|@ADUt@Sl@_AzCa@fAIXOb@K\\ADAFCHAJCFAD?@CPOv@G`@Kz@KbAA\\CZCZAZC^IlAEz@Ej@E`AGz@AXC^CXEXC\\EZEZEZGX?BETQ|@ENI\\IXGVGPCHIXIRIXMVKX?@KRKTKVMTINCF]j@CDILOTMRMNMNUXMN]^GFa@b@WXWXCBMNQPa@d@QREDUVGFML[\\QNGFGFEDGFST[ZMLWX]b@MPA@A@KPMNMPS\\c@r@QZWb@m@nAIPOZWd@IPMXOZQZMTS^KRWd@_@r@MVKTUb@Q^g@dA]x@]v@c@jAa@bAENEJMZSj@Sj@ADGRKXo@xBO`@g@vAGP[|@Of@M^]bASj@Od@Sj@Sh@CHOd@Sf@Sj@O`@Sh@O`@Wn@Sd@EJ_@~@g@lAa@~@O\\GLSd@Q^O^IN_@~@GJUj@Q`@Wh@Qb@Sd@ABQ`@Wh@Qb@a@~@]v@Sf@S`@w@jBc@bA}@vBYn@Yn@[r@i@nAMTu@fBo@zAe@hAs@~AcA~B_@z@Q`@Q`@g@jAINYp@MVYl@MV[j@MTMTYd@KPSZSZMPMP_@h@a@f@_@h@a@d@_@d@_@b@QRGHEDCDEDA@u@z@a@f@c@f@[\\Y^e@l@e@n@KLMP[`@SZe@r@CDa@n@GHS\\OV"
-                            },
-                            "start_location": {
-                                "lat": 40.6157198,
-                                "lng": -74.02678159999999
-                            },
-                            "travel_mode": "DRIVING"
-                        },
-                        {
-                            "distance": {
-                                "text": "0.8 mi",
-                                "value": 1209
+                                "text": "0.6 mi",
+                                "value": 1006
                             },
                             "duration": {
                                 "text": "1 min",
-                                "value": 86
+                                "value": 59
                             },
                             "end_location": {
-                                "lat": 40.6389242,
-                                "lng": -74.2084355
+                                "lat": 40.7005799,
+                                "lng": -74.1557693
                             },
-                            "html_instructions": "Take exit <b>3 A</b> on the <b>left</b> for <b>I-95 S</b><div style=\"font-size:0.9em\">Toll road</div>",
-                            "maneuver": "ramp-left",
+                            "html_instructions": "Take the <b>I-95 S</b>/<wbr/><b>NJ Turnpike</b> exit toward <b>Trenton</b><div style=\"font-size:0.9em\">Toll road</div>",
+                            "maneuver": "ramp-right",
                             "polyline": {
-                                "points": "a|`wFxo|cMGZMTKTMVKTMVWn@Wh@OXWn@Yj@ABKTGPCFKVGRA@GXGXABEXCZCZAV?BA\\?V?@?X?Z@`@Bf@@R@H?D@P@H@FBP@H?DBPBF?D@@@F@H@B@D@DDNBH@DBF@?BFBF@DDDDFFHDFFDB@FDDBDBD@LDJBJ@N@J?L?D?F?LCF?DAFADAFCBAFCDADCDCLGDC@ABAJIFGLM@CBC@CDE@EBCBE@EJWHOJ_@\\WFM@Ej@yADYDWDWDa@Di@JoABw@@e@@Y@Q@Y@Q@ORo@@CDIDINSBE@AJILKHEJELCDAHAB?@?D?L?JBLBF@DBJB?@JFJFb@X~@l@"
+                                "points": "}qmwFf~qcMMFKPC@GFEDCBEBEBA?C@C?E@A?C?E?E?AAA?C?CAEAAACAECCCCEACEEAEA?AEACAEAC?AACAG?E?G?E?G?G?E@E?C@A@GBMBC@E@ABEDCBEBABADCJCDAFAL?P@TBFBb@L`@N`@LRHzAf@l@VB?d@R@?VJNFJHpFbCVLpEpBdBv@jAh@jAj@nAn@n@\\RLjAp@"
                             },
                             "start_location": {
-                                "lat": 40.6420868,
-                                "lng": -74.2068525
+                                "lat": 40.7070336,
+                                "lng": -74.1528428
                             },
                             "travel_mode": "DRIVING"
                         },
                         {
                             "distance": {
-                                "text": "47.7 mi",
-                                "value": 76782
+                                "text": "52.8 mi",
+                                "value": 85045
                             },
                             "duration": {
-                                "text": "41 mins",
-                                "value": 2473
+                                "text": "46 mins",
+                                "value": 2756
                             },
                             "end_location": {
                                 "lat": 40.1025896,
                                 "lng": -74.7244216
                             },
-                            "html_instructions": "Keep <b>left</b> at the fork and merge onto <b>I-95 S</b><div style=\"font-size:0.9em\">Toll road</div>",
+                            "html_instructions": "Keep <b>left</b> at the fork and merge onto <b>I-95 S</b>/<wbr/><b>NJ Turnpike S</b><div style=\"font-size:0.9em\">Toll road</div>",
                             "maneuver": "fork-left",
                             "polyline": {
-                                "points": "gh`wFvy|cMRDLFHBJDRFNBF@H@NBJ@@?T@T@Z?T@L?b@@NBRBNB@@JBPDTHb@T`@Rl@Zl@\\`@R^P^R`@RDBVJb@T^Ph@VJDb@RzBfANHb@PXNRHPJ@?ZA~Az@vAr@XNRJ\\PBBb@Td@TdAj@xC`Bx@b@VN^RRJ^RZPb@V^RJFfAj@JFJFDBTLb@RFDZPRL^RHDv@b@f@VVNZNBB^R\\PVLj@Zl@Zj@ZB?\\PLHbAf@x@b@`@RzAv@JDv@b@h@VB@LHn@ZPJVLpAp@bBz@ZPRJRJPH\\PNH\\Pn@\\@?b@TVLb@TRJ\\Ph@XnAn@FDr@^~Ax@VLf@VXNPJHD\\PXNFBd@Tn@\\z@b@LHPHHDTLz@b@NHb@RNHVLNJ`@Rl@Zr@^j@Xv@`@ZNXNl@ZVL`@T^Pd@V^Rl@ZLFVLdAj@p@\\zAv@x@`@@?n@\\t@`@l@Xz@d@VLj@XRJVJ`@T\\PlAn@JDNH~@f@^Pb@V\\Px@b@jB~@j@ZRHdB~@`@RZNh@X`@RLFRLhExB~Ax@hAl@VL`@Tv@`@B@dAn@l@ZJFj@\\XPPJ|@h@x@d@bBbAVPXNXPVNB@JHB@B@BBB@JFJFbAf@RNFB`@T^RtAr@b@Vx@`@B@t@b@tAr@lB`AXNVNbBz@d@VtAr@bAh@nAl@r@^TNj@XZPJF`@TdAj@B@`@Tp@^~@f@RLt@`@jBdAPHTLf@XXPVLTLRLZPXNVLLH^RXNVLXNFDNF\\PRLDBf@V^P^RXLXPLFTJZPPH\\PRLTJv@`@b@R^Rn@\\NHj@VXPXLPJb@TJFRJb@VVNXNTLJFZPTL@@RJJF^TFBVP^RVNt@`@NHr@`@XPTLTLnBhAXNd@XLFVNXNVNVNRLVLVNTNXNVNXNVNVNXPTNVNVNXPVNLH\\TB@VPVPVPVNXPVPTNVPVP^VRNRLTPVPXPVRRN@@VPVRVNTRVPVRdAv@TRTPVPVTVRDDNJVRxAlATRVRVTVRRPbA|@pAjAJHJJl@j@XTv@t@f@d@t@r@LJVTn@l@^\\r@n@dA`Ab@`@NLv@v@t@n@f@d@x@v@x@r@^^JJbA|@~@|@~@z@v@r@HHPNZXf@d@z@v@\\\\LJFFFFd@b@`@^PNHH`@^FF|@v@JJ`@^^\\TRVTt@p@ZZ@@hAdA`@`@^\\b@`@VRj@j@f@d@JHx@t@ZZ^ZTTl@j@j@f@`A|@l@j@x@v@t@p@FDZZf@b@FHNLXV`A|@LL^\\d@b@VVZVZXLLHH`@\\h@f@x@t@BDXTZZ\\ZDDb@^r@r@\\\\NNHH~@`Af@f@VVFHb@f@t@v@FHHJ^`@TVTXBBj@n@DHRTn@x@JLd@n@t@`AV\\v@dA`@l@d@n@b@p@JPt@fAXd@NRXd@b@t@PVJRbAdBV`@FN~@`Bv@vA|@`Br@tAr@tAFHXj@`AjBl@hAfBhDdCtE`B`DXf@bAlB~@hBrAfCBF^r@R`@LV`@|@v@bBP`@P^\\v@DLb@bAn@~ABFjA`DTj@Rj@t@xBL^L\\f@~A\\bATv@FRL`@J`@Pl@Ld@Nf@Nj@f@lBDPNj@\\vA\\zAXlALp@DP\\`BBHVrA\\dBVvAN|@Lp@DRDVHj@Jl@BN`@nCLbABLDVFd@Hl@R|ADb@Hv@VxBBRBTPdB@LFt@JhADd@V~C@LBZBZFdAL|APtBFz@Fp@PzBL`BL`BJtAHfADf@Db@Bb@Dj@F|@Dj@BXHfA@RBb@Ft@B`@BXDj@Dj@@XDn@BVFdAHfADf@Bj@BZB^?@D`@B`@B`@?DBZDd@B`@?DB^D`@Bb@@PBRVnDDd@D`@JhA?BD\\B`@D`@Db@Fb@D`@LdAD`@Fd@Fh@?@Hl@F`@T|ANfAHf@Jr@Jl@BJFd@RlARjARfAP`AR~@RdANv@RbALn@TfAHZXtALl@Pr@XrAT`APt@Nl@FRNj@DNPp@Pn@\\nAV`ABDHZX|@V|@L`@Z~@Nd@FRZ~@d@tA|@bC\\|@\\z@\\|@FLbAhCDFXp@Tf@h@nAHNTh@^t@P`@HLh@fA?@r@rANZ\\p@h@~@HNj@bAXf@d@z@v@pAn@fAXd@Xd@t@nAJRXb@\\n@T^RZR\\`@p@PXp@hAp@hAV`@FHNV|@xABDZf@|@|Af@z@~ArC@B|@`B@BDHp@lAR`@b@x@z@bBz@dBZn@f@fAf@fA^|@Zv@\\z@Rf@N`@p@hBf@xAN`@X~@Vv@Z~@X|@r@~BX`Ad@|Ax@jCRt@`@rANd@ZfARt@Vv@XdANh@L`@Nj@d@~AJ^hChJHTV~@^vALb@~@bDPr@d@`B^vAf@hBLf@Rt@Pn@Nh@ZhARt@Rr@FVh@pBRr@Tr@Rn@Vz@FPL^^hAPb@^hA`@fATh@BHZt@Zt@t@lBJV`@|@JXTj@`@z@^z@\\t@Xp@Tb@p@vAdAtBXh@r@rAr@nAr@pAFJNTZh@T^v@nAd@v@X`@r@fAHLTZh@v@j@v@dAxAd@l@`@f@f@p@h@p@VZJJf@l@TVVZHHV\\|CnDxCjDZ^FHdDvDX\\@@`AhAlGlHbDvDdGdH^d@`@b@RTpCbDt@z@b@f@jAtAZ\\rJ`LVXf@j@f@l@HJzAdBz@bAJL`BjBn@v@pAzA|CnD^b@NP~@fA^b@b@f@dBpB~AjBFHRR\\b@fF`GPR^b@TVHJNP^b@nAxA\\^Z`@bAjAt@z@t@z@b@f@l@p@j@r@Z\\tA`BLLl@t@PRLLf@l@d@h@vAbBfAnA`@f@r@v@PT`AdATXr@x@r@x@JL`@f@PPVXFJXZ\\b@hAnAJLh@j@b@f@p@r@BBtAvAnAnAb@`@LLVTXVVVRPj@f@r@n@XVf@`@ZVjA`AbAv@bBlALH`Ar@n@b@f@Zd@Zx@h@lAv@r@b@p@b@b@Xl@^XPPLjAt@p@b@XPr@b@^Tj@^r@d@dC~A`@T\\T~@n@RL^VNHVPVRXPVRXPVRXR\\TRPTPXPVTXRFDNLTNBBVRZRXTZVHDLJRNZVh@`@f@\\NLFDDBPLLJHFB@TNn@b@VNXPFDNJXNXPXNjAn@?@VLXNZNXNXNZPVLXNJFLHXLXPVLLFJFZNVNXNVNXLZPVLZPFDPHXNXNZPVLp@\\HFJDXNVNVLZPVLVLVLt@`@VNVL\\RZNZPXNr@^ZPRJZPHBPJVLTLXNr@^XNXNVN@?VNLFHDB@XNXNXNZPVLHFJDVNXNTLLFHDXNXNLDJFVNXLXNVLXNVLZNVLZNHDJFZNTLZNHDLFVNVJVNXLVLVNXLXNXLVN\\PNHdBx@bAf@~@d@B@j@Xj@ZZN\\Ph@VJF^P`@Rp@\\n@ZpAn@l@Zl@ZVLLF\\Pf@TNHb@T`@Rj@Xj@Xf@Tf@Xb@RJFj@Xz@`@r@^LFh@V~@d@j@XLFTJPJhB|@fAh@^RRJTLf@T|At@hAj@TLl@Zn@ZvAp@DBn@Zv@`@x@`@b@Tf@Tb@TZNRJz@b@j@Xb@TTJx@b@h@VVLh@Vd@V`@Rj@Xp@Zx@`@XNx@`@XNZNd@TXN`Af@rAp@TLjAn@TLr@`@`@T|@j@p@`@j@\\ZRXPVNXPVPRNFBPLJHLFVPRNXPRLXRZRh@\\ZTl@^HFLHPJDDVPRLZR^VRLRLTNVPVNVRVNVPVNVPTPZRTNTNVNVRRLXRXPXRVNTNTNXRNJFDTLXRVPVNRNXPVPNJFBVPXRRLVPTNVPFDRLTNZRRNVPVPVPXRTNVPFDNLXRTNTPTPVRVPTPVPVRVPVRRNVPXTTPXPTPTPVRJFLJNJTPTPXRRNVPTPTPTPVPTPXRLJVPVRTPVPl@b@TPTPRNVPTPRNZVVPRLNL\\VZTTPVRVPTPVPVRVPVRTNRNTN^VVPTPVPXRVPVNTPh@\\JHPLTLVP@?RNp@b@VNVPVNJHJFVNVPVNXPVNVNVNh@Z|@f@FBLHVNVNTLB@TNTLZNVNVNVNTLTL@@TLXNXNVNXNXNJFJDVNZNJFJDVLXN\\NTLXLXNVLXLXNXLVLVJRJTJ^PXLNFFBZNZLVLXJVLHDPFVJZLVJZNVJZLXJXL\\LTH\\NVHVJTHXJXJXJXHz@Vh@Pt@TVHZJXHXHXHVHZJH@NFZHXHVHVFZJXHXHXFn@Pr@PXHLBJDXFXHZJXF^JPFZHn@PB@ZFXJXFVHZHZHt@R@?VFXHZHXHXFXHXHXHXF@@VFZHVHXFZHVH\\HJDLBXHXHXFZHXHLDJBXHNDJBXHt@TVFXHJBLDXHXFHBPFVFXH@@TFHBRFH@hA^@?zDjAdAZ`@LdBh@B@n@P`Bh@h@NxAb@B@lCx@bAZtEtA^LXH|@XlBj@LDrCz@ZJdCt@rC|@~Br@nDdApLpD|EzAx@TtAb@jA^hCv@fEnAhHxBXHRFbAZt@TND`@Lj@PHBx@VdBh@XHJDnIfCtBn@h@Nh@PRFlDfAbJnCbCv@x@Vf@NRFvBp@\\JdBf@vDjAlBj@tC|@`Bf@jBj@zBp@nHxB~Af@l@RRFJBRFVHdAZJDTFJDbFzAVH~C~@VHVH^JXJb@LLDx@V~Af@@?jA^p@RXJZHXJXHZLVHVHXJZJTHXJ`@Lj@RTHn@TXJVHLDLD\\LRFz@Xr@VLDTHj@Rj@Rn@Tt@Vt@Vv@Xl@T|@Z\\JTHHDbA\\p@Tb@NxCdA|DrA~FrBr@Vr@TVJNFf@PZJb@Pl@RdA^XHb@NtFnBx@XVJNDNFpBr@`@LZL`@Nf@PRFXJn@TNDf@Pr@VD@lBp@FBVHn@T`A\\^LnBp@fDjA~Aj@nAb@pE|AdCz@rAd@fA^fBn@fBl@bBl@rAd@vAf@d@N~Bx@xCdAf@Pj@RnAb@n@THBhFhBJBPFl@TlBp@`AZzBx@~@Z`A\\D@hA`@FBRFZLp@TZJp@TFBTHv@Xn@Tx@XvAd@~@Z`@Lr@Rr@TdBd@|A`@bBb@z@TPFzA`@lAZhBd@vA^|@VbAXnA\\|@XfA\\bAZ`AZzAf@lA`@`A\\f@P\\LlAd@|@\\v@Zx@ZnAd@lAd@`Bj@pAf@t@XjA`@\\Nd@PfBp@jBr@z@Z~EhBlAd@nDnAvFnBRHlBp@tCbA|@ZtFdBfEtA`A\\~Bt@fDfA~Bv@jA`@x@VXJJBRHj@PxBr@lA`@`AZJDvBt@j@P~@ZrAb@l@RjBn@f@Ph@PnA`@r@T\\LbBj@~@Zf@N~Aj@~@XfA^x@XvAf@zAf@`@NbA\\lGtBhA^x@Xz@Xb@NrAd@PF~@Z|Af@tDpA~@Zr@VPFn@R^LD@fJ~CRFnAb@|IzCpEzAbFdBND`Bj@jA`@tAd@xCbAf@PzPzF`A\\xBt@fA^~@ZjFfBvDpAXJtAb@`@ND@z@X`@LjA\\B@hA\\l@PfAZvCx@^Jr@RLD`AVXJx@TbAX\\HPD\\JlBj@|Ab@l@PZH|@V|Bn@PDnA^bAXb@Jz@VfCr@vBl@jAZPFLDr@R|Cz@LDv@RnBj@`@JLDJBr@RJBd@LXJJBD@zAb@jAZt@T\\J@?dBf@\\H~C|@l@PZHfA\\HBdA\\HDb@Nj@R`A\\nAf@bAb@LFp@Z@?l@Xd@Tf@Tj@Zb@RRLl@ZfAl@@@XPl@\\@@hAp@XR@?~@p@XPLJp@d@n@b@XTVRv@l@l@f@PLr@j@\\Xb@`@XVRPf@d@^\\TTt@t@h@h@r@r@\\^Z^JJ\\`@`AfAVXZ`@RVHHRVfAvAX^|@lARZRVhAbBv@lAb@r@b@r@b@t@`@r@d@v@`@v@v@xAl@lAP\\\\r@N\\h@hAFL^v@rArCBFHNrBjEVl@P\\FN\\r@^v@~@pBp@vA`@x@pApCl@rApAnC`@x@^z@x@bBVh@vCnG^t@|@nB@DVf@n@rAn@tA~AhDb@~@dAxB`@z@FNLVHPTd@^x@P^R`@rFlLjAfCP^pAlCHRLVd@`AJV`@x@^r@`@v@f@~@n@jA^t@^l@Vf@b@t@r@nAh@|@BB`@p@~EbInAtBt@lAj@~@^n@f@x@dAdBp@fAXd@`EvGR\\b@t@l@~@Zh@vDlGzAbCp@hAx@rAp@fAl@`AVb@V`@lApB^l@Zh@DHXd@@@V`@|BvDV`@h@z@\\l@Zd@Vb@d@t@R\\`@p@T^Zf@V`@t@nANT\\l@HJVd@T\\PV\\l@p@fAlB`Dx@pAPXVb@l@bAV`@T^RZn@dAPXfCdEPZx@pAXd@dBtCbA`BfAhBpBbD\\l@V`@T\\Xf@p@dAVb@h@|@p@fAr@jAV`@PX`A`BfBtCR\\DFBDZf@@BRZb@r@^n@`@n@V`@fCdEfAhBb@r@`A~An@dA|@xAx@tA\\h@b@r@\\l@f@v@tCxE|@zAdAbBvA~Bt@lABDFLd@v@b@r@R\\d@r@b@v@DD\\j@`@n@v@lAv@rAv@nA`@p@@@d@v@NTPZRZz@xAtAzBNXPXZf@hAhBb@p@jAlBfBvCHLr@hAhBxCpBdDXf@T^d@r@JR`@n@x@rABFb@p@f@|@`A|An@dAFHNXFHjDxFh@|@PXn@hAd@z@HLz@`BR\\LVDFNX^v@Vf@P\\Xh@P`@f@`A\\v@v@bBTf@LVn@rAj@lALXDFp@zArArCN\\`ArBl@pAd@bA`@x@JTTf@b@`AvA|CfBxDnAnCj@nALTlAhCr@xAr@zAFNJTHNJTx@bBt@`BRd@`@x@DLVl@b@|@Tf@P\\Th@\\r@JRTf@n@tAXl@d@bA\\t@BDl@pAx@fBXl@d@~@|@nBN\\Td@FNVj@P\\`@z@d@bA^v@Tf@`@|@^v@b@~@d@`ATf@`@|@l@pAf@bAh@lAl@lA^z@nAlC~@pBv@`BJR|@nBb@`AXl@n@rA^x@P\\`@~@h@fAZr@vAzCTf@\\p@jAfC\\t@p@xAZp@|@lBTd@Th@\\t@LVp@tAj@lAnAfCZn@JT\\p@n@pA@BHPVd@NZf@~@R`@R^NZRXJPz@~ADJ~@`B\\p@t@rAh@~@`A`B@B`AdBhAjB`A`B`C|Dj@|@^j@vAxBRZj@z@h@x@h@z@Zb@rBzCNTd@n@zAvBPXnAfBB@~@pANPz@jA~AvBX^LP~@nAd@p@`ApAHLHJz@jAxHhKj@t@l@v@`ArAVZ@BlA`BV\\zLjP?@TZrCxDxBxC`C`DNRzCbEZb@DFLP`@h@d@n@PTPVRVzErGRVV^LPNPRXTZf@p@r@`ANRX^TXRZNRRVV\\\\d@BDTX@@@BNPf@r@JLFJZ`@\\b@RZLNDFTXLRRVPVZ`@X`@~@lAPVTXLPn@|@DDHJNTHHFJTX^h@VZPTPVRXV\\RVRXPTlBhC`ApApBnCVZTZTZTZ\\d@V^RVPTRXRVRXPRX`@\\d@RXRVPVb@l@pAdBb@l@RVNRHLHHNTBDj@t@FHPTb@l@f@p@NRPTPVPT`@h@JNLPX^HJTZFHPT^f@V\\^f@RXX`@BBPTLPPVTXTZX^V\\V\\b@l@bArAZb@FHh@r@x@hAlBhCtAnBpAdBf@r@HJZb@xAjBrEhG`GbIvBtChEzFr@`AzCdETX^f@~@pAt@bAn@z@FHbArAHJhDtEl@v@j@v@r@~@~@nAv@hAzApBnA`BrBrCJNLLj@x@`@h@l@x@Zb@h@r@l@x@j@t@d@l@tAlBlCpDvBvCNPvC~DRTx@hARXd@n@dAvAb@l@JN^f@RVVXHJJLRVFJJJLP@?LPTXPR?@VXLPZ^h@p@VZj@r@`@f@@BVXd@l@JLX\\LPTVLNVXZ^PTRTTVPTTVTXPRTVRVPRVXVZNPHJb@f@PRRTRTNPNPFFRTLLFJPRDBLNFHFHb@h@RTHHHJTTHJRRNNFFXXPTn@t@rAzAFFNP\\ZLLRRPPp@p@XXTT`@b@\\^HHRR\\`@TTVVZZf@j@VVJJXXTTZ\\@?PPXVRTJHt@r@^\\PPDDNNRRXXDFz@|@h@j@b@f@d@d@tArA\\\\BBVTTT`@^NNBBTTTTLLHHVXZXJHPPVVXVFHVTXXb@b@JJVTNNXZ\\Zb@b@PPPPJJDD~@|@l@n@XV"
+                                "points": "silwFpprcMJ@@?h@Z^RZRz@f@\\PRLPHRLDBNHNJXNDBHDNJRJPLZNZR\\PHFJFLFJDJDHBD@J@PBH@J@JBTBJ@PBB?L@LBD@FBD@@?DBJDFBHDJF@@LH`@VPJLHBBLHj@`@B@NHJHPJPLXRNJ@?VPXPz@f@f@ZbAl@DBPJr@b@VNDBPJ\\TDBTC^Vn@`@f@\\ZRLFVRZRNJh@\\XPp@d@l@^fAp@LHHFbAn@p@b@RLr@`@HFrAx@BBn@^BB^T`@V\\RTNZPl@^hAr@hAp@fAr@hAp@bAn@lAt@n@`@|A~@p@`@nDxB~AbAxBrAlDvBZRXPDBh@\\`BbAjDtBXPJFHFhAp@n@`@`BbATNr@b@lBjAx@f@DBFDtAz@hAr@n@`@f@\\B@t@f@l@d@TPXRTPXTj@f@VR^Zx@r@\\\\d@`@VVj@f@j@f@j@j@h@d@n@l@d@`@\\Zh@f@n@j@l@j@t@r@v@r@VTVTVV^Z^\\j@h@l@j@j@f@j@h@@@VT|@x@n@j@b@`@jAfAVT\\\\b@^XXt@p@ZX@@^\\PNvApAz@v@XXNNt@n@XVj@h@l@h@l@h@h@b@^ZBBd@^j@b@TR\\V`@ZB@b@\\JH`@XNJ^VZTr@d@r@d@h@\\d@XLHv@d@DBXP~@j@DBjAr@^Rx@f@h@\\d@XHDf@ZB@f@XTNx@d@@@^T`@TB@^T^Td@X@@RJLJTLLHPJHDXPNJz@f@`@VTNDBRNZTPLRPXVXTLLLLJHHJFDZ\\@@RRDD^b@@B^b@`@h@JLV`@HJDFJNJNJPV`@DFFJXh@Zj@P\\Tf@P\\Zr@NZJVHPJRHRXn@FJJXNXN\\JVLXh@hADJFLFNDHDJTf@Th@BFVh@BFFLHPJVRb@NZDJHNN\\BFJTLVJVRb@N\\NZP`@LXNZP`@N^NZNZN^LXP\\N\\P^N\\LXNZN\\Xl@Vj@Zj@Tf@JNDHR\\JPFJLTNTT\\NTV^^f@X\\V\\VZTVLNRRBBRTRRPPZXVVVRDDNLTPDBt@l@bAp@v@f@b@XTJh@Xf@Vv@\\JDt@Z@?h@TVLp@V|@`@fAb@dAd@n@X\\N@@`@P|@b@dBz@PJXLd@V`@T`@RFBj@Zh@Vj@X?@XLNHf@VRJRJ@@l@XhAl@NHRJNHRJNFRLZPFBVLbAf@^RZP`@Rf@VVLb@TXNd@VLFRJDBZN^R\\PVLJF^RB@@?XNZPZNn@\\^R~BlA\\Np@^VLdAh@@@~BlA~Az@vAr@XNRJ\\PBBb@Td@TdAj@xC`Bx@b@VN^RRJ^RZPb@V^RJFfAj@JFJFDBTLb@RFDZPRL^RHDv@b@f@VVNZNBB^R\\PVLj@Zl@Zj@ZB?\\PLHbAf@x@b@`@RzAv@JDv@b@h@VB@LHn@ZPJVLpAp@bBz@ZPRJRJPH\\PNH\\Pn@\\@?b@TVLb@TRJ\\Ph@XnAn@FDr@^~Ax@VLf@VXNPJHD\\PXNFBd@Tn@\\z@b@LHPHHDTLz@b@NHb@RNHVLNJ`@Rl@Zr@^j@Xv@`@ZNXNl@ZVL`@T^Pd@V^Rl@ZLFVLdAj@p@\\zAv@x@`@@?n@\\t@`@l@Xz@d@VLj@XRJVJ`@T\\PlAn@JDNH~@f@^Pb@V\\Px@b@jB~@j@ZRHdB~@`@RZNh@X`@RLFRLhExB~Ax@hAl@VL`@Tv@`@B@dAn@l@ZJFj@\\XPPJ|@h@x@d@bBbAVPXNXPVNB@JHB@B@BBB@JFJFbAf@RNFB`@T^RtAr@b@Vx@`@B@t@b@tAr@lB`AXNVNbBz@d@VtAr@bAh@nAl@r@^TNj@XZPJF`@TdAj@B@`@Tp@^~@f@RLt@`@jBdAPHTLf@XXPVLTLRLZPXNVLLH^RXNVLXNFDNF\\PRLDBf@V^P^RXLXPLFTJZPPH\\PRLTJv@`@b@R^Rn@\\NHj@VXPXLPJb@TJFRJb@VVNXNTLJFZPTL@@RJJF^TFBVP^RVNt@`@NHr@`@XPTLTLnBhAXNd@XLFVNXNVNVNRLVLVNTNXNVNXNVNVNXPTNVNVNXPVNLH\\TB@VPVPVPVNXPVPTNVPVP^VRNRLTPVPXPVRRN@@VPVRVNTRVPVRdAv@TRTPVPVTVRDDNJVRxAlATRVRVTVRRPbA|@pAjAJHJJl@j@XTv@t@f@d@t@r@LJVTn@l@^\\r@n@dA`Ab@`@NLv@v@t@n@f@d@x@v@x@r@^^JJbA|@~@|@~@z@v@r@HHPNZXf@d@z@v@\\\\LJFFFFd@b@`@^PNHH`@^FF|@v@JJ`@^^\\TRVTt@p@ZZ@@hAdA`@`@^\\b@`@VRj@j@f@d@JHx@t@ZZ^ZTTl@j@j@f@`A|@l@j@x@v@t@p@FDZZf@b@FHNLXV`A|@LL^\\d@b@VVZVZXLLHH`@\\h@f@x@t@BDXTZZ\\ZDDb@^r@r@\\\\NNHH~@`Af@f@VVFHb@f@t@v@FHHJ^`@TVTXBBj@n@DHRTn@x@JLd@n@t@`AV\\v@dA`@l@d@n@b@p@JPt@fAXd@NRXd@b@t@PVJRbAdBV`@FN~@`Bv@vA|@`Br@tAr@tAFHXj@`AjBl@hAfBhDdCtE`B`DXf@bAlB~@hBrAfCBF^r@R`@LV`@|@v@bBP`@P^\\v@DLb@bAn@~ABFjA`DTj@Rj@t@xBL^L\\f@~A\\bATv@FRL`@J`@Pl@Ld@Nf@Nj@f@lBDPNj@\\vA\\zAXlALp@DP\\`BBHVrA\\dBVvAN|@Lp@DRDVHj@Jl@BN`@nCLbABLDVFd@Hl@R|ADb@Hv@VxBBRBTPdB@LFt@JhADd@V~C@LBZBZFdAL|APtBFz@Fp@PzBL`BL`BJtAHfADf@Db@Bb@Dj@F|@Dj@BXHfA@RBb@Ft@B`@BXDj@Dj@@XDn@BVFdAHfADf@Bj@BZB^?@D`@B`@B`@?DBZDd@B`@?DB^D`@Bb@@PBRVnDDd@D`@JhA?BD\\B`@D`@Db@Fb@D`@LdAD`@Fd@Fh@?@Hl@F`@T|ANfAHf@Jr@Jl@BJFd@RlARjARfAP`AR~@RdANv@RbALn@TfAHZXtALl@Pr@XrAT`APt@Nl@FRNj@DNPp@Pn@\\nAV`ABDHZX|@V|@L`@Z~@Nd@FRZ~@d@tA|@bC\\|@\\z@\\|@FLbAhCDFXp@Tf@h@nAHNTh@^t@P`@HLh@fA?@r@rANZ\\p@h@~@HNj@bAXf@d@z@v@pAn@fAXd@Xd@t@nAJRXb@\\n@T^RZR\\`@p@PXp@hAp@hAV`@FHNV|@xABDZf@|@|Af@z@~ArC@B|@`B@BDHp@lAR`@b@x@z@bBz@dBZn@f@fAf@fA^|@Zv@\\z@Rf@N`@p@hBf@xAN`@X~@Vv@Z~@X|@r@~BX`Ad@|Ax@jCRt@`@rANd@ZfARt@Vv@XdANh@L`@Nj@d@~AJ^hChJHTV~@^vALb@~@bDPr@d@`B^vAf@hBLf@Rt@Pn@Nh@ZhARt@Rr@FVh@pBRr@Tr@Rn@Vz@FPL^^hAPb@^hA`@fATh@BHZt@Zt@t@lBJV`@|@JXTj@`@z@^z@\\t@Xp@Tb@p@vAdAtBXh@r@rAr@nAr@pAFJNTZh@T^v@nAd@v@X`@r@fAHLTZh@v@j@v@dAxAd@l@`@f@f@p@h@p@VZJJf@l@TVVZHHV\\|CnDxCjDZ^FHdDvDX\\@@`AhAlGlHbDvDdGdH^d@`@b@RTpCbDt@z@b@f@jAtAZ\\rJ`LVXf@j@f@l@HJzAdBz@bAJL`BjBn@v@pAzA|CnD^b@NP~@fA^b@b@f@dBpB~AjBFHRR\\b@fF`GPR^b@TVHJNP^b@nAxA\\^Z`@bAjAt@z@t@z@b@f@l@p@j@r@Z\\tA`BLLl@t@PRLLf@l@d@h@vAbBfAnA`@f@r@v@PT`AdATXr@x@r@x@JL`@f@PPVXFJXZ\\b@hAnAJLh@j@b@f@p@r@BBtAvAnAnAb@`@LLVTXVVVRPj@f@r@n@XVf@`@ZVjA`AbAv@bBlALH`Ar@n@b@f@Zd@Zx@h@lAv@r@b@p@b@b@Xl@^XPPLjAt@p@b@XPr@b@^Tj@^r@d@dC~A`@T\\T~@n@RL^VNHVPVRXPVRXPVRXR\\TRPTPXPVTXRFDNLTNBBVRZRXTZVHDLJRNZVh@`@f@\\NLFDDBPLLJHFB@TNn@b@VNXPFDNJXNXPXNjAn@?@VLXNZNXNXNZPVLXNJFLHXLXPVLLFJFZNVNXNVNXLZPVLZPFDPHXNXNZPVLp@\\HFJDXNVNVLZPVLVLVLt@`@VNVL\\RZNZPXNr@^ZPRJZPHBPJVLTLXNr@^XNXNVN@?VNLFHDB@XNXNXNZPVLHFJDVNXNTLLFHDXNXNLDJFVNXLXNVLXNVLZNVLZNHDJFZNTLZNHDLFVNVJVNXLVLVNXLXNXLVN\\PNHdBx@bAf@~@d@B@j@Xj@ZZN\\Ph@VJF^P`@Rp@\\n@ZpAn@l@Zl@ZVLLF\\Pf@TNHb@T`@Rj@Xj@Xf@Tf@Xb@RJFj@Xz@`@r@^LFh@V~@d@j@XLFTJPJhB|@fAh@^RRJTLf@T|At@hAj@TLl@Zn@ZvAp@DBn@Zv@`@x@`@b@Tf@Tb@TZNRJz@b@j@Xb@TTJx@b@h@VVLh@Vd@V`@Rj@Xp@Zx@`@XNx@`@XNZNd@TXN`Af@rAp@TLjAn@TLr@`@`@T|@j@p@`@j@\\ZRXPVNXPVPRNFBPLJHLFVPRNXPRLXRZRh@\\ZTl@^HFLHPJDDVPRLZR^VRLRLTNVPVNVRVNVPVNVPTPZRTNTNVNVRRLXRXPXRVNTNTNXRNJFDTLXRVPVNRNXPVPNJFBVPXRRLVPTNVPFDRLTNZRRNVPVPVPXRTNVPFDNLXRTNTPTPVRVPTPVPVRVPVRRNVPXTTPXPTPTPVRJFLJNJTPTPXRRNVPTPTPTPVPTPXRLJVPVRTPVPl@b@TPTPRNVPTPRNZVVPRLNL\\VZTTPVRVPTPVPVRVPVRTNRNTN^VVPTPVPXRVPVNTPh@\\JHPLTLVP@?RNp@b@VNVPVNJHJFVNVPVNXPVNVNVNh@Z|@f@FBLHVNVNTLB@TNTLZNVNVNVNTLTL@@TLXNXNVNXNXNJFJDVNZNJFJDVLXN\\NTLXLXNVLXLXNXLVLVJRJTJ^PXLNFFBZNZLVLXJVLHDPFVJZLVJZNVJZLXJXL\\LTH\\NVHVJTHXJXJXJXHz@Vh@Pt@TVHZJXHXHXHVHZJH@NFZHXHVHVFZJXHXHXFn@Pr@PXHLBJDXFXHZJXF^JPFZHn@PB@ZFXJXFVHZHZHt@R@?VFXHZHXHXFXHXHXHXF@@VFZHVHXFZHVH\\HJDLBXHXHXFZHXHLDJBXHNDJBXHt@TVFXHJBLDXHXFHBPFVFXH@@TFHBRFH@hA^@?zDjAdAZ`@LdBh@B@n@P`Bh@h@NxAb@B@lCx@bAZtEtA^LXH|@XlBj@LDrCz@ZJdCt@rC|@~Br@nDdApLpD|EzAx@TtAb@jA^hCv@fEnAhHxBXHRFbAZt@TND`@Lj@PHBx@VdBh@XHJDnIfCtBn@h@Nh@PRFlDfAbJnCbCv@x@Vf@NRFvBp@\\JdBf@vDjAlBj@tC|@`Bf@jBj@zBp@nHxB~Af@l@RRFJBRFVHdAZJDTFJDbFzAVH~C~@VHVH^JXJb@LLDx@V~Af@@?jA^p@RXJZHXJXHZLVHVHXJZJTHXJ`@Lj@RTHn@TXJVHLDLD\\LRFz@Xr@VLDTHj@Rj@Rn@Tt@Vt@Vv@Xl@T|@Z\\JTHHDbA\\p@Tb@NxCdA|DrA~FrBr@Vr@TVJNFf@PZJb@Pl@RdA^XHb@NtFnBx@XVJNDNFpBr@`@LZL`@Nf@PRFXJn@TNDf@Pr@VD@lBp@FBVHn@T`A\\^LnBp@fDjA~Aj@nAb@pE|AdCz@rAd@fA^fBn@fBl@bBl@rAd@vAf@d@N~Bx@xCdAf@Pj@RnAb@n@THBhFhBJBPFl@TlBp@`AZzBx@~@Z`A\\D@hA`@FBRFZLp@TZJp@TFBTHv@Xn@Tx@XvAd@~@Z`@Lr@Rr@TdBd@|A`@bBb@z@TPFzA`@lAZhBd@vA^|@VbAXnA\\|@XfA\\bAZ`AZzAf@lA`@`A\\f@P\\LlAd@|@\\v@Zx@ZnAd@lAd@`Bj@pAf@t@XjA`@\\Nd@PfBp@jBr@z@Z~EhBlAd@nDnAvFnBRHlBp@tCbA|@ZtFdBfEtA`A\\~Bt@fDfA~Bv@jA`@x@VXJJBRHj@PxBr@lA`@`AZJDvBt@j@P~@ZrAb@l@RjBn@f@Ph@PnA`@r@T\\LbBj@~@Zf@N~Aj@~@XfA^x@XvAf@zAf@`@NbA\\lGtBhA^x@Xz@Xb@NrAd@PF~@Z|Af@tDpA~@Zr@VPFn@R^LD@fJ~CRFnAb@|IzCpEzAbFdBND`Bj@jA`@tAd@xCbAf@PzPzF`A\\xBt@fA^~@ZjFfBvDpAXJtAb@`@ND@z@X`@LjA\\B@hA\\l@PfAZvCx@^Jr@RLD`AVXJx@TbAX\\HPD\\JlBj@|Ab@l@PZH|@V|Bn@PDnA^bAXb@Jz@VfCr@vBl@jAZPFLDr@R|Cz@LDv@RnBj@`@JLDJBr@RJBd@LXJJBD@zAb@jAZt@T\\J@?dBf@\\H~C|@l@PZHfA\\HBdA\\HDb@Nj@R`A\\nAf@bAb@LFp@Z@?l@Xd@Tf@Tj@Zb@RRLl@ZfAl@@@XPl@\\@@hAp@XR@?~@p@XPLJp@d@n@b@XTVRv@l@l@f@PLr@j@\\Xb@`@XVRPf@d@^\\TTt@t@h@h@r@r@\\^Z^JJ\\`@`AfAVXZ`@RVHHRVfAvAX^|@lARZRVhAbBv@lAb@r@b@r@b@t@`@r@d@v@`@v@v@xAl@lAP\\\\r@N\\h@hAFL^v@rArCBFHNrBjEVl@P\\FN\\r@^v@~@pBp@vA`@x@pApCl@rApAnC`@x@^z@x@bBVh@vCnG^t@|@nB@DVf@n@rAn@tA~AhDb@~@dAxB`@z@FNLVHPTd@^x@P^R`@rFlLjAfCP^pAlCHRLVd@`AJV`@x@^r@`@v@f@~@n@jA^t@^l@Vf@b@t@r@nAh@|@BB`@p@~EbInAtBt@lAj@~@^n@f@x@dAdBp@fAXd@`EvGR\\b@t@l@~@Zh@vDlGzAbCp@hAx@rAp@fAl@`AVb@V`@lApB^l@Zh@DHXd@@@V`@|BvDV`@h@z@\\l@Zd@Vb@d@t@R\\`@p@T^Zf@V`@t@nANT\\l@HJVd@T\\PV\\l@p@fAlB`Dx@pAPXVb@l@bAV`@T^RZn@dAPXfCdEPZx@pAXd@dBtCbA`BfAhBpBbD\\l@V`@T\\Xf@p@dAVb@h@|@p@fAr@jAV`@PX`A`BfBtCR\\DFBDZf@@BRZb@r@^n@`@n@V`@fCdEfAhBb@r@`A~An@dA|@xAx@tA\\h@b@r@\\l@f@v@tCxE|@zAdAbBvA~Bt@lABDFLd@v@b@r@R\\d@r@b@v@DD\\j@`@n@v@lAv@rAv@nA`@p@@@d@v@NTPZRZz@xAtAzBNXPXZf@hAhBb@p@jAlBfBvCHLr@hAhBxCpBdDXf@T^d@r@JR`@n@x@rABFb@p@f@|@`A|An@dAFHNXFHjDxFh@|@PXn@hAd@z@HLz@`BR\\LVDFNX^v@Vf@P\\Xh@P`@f@`A\\v@v@bBTf@LVn@rAj@lALXDFp@zArArCN\\`ArBl@pAd@bA`@x@JTTf@b@`AvA|CfBxDnAnCj@nALTlAhCr@xAr@zAFNJTHNJTx@bBt@`BRd@`@x@DLVl@b@|@Tf@P\\Th@\\r@JRTf@n@tAXl@d@bA\\t@BDl@pAx@fBXl@d@~@|@nBN\\Td@FNVj@P\\`@z@d@bA^v@Tf@`@|@^v@b@~@d@`ATf@`@|@l@pAf@bAh@lAl@lA^z@nAlC~@pBv@`BJR|@nBb@`AXl@n@rA^x@P\\`@~@h@fAZr@vAzCTf@\\p@jAfC\\t@p@xAZp@|@lBTd@Th@\\t@LVp@tAj@lAnAfCZn@JT\\p@n@pA@BHPVd@NZf@~@R`@R^NZRXJPz@~ADJ~@`B\\p@t@rAh@~@`A`B@B`AdBhAjB`A`B`C|Dj@|@^j@vAxBRZj@z@h@x@h@z@Zb@rBzCNTd@n@zAvBPXnAfBB@~@pANPz@jA~AvBX^LP~@nAd@p@`ApAHLHJz@jAxHhKj@t@l@v@`ArAVZ@BlA`BV\\zLjP?@TZrCxDxBxC`C`DNRzCbEZb@DFLP`@h@d@n@PTPVRVzErGRVV^LPNPRXTZf@p@r@`ANRX^TXRZNRRVV\\\\d@BDTX@@@BNPf@r@JLFJZ`@\\b@RZLNDFTXLRRVPVZ`@X`@~@lAPVTXLPn@|@DDHJNTHHFJTX^h@VZPTPVRXV\\RVRXPTlBhC`ApApBnCVZTZTZTZ\\d@V^RVPTRXRVRXPRX`@\\d@RXRVPVb@l@pAdBb@l@RVNRHLHHNTBDj@t@FHPTb@l@f@p@NRPTPVPT`@h@JNLPX^HJTZFHPT^f@V\\^f@RXX`@BBPTLPPVTXTZX^V\\V\\b@l@bArAZb@FHh@r@x@hAlBhCtAnBpAdBf@r@HJZb@xAjBrEhG`GbIvBtChEzFr@`AzCdETX^f@~@pAt@bAn@z@FHbArAHJhDtEl@v@j@v@r@~@~@nAv@hAzApBnA`BrBrCJNLLj@x@`@h@l@x@Zb@h@r@l@x@j@t@d@l@tAlBlCpDvBvCNPvC~DRTx@hARXd@n@dAvAb@l@JN^f@RVVXHJJLRVFJJJLP@?LPTXPR?@VXLPZ^h@p@VZj@r@`@f@@BVXd@l@JLX\\LPTVLNVXZ^PTRTTVPTTVTXPRTVRVPRVXVZNPHJb@f@PRRTRTNPNPFFRTLLFJPRDBLNFHFHb@h@RTHHHJTTHJRRNNFFXXPTn@t@rAzAFFNP\\ZLLRRPPp@p@XXTT`@b@\\^HHRR\\`@TTVVZZf@j@VVJJXXTTZ\\@?PPXVRTJHt@r@^\\PPDDNNRRXXDFz@|@h@j@b@f@d@d@tArA\\\\BBVTTT`@^NNBBTTTTLLHHVXZXJHPPVVXVFHVTXXb@b@JJVTNNXZ\\Zb@b@PPPPJJDD~@|@l@n@XV"
                             },
                             "start_location": {
-                                "lat": 40.6389242,
-                                "lng": -74.2084355
+                                "lat": 40.7005799,
+                                "lng": -74.1557693
                             },
                             "travel_mode": "DRIVING"
                         },
@@ -3086,7 +3038,7 @@
                                 "lat": 39.6865392,
                                 "lng": -75.44401549999999
                             },
-                            "html_instructions": "Continue onto <b>NJ Tpke S</b><div style=\"font-size:0.9em\">Toll road</div>",
+                            "html_instructions": "Continue onto <b>NJ Tpke S</b>/<wbr/><b>NJ Turnpike S</b><div style=\"font-size:0.9em\">Toll road</div>",
                             "polyline": {
                                 "points": "epwsFrragMPP|AzARRXZh@d@n@n@~A~ApCnCZZrBrBNNf@d@NPpAnAf@f@BBb@b@pAnAl@l@JJdAdAVVJJd@d@j@h@LNr@p@PPf@d@DFn@n@FF`@`@^^^^PNd@d@^\\FHt@t@d@d@NN|@|@B@|@|@DDXXVTp@r@p@n@z@|@v@t@x@x@|@z@^`@p@n@BB@@XXrBrBl@j@pAtAbCdCd@f@jBnBrBxBDFdAhAxA~A~BlC^b@Z\\bAjAHJrA~ANNX\\d@j@dBtB\\b@RV|@fATVd@l@h@p@b@h@@@DFb@j@j@r@TZnBhCRVTXDDr@bAt@`Ap@|@|@nAj@v@n@z@p@~@RXH`@\\h@d@l@PT`@j@z@pAbAvA`AtAp@`ATZX`@JNf@r@h@v@d@p@n@|@r@`ArAlBPVt@fAz@nA@@z@lAn@|@l@|@dA|AV\\X`@~@tAdAzA~@tAnAjB~@tAz@lAhA`Bb@p@f@t@d@p@jEnGdCpDhG~IdEfGfBfC`AvAPVd@r@~A|BbCnDfCrDbAxAv@jAjAbBxB`DXd@\\f@`@h@V`@lAhBpBzCdAfBzAdCpAxB`BrClBlDhAvBfAxBp@rAx@`Bx@dBt@~Ar@|AP^LZNZNZN\\pChGN\\HNx@lBP\\N\\NZJTFPBDlAlCd@dAp@|AVh@Xp@NZP^NZN\\P^LZP\\N\\NZ^z@N^NZNZN\\P\\LZNZ`DfHN\\N\\P^LVP^^|@NXN\\LZ@?pBpEnApCp@zAVj@FN@?JTzAhDDFBHTd@r@|An@vAz@hB|@jBt@zAz@fB`B~C`@v@t@tAp@lAr@nABDrA`ChB|CjAhB|AbClAjBJNRXf@v@NRr@bA\\f@NRZd@LN`@j@NRFHDFRVDFr@`ATXb@j@NR~@lAJJ\\b@h@p@nCdD\\`@`AfATVz@`A@B`AdALLl@n@j@j@VZNLTTh@j@b@b@XZh@h@v@v@|@|@t@t@LLj@l@Z\\h@f@^^v@v@j@j@tBvBfAhARRVVTRPRj@j@DDNNRRTTRRVVRR`JdJ\\\\dAfArArADDv@v@lAnAv@v@ZZFHRPPPnAnAlAnARRx@x@XXPRDDNNPP^\\BBTTRTNNNN@@DDFFHH\\\\NNv@v@DD`EbETTLLJJ\\^^^`@`@NNPPRPRTJJfBfBJJbAbArCtCl@l@|@~@RRLJf@h@PPHHv@v@JJ^^Z\\r@r@JJf@f@`@`@n@n@^`@jAjAh@h@bAbAz@z@DDx@z@pApA\\\\jAlA~@~@TTJHJJRTp@p@XXNNpArA|A|A`@`@VVHHHHTTTTTTVVDDRRTVTT`A~@XZNNTTRTVTRTTTRTTTTT@BPRTTRTRTHJJJTVRTRVRVRTTVFHJLPTVXPVDDLPTXPRRXRXJNDFRVRXRVX`@JPb@l@R\\@?PXPXRXPVPZLPV`@NXRXPXPZPZPXNV@@PZNXPZPXNZPZNXNXP\\BDJRR^JTT`@LXNZP\\NZNZLXFLHPNZN\\FLFLN\\Th@HNL\\N\\N\\L\\N\\N`@LXN^JZN\\L^L\\N^L^L\\FNDLL^L^L\\L^L^J\\L^L\\J^DNFLJ`@L^J\\J^L`@L`@HZL`@L`@HZLb@FPDN?@BFBJ@BDNPl@L`@L`@Tv@L`@Lb@J\\@BHXL`@J^L`@J^@DJXHZJ\\@@?@J^L^J\\J^J\\Lb@BJFTL\\?@J^L`@L^J^HZL`@DJDNFNBJJ\\L\\Nd@JXL^L`@L^N^J\\LZv@tBN`@JZLXLZ@DLZN\\L\\N\\N^N\\Tf@f@fAd@bAfA~BT`@LXP\\NXHPDHPZP\\BDJPNZPZPZZh@lBbDFJNXRZPXb@r@PXPZPX`@p@FJLTLRR\\tAzBFJPZRZPZPXR\\RZPZJNZj@v@pAR\\RXVd@n@fARXj@bAr@jAv@pALRl@bAFJb@r@x@rA`@r@b@t@d@t@b@p@P\\RXb@t@b@t@Vb@FHBFBDBDDFHLFJDHPXNVNXNV^r@T`@PZNXPZPXNZP\\PZNXNZPZ@@NZNZZj@BHP\\BFJRNZPZNXN\\P\\N\\LXBD@@JTN\\\\v@`@x@LZP^N\\^x@^z@Rb@FPZr@`@bATf@HPL\\N\\N^LXLZFNbB`EP`@DJDLN\\L\\f@jADJ\\x@N\\\\z@^|@Zv@N\\N\\Zt@L\\NZFPHPlFnMBHNZ~BzFt@fBN\\LZNZ@BNZLZNZN\\NZNZNZLVJRNX^t@`@t@`AlBXf@Tb@NXRZPZPXP\\PXPXNVR^LPPV\\j@NTNTPXRXRZPVPXRVRXFJHLPTFH?@`@f@lA`Br@~@~AnBt@|@fCrCzBbClJjKt@x@zBbClBvBvB~BNPPRHHPR|GrHnAtAJLrAvA\\`@lApA|ChDd@f@\\`@f@j@PRTVt@|@t@z@f@l@h@p@d@h@\\`@b@j@|@dANPNRZ^d@l@X\\f@n@b@j@b@l@TXNRTZX^@@z@hAX^X^V^d@l@b@j@Z`@b@l@VZPTBFNR`@f@V\\PTRVTZRXRVFHJNRTPVPTDDp@z@^j@TXHJx@fAPTHJ^f@Z`@LNh@t@l@v@f@p@`ArAb@h@RZJL`@h@|@hATZlA~ABB|AtBj@t@h@p@@BX^X^?@z@hAPTj@t@pAdBHJLNt@`Af@r@Z`@fAvAb@l@FFj@v@h@t@BDj@v@PVpAhBdAzAd@p@v@jAJPRXZd@RZRXf@r@PXbAxAj@z@`@l@\\f@V`@p@bAV\\r@dA`AvA\\h@HLNRRXDHT\\PTHLnAlBf@r@PXHJJN^l@x@jAX`@@BRZt@fAPVT\\JPRXLPHJNVTZHJZd@PXhCvDNTRXPXj@x@\\h@HJ^h@pBxC`@l@p@`ALRNTNTDDPVPVDHLRPVPVZd@HLh@v@BBJPV^@@V`@X^v@jAd@p@RVLRHLd@l@^h@DDDHRV`@j@d@l@Zb@X\\DHv@bA~@jAz@hALP\\b@f@n@NR@Bh@n@LRVZLNj@t@^d@V^@@VZb@l@l@v@TX^d@TZ^d@LPx@dAd@l@LRX\\|@jAh@r@l@t@vAjBX\\RX\\b@l@v@d@h@RVLLDHNPt@`AX^HJj@t@^d@`@h@`@h@TZ`@f@BDb@j@@@d@l@n@x@BDbApARVJNr@~@DDLPRVf@n@RXl@v@b@h@f@n@lCjDz@hARVRVd@n@TZvBpCLNX^dBzBf@n@RVPVZ^JPf@n@RVVZf@n@d@n@^d@@@DFxBrCV\\NPRXRVRVf@p@f@n@X^vBrC`@f@nBfCp@z@`@j@n@x@VZRVRVTZPTPTLPDDTXLRRTX^NPTXRXXZJN@@TVRVVXPTPRVXRVj@p@PRTVRTTTVXJNHFNPRTTVRTTTTVVXPPTTVVZZNPDDPNPRRRVTRTJJLLj@h@TT`A`ATRVT~@~@TTj@j@HHLJRTVTRRVTRTRRXVRRTTTRVTTTRTl@j@TTvAtA~BzBBBj@j@n@l@NPj@h@~@~@RPl@l@TRPPDFf@b@xAxADDrCnCnBjBTVh@h@RPn@n@j@h@l@l@VVRPRRl@j@`A`AVTrArAvAtAVTRRVVTTTTvAtARPpCnCb@b@PPj@h@l@l@RRl@j@TRRR\\\\z@x@h@h@RRpBlBTTTTVVRRVV`@^JJNNn@l@TTj@h@JL`@^PPvAtAj@j@BBvAtAVTx@x@j@j@bA~@BBj@j@^^j@h@lBjBfAdAt@t@JJ`@`@XVd@d@\\ZlAlA\\ZXX`@`@jAjAnAnAn@n@b@b@TRZZXVZ\\ZXVTJJBBd@d@dAbAPNx@v@TTRPd@b@hDfD\\\\f@d@bA`ADD`C~Bt@r@j@h@`A`ANNf@d@pClCZZt@r@lAjALNx@t@r@r@XXp@n@ZZTTl@l@^^ZZFFv@x@\\`@DD\\\\VZ`@d@Z^^b@\\`@^b@RTh@r@b@h@PTPTHJz@hA^h@Z`@V^NVl@|@b@l@PXLPPXFJDHh@x@`@p@`@p@h@~@`AdBDHf@|@Vf@d@|@l@lAVf@Xl@Tb@HRd@`Ab@~@JT^x@@BLZLX\\v@^|@HTP`@Pf@Xp@JXZx@Zz@Vv@N`@Xx@Rl@HRL^J^Vv@Nd@Tv@J^~@`Dh@dB~AtFXbAJ\\jBlGpGtTd@`Bd@~AX|@Lb@Tv@Lf@V|@T|@V`ATx@Jd@T~@J`@^~ATbAP|@TbAP~@H^Hb@^nBVvAFb@H^F`@Fb@N|@Hd@D\\F`@F`@Fb@F\\Fb@F`@D^@LJt@Fh@P~AFb@BXLdADd@Hz@D^Db@XnCVbC?BFl@?BP|A\\jDVhCDf@D`@BRFj@LpAPbBVfCDb@Db@JbAJbA^pDVhCDXJnAD\\D^LjAFn@@Fj@~Fl@lGNtADb@D^Ff@B\\D^D\\@LBXPfBDb@Db@J`ADb@D`@Db@D`@Dd@D^Ff@J`AD`@BV?D@JBRBN@P@DBZ@HD^BZBN@P@HBV@HDb@D^Db@D`@Ff@B\\F`@B`@F`@?FD^DZDd@BZBLD^B\\D^D^@HDf@BN@JD^TdCFh@D`@JdAD^PhBLfAJbAJdAFh@Fv@XnCHv@DZJjARnBBVBT@JJ`ADb@J~@D`@@N@ND`@RlBBVD^H|@LlADb@D^JdAD`@JdAVdCLjAD`@D`@Db@JdALhAD^Db@Db@D^Db@D^JjAFl@Hv@Db@Hr@@RBTJx@Ft@D^Fd@BVNvAJfAHz@BPT~BFp@D\\Dd@Hn@JdAD^B^D`@P`BD`@@FBVVlCJdADXD`@Hx@B^J`AD`@D`@D^D\\x@jIJdAJ|@JbABXDf@@BFj@Fp@J~@NbBPbBFn@Hp@N|AFh@H~@\\zCHv@@DLjAZbCTbBHh@Ff@DVPdAPfALz@P~@N~@P~@Nz@R|@Jl@@@TfAPz@BJLl@h@`C@FRz@Pl@FT^zAn@~BTx@\\nAHVZdA`@tA\\dAVt@@Bf@xAXx@Z~@l@~A@@d@pADHj@vAh@rA\\t@BFJV^|@Zn@b@bA^x@\\p@`@x@P\\\\p@NXR^T`@JTd@z@`@p@`@r@^p@BBf@x@b@t@t@lAv@lAf@r@jAdBTXr@bALP`ArANTh@t@lAbBZ`@r@dAzAtBRVBDd@p@f@r@PTb@l@RVf@t@pAfBt@dATZf@r@^h@BBh@t@t@dANRDHb@l@lAbBx@fAf@r@x@jAnAdBjA`BpAhBTZr@bAf@p@PXfCnDlCrDhA~Ah@t@rBtCf@p@f@r@t@dA`GjIf@r@d@n@hBhCp@~@fBdC|@nAtAlBHLt@bA`@j@|@nA|AxBX^RZr@`AhAfBFJl@`AV`@DFXb@Xf@FJV`@Vd@FJl@hAZj@\\l@\\n@BFTb@^t@@B\\p@`@z@P\\~@rB^v@HTd@bARf@Rd@@Dj@tA^dAj@vA\\~@Rh@`@fA^`Af@tAjA|Ch@tA^bA`BlEj@~Ah@tAl@`BZz@N`@JXFLb@hAN`@JXz@|B^bAVn@Z|@Xt@\\|@Xx@Rh@L\\N\\DJxB`Gl@|Aj@~Al@|A\\~@l@~ADLTl@HR?@Xt@hAzChAvCtBxFpAlDFNx@xBd@lAXv@@Dp@fBDHL^Rf@fDbJ\\z@L^L\\Rf@HRHTBJ|@`Ct@nBL\\N^Pd@Vr@N\\L^L\\\\z@L^Rf@r@nBvAtD`@dAr@pBx@vBPf@~BhGPd@dApCZz@\\|@h@xA`@dAx@vBf@rAv@vBRf@N^bAlCZ|@Pf@fBvEZx@l@`Bf@pAj@zAj@|A\\|@Xt@Rh@FNJVTl@Xt@N`@N^`@fAFRZx@N`@Zz@\\|@N\\j@|Ah@xA\\z@Zz@N^Zz@\\|@Zz@\\~@j@zAh@tA\\|@j@|Aj@|Ah@vA\\|@Zz@^|@\\z@Zt@BFXp@LZDF\\x@Zn@BHNZ^x@r@|ALT^x@Vf@HPNZJTBFR`@Pb@NZHPP^NX`@|@FJTh@R^\\v@NZR`@NZN^^r@N\\N\\NXP`@^t@N^P\\JV@@LVFLHPNZ\\t@P^\\t@P\\?@b@|@R`@P`@Vj@Tb@HPN\\P^JTR`@P^^x@d@~@LZNZ^x@^v@P^LXP\\N\\NZP\\N\\NZNZN\\P\\~@pBNZNZNZN\\NZP^FLrAtCd@bALXTd@tAtClAjCNXP^n@rALZP\\N^NZNZP^JRd@`AJVP\\n@tA^v@FJFPJRBFNZP\\N\\LXPZZr@P`@P\\^x@`@x@j@lAN^Tb@?@JRb@~@l@nA^x@p@vAN\\LT^z@P\\NZN\\NZl@pANZP^N\\LX`@z@NXp@xALVN\\NX@B^x@^t@N\\LVP^LX@@N\\P^LX`BlDBDJRLV?@jCvFTd@hDlH`Q~^fCpFTd@fJ|RLVN\\NZNZR`@N\\P\\LZP\\@BTd@Tf@`@x@`@z@JVBDNZDHVj@^v@^v@P^?@^v@R`@l@pA^v@b@~@Zr@LVR`@LX`@x@p@xA`@z@LVN\\LX`@x@P`@NZNXP`@DFFNR`@JRBHHPDJHPFHLXP^LXBBZp@NZp@zA^v@P\\NZLXP^NZN\\NXP`@NZNXNZP^?@HNt@~ANZN\\dAxBTd@`@|@\\r@xA~C~AfDN\\P\\LXN\\NZP\\P\\LZP\\NZLXP^NZN\\DFFNP`@NXP\\N\\HLFLNZNZ^v@LVBD`@t@P\\NZPZP\\^v@LXPXNZR^PZ`@x@n@nAP\\NXPZNZPZR^LVLTR^NZPZP^Xj@DFN\\NVR^p@pANZLVBBLVNXBDNZLRDHLXPZP\\^t@NZb@z@HNR\\P^R^NZNZPXR`@LXNXr@tAtAlCpIlPPZP\\BDLVT`@bBdDr@vA^t@z@`BNXNZLV`@t@f@~@FNNXPZNXNZ^r@Zj@Xj@?@\\p@HN`@v@Tb@R^@DPZVd@Td@p@pA^r@Vd@Td@Vh@f@`A~AxCv@|A`@x@LTPZb@|@DFr@tADF|@fBx@|AtApCHN|@dBPZb@z@t@xAd@~@Vd@r@rARb@Xh@l@jA^r@FJ\\p@DH?@FJJRPZLVTd@b@x@l@jAP^^p@d@`AJPR`@Tb@HN@BT`@xArCXl@NXXh@NXZl@R`@P\\NXDHTb@?@v@zABBFLRb@@?Xj@R`@b@x@Xj@bAlBd@|@lAbCBBn@nAv@|AFJ`@v@z@bBHNFJVf@JRNXDJn@lAb@x@DHXj@f@`A?@Tb@f@~@`AjBZn@^r@JTVd@j@hAVd@zC`GZl@NXbCxE@B`B`D`@t@bApB~A~CdBfD^p@`AlBn@nArAhCh@bAN\\b@v@pAhCP\\JRBDR^JRR^\\r@P\\NVLXPZBFLVPXN\\LTTb@LTJRVf@FNFJNVLXJPNZNXPZNZVf@PZNXXh@NZFLFLT`@LXNVR`@LVPZNXP^NXZj@DHNVN\\NXP\\NXb@v@?B`@r@FNDHHNDHLTP\\z@bBR^r@rAR`@Zl@P\\P\\n@pANTR`@N\\LT`@v@^r@`@x@R^Td@LRHPNXr@rAJRBDP^HNDFz@bBf@`Aj@fAnCrFBBP`@NZNZ\\t@N\\Xl@@BPb@Zr@\\|@b@dAz@zBj@xA\\~@Pb@JZVt@p@lB`@dARj@nAnD`@jAn@dBx@`C~AnEnBvF\\`ApBxFlDzJZ|@\\`Af@vAjBjFTn@`@jAPb@dB~E~C|I\\`AJZL\\N`@Vt@Xx@Zz@\\|@Tr@N`@Pd@Z~@Z|@Zx@Tr@FNd@pAj@`Bh@zAf@rAPf@JX\\`AbAvCZx@Nd@Zz@Vt@BDZz@JZN`@Xx@N`@HV\\~@L^@Bf@tAL^DJRn@L^L^J\\@@L`@HXL`@L^JZL`@J^J\\J`@L^J^J^J`@L`@H\\J^@DFVLd@H\\@@BLDLJ^Jb@HZ?@J^J`@J\\@HHVH\\J`@J^DRFRHXJ^HZBLFTJ`@J^DNDLJb@J\\FX@DLb@J`@HZH\\J`@J^@@H\\J`@J^J^H^L`@H\\J^J^J`@H^J^J^Jb@HXJb@J\\?@J^J^H\\L`@H^J`@J^@@HZJ`@J`@Nl@tApF~AdGvCdLLh@FRFXLf@J^XdAHXLj@b@bBHVFVLd@t@tCNh@Nj@Lf@^zAv@nC@FHXJ`@J`@DLFVLh@BHNn@HZJ\\H\\J\\@BH^@BHZH\\H^HTPn@Lf@Pt@V|@@DDRFR@FDNJ\\@DH\\HX@D@FFRBHBHDPJ^?@J^DTDHH^FXHZPr@Nj@@F@HNl@R~@FVJ`@DRR~@@HTdA\\|ABNTbA@BBNJb@H^@DDTH^FZBHJd@Lp@BJZxAZzAZ|AZtATfAH^Nr@ThA^dBNt@FVZtABNZzAPr@R~@BL@D\\~ANn@Jh@ZvAZrATfA\\bBl@tCr@fDTbALn@Lj@ZvAf@bCLn@FRH`@BLBNTfAVlA\\xADVLn@T~@BLP~@J^RfA\\zAPx@RdAZtA?@Z~Ab@nBR`AZzAThAb@pB\\dBXpAVlAVlATfATdADNLl@DPNp@H`@Jh@FXLj@VlAJb@Hb@FZz@~D\\dBDVNt@\\~AThAR|@Nv@@DJd@Jf@Lj@Lh@Jh@BJFVRfADL@JBHFXF\\RfA@@BPJf@F\\F^BN@HP~@@FJr@BLF`@Fb@BLHh@F\\L|@D\\Hh@@H@F@HDZDXBTHl@?BD^F^@HHr@@RBNJ`A@HJdAJnABRNrB@BFx@BTJhAFl@?BBXB\\?@Hv@@JBZJlAFp@Dh@@JLtADj@Hv@BZ@PFr@BVBV?@Fn@Fn@@RD`@?@Ft@Hx@Hz@H|@Db@@TBVDb@Hz@H~@B\\Fl@Fz@Fj@@PJfAH~@@LH~@?@D^BX@FFx@Fr@BTDf@@PFh@BZNbBHbAB^Db@H`AJbAFx@Hz@HbAD`@Df@BZFh@Bb@BRB^Ff@B`@Dd@Fh@Dh@Hz@BZJnABXDd@?@Dd@D\\Dh@Dd@D^BZDd@BXFp@BXB\\Db@Db@@RDb@LzAJhAPtBNbBDzAFbCJbC"
                             },
@@ -5111,7 +5063,7 @@
                                 "lat": 25.7744896,
                                 "lng": -80.1995379
                             },
-                            "html_instructions": "Merge onto <b>I-95 S</b><div style=\"font-size:0.9em\">Parts of this road may be closed at certain times or days</div>",
+                            "html_instructions": "Merge onto <b>I-95 S</b>",
                             "maneuver": "merge",
                             "polyline": {
                                 "points": "ovn|CtephNh@?RAr@AxACTApAC`ACh@Av@ApAC^Cv@AvAC~CEbDChAAF?V?jA?@?vA?p@A@?@?^?@?DAxAApAEd@Ah@AP?^AP?ZAdDE^AlCEf@Cj@Af@Cv@Ed@CTCVCZGXE|B_@bCo@TGp@WLG\\Op@WdDsAt@Yr@[bAc@jAe@nAi@h@Sr@[f@U^Q^Od@Uf@U\\Qj@Yn@[RKPKRKRMx@a@HEHGHEbAi@~@e@t@a@b@UPIRKNGVKRITIhA]FCh@MTETEd@Ih@GLCt@I\\EL?TCPAf@Aj@Al@AnBC`@Ah@An@A`AA^?`@AfBCj@A`AAT?FA|@Az@Ad@An@GPCVEDAHA`@KJCh@Mh@M"
@@ -5342,7 +5294,7 @@
                 }
             ],
             "overview_polyline": {
-                "points": "gunwFblubM~cEyFjkFlvApiE~lAxNdaJm}CbqSeEteBdbHtqD`uKnmTvrPpuOlpU~oIp}N|uHniI`~N~|P`uUnlPz`Vv`M`uRbzGphHxsCl|KhxLfh[toM~nXr`ElbTyeBviYztA~jJ~jC~{@bkJ_NbdQ}Ff|E{CxyBdhCbjLy`@|zJogGndJycGriIu~BhhIulL`yIkyD``VggAbfHy`DhdE|iBf~MoYfeSorB~_OuhIdsMioNfoRykIrnOqaElkMlw@n{L`|LvwG|fN`wG~dBhdD|hJxmGjsPzfEblB~oIuEjjKz@~pJtpA`|RxqIvfMzePlwPp_Lv{w@tac@xsFvvDfgJqw@nrP_Zl`GfVx|C`oJ|rKphL|pI~eCnaHj_AtnBlvHbbFrjBpl@n{F~aAtdJvrGboSr`CfhMzP~jL|o@|pLxaFtfF|fGzzWdsFtpV{kG||S_xCfyy@hcDfeb@oqDrkO{cJxsZsYh_UpkIjh\\dhApcKus@xoN~vLxpCvu[rdOtnWtsZftFdoNziBb_Sn}Rl`Xdt\\~hVzkG`yL_h@`sOsjFxed@wgAzvWh`@~fQzr@rvm@`u@frP`hCrpEfzDhxJhZ|_PnaRlyQbkGhnXh}Hn}Q|jJvg_@r_J`dHjcFlkKxiG`fItaMptI|oHwOxvGroGn}CvhJfsG`bFfaNbxI`vCzyKb~AreAjbDiR{o@dtAvbP~dGpbTzzKnaQznBjfJp_BflLdvFdkZqPnke@{pExmb@dWree@yiFrvDccC|lFwn@fsNrxBfyEfnPnTtlD`bBq|A~gIgaDnkP}`JrqOicL`kY_rPpbVaeWtlQenWdqD{gApoE`sAxcNjfFd~T|kH~vb@xjI`aXtuQnoJtaK~kOhtBxnJ|}Il|PdgEpmc@xlQnnGdhLt{QrnS`eTvpCjkMhgJ|`Pv}@fpZfbJfpUdmCz|WpkF|mX`}@dn\\ttLxp^bgUvsRhhG`hRce@f`RuxC|bHbuB~jIgl@`o^q}ClpW|}DjxGd|@nqA}kCbrKwbKriPeiGzlRgoInng@opSxySsaHjaQwiLt_k@wvTxrp@krNnwOm}K|_VirJplj@giMld[kbFfs_@g_EpgP_lE|pKajIp|_@}rDjxGcGdjDe_GhsJ{lG`vM{iCvqPm_Hj{[_dC`vVcdJh`M{aG|nGyoGj{CbkA|rHcuC|cK{\\vgZkrLvyKaaHltVsgNtdPebH~zMFvlOjZrpFviDx_MxbAreh@qNl{Z{Y|cMxoHvmWaBzzV~ZzmSouAzbMuwA"
+                "points": "gunwFblubMsqBvvGnyDziBnfAnqEeeApvEfoCjuEpjNh|Jf|FjfEhbD~aLjbQdeR~aSh{HdlPjxF`tIr~NlqPzzVdbRfxVbzZdgh@dxKfa[voL``V`_GxmVgy@rcYdLz|HpkCvaEh~Isr@ljIrkBhmGsgAteJjbA`sK|TpjKepEfvIizGpyImtB~yHcxLlhErAvaDatD`|Qmo@hnPcwDbg_@re@`{P{bIfrNimNpeNwlLxvScaD`jLl@zfOnjHfgGn{O`tLrsKnbIt~PlxBflF~eI`Cd|GggAlqI~oB~sTbuGtyNtyLpaEfeIdsIxxDjkU~nOfq]zkQz}M`_HhnFbLrpRiNt_GiJp}CvrB``LlzR~dJ~lCvsLx{EfwI|nNvDhsJvnGfsQfhFtx\\g^d~LpzEvnCrvGzcZ`~EjlRw_DtfUsqBp{Pgq@fk_@`wBj`i@owBp`Qq|In`UiiCz{\\taFdbM`eChwLlvBhrKcfArqQniKf`Czz[dkN`nWtcZbcGbwNjiBl{Qx~RhiYduZhzSjlIrcOeh@|pNq}Dbuc@}jBxdYzr@~cNxa@zrm@nVrrSfiDzeEhvEtmHk\\~nRfyQbpQfcHj}XntS|ir@fnGjeHdeIjoKfgGnlI`yLzrJxzHca@j_Ht~EdfB|zJjuHdfGb~L|mIhrG~nOf_D{F~w@yp@ijAb`AnvDfmDpbHf`BzpTpnL~~QlnCvvJvw@xxK|uFf}XzBrbf@}kE|{b@bn@`kc@{cGfyFebAjxFunDriN~~DlpG`cMsEh_FpqAkEtiG{bDjjQs}H`vOgdMr`ZqwPtsV_aWjiQ_uWzfDi}BpbErkA|xMldFvmUloH`~b@liIvyWzkPbeJzqK|wOrdDl}JteIpyOfcFpld@f}Pb}Yv|^brTvgE`aMlhIx`FzwCrdIkv@ngUxgIfdYjgCtlWjvGr{Xzf@f{\\z{Jjj\\h}RrhSbeJleS|jAzaSkzDxaRtvAb|]isExrY|mFprGgGlqB~IyBmyAxmB}_CfqGynFnzNycGn}RssJrjf@ovRlvSsvG`sMozDvhDadFvwOgkIptXa~Jvcq@arNdoOqsKj`VwdJxsj@ckNn|Y}qFrnSuCngJy{DfqPewB`pNexJ`o^{~ErfGLvfE_rCv`K_vIpd_@w{K~r[sgD`bWigIzjKyeGd{G_uG~iG|^fkGocCb`Ku`@zqZulL~|JaoGryHkjCt|KwbI|sOmsHh~N_n@tsOhZzzQl}FrifAgk@viMhjFtyVfy@xxWpgAntRozBdwOobB"
             },
             "summary": "US-13 S",
             "warnings": [],

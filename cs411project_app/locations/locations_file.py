@@ -1,11 +1,14 @@
-import events
-import hotels
-import maps
+from ..locations import events
+from ..locations import hotels
+from ..locations import maps
+# import events
+# import hotels
+# import maps
 import json
 import datetime
 
 HOTEL_SEARCH_RADIUS = 10
-EVENT_SEARCH_RADIUS = 10
+EVENT_SEARCH_RADIUS = 10   
 
 # combine the 3 APIs to get a roudtrip plan
 # origin and destination are names of cities in the list of 100
