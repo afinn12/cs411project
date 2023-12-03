@@ -12,7 +12,7 @@ GOOGLEMAPS_DIRECTIONS_API_ENDPOINT = 'https://maps.googleapis.com/maps/api/direc
 # use the Routes API to get a route from origin to destination
 # origin and destination are names of cities in the list of 100
 # returns a JSON
-def get_route(origin, destination):
+def get_direct_route(origin, destination):
     route_args = {
         'origin': origin,
         'destination': destination,
@@ -53,8 +53,8 @@ def compute_split_points_on_daily_limit(route, distance_limit):
 # compute the shortest path from irigin to destination, only traversing the graph of 100 cities,
 # not allowing edges with distance greater than the daily limit
 # origin and destination are names of cities in the list of 100
-# return a list of tuples of lat-long coordinates
-def compute_city_path(origin, destination, distance_limit):
+# return a list of tuples of lat-long coordinates for each split city (each city in between the ends)
+def get_city_route(origin, destination, distance_limit):
     # load the adj_list JSON file
     curr_dir = os.path.dirname(__file__)
     adj_list_file_path = os.path.join(curr_dir, '100cities/100cities_closest_n_adj_list.json')
@@ -116,16 +116,16 @@ if __name__ == '__main__':
     la = 'Los Angeles, CA'
     miami = "Miami, FL"
 
-    compute_city_path(nyc, miami, 500)
-
     # f = open('sample_route.txt', 'w')
-    # route = get_route(nyc, boston)
+    # route = get_direct_route(nyc, boston)
     # json.dump(route, f)
 
     # split_points = compute_split_points_on_daily_limit(route, 100)
     # new_route = get_route_with_stops(nyc, boston, split_points)
+    nyc_miami_split_cities = get_city_route(nyc, miami, 500)
+    new_route = get_route_with_stops(nyc, miami, nyc_miami_split_cities)
 
-    # f = open('sample_route_with_stops.txt', 'w')
-    # json.dump(new_route, f, indent=4)
+    f = open('sample_route_with_stops.txt', 'w')
+    json.dump(new_route, f, indent=4)
     
     

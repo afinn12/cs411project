@@ -12,7 +12,7 @@ DAILY_DISTANCE_LIMIT_MILES = 100
 # return a JSON
 def get_roadtrip(origin, destination):
     # get the route and split points
-    route = maps.get_route(origin, destination)
+    route = maps.get_direct_route(origin, destination)
     split_points = maps.compute_split_points_on_daily_limit(route, DAILY_DISTANCE_LIMIT_MILES * 1609)
 
 
