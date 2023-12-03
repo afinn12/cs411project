@@ -19,7 +19,7 @@
     - For each split point:
         - If "close," choose the closest hotel
         - If "cheap," choose the cheapest from the closest 10
-- Find events around each hotel
+- Find events around each split point
 - Give route, hotels, events to front end
 - Store the computed route on DB
 

@@ -2596,8 +2596,31 @@
                     "time_end": "2023-12-31T19:30:00-05:00"
                 }
             },
-            {},
             {
+                "jacksonville-awareness-presentation-2": {
+                    "name": "Awareness Presentation.",
+                    "description": "Learn about all the ways the Alzheimer's Association:\n   * Works to provide support for all those affected by Alzheimer's and all other dementia;\n   *...",
+                    "category": "other",
+                    "cost": null,
+                    "event_site_url": "https://www.yelp.com/events/jacksonville-awareness-presentation-2?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 30.2401342,
+                    "longitude": -81.6192633,
+                    "time_start": "2023-12-21T12:00:00-05:00",
+                    "time_end": "2023-12-21T13:00:00-05:00"
+                }
+            },
+            {
+                "miami-beach-experience-pomp-snow-and-cirqueumstance-at-the-fontainebleau-miami-beach-this-winter": {
+                    "name": "Experience Pomp, Snow, and Cirqueumstance at The Fontainebleau Miami Beach this winter",
+                    "description": "BleauLive, in partnership with Capture Studio Group and Variety Management, will premiere its first-ever Fontainebleau Miami Beach residency show with...",
+                    "category": "performing-arts",
+                    "cost": null,
+                    "event_site_url": "https://www.yelp.com/events/miami-beach-experience-pomp-snow-and-cirqueumstance-at-the-fontainebleau-miami-beach-this-winter?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.8177677,
+                    "longitude": -80.12245829999999,
+                    "time_start": "2023-12-19T15:00:00-05:00",
+                    "time_end": "2023-12-30T19:30:00-05:00"
+                },
                 "miami-beach-miami-nightclub-package-26": {
                     "name": "Miami Nightclub Package",
                     "description": "Party at the best nightclubs in Miami with this epic Miami Nightclub package! This Miami Club Crawl includes a 1-hour open bar, a party bus ride, and free...",
@@ -2607,6 +2630,17 @@
                     "latitude": 25.7899509,
                     "longitude": -80.1399315,
                     "time_start": "2023-12-15T21:00:00-05:00",
+                    "time_end": null
+                },
+                "miami-beach-miami-nightclub-package-27": {
+                    "name": "Miami Nightclub Package",
+                    "description": "Party at the best nightclubs in Miami with this epic Miami Nightclub package! This Miami Club Crawl includes a 1-hour open bar, a party bus ride, and free...",
+                    "category": "nightlife",
+                    "cost": 79.0,
+                    "event_site_url": "https://www.yelp.com/events/miami-beach-miami-nightclub-package-27?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.7899509,
+                    "longitude": -80.1399315,
+                    "time_start": "2023-12-16T21:00:00-05:00",
                     "time_end": null
                 },
                 "pinecrest-nights-of-lights-returns-to-pinecrest-gardens": {
@@ -2620,16 +2654,60 @@
                     "time_start": "2023-12-09T18:00:00-05:00",
                     "time_end": "2024-01-06T21:00:00-05:00"
                 },
-                "miami-sweets-and-bubbles-at-intercontinental-miami": {
-                    "name": "Sweets & Bubbles at InterContinental Miami",
-                    "description": "Join in on the fun for an early holiday celebration and sip on bubbly in the hotel's lobby at 3PM. Enjoy holiday-themed candy, champagne, chocolates and...",
-                    "category": "food-and-drink",
+                "miami-marshmello-2": {
+                    "name": "Marshmello",
+                    "description": "Superstar Producer & DJ Marshmello making his E11EVEN return Saturday, December 16",
+                    "category": "nightlife",
                     "cost": null,
-                    "event_site_url": "https://www.yelp.com/events/miami-sweets-and-bubbles-at-intercontinental-miami?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
-                    "latitude": 25.7720361,
-                    "longitude": -80.1858501,
-                    "time_start": "2023-12-15T15:00:00-05:00",
-                    "time_end": null
+                    "event_site_url": "https://www.yelp.com/events/miami-marshmello-2?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.7848968,
+                    "longitude": -80.1934998,
+                    "time_start": "2023-12-16T20:00:00-05:00",
+                    "time_end": "2023-12-17T10:00:00-05:00"
+                },
+                "miami-dj-efx-5": {
+                    "name": "DJ EFX",
+                    "description": "DJ EFX Birthday Celebration at E11EVEN Wednesday, December 20. Get on the Guest List for Complimentary Entry. All locals with valid FL ID also receive a...",
+                    "category": "nightlife",
+                    "cost": null,
+                    "event_site_url": "https://www.yelp.com/events/miami-dj-efx-5?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.7848968,
+                    "longitude": -80.1934998,
+                    "time_start": "2023-12-20T20:00:00-05:00",
+                    "time_end": "2023-12-21T10:00:00-05:00"
+                },
+                "miami-dj-obscene-10": {
+                    "name": "DJ Obscene",
+                    "description": "DJ Obscene at E11EVEN Thursday, December 21.",
+                    "category": "nightlife",
+                    "cost": null,
+                    "event_site_url": "https://www.yelp.com/events/miami-dj-obscene-10?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.7848968,
+                    "longitude": -80.1934998,
+                    "time_start": "2023-12-21T20:00:00-05:00",
+                    "time_end": "2023-12-22T10:00:00-05:00"
+                },
+                "miami-shift-39": {
+                    "name": "Shift",
+                    "description": "From Vegas to Miami, Shift at E11EVEN Friday, December 22.",
+                    "category": "nightlife",
+                    "cost": null,
+                    "event_site_url": "https://www.yelp.com/events/miami-shift-39?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.7848968,
+                    "longitude": -80.1934998,
+                    "time_start": "2023-12-22T20:00:00-05:00",
+                    "time_end": "2023-12-23T10:00:00-05:00"
+                },
+                "miami-savi-53": {
+                    "name": "Savi",
+                    "description": "DJ Savi at E11EVEN Saturday, December 23.",
+                    "category": "nightlife",
+                    "cost": null,
+                    "event_site_url": "https://www.yelp.com/events/miami-savi-53?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.7848968,
+                    "longitude": -80.1934998,
+                    "time_start": "2023-12-23T20:00:00-05:00",
+                    "time_end": "2023-12-24T10:00:00-05:00"
                 },
                 "miami-bonnie-x-clyde": {
                     "name": "Bonnie x Clyde",
@@ -2664,27 +2742,16 @@
                     "time_start": "2023-12-02T10:00:00-05:00",
                     "time_end": "2024-01-01T17:00:00-05:00"
                 },
-                "coral-gables-shops-at-merrick-parks-santa-on-the-green": {
-                    "name": "Shops at Merrick Park's \"Santa on the Green\"",
-                    "description": "Shops at Merrick Park, Coral Gables' pristine destination for fine shopping and dining, is thrilled to usher in the holiday season with \"Santa on the...",
-                    "category": "music",
+                "miami-ufc-296-viewing-party": {
+                    "name": "UFC 296 Viewing Party",
+                    "description": "It's Fight Night on Saturday, December 16. Leon Edwards takes on Colby Covington for the Welterweight Championship title for UFC 296. Watch the fight on a...",
+                    "category": "nightlife",
                     "cost": null,
-                    "event_site_url": "https://www.yelp.com/events/coral-gables-shops-at-merrick-parks-santa-on-the-green?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
-                    "latitude": 25.731381,
-                    "longitude": -80.260057,
-                    "time_start": "2023-11-30T18:00:00-05:00",
-                    "time_end": "2023-12-21T21:00:00-05:00"
-                },
-                "doral-preparation-for-the-holiday-toy-and-meal-distribution": {
-                    "name": "Preparation for the Holiday Toy & Meal Distribution",
-                    "description": "Join the Little Lighthouse Foundation on Friday, December 15th, as they prepare for their annual Holiday Toy & Meal Distribution. Volunteers are welcome to...",
-                    "category": "charities",
-                    "cost": null,
-                    "event_site_url": "https://www.yelp.com/events/doral-preparation-for-the-holiday-toy-and-meal-distribution?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
-                    "latitude": 25.7910992,
-                    "longitude": -80.3330184,
-                    "time_start": "2023-12-15T09:00:00-05:00",
-                    "time_end": null
+                    "event_site_url": "https://www.yelp.com/events/miami-ufc-296-viewing-party?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.84690857386301,
+                    "longitude": -80.18484350243273,
+                    "time_start": "2023-12-16T20:00:00-05:00",
+                    "time_end": "2023-12-17T05:00:00-05:00"
                 },
                 "miami-the-art-of-cabaret-i-miami-art-week-4": {
                     "name": "The Art of Cabaret I Miami Art Week",
@@ -2696,6 +2763,17 @@
                     "longitude": -80.18484350243273,
                     "time_start": "2023-12-10T20:00:00-05:00",
                     "time_end": "2023-12-18T05:00:00-05:00"
+                },
+                "miami-local-love-17": {
+                    "name": "Local Love",
+                    "description": "The sexiest party in Miami is at Gold Rush Cabaret on Tuesday, December 19! All locals receive complimentary admission, sponsored open bar from 8pm-11pm &...",
+                    "category": "nightlife",
+                    "cost": null,
+                    "event_site_url": "https://www.yelp.com/events/miami-local-love-17?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.84690857386301,
+                    "longitude": -80.18484350243273,
+                    "time_start": "2023-12-19T20:00:00-05:00",
+                    "time_end": "2023-12-20T05:00:00-05:00"
                 }
             }
         ]
@@ -5371,8 +5449,31 @@
                     "time_end": "2023-12-31T19:30:00-05:00"
                 }
             },
-            {},
             {
+                "jacksonville-awareness-presentation-2": {
+                    "name": "Awareness Presentation.",
+                    "description": "Learn about all the ways the Alzheimer's Association:\n   * Works to provide support for all those affected by Alzheimer's and all other dementia;\n   *...",
+                    "category": "other",
+                    "cost": null,
+                    "event_site_url": "https://www.yelp.com/events/jacksonville-awareness-presentation-2?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 30.2401342,
+                    "longitude": -81.6192633,
+                    "time_start": "2023-12-21T12:00:00-05:00",
+                    "time_end": "2023-12-21T13:00:00-05:00"
+                }
+            },
+            {
+                "miami-beach-experience-pomp-snow-and-cirqueumstance-at-the-fontainebleau-miami-beach-this-winter": {
+                    "name": "Experience Pomp, Snow, and Cirqueumstance at The Fontainebleau Miami Beach this winter",
+                    "description": "BleauLive, in partnership with Capture Studio Group and Variety Management, will premiere its first-ever Fontainebleau Miami Beach residency show with...",
+                    "category": "performing-arts",
+                    "cost": null,
+                    "event_site_url": "https://www.yelp.com/events/miami-beach-experience-pomp-snow-and-cirqueumstance-at-the-fontainebleau-miami-beach-this-winter?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.8177677,
+                    "longitude": -80.12245829999999,
+                    "time_start": "2023-12-19T15:00:00-05:00",
+                    "time_end": "2023-12-30T19:30:00-05:00"
+                },
                 "miami-beach-miami-nightclub-package-26": {
                     "name": "Miami Nightclub Package",
                     "description": "Party at the best nightclubs in Miami with this epic Miami Nightclub package! This Miami Club Crawl includes a 1-hour open bar, a party bus ride, and free...",
@@ -5382,6 +5483,17 @@
                     "latitude": 25.7899509,
                     "longitude": -80.1399315,
                     "time_start": "2023-12-15T21:00:00-05:00",
+                    "time_end": null
+                },
+                "miami-beach-miami-nightclub-package-27": {
+                    "name": "Miami Nightclub Package",
+                    "description": "Party at the best nightclubs in Miami with this epic Miami Nightclub package! This Miami Club Crawl includes a 1-hour open bar, a party bus ride, and free...",
+                    "category": "nightlife",
+                    "cost": 79.0,
+                    "event_site_url": "https://www.yelp.com/events/miami-beach-miami-nightclub-package-27?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.7899509,
+                    "longitude": -80.1399315,
+                    "time_start": "2023-12-16T21:00:00-05:00",
                     "time_end": null
                 },
                 "pinecrest-nights-of-lights-returns-to-pinecrest-gardens": {
@@ -5395,16 +5507,60 @@
                     "time_start": "2023-12-09T18:00:00-05:00",
                     "time_end": "2024-01-06T21:00:00-05:00"
                 },
-                "miami-sweets-and-bubbles-at-intercontinental-miami": {
-                    "name": "Sweets & Bubbles at InterContinental Miami",
-                    "description": "Join in on the fun for an early holiday celebration and sip on bubbly in the hotel's lobby at 3PM. Enjoy holiday-themed candy, champagne, chocolates and...",
-                    "category": "food-and-drink",
+                "miami-marshmello-2": {
+                    "name": "Marshmello",
+                    "description": "Superstar Producer & DJ Marshmello making his E11EVEN return Saturday, December 16",
+                    "category": "nightlife",
                     "cost": null,
-                    "event_site_url": "https://www.yelp.com/events/miami-sweets-and-bubbles-at-intercontinental-miami?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
-                    "latitude": 25.7720361,
-                    "longitude": -80.1858501,
-                    "time_start": "2023-12-15T15:00:00-05:00",
-                    "time_end": null
+                    "event_site_url": "https://www.yelp.com/events/miami-marshmello-2?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.7848968,
+                    "longitude": -80.1934998,
+                    "time_start": "2023-12-16T20:00:00-05:00",
+                    "time_end": "2023-12-17T10:00:00-05:00"
+                },
+                "miami-dj-efx-5": {
+                    "name": "DJ EFX",
+                    "description": "DJ EFX Birthday Celebration at E11EVEN Wednesday, December 20. Get on the Guest List for Complimentary Entry. All locals with valid FL ID also receive a...",
+                    "category": "nightlife",
+                    "cost": null,
+                    "event_site_url": "https://www.yelp.com/events/miami-dj-efx-5?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.7848968,
+                    "longitude": -80.1934998,
+                    "time_start": "2023-12-20T20:00:00-05:00",
+                    "time_end": "2023-12-21T10:00:00-05:00"
+                },
+                "miami-dj-obscene-10": {
+                    "name": "DJ Obscene",
+                    "description": "DJ Obscene at E11EVEN Thursday, December 21.",
+                    "category": "nightlife",
+                    "cost": null,
+                    "event_site_url": "https://www.yelp.com/events/miami-dj-obscene-10?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.7848968,
+                    "longitude": -80.1934998,
+                    "time_start": "2023-12-21T20:00:00-05:00",
+                    "time_end": "2023-12-22T10:00:00-05:00"
+                },
+                "miami-shift-39": {
+                    "name": "Shift",
+                    "description": "From Vegas to Miami, Shift at E11EVEN Friday, December 22.",
+                    "category": "nightlife",
+                    "cost": null,
+                    "event_site_url": "https://www.yelp.com/events/miami-shift-39?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.7848968,
+                    "longitude": -80.1934998,
+                    "time_start": "2023-12-22T20:00:00-05:00",
+                    "time_end": "2023-12-23T10:00:00-05:00"
+                },
+                "miami-savi-53": {
+                    "name": "Savi",
+                    "description": "DJ Savi at E11EVEN Saturday, December 23.",
+                    "category": "nightlife",
+                    "cost": null,
+                    "event_site_url": "https://www.yelp.com/events/miami-savi-53?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.7848968,
+                    "longitude": -80.1934998,
+                    "time_start": "2023-12-23T20:00:00-05:00",
+                    "time_end": "2023-12-24T10:00:00-05:00"
                 },
                 "miami-bonnie-x-clyde": {
                     "name": "Bonnie x Clyde",
@@ -5439,27 +5595,16 @@
                     "time_start": "2023-12-02T10:00:00-05:00",
                     "time_end": "2024-01-01T17:00:00-05:00"
                 },
-                "coral-gables-shops-at-merrick-parks-santa-on-the-green": {
-                    "name": "Shops at Merrick Park's \"Santa on the Green\"",
-                    "description": "Shops at Merrick Park, Coral Gables' pristine destination for fine shopping and dining, is thrilled to usher in the holiday season with \"Santa on the...",
-                    "category": "music",
+                "miami-ufc-296-viewing-party": {
+                    "name": "UFC 296 Viewing Party",
+                    "description": "It's Fight Night on Saturday, December 16. Leon Edwards takes on Colby Covington for the Welterweight Championship title for UFC 296. Watch the fight on a...",
+                    "category": "nightlife",
                     "cost": null,
-                    "event_site_url": "https://www.yelp.com/events/coral-gables-shops-at-merrick-parks-santa-on-the-green?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
-                    "latitude": 25.731381,
-                    "longitude": -80.260057,
-                    "time_start": "2023-11-30T18:00:00-05:00",
-                    "time_end": "2023-12-21T21:00:00-05:00"
-                },
-                "doral-preparation-for-the-holiday-toy-and-meal-distribution": {
-                    "name": "Preparation for the Holiday Toy & Meal Distribution",
-                    "description": "Join the Little Lighthouse Foundation on Friday, December 15th, as they prepare for their annual Holiday Toy & Meal Distribution. Volunteers are welcome to...",
-                    "category": "charities",
-                    "cost": null,
-                    "event_site_url": "https://www.yelp.com/events/doral-preparation-for-the-holiday-toy-and-meal-distribution?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
-                    "latitude": 25.7910992,
-                    "longitude": -80.3330184,
-                    "time_start": "2023-12-15T09:00:00-05:00",
-                    "time_end": null
+                    "event_site_url": "https://www.yelp.com/events/miami-ufc-296-viewing-party?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.84690857386301,
+                    "longitude": -80.18484350243273,
+                    "time_start": "2023-12-16T20:00:00-05:00",
+                    "time_end": "2023-12-17T05:00:00-05:00"
                 },
                 "miami-the-art-of-cabaret-i-miami-art-week-4": {
                     "name": "The Art of Cabaret I Miami Art Week",
@@ -5471,6 +5616,17 @@
                     "longitude": -80.18484350243273,
                     "time_start": "2023-12-10T20:00:00-05:00",
                     "time_end": "2023-12-18T05:00:00-05:00"
+                },
+                "miami-local-love-17": {
+                    "name": "Local Love",
+                    "description": "The sexiest party in Miami is at Gold Rush Cabaret on Tuesday, December 19! All locals receive complimentary admission, sponsored open bar from 8pm-11pm &...",
+                    "category": "nightlife",
+                    "cost": null,
+                    "event_site_url": "https://www.yelp.com/events/miami-local-love-17?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.84690857386301,
+                    "longitude": -80.18484350243273,
+                    "time_start": "2023-12-19T20:00:00-05:00",
+                    "time_end": "2023-12-20T05:00:00-05:00"
                 }
             }
         ]
