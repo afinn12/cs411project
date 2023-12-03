@@ -18,6 +18,8 @@ headers = {'Content-Type': 'application/json'}
 # Make a POST request
 response = requests.post(api_url, data=json.dumps(payload), headers=headers)
 
-# Print the response
-print(response.status_code)
-print(response.json())  # Assuming the response is in JSON format
+# # Print the response
+# print(response.status_code)
+# print(response.json())  # Assuming the response is in JSON format
+
+json.dump(response.json(), open('sample_api_output.json', 'w'), indent=4)
