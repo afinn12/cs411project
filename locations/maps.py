@@ -1,6 +1,8 @@
 import requests
 import googlemaps_key
 import json
+import os
+import networkx as nx
 
 GOOGLEMAPS_API_KEY = googlemaps_key.googlemaps_key
 
@@ -8,12 +10,12 @@ GOOGLEMAPS_DIRECTIONS_API_ENDPOINT = 'https://maps.googleapis.com/maps/api/direc
 
 
 # use the Routes API to get a route from origin to destination
-# origin and destination are tuples of lat-long coordinates
+# origin and destination are names of cities in the list of 100
 # returns a JSON
 def get_route(origin, destination):
     route_args = {
-        'origin': f'{origin[0]},{origin[1]}',
-        'destination': f'{destination[0]},{destination[1]}',
+        'origin': origin,
+        'destination': destination,
         'key': GOOGLEMAPS_API_KEY
     }
     response = requests.get(GOOGLEMAPS_DIRECTIONS_API_ENDPOINT, params=route_args)
@@ -28,6 +30,7 @@ def get_route(origin, destination):
 # compute suitable split points along the route so that the number of legs < distance_limit is minimized
 # route is a route computed by get_route: it should contain just 1 leg
 # distance_limit is in miles
+# returns a list of tuples of lat-long coordinates
 def compute_split_points_on_daily_limit(route, distance_limit):
     # extract the list of steps
     steps = route['legs'][0]['steps']
@@ -47,13 +50,34 @@ def compute_split_points_on_daily_limit(route, distance_limit):
     return split_points
 
 
+# compute the shortest path from irigin to destination, only traversing the graph of 100 cities,
+# not allowing edges with distance greater than the daily limit
+# origin and destination are names of cities in the list of 100
+# return a list of tuples of lat-long coordinates
+def compute_city_path(origin, destination, distance_limit):
+    # load the adj_list JSON file
+    curr_dir = os.path.dirname(__file__)
+    adj_list_file_path = os.path.join(curr_dir, '100cities/100cities_closest_n_adj_list.json')
+    adj_list = json.load(open(adj_list_file_path))
+
+    # make the nx Graph, exluding any edge longer than the distance_limit
+    G = nx.Graph()
+    for city1 in adj_list:
+        for entry in adj_list[city1]:
+            city2 = entry['name']
+            if entry['distanceInMeters'] <= distance_limit * 1609:
+                G.add(city1, city2, weight=entry['distanceInMeters'])
+    
+    
+
+
 # use the Routes API to get a route from origin to destination, taking the stops into account
-# origin and destination are tuples of lat-long coordinates
+# origin and destination are names of cities in the list of 100
 # stops should be a list of lat-longs, i.e. the coordinates of hotels
 def get_route_with_stops(origin, destination, stops):
     route_args = {
-        'origin': f'{origin[0]},{origin[1]}',
-        'destination': f'{destination[0]},{destination[1]}',
+        'origin': origin,
+        'destination': destination,
         'waypoints': '|'.join(map(lambda x: f'{x[0]},{x[1]}', stops)),
         'key': GOOGLEMAPS_API_KEY
     }
@@ -68,10 +92,8 @@ def get_route_with_stops(origin, destination, stops):
 
 # test the functionality with lat-longs for NYC and Boston
 if __name__ == '__main__':
-    # nyc coors
-    nyc = 40.7128, -74.0060
-    # boston coors
-    boston = 42.3601, -71.0589
+    nyc = 'New York, NY'
+    boston = 'Boston, MA'
 
     # f = open('sample_route.txt', 'w')
     route = get_route(nyc, boston)

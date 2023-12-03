@@ -10,7 +10,7 @@
 - Get two cities from frontend &rarr; give 4 routes
     - Direct Route: get from city A to B as directly as possible
     - City-Based Route: get from A to B going through some cities in between
-        - Both cities have to be one of the 100 largest US cities (minus Honolulu) for this kind of route (maybe add this restriction to the direct route as well)
+        - Both cities have to be one of the 100 largest US cities (actually 98 cities, excluding Honolulu and Anchorage, but including some Canada cities like Toronto and Vancouver) for this kind of route (maybe add this restriction to the direct route as well)
     - Each of these routes can have a "close" or "cheap" option for hotels
 - For hotels:
     - Determine split points 

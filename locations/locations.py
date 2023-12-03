@@ -8,10 +8,9 @@ EVENT_SEARCH_RADIUS = 10
 DAILY_DISTANCE_LIMIT_MILES = 100
 
 # combine the 3 APIs to get a roudtrip plan
-# origin and detination are tuples of lat-long coordinates
-# fast_flag is a bool flag to indicate if this is the "fast" route or "cheaper" route
+# origin and destination are names of cities in the list of 100]
 # return a JSON
-def get_roadtrip(origin, destination, fast_flag=True):
+def get_roadtrip(origin, destination):
     # get the route and split points
     route = maps.get_route(origin, destination)
     split_points = maps.compute_split_points_on_daily_limit(route, DAILY_DISTANCE_LIMIT_MILES * 1609)
@@ -83,10 +82,8 @@ def get_roadtrip(origin, destination, fast_flag=True):
 
 # test the functionality on the lat-longs for NYC and Boston
 if __name__ == '__main__':
-    # nyc coors
-    nyc = 40.7128, -74.0060
-    # boston coors
-    boston = 42.3601, -71.0589
+    nyc = 'New York, NY'
+    boston = 'Boston, MA'
 
     f = open('sample_roadtrip.txt', 'w')
     roadtrip = get_roadtrip(nyc, boston)
