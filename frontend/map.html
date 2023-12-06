@@ -17,6 +17,7 @@
       function initMap() {
         const directionsRenderer = new google.maps.DirectionsRenderer();
         const directionsRenderer2 = new google.maps.DirectionsRenderer();
+        const directionsRenderer3 = new google.maps.DirectionsRenderer();
         const directionsService = new google.maps.DirectionsService();
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 7,
@@ -28,39 +29,58 @@
         directionsRenderer.setPanel(document.getElementById("sidebar"));
         directionsRenderer2.setMap(map);
         directionsRenderer2.setPanel(document.getElementById("sidebar"));
+        directionsRenderer3.setMap(map);
+        directionsRenderer3.setPanel(document.getElementById("sidebar"));
 
         const control = document.getElementById("floating-panel");
 
         map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
 
-        const onChangeHandler = function () {
+        const fastestroute = function () {
           if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim() !=="" && document.getElementById("mode").value.trim()!=="") {
-            calculateAndDisplayRoute(directionsService, directionsRenderer);}
+            calculateAndDisplayRoute(directionsService,  directionsRenderer);}
         };
         document
           .getElementById("start")
-          .addEventListener("change", onChangeHandler);
+          .addEventListener("change", fastestroute);
         document
           .getElementById("end")
-          .addEventListener("change", onChangeHandler);
+          .addEventListener("change", fastestroute);
         document
           .getElementById("mode")
-          .addEventListener("change", onChangeHandler);
+          .addEventListener("change", fastestroute);
         
-        const newhandler = function () {
+        const cheapestroute = function () {
           if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!=="" && document.getElementById("mode").value.trim()!=="") {
             newfunc(directionsService, directionsRenderer2);}
         };
 
         document
           .getElementById("start")
-          .addEventListener("change", newhandler);
+          .addEventListener("change", cheapestroute);
         document
           .getElementById("end")
-          .addEventListener("change", newhandler);
+          .addEventListener("change", cheapestroute);
         document
           .getElementById("mode")
-          .addEventListener("change", newhandler);
+          .addEventListener("change", cheapestroute);
+      
+
+      const otherroute = function () {
+          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!=="" && document.getElementById("mode").value.trim()!=="") {
+            newfunc2(directionsService, directionsRenderer3);}
+        };
+
+        document
+          .getElementById("start")
+          .addEventListener("change", otherroute);
+        document
+          .getElementById("end")
+          .addEventListener("change", otherroute);
+        document
+          .getElementById("mode")
+          .addEventListener("change", otherroute);
+
       }
 
       function calculateAndDisplayRoute(directionsService, directionsRenderer) {
@@ -91,6 +111,24 @@
         directionsService
           .route({
             origin: "St. Louis, MO",
+            destination: end,
+            travelMode: google.maps.TravelMode[selectedMode],
+          })
+          .then((response) => {
+            directionsRenderer.setDirections(response);
+          })
+          .catch((e) =>
+            window.alert("Directions request failed due to " + status)
+          );
+      }
+      function newfunc2(directionsService, directionsRenderer) {
+        const start = document.getElementById("start").value;
+        const end = document.getElementById("end").value;
+        const selectedMode = document.getElementById("mode").value;
+
+        directionsService
+          .route({
+            origin: "Columbus, OH",
             destination: end,
             travelMode: google.maps.TravelMode[selectedMode],
           })
