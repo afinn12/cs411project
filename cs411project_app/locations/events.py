@@ -1,5 +1,6 @@
 import requests
-import yelp_key
+from ..locations import yelp_key
+# import yelp_key
 import datetime
 import json
 
