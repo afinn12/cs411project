@@ -1,5 +1,6 @@
 import requests
-import amadeus_key
+from ..locations import amadeus_key
+# import amadeus_key
 import json
 
 AMADEUS_API_KEY = amadeus_key.amadeus_key
