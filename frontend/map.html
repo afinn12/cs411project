@@ -32,6 +32,7 @@
         directionsRenderer2.setPanel(document.getElementById("sidebar"));
         directionsRenderer3.setMap(map);
         directionsRenderer3.setPanel(document.getElementById("sidebar"));
+        
 
         const control = document.getElementById("floating-panel");
 
@@ -82,18 +83,25 @@
           .getElementById("mode")
           .addEventListener("change", otherroute);
 
-      
+      //add routes with correct directions
+      //add markers with correct locations
+      //add information about markers (what, when, cost, etc)
+      //overall info window, cost and time
+  
+
+
       const randcoor = { lat: 34.0549, lng: -118.2426 };
 
-      addMarker( { lat: 34.0549, lng: -118.2426 }, map);
-      addMarker( { lat: 50.0549, lng: -80.2426 }, map);
-      addMarker( { lat: 41.0549, lng: -118.2426 }, map);
+      addMarker( { lat: 34.0549, lng: -118.2426 }, map, "1");
+      addMarker( { lat: 41.0549, lng: -90.2426 }, map, "2");
+      addMarker( { lat: 42.0549, lng: -76.2426 }, map, "3");
   
       }
 
-      function addMarker(randcoor, map){
+      function addMarker(randcoor, map, name){
           const marker = new google.maps.Marker({
           position: randcoor,
+          label: name,
           map,
           title: "Click to zoom",
         });
@@ -120,7 +128,7 @@
             console.log(response)
           })
           .catch((e) =>
-            window.alert("Directions request failed due to " + status)
+            {}
           );
       }
 
@@ -139,7 +147,7 @@
             directionsRenderer.setDirections(response);
           })
           .catch((e) =>
-            window.alert("Directions request failed due to " + status)
+          {}
           );
       }
       function newfunc2(directionsService, directionsRenderer) {
@@ -157,7 +165,7 @@
             directionsRenderer.setDirections(response);
           })
           .catch((e) =>
-            window.alert("Directions request failed due to " + status)
+          {}
           );
       }
 
