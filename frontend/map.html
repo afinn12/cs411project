@@ -25,6 +25,7 @@
           disableDefaultUI: true,
         });
 
+
         directionsRenderer.setMap(map);
         directionsRenderer.setPanel(document.getElementById("sidebar"));
         directionsRenderer2.setMap(map);
@@ -81,6 +82,26 @@
           .getElementById("mode")
           .addEventListener("change", otherroute);
 
+      
+      const randcoor = { lat: 34.0549, lng: -118.2426 };
+
+      addMarker( { lat: 34.0549, lng: -118.2426 }, map);
+      addMarker( { lat: 50.0549, lng: -80.2426 }, map);
+      addMarker( { lat: 41.0549, lng: -118.2426 }, map);
+  
+      }
+
+      function addMarker(randcoor, map){
+          const marker = new google.maps.Marker({
+          position: randcoor,
+          map,
+          title: "Click to zoom",
+        });
+
+        marker.addListener("click", () => {
+          map.setZoom(8);
+          map.setCenter(marker.getPosition());
+        });
       }
 
       function calculateAndDisplayRoute(directionsService, directionsRenderer) {
@@ -154,6 +175,8 @@
         citiesDatalist.appendChild(option);
     });
 });
+
+      
 
 
       window.initMap = initMap;
