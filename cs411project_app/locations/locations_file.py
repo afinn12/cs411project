@@ -7,7 +7,7 @@ from ..locations import maps
 import json
 import datetime
 
-HOTEL_SEARCH_RADIUS = 10
+HOTEL_SEARCH_RADIUS = 25
 EVENT_SEARCH_RADIUS = 10   
 
 # combine the 3 APIs to get a roudtrip plan
@@ -57,13 +57,13 @@ def get_roadtrip(origin, destination, is_direct_route, distance_limit, start_dat
         hotel_list_array.sort(key=lambda info_hotel_pair: info_hotel_pair[0]['distance'])
         
         # choose closest hotel and add it to the list for fast hotels
-        hotel_choice_info, hotel_choice_id = hotel_list_array[0]
+        hotel_choice_info, hotel_choice_id = hotel_list_array[0] if hotel_list_array else (None, None)
         hotel_per_point_fast.append((hotel_choice_id, hotel_choice_info))
 
         # choose cheapest from closet 10 hotels and add it to the list for cheap hotels
         hotel_list_array = hotel_list_array[:10]
         hotel_list_array.sort(key=lambda info_hotel_pair: info_hotel_pair[0]['price']['total'])
-        hotel_choice_info, hotel_choice_id = hotel_list_array[0]
+        hotel_choice_info, hotel_choice_id = hotel_list_array[0] if hotel_list_array else (None, None)
         hotel_per_point_cheap.append((hotel_choice_id, hotel_choice_info))
 
 
@@ -87,18 +87,20 @@ def get_roadtrip(origin, destination, is_direct_route, distance_limit, start_dat
         ]
 
 
+    # print(hotel_per_point_fast)
+
     # recompute the route based on the fast hotels
     stops_fast = []
-    for hotel_id, hotel_info in hotel_per_point_fast:
-        stops_fast.append((hotel_info['latitude'], hotel_info['longitude']))
-    new_route_fast = maps.get_route_with_stops(origin, destination, stops_fast)
+    for i, (hotel_id, hotel_info) in enumerate(hotel_per_point_fast):
+        stops_fast.append((hotel_info['latitude'], hotel_info['longitude']) if hotel_id else split_points[i])
+    new_route_fast = maps.get_route_with_stops(origin, destination, split_points)
 
 
     # recompute the route based on the cheap hotels
     stops_cheap = []
-    for hotel_id, hotel_info in hotel_per_point_cheap:
-        stops_cheap.append((hotel_info['latitude'], hotel_info['longitude']))
-    new_route_cheap = maps.get_route_with_stops(origin, destination, stops_cheap)
+    for i, (hotel_id, hotel_info) in enumerate(hotel_per_point_cheap):
+        stops_cheap.append((hotel_info['latitude'], hotel_info['longitude']) if hotel_id else split_points[i])
+    new_route_cheap = maps.get_route_with_stops(origin, destination, split_points)
 
 
     # format the return json
@@ -130,5 +132,5 @@ if __name__ == '__main__':
     # json.dump(roadtrip, f, indent=4)
 
     f = open('sample_city_roadtrip.txt', 'w')
-    roadtrip = get_roadtrip(nyc, miami, False, 500, '2023-12-15')
+    roadtrip = get_roadtrip(nyc, miami, False, 500, '2024-01-15')
     json.dump(roadtrip, f, indent=4)

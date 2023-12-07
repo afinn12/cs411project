@@ -1,15 +1,30 @@
-import fs from 'fs';
+function get_sample_roadtrip_output() {
+  const apikey_endpoint = 'http://127.0.0.1:8000/cs411project_app/get_sample_roadtrip/';
+  const post_request_options = {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      }
+  };
 
-function get_route_from_file(){
-  fs.readFile('cs411project_app/locations/sample_city_roadtrip.txt', 'utf8', (err, data) => {
-    if (err) {
-      console.error('Error reading the file:', err);
-      return;
-    }
-    const JSONdata = JSON.parse(data);
-    console.log(JSONdata['cheap_hotel_route']);
-    return data;
-  });
+  // Use fetch to make an HTTP request
+  return fetch(apikey_endpoint, post_request_options)
+      .then(response => response.json())
+      .then(data => {
+          return data;
+      })
+      .catch(err => {
+          console.error('Error reading the file:', err);
+          throw err;
+      });
 }
 
-// get_route_from_file();
+// Example usage
+// get_sample_roadtrip_output()
+//   .then(data => {
+//       console.log(data);
+//       // Optionally, you can create the script element here if needed
+//   })
+//   .catch(error => {
+//       console.error('Error:', error);
+//   });

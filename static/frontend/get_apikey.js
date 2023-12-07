@@ -11,7 +11,7 @@ function get_google_apikey() {
   return fetch(apikey_endpoint, post_request_options)
       .then(response => response.text())
       .then(data => {
-          console.log(data);
+        //   console.log(data);
           return data.substring(1, data.length - 1);
       })
       .catch(err => {
@@ -32,11 +32,11 @@ function get_google_directions_link() {
 }
 
 // Example usage
-get_google_directions_link()
-  .then(apikey => {
-      console.log('Link with API key:', apikey);
-      // Optionally, you can create the script element here if needed
-  })
-  .catch(error => {
-      console.error('Error:', error);
-  });
+// get_google_directions_link()
+//   .then(apikey => {
+//       console.log('Link with API key:', apikey);
+//       // Optionally, you can create the script element here if needed
+//   })
+//   .catch(error => {
+//       console.error('Error:', error);
+//   });
