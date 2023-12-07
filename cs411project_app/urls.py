@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import get_roadtrip_APIView
+from .views import get_roadtrip_APIView, get_google_apikey
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('get_roadtrip/', get_roadtrip_APIView.as_view(), name='get_roadtrip')
+    path('get_roadtrip/', get_roadtrip_APIView.as_view(), name='get_roadtrip'),
+    path('get_google_apikey/', get_google_apikey.as_view(), name='get_google_apikey')
 ]

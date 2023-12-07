@@ -2,7 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .serializers import get_roadtrip_serializer
-from .locations import locations_file
+from .locations import locations_file, googlemaps_key
 
 class get_roadtrip_APIView(APIView):
     def post(self, request, *args, **kwargs):
@@ -18,3 +18,7 @@ class get_roadtrip_APIView(APIView):
             )
             return Response(result, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+class get_google_apikey(APIView):
+    def post(self, request, *args, **kwargs):
+        return Response(googlemaps_key.googlemaps_key, status=status.HTTP_200_OK)
