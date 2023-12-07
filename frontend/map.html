@@ -17,18 +17,21 @@
 
 
       /*
-      //add routes with correct directions
-      //add markers with correct locations
+      add routes with correct directions
+      add markers with correct locations
 
-      //add information about markers (what, when, cost, etc)
-          add info window for hotels and events
+      add information about markers (what, when, cost, etc)
+      add info window for hotels and events
           when hover over (use marker.addListener("mouseover", () => {
                                   infoWindow.open(map, marker);
                                 });
-)
-      //overall info window, total cost and time
-        //only add total cost to route, time is shown in side bar
+        overall cost for route?
+        
+      optional: fix overlap with menu when zoom, also overlap with map and menu
+        
       */  
+
+
       function initMap() {
         //make map functions and map
         const directionsRenderer = new google.maps.DirectionsRenderer();
@@ -40,9 +43,10 @@
           zoom: 7,
           center: { lat: 41.85, lng: -87.65 },
           disableDefaultUI: true,
+          gestureHandling: "greedy",
         });
 
-        //initialize
+        //initialize 
         directionsRenderer.setMap(map);
         directionsRenderer.setPanel(document.getElementById("sidebar"));
         directionsRenderer2.setMap(map);
@@ -53,19 +57,29 @@
         directionsRenderer4.setPanel(document.getElementById("sidebar"));
         
 
-        const control = document.getElementById("floating-panel");
+        const control = document.getElementById("floating-panel1");
 
         map.controls[google.maps.ControlPosition.TOP_LEFT].push(control);
+
+        //valid date format
         const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
 
-      //map the fastest route (default)
+      //map the fastest route with cheap hotels
         const quickcheap = function () {
           if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim() !==""&&dateRegex.test(document.getElementById("date").value.trim()) /*&& document.getElementById("mode").value.trim()!==""*/) {
-            if(document.getElementById("route").value ==1){
+            if(document.querySelector('#route input[name="choice"]:checked').value =="quick" && document.querySelector('#hotel input[name="choice"]:checked').value =="cheap"){
+            //erase other routes and set map for the right route
             directionsRenderer.setMap(map);
             directionsRenderer2.setMap(null);
             directionsRenderer3.setMap(null);
             directionsRenderer4.setMap(null);
+            
+            //erase other directions and display the correct ones
+            directionsRenderer.setPanel(document.getElementById("sidebar"));
+            directionsRenderer2.setPanel(null);
+            directionsRenderer3.setPanel(null);
+            directionsRenderer4.setPanel(null);
+            //calculate and display the route 
             calculateAndDisplayRoute(directionsService,  directionsRenderer);}}
         };
         document
@@ -77,20 +91,29 @@
         document
           .getElementById("route")
           .addEventListener("change", quickcheap);
+          document
+          .getElementById("hotel")
+          .addEventListener("change", quickcheap);
        
        /* document
           .getElementById("mode")
           .addEventListener("change", fastestroute);*/
         
           
-      //map the cheapest route (hotel)
+      //map the fastest map with close hotels
         const quickclose = function () {
           if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!=="" && dateRegex.test(document.getElementById("date").value.trim())) {
-            if(document.getElementById("route").value ==2){
+            if(document.querySelector('#route input[name="choice"]:checked').value =="quick" && document.querySelector('#hotel input[name="choice"]:checked').value =="close"){
               directionsRenderer.setMap(null);
               directionsRenderer2.setMap(map);
               directionsRenderer3.setMap(null);
               directionsRenderer4.setMap(null);
+
+              
+              directionsRenderer.setPanel(null);
+              directionsRenderer2.setPanel(document.getElementById("sidebar"));
+              directionsRenderer3.setPanel(null);
+              directionsRenderer4.setPanel(null);
               newfunc(directionsService, directionsRenderer2);}}
         };
 
@@ -103,19 +126,28 @@
         document
           .getElementById("route")
           .addEventListener("change", quickclose);
+          document
+          .getElementById("hotel")
+          .addEventListener("change", quickclose);
        /* document
           .getElementById("mode")
           .addEventListener("change", cheapestroute);*/
       
 
-      //map the most fun route (events)
+      //map the city-based route with cheap hotels
       const citycheap = function () {
           if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!==""&& dateRegex.test(document.getElementById("date").value.trim())) {
-            if(document.getElementById("route").value ==3){
+            if(document.querySelector('#route input[name="choice"]:checked').value =="city" && document.querySelector('#hotel input[name="choice"]:checked').value =="cheap"){
               directionsRenderer.setMap(null);
               directionsRenderer2.setMap(null);
               directionsRenderer3.setMap(map);
               directionsRenderer4.setMap(null);
+
+              
+              directionsRenderer.setPanel(null);
+              directionsRenderer2.setPanel(null);
+              directionsRenderer3.setPanel(document.getElementById("sidebar"));
+              directionsRenderer4.setPanel(null);
               newfunc2(directionsService, directionsRenderer3);}}
         };
 
@@ -128,18 +160,29 @@
         document
           .getElementById("route")
           .addEventListener("change", citycheap);
+        document
+          .getElementById("hotel")
+          .addEventListener("change", citycheap);
      /*   document
           .getElementById("mode")
           .addEventListener("change", otherroute);*/
           const c=0;
 
+        //map the city-based route with close hotels
         const cityclose = function () {
           if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim() !=="" && dateRegex.test(document.getElementById("date").value.trim())/*&& document.getElementById("mode").value.trim()!==""*/) {
-            if(document.getElementById("route").value ==4){
+            if(document.querySelector('#route input[name="choice"]:checked').value =="city" && document.querySelector('#hotel input[name="choice"]:checked').value =="close"){
+              console.log("cityclose!!")
               directionsRenderer.setMap(null);
               directionsRenderer2.setMap(null);
               directionsRenderer3.setMap(null);
               directionsRenderer4.setMap(map);
+
+              
+              directionsRenderer.setPanel(null);
+              directionsRenderer2.setPanel(null);
+              directionsRenderer3.setPanel(null);
+              directionsRenderer4.setPanel(document.getElementById("sidebar"));
               newfunc3(directionsService,  directionsRenderer4);}}
         };
         document
@@ -151,37 +194,94 @@
         document
           .getElementById("route")
           .addEventListener("change", cityclose);
+        document
+          .getElementById("hotel")
+          .addEventListener("change", cityclose);
       
 
+      //plot the route depending on the route selected
       function plotall(){
-        if(document.getElementById("route").value == 1){
-        quickcheap();}
-        else if(document.getElementById("route").value == 2){
-        quickclose(); }
-        else if(document.getElementById("route").value == 3){
-        citycheap();}
-        else if(document.getElementById("route").value == 4){
-        cityclose()} 
-      }
+        if(document.querySelector('#route input[name="choice"]:checked').value == "quick"){
+          if(document.querySelector('#hotel input[name="choice"]:checked').value == "cheap"){
+            quickcheap();
+          }else if(document.querySelector('#hotel input[name="choice"]:checked').value == "close"){
+            quickclose(); 
+          }
+        }else if(document.querySelector('#route input[name="choice"]:checked').value == "city"){
+          if(document.querySelector('#hotel input[name="choice"]:checked').value == "cheap"){
+            citycheap();
+          }else if(document.querySelector('#hotel input[name="choice"]:checked').value == "close"){
+            cityclose();
+          }
+      
+      }}
 
+      
       const depdate = function (event) {
+          //if the user hits enter, execute this code
           if (event.key === "Enter") {
+            //take the input and remove spaces from the ends
             const inputDate = this.value.trim();
-            if (!dateRegex.test(inputDate)) {
+            const [year, month, day] = inputDate.split('-');
+            // Get the current and convert to compare
+            const currentDate = new Date().toISOString().split('T')[0]; 
+            
+            //get max date and increment, then convert to compare
+            const max = new Date();
+            max.setFullYear(max.getFullYear() + 1);
+            const maxDate = max.toISOString().split('T')[0];
+            //check if its valid format and beyond our days
 
+            const months31 = ['01', '03', '05', '07', '08', '10', '12'];
+            const months30 = ['04', '06', '09', '11'];
+
+            //check format
+            if (!dateRegex.test(inputDate)) {
               alert("Please enter the date in the format YYYY-MM-DD");
               return;
-                }else{plotall();
-                console.log("hello")};
-            console.log("Valid date:", inputDate);
-            }};
+            //check if too early/late
+            }else if (inputDate < currentDate) {
+              alert("Please enter a date that is today or later");
+              return;
+            }else if (inputDate > maxDate) {
+              alert("Please enter a date that is a year away or less");
+              return;
+            //check if month is valid
+            }else if(month<1 || month>12){
+              alert("Please enter a valid month");
+              return
+            //check if day is valid depending on month
+            }else if(months31.includes(month) && (day < 1 || day > 31)){
+              alert("Please enter a valid day");
+              return
+            }else if(months30.includes(month) && (day < 1 || day > 30)){
+              alert("Please enter a valid day");
+              return
+            }else if (month==2){
+              //check for leap year
+              if(year%4==0){
+                if(day<1||day>29){
+                  alert("Please enter a valid day");
+                  return
+                }
+              }else{
+                if(day<1||day>28){
+                  alert("Please enter a valid day");
+                  return
+                } }
+            }else{
+              //plot the route based on the selected route if given a valid date
+              plotall();
+          }
+          }};
 
+         //calls depdate when a key is pressed
         document
           .getElementById("date")
           .addEventListener("keypress", depdate);
 
       //plot markers for hotels/events
-      const randcoor = { lat: 34.0549, lng: -118.2426 };
+      //const randcoor = { lat: 34.0549, lng: -118.2426 };
 
       addMarker( { lat: 34.0549, lng: -118.2426 }, map, "1");
       addMarker( { lat: 41.0549, lng: -90.2426 }, map, "2");
@@ -210,6 +310,8 @@
         const end = document.getElementById("end").value;
         /*const mpde = document.getElementById("mode").value;*/
 
+        //we will replace calculaute (directionsService) with our routes we calculated
+        //we have to pass it to directionsRenderer.setDirections?
         directionsService
           .route({
             origin: start,
@@ -221,6 +323,7 @@
             console.log(response)
           })
           .catch((e) =>
+            //print error if no route was found (due to ocean, unknown place, etc)
             window.alert("No Direct Route was found")
           );
       }
@@ -277,6 +380,7 @@
           window.alert("No Closest Hotel Route was found")
           );
       }
+
      //create list of cities to choose from 
     document.addEventListener('DOMContentLoaded', function() {
     var citiesArray = [
@@ -294,7 +398,7 @@
 
       
 
-
+      //call function to make map
       window.initMap = initMap;
     </script>
     <style>
@@ -303,7 +407,6 @@
        * Copyright 2019 Google LLC. All Rights Reserved.
        * SPDX-License-Identifier: Apache-2.0
        */
-      /* Optional: Makes the sample page fill the window. */
       html,
       body {
         height: 100%;
@@ -331,35 +434,31 @@
         flex-grow: 4;
         height: 100%;
       }
+      
 
-      #floating-panel {
-        position: absolute;
-        top: 10px;
-        left: 25%;
+      #floating-panel1, 
+      #floating-panel2  {
+        margin-top: 5px;
+        left: 27%;
         z-index: 5;
-        background-color: #fff;
-        padding: 5px;
-        border: 1px solid #999;
-        text-align: center;
-        font-family: "Roboto", "sans-serif";
-        line-height: 30px;
-        padding-left: 10px;
-      }
-
-      #floating-panel {
-        background-color: #fff;
-        border: 0;
-        border-radius: 2px;
+        color:white;
+        position: absolute;
+        background-color: #9e0000;
+        border: 5px solid #420202;
+        border-radius: 20px;
         box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
-        margin: 10px;
-        padding: 0 0.5em;
-        font: 400 18px Roboto, Arial, sans-serif;
+        font:Roboto;
         overflow: hidden;
-        padding: 5px;
-        font-size: 14px;
+        padding: 8px;
+        font-size: 15px;
         text-align: center;
         line-height: 30px;
         height: auto;
+        margin-left: 5px;
+
+      }
+      #floating-panel2{
+        margin-left: 10px;
       }
 
       #map {
@@ -376,7 +475,8 @@
     </style>
   </head>
   <body>
-    <div id="floating-panel">
+    <!-- floating panel where user enters their input  -->
+    <div id="floating-panel1">
       <strong>Start:</strong>
         <input type="text" list="cities" id="start" />
         <datalist id="cities"></datalist>
@@ -388,22 +488,29 @@
       <Strong>Departure Date (YYYY-MM-DD)</Strong>
         <input type="text" id="date" />
       
+     <!-- floating panel where user selects the route to view -->
     </div>
-    <div id="floating-panel">
+    <div id="floating-panel2">
       <b>Select Route: </b>
-        <select id="route">
-          <option value="1">Quickest Route/Cheapest Hotels</option>
-          <option value="2">Quickest Route/Closest Hotels</option>
-          <option value="3">City-Based Route/Cheapest Hotels</option>
-          <option value="4">City-Based Route/Closest Hotels</option>
-        </select>
+      <form id="route">
+        <input type="radio"name="choice" value="quick">
+        <label>Quickest Route</label>
+        <input type="radio"name="choice" value="city">
+        <label>City-Based Route</label><br>
+      </form>
+      <form id="hotel">
+        <input type="radio" name="choice" value="cheap">
+        <label>Cheapest Hotels</label>
+        <input type="radio" name="choice" value="close">
+        <label>Closest Hotels</label><br>
+      </form>
     </div>
     <div id="container">
       <div id="map"></div>
       <div id="sidebar"></div>
     </div>
     <div style="display: none">
-      <div id="floating-panel">
+      <div id="floating-panel1">
         <strong>Start:</strong>
         <input type="text" list="cities" id="start" />
        <datalist id="cities"></datalist>
@@ -414,7 +521,7 @@
       </div>
     </div>
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=APIKEY&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly"
       defer
     ></script>
   </body>

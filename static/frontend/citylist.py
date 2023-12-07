@@ -21,5 +21,5 @@ for city in data:
 unique_names=sorted(unique_names)
 
 for i in range(len(unique_names)):
-    print(f"<option value=\"{unique_names[i]}\">{unique_names[i]}</option>")
+    print(f"\"{unique_names[i]}\", ", end="")
 
