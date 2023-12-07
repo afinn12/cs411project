@@ -28,17 +28,13 @@
 )
       //overall info window, total cost and time
         //only add total cost to route, time is shown in side bar
-
-        
-
-
-      */
-          
+      */  
       function initMap() {
         //make map functions and map
         const directionsRenderer = new google.maps.DirectionsRenderer();
         const directionsRenderer2 = new google.maps.DirectionsRenderer();
         const directionsRenderer3 = new google.maps.DirectionsRenderer();
+        const directionsRenderer4 = new google.maps.DirectionsRenderer();
         const directionsService = new google.maps.DirectionsService();
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 7,
@@ -53,63 +49,136 @@
         directionsRenderer2.setPanel(document.getElementById("sidebar"));
         directionsRenderer3.setMap(map);
         directionsRenderer3.setPanel(document.getElementById("sidebar"));
+        directionsRenderer4.setMap(map);
+        directionsRenderer4.setPanel(document.getElementById("sidebar"));
         
 
         const control = document.getElementById("floating-panel");
 
-        map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(control);
+        const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
 
       //map the fastest route (default)
-        const fastestroute = function () {
-          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim() !=="" && document.getElementById("mode").value.trim()!=="") {
-            calculateAndDisplayRoute(directionsService,  directionsRenderer);}
+        const quickcheap = function () {
+          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim() !==""&&dateRegex.test(document.getElementById("date").value.trim()) /*&& document.getElementById("mode").value.trim()!==""*/) {
+            if(document.getElementById("route").value ==1){
+            directionsRenderer.setMap(map);
+            directionsRenderer2.setMap(null);
+            directionsRenderer3.setMap(null);
+            directionsRenderer4.setMap(null);
+            calculateAndDisplayRoute(directionsService,  directionsRenderer);}}
         };
         document
           .getElementById("start")
-          .addEventListener("change", fastestroute);
+          .addEventListener("change", quickcheap);
         document
           .getElementById("end")
-          .addEventListener("change", fastestroute);
+          .addEventListener("change", quickcheap);
         document
+          .getElementById("route")
+          .addEventListener("change", quickcheap);
+       
+       /* document
           .getElementById("mode")
-          .addEventListener("change", fastestroute);
+          .addEventListener("change", fastestroute);*/
         
           
       //map the cheapest route (hotel)
-        const cheapestroute = function () {
-          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!=="" && document.getElementById("mode").value.trim()!=="") {
-            newfunc(directionsService, directionsRenderer2);}
+        const quickclose = function () {
+          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!=="" && dateRegex.test(document.getElementById("date").value.trim())) {
+            if(document.getElementById("route").value ==2){
+              directionsRenderer.setMap(null);
+              directionsRenderer2.setMap(map);
+              directionsRenderer3.setMap(null);
+              directionsRenderer4.setMap(null);
+              newfunc(directionsService, directionsRenderer2);}}
         };
 
         document
           .getElementById("start")
-          .addEventListener("change", cheapestroute);
+          .addEventListener("change", quickclose);
         document
           .getElementById("end")
-          .addEventListener("change", cheapestroute);
+          .addEventListener("change", quickclose);
         document
+          .getElementById("route")
+          .addEventListener("change", quickclose);
+       /* document
           .getElementById("mode")
-          .addEventListener("change", cheapestroute);
+          .addEventListener("change", cheapestroute);*/
       
 
       //map the most fun route (events)
-      const otherroute = function () {
-          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!=="" && document.getElementById("mode").value.trim()!=="") {
-            newfunc2(directionsService, directionsRenderer3);}
+      const citycheap = function () {
+          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!==""&& dateRegex.test(document.getElementById("date").value.trim())) {
+            if(document.getElementById("route").value ==3){
+              directionsRenderer.setMap(null);
+              directionsRenderer2.setMap(null);
+              directionsRenderer3.setMap(map);
+              directionsRenderer4.setMap(null);
+              newfunc2(directionsService, directionsRenderer3);}}
         };
 
         document
           .getElementById("start")
-          .addEventListener("change", otherroute);
+          .addEventListener("change", citycheap);
         document
           .getElementById("end")
-          .addEventListener("change", otherroute);
+          .addEventListener("change", citycheap);
         document
+          .getElementById("route")
+          .addEventListener("change", citycheap);
+     /*   document
           .getElementById("mode")
-          .addEventListener("change", otherroute);
+          .addEventListener("change", otherroute);*/
+          const c=0;
 
-  
-  
+        const cityclose = function () {
+          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim() !=="" && dateRegex.test(document.getElementById("date").value.trim())/*&& document.getElementById("mode").value.trim()!==""*/) {
+            if(document.getElementById("route").value ==4){
+              directionsRenderer.setMap(null);
+              directionsRenderer2.setMap(null);
+              directionsRenderer3.setMap(null);
+              directionsRenderer4.setMap(map);
+              newfunc3(directionsService,  directionsRenderer4);}}
+        };
+        document
+          .getElementById("start")
+          .addEventListener("change", cityclose);
+        document
+          .getElementById("end")
+          .addEventListener("change", cityclose);
+        document
+          .getElementById("route")
+          .addEventListener("change", cityclose);
+      
+
+      function plotall(){
+        if(document.getElementById("route").value == 1){
+        quickcheap();}
+        else if(document.getElementById("route").value == 2){
+        quickclose(); }
+        else if(document.getElementById("route").value == 3){
+        citycheap();}
+        else if(document.getElementById("route").value == 4){
+        cityclose()} 
+      }
+
+      const depdate = function (event) {
+          if (event.key === "Enter") {
+            const inputDate = this.value.trim();
+            if (!dateRegex.test(inputDate)) {
+
+              alert("Please enter the date in the format YYYY-MM-DD");
+              return;
+                }else{plotall();
+                console.log("hello")};
+            console.log("Valid date:", inputDate);
+            }};
+
+        document
+          .getElementById("date")
+          .addEventListener("keypress", depdate);
 
       //plot markers for hotels/events
       const randcoor = { lat: 34.0549, lng: -118.2426 };
@@ -139,61 +208,75 @@
       function calculateAndDisplayRoute(directionsService, directionsRenderer) {
         const start = document.getElementById("start").value;
         const end = document.getElementById("end").value;
-        const selectedMode = document.getElementById("mode").value;
+        /*const mpde = document.getElementById("mode").value;*/
 
         directionsService
           .route({
             origin: start,
             destination: end,
-            travelMode: google.maps.TravelMode[selectedMode],
+            travelMode: google.maps.TravelMode["DRIVING"],
           })
           .then((response) => {
             directionsRenderer.setDirections(response);
             console.log(response)
           })
           .catch((e) =>
-            {}
+            window.alert("No Direct Route was found")
           );
       }
 
       function newfunc(directionsService, directionsRenderer) {
         const start = document.getElementById("start").value;
         const end = document.getElementById("end").value;
-        const selectedMode = document.getElementById("mode").value;
 
         directionsService
           .route({
             origin: "St. Louis, MO",
             destination: end,
-            travelMode: google.maps.TravelMode[selectedMode],
+            travelMode: google.maps.TravelMode["DRIVING"],
           })
           .then((response) => {
             directionsRenderer.setDirections(response);
           })
           .catch((e) =>
-          {}
+          window.alert("No Cheapest Hotel Route was found")
           );
       }
       function newfunc2(directionsService, directionsRenderer) {
         const start = document.getElementById("start").value;
         const end = document.getElementById("end").value;
-        const selectedMode = document.getElementById("mode").value;
 
         directionsService
           .route({
             origin: "Columbus, OH",
             destination: end,
-            travelMode: google.maps.TravelMode[selectedMode],
+            travelMode: google.maps.TravelMode["DRIVING"],
           })
           .then((response) => {
             directionsRenderer.setDirections(response);
           })
           .catch((e) =>
-          {}
+          window.alert("No Closest Hotel Route was found")
           );
       }
-
       
+      function newfunc3(directionsService, directionsRenderer) {
+        const start = document.getElementById("start").value;
+        const end = document.getElementById("end").value;
+
+        directionsService
+          .route({
+            origin: "Seattle, WA",
+            destination: end,
+            travelMode: google.maps.TravelMode["DRIVING"],
+          })
+          .then((response) => {
+            directionsRenderer.setDirections(response);
+          })
+          .catch((e) =>
+          window.alert("No Closest Hotel Route was found")
+          );
+      }
      //create list of cities to choose from 
     document.addEventListener('DOMContentLoaded', function() {
     var citiesArray = [
@@ -295,24 +378,25 @@
   <body>
     <div id="floating-panel">
       <strong>Start:</strong>
-      <input type="text" list="cities" id="start" />
-       <datalist id="cities">
-       
-       </datalist>
+        <input type="text" list="cities" id="start" />
+        <datalist id="cities"></datalist>
       <br />
       <strong>End:</strong>
-      <input type="text" list="cities" id="end" />
-       <datalist id="cities">
-
-       </datalist>
+        <input type="text" list="cities" id="end" />
+        <datalist id="cities"></datalist>
       <br />
-      <b>Mode of Travel: </b>
-      <select id="mode">
-        <option value="DRIVING">Driving</option>
-        <option value="WALKING">Walking</option>
-        <option value="BICYCLING">Bicycling</option>
-        <option value="TRANSIT">Transit</option>
-      </select>
+      <Strong>Departure Date (YYYY-MM-DD)</Strong>
+        <input type="text" id="date" />
+      
+    </div>
+    <div id="floating-panel">
+      <b>Select Route: </b>
+        <select id="route">
+          <option value="1">Quickest Route/Cheapest Hotels</option>
+          <option value="2">Quickest Route/Closest Hotels</option>
+          <option value="3">City-Based Route/Cheapest Hotels</option>
+          <option value="4">City-Based Route/Closest Hotels</option>
+        </select>
     </div>
     <div id="container">
       <div id="map"></div>
@@ -322,15 +406,11 @@
       <div id="floating-panel">
         <strong>Start:</strong>
         <input type="text" list="cities" id="start" />
-       <datalist id="cities">
-
-       </datalist>
+       <datalist id="cities"></datalist>
         <br />
         <strong>End:</strong>
         <input type="text" list="cities" id="end" />
-       <datalist id="cities">
-
-       </datalist>
+       <datalist id="cities"></datalist>
       </div>
     </div>
     <script
@@ -339,3 +419,15 @@
     ></script>
   </body>
 </html>
+
+
+<!-- 
+
+<b>Mode of Travel: </b>
+<select id="mode">
+  <option value="DRIVING">Driving</option>
+  <option value="WALKING">Walking</option>
+  <option value="BICYCLING">Bicycling</option>
+  <option value="TRANSIT">Transit</option>
+</select>
+ -->
