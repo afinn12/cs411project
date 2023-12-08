@@ -190,6 +190,7 @@
       
       const depdate = function (event) {
           //if the user hits enter, execute this code
+          document.getElementById("date").style.backgroundColor = "white";
           if (event.key === "Enter") {
             //take the input and remove spaces from the ends
             const inputDate = this.value.trim();
@@ -242,6 +243,7 @@
                 } }
             }else{
               //plot the route based on the selected route if given a valid date
+              document.getElementById("date").style.backgroundColor = "lightgreen";
               plotall();
           }
           }};
@@ -260,6 +262,7 @@
             if (checkdate(inputdist)) {
               plotall();
             }else {
+              alert("Please enter a valid distance");
               return
           }
         }
@@ -267,9 +270,10 @@
 
       const checkdate = function(d){
         if (!distregex.test(d) ||d<100 || d>1500 || d == "" ) {
-              alert("Please enter a valid distance");
+              document.getElementById("distance").style.backgroundColor = "white";
               return false;
             }else { 
+              document.getElementById("distance").style.backgroundColor = "lightgreen";
               return true;
       }
     }
