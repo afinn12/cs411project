@@ -375,9 +375,40 @@
       //plot markers for hotels/events
       //const randcoor = { lat: 34.0549, lng: -118.2426 };
 
-      addMarker( { lat: 34.0549, lng: -118.2426 }, map, "1");
-      addMarker( { lat: 41.0549, lng: -90.2426 }, map, "2");
-      addMarker( { lat: 42.0549, lng: -76.2426 }, map, "3");
+      //markers for hotels
+      hotels.forEach((hotel, index) => {
+        if (hotel) {
+          const hotelPosition = { lat: hotel.latitude, lng: hotel.longitude };
+          const hotelMarker = addMarker(hotelPosition, map, 'H${index + 1}');
+          const hotelInfoWindow = new google.maps.InfoWindow({
+            content: '<strong>${hotel.name}</strong><br>${hotel.roomInfo.description}<br>Price: ${hotel.price.total}', });
+
+          //info pops up on hover
+          hotelMarker.addListener("mouseover", () => { hotelInfoWindow.open(map, hotelMarker); });
+
+          //close info when mouse out of marker
+          hotelMarker.addListener("mouseout", () => { hotelInfoWindow.close(); });
+        }
+      });
+
+      //markers for events
+      events.forEach((dayEvents, day) => {
+        if (dayEvents) {
+          Object.values(dayEvents).forEach((event) => {
+            const eventPosition = { lat: event.latitude, lng: event.longitude };
+            const eventMarker = addMarker(eventPosition, map, "E");
+            const eventInfoWindow = new google.maps.InfoWindow({
+            content: '<strong>${event.name}</strong><br>${event.description}<br>Time: ${event.time_start}', });
+
+          //info pops up on hover
+          eventMarker.addListener("mouseover", () => { eventInfoWindow.open(map, eventMarker); });
+
+          //close info when mouse out of marker
+          eventMarker.addListener("mouseout", () => { eventInfoWindow.close(); });
+          });
+        }
+      });
+
   
       }
 
@@ -498,6 +529,8 @@
           map.setZoom(8);
           map.setCenter(marker.getPosition());
         });
+
+        return marker;
       }
 
       //function calculates and displays route
