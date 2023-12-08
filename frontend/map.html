@@ -283,6 +283,110 @@
   
       }
 
+      const hotels = [
+            {
+                "name": "COURTYARD NORFOLK DTN MARRIOTT",
+                "distance": 0.18,
+                "latitude": 36.8472,
+                "longitude": -76.2878,
+                "checkInDate": "2024-01-15",
+                "checkOutDate": "2024-01-17",
+                "roomInfo": {
+                    "beds": 2,
+                    "bedType": "QUEEN",
+                    "description": "Prepay Non-refundable Non-changeable, prepay in full\n2 Queen(s), Mini fridge, 328sqft/30sqm,\nWireless internet, complimentary, Wired"
+                },
+                "guestInfo": {
+                    "adults": 1
+                },
+                "price": {
+                    "total": "$265.69"
+                }
+            },
+            {
+                "name": "OMNI CHARLOTTE HOTEL",
+                "distance": 0.06,
+                "latitude": 35.22632,
+                "longitude": -80.84247,
+                "checkInDate": "2024-01-17",
+                "checkOutDate": "2024-01-19",
+                "roomInfo": {
+                    "category": "DELUXE_ROOM",
+                    "beds": 2,
+                    "bedType": "QUEEN",
+                    "description": "Non Flexible Prepaid Rate\nDELUXE 2 QUEENS-SKYBRIDGE TO BOA-WELLS FARGO\nAND SHOPPING-DELUXE ATHLETIC CLUB ACCESS-377SF"
+                },
+                "guestInfo": {
+                    "adults": 1
+                },
+                "price": {
+                    "total": "$604.61"
+                }
+            },
+            null,
+            {
+                "name": "HOLIDAY INN PORT OF MIAMI DTWN",
+                "distance": 0.38,
+                "latitude": 25.77752,
+                "longitude": -80.18872,
+                "checkInDate": "2024-01-21",
+                "checkOutDate": "2024-01-23",
+                "roomInfo": {
+                    "category": "STANDARD_ROOM",
+                    "beds": 2,
+                    "bedType": "DOUBLE",
+                    "description": "BOOK EARLY AND  SAVE\n2 Double Bed Standard  Room with Microwave\nRefrigerator"
+                },
+                "guestInfo": {
+                    "adults": 1
+                },
+                "price": {
+                    "total": "$533.36"
+                }
+            }
+        ]
+
+      const events = [
+            {},
+            {},
+            {},
+            {
+                "north-miami-lost-in-laughs-comedy-show-5": {
+                    "name": "Lost in Laughs Comedy Show",
+                    "description": "Come enjoy an all-star line-up of comedians, that will have you giggling all night!\n\n8PM Show Time! Free Event!\n\nLocated at the wonderful Lost City Brewing...",
+                    "category": "performing-arts",
+                    "cost": null,
+                    "event_site_url": "https://www.yelp.com/events/north-miami-lost-in-laughs-comedy-show-5?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.8882891,
+                    "longitude": -80.1708534,
+                    "time_start": "2024-01-20T20:00:00-05:00",
+                    "time_end": "2024-01-20T22:30:00-05:00"
+                },
+                "north-miami-brews-n-bingo-at-lost-city-brewing-21": {
+                    "name": "Brews N' Bingo at Lost City Brewing",
+                    "description": "A great night of BEER & BINGO!\nFree event!\nGreat prizes and fun at the awesome Lost City Brewing!\n\nHosted by comedian Raul Hernandez (@FunnyRaul)\nPresented...",
+                    "category": "nightlife",
+                    "cost": null,
+                    "event_site_url": "https://www.yelp.com/events/north-miami-brews-n-bingo-at-lost-city-brewing-21?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.8882891,
+                    "longitude": -80.1708534,
+                    "time_start": "2024-01-18T19:00:00-05:00",
+                    "time_end": "2024-01-18T21:30:00-05:00"
+                },
+                "miami-sickick": {
+                    "name": "Sickick",
+                    "description": "EDM producer and vocalist, Sickick makes his E11EVEN debut Friday, January 26 for the Fearless Tour.",
+                    "category": "nightlife",
+                    "cost": null,
+                    "event_site_url": "https://www.yelp.com/events/miami-sickick?adjust_creative=B3xMZQXpWM0ODv_mqfndlQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=B3xMZQXpWM0ODv_mqfndlQ",
+                    "latitude": 25.7848968,
+                    "longitude": -80.1934998,
+                    "time_start": "2024-01-26T20:00:00-05:00",
+                    "time_end": "2024-01-27T10:00:00-05:00"
+                }
+            }
+        ]
+
       //function to add markers to map
       function addMarker(randcoor, map, name){
           const marker = new google.maps.Marker({
