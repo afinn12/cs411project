@@ -55,7 +55,7 @@
 
       //map the fastest route with cheap hotels
         const quickcheap = function () {
-          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim() !==""&&dateRegex.test(document.getElementById("date").value.trim()) /*&& document.getElementById("mode").value.trim()!==""*/) {
+          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim() !==""&&dateRegex.test(document.getElementById("date").value.trim()) && checkdate(document.getElementById("distance").value)/*&& document.getElementById("mode").value.trim()!==""*/) {
             if(document.querySelector('#route input[name="choice"]:checked').value =="quick" && document.querySelector('#hotel input[name="choice"]:checked').value =="cheap"){
             //erase other routes and set map for the right route
             directionsRenderer.setMap(map);
@@ -85,7 +85,7 @@
           
       //map the fastest map with close hotels
         const quickclose = function () {
-          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!=="" && dateRegex.test(document.getElementById("date").value.trim())) {
+          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!=="" && dateRegex.test(document.getElementById("date").value.trim())  && checkdate(document.getElementById("distance").value)) {
             if(document.querySelector('#route input[name="choice"]:checked').value =="quick" && document.querySelector('#hotel input[name="choice"]:checked').value =="close"){
                //erase other routes and set map for the right route
             directionsRenderer.setMap(map);
@@ -114,7 +114,7 @@
 
       //map the city-based route with cheap hotels
       const citycheap = function () {
-          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!==""&& dateRegex.test(document.getElementById("date").value.trim())) {
+          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!==""&& dateRegex.test(document.getElementById("date").value.trim()) && checkdate(document.getElementById("distance").value)) {
             if(document.querySelector('#route input[name="choice"]:checked').value =="city" && document.querySelector('#hotel input[name="choice"]:checked').value =="cheap"){
               //erase other routes and set map for the right route
             directionsRenderer.setMap(map);
@@ -143,7 +143,7 @@
 
         //map the city-based route with close hotels
         const cityclose = function () {
-          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim() !=="" && dateRegex.test(document.getElementById("date").value.trim())/*&& document.getElementById("mode").value.trim()!==""*/) {
+          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim() !=="" && dateRegex.test(document.getElementById("date").value.trim()) && checkdate(document.getElementById("distance").value)/*&& document.getElementById("mode").value.trim()!==""*/) {
             if(document.querySelector('#route input[name="choice"]:checked').value =="city" && document.querySelector('#hotel input[name="choice"]:checked').value =="close"){
               console.log("cityclose!!")
               //erase other routes and set map for the right route
@@ -257,17 +257,22 @@
           if (event.key === "Enter") {
             const inputdist = this.value.trim();
             console.log(inputdist);
-            if (!distregex.test(inputdist)) {
-              alert("Please enter a valid distance");
+            if (checkdate(inputdist)) {
+              plotall();
+            }else {
               return
-            }else if(inputdist<100 || inputdist>1500){
-              alert("Please enter a valid distance");
-              return
-          }else {
-            plotall();
           }
         }
       }
+
+      const checkdate = function(d){
+        if (!distregex.test(d) ||d<100 || d>1500 || d == "" ) {
+              alert("Please enter a valid distance");
+              return false;
+            }else { 
+              return true;
+      }
+    }
 
       document
           .getElementById("distance")
