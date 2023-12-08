@@ -61,8 +61,6 @@
 
         map.controls[google.maps.ControlPosition.TOP_LEFT].push(control);
 
-        //valid date format
-        const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
 
       //map the fastest route with cheap hotels
         const quickcheap = function () {
@@ -216,6 +214,9 @@
       
       }}
 
+        //valid date format
+        const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+        const distregex = /^[01]?[0-9]00$/;
       
       const depdate = function (event) {
           //if the user hits enter, execute this code
@@ -279,6 +280,29 @@
         document
           .getElementById("date")
           .addEventListener("keypress", depdate);
+
+       
+          const distfunc = function (event) {
+          //if the user hits enter, execute this code
+          if (event.key === "Enter") {
+            const inputdist = this.value.trim();
+            console.log(inputdist);
+            if (!distregex.test(inputdist)) {
+              alert("Please enter a valid distance");
+              return
+            }else if(inputdist<100 || inputdist>1500){
+              alert("Please enter a valid distance");
+              return
+          }else {
+            plotall();
+          }
+        }
+      }
+
+      document
+          .getElementById("distance")
+          .addEventListener("keypress", distfunc);
+
 
       //plot markers for hotels/events
       //const randcoor = { lat: 34.0549, lng: -118.2426 };
@@ -487,6 +511,26 @@
       <br />
       <Strong>Departure Date (YYYY-MM-DD)</Strong>
         <input type="text" id="date" />
+      <br />
+      <strong>Daily Distance Limit:</strong>
+        <input type="text" list="dist" id="distance" />
+        <datalist id="dist">
+          <option value="100">100</option>
+          <option value="200">200</option>
+          <option value="300">300</option>
+          <option value="400">400</option>
+          <option value="500">500</option>
+          <option value="600">600</option>
+          <option value="700">700</option>
+          <option value="800">800</option>
+          <option value="900">900</option>
+          <option value="1000">1000</option>
+          <option value="1100">1100</option>
+          <option value="1200">1200</option>
+          <option value="1300">1300</option>
+          <option value="1400">1400</option>
+          <option value="1500">1500</option>
+        </datalist>
       
      <!-- floating panel where user selects the route to view -->
     </div>
