@@ -35,9 +35,6 @@
       function initMap() {
         //make map functions and map
         const directionsRenderer = new google.maps.DirectionsRenderer();
-        const directionsRenderer2 = new google.maps.DirectionsRenderer();
-        const directionsRenderer3 = new google.maps.DirectionsRenderer();
-        const directionsRenderer4 = new google.maps.DirectionsRenderer();
         const directionsService = new google.maps.DirectionsService();
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 7,
@@ -49,12 +46,6 @@
         //initialize 
         directionsRenderer.setMap(map);
         directionsRenderer.setPanel(document.getElementById("sidebar"));
-        directionsRenderer2.setMap(map);
-        directionsRenderer2.setPanel(document.getElementById("sidebar"));
-        directionsRenderer3.setMap(map);
-        directionsRenderer3.setPanel(document.getElementById("sidebar"));
-        directionsRenderer4.setMap(map);
-        directionsRenderer4.setPanel(document.getElementById("sidebar"));
         
 
         const control = document.getElementById("floating-panel1");
@@ -68,15 +59,9 @@
             if(document.querySelector('#route input[name="choice"]:checked').value =="quick" && document.querySelector('#hotel input[name="choice"]:checked').value =="cheap"){
             //erase other routes and set map for the right route
             directionsRenderer.setMap(map);
-            directionsRenderer2.setMap(null);
-            directionsRenderer3.setMap(null);
-            directionsRenderer4.setMap(null);
             
             //erase other directions and display the correct ones
             directionsRenderer.setPanel(document.getElementById("sidebar"));
-            directionsRenderer2.setPanel(null);
-            directionsRenderer3.setPanel(null);
-            directionsRenderer4.setPanel(null);
             //calculate and display the route 
             calculateAndDisplayRoute(directionsService,  directionsRenderer);}}
         };
@@ -102,17 +87,12 @@
         const quickclose = function () {
           if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!=="" && dateRegex.test(document.getElementById("date").value.trim())) {
             if(document.querySelector('#route input[name="choice"]:checked').value =="quick" && document.querySelector('#hotel input[name="choice"]:checked').value =="close"){
-              directionsRenderer.setMap(null);
-              directionsRenderer2.setMap(map);
-              directionsRenderer3.setMap(null);
-              directionsRenderer4.setMap(null);
-
-              
-              directionsRenderer.setPanel(null);
-              directionsRenderer2.setPanel(document.getElementById("sidebar"));
-              directionsRenderer3.setPanel(null);
-              directionsRenderer4.setPanel(null);
-              newfunc(directionsService, directionsRenderer2);}}
+               //erase other routes and set map for the right route
+            directionsRenderer.setMap(map);
+            
+            //erase other directions and display the correct ones
+            directionsRenderer.setPanel(document.getElementById("sidebar"));
+              newfunc(directionsService, directionsRenderer);}}
         };
 
         document
@@ -136,17 +116,12 @@
       const citycheap = function () {
           if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!==""&& dateRegex.test(document.getElementById("date").value.trim())) {
             if(document.querySelector('#route input[name="choice"]:checked').value =="city" && document.querySelector('#hotel input[name="choice"]:checked').value =="cheap"){
-              directionsRenderer.setMap(null);
-              directionsRenderer2.setMap(null);
-              directionsRenderer3.setMap(map);
-              directionsRenderer4.setMap(null);
-
-              
-              directionsRenderer.setPanel(null);
-              directionsRenderer2.setPanel(null);
-              directionsRenderer3.setPanel(document.getElementById("sidebar"));
-              directionsRenderer4.setPanel(null);
-              newfunc2(directionsService, directionsRenderer3);}}
+              //erase other routes and set map for the right route
+            directionsRenderer.setMap(map);
+            
+            //erase other directions and display the correct ones
+            directionsRenderer.setPanel(document.getElementById("sidebar"));
+              newfunc2(directionsService, directionsRenderer);}}
         };
 
         document
@@ -171,17 +146,12 @@
           if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim() !=="" && dateRegex.test(document.getElementById("date").value.trim())/*&& document.getElementById("mode").value.trim()!==""*/) {
             if(document.querySelector('#route input[name="choice"]:checked').value =="city" && document.querySelector('#hotel input[name="choice"]:checked').value =="close"){
               console.log("cityclose!!")
-              directionsRenderer.setMap(null);
-              directionsRenderer2.setMap(null);
-              directionsRenderer3.setMap(null);
-              directionsRenderer4.setMap(map);
-
-              
-              directionsRenderer.setPanel(null);
-              directionsRenderer2.setPanel(null);
-              directionsRenderer3.setPanel(null);
-              directionsRenderer4.setPanel(document.getElementById("sidebar"));
-              newfunc3(directionsService,  directionsRenderer4);}}
+              //erase other routes and set map for the right route
+            directionsRenderer.setMap(map);
+            
+            //erase other directions and display the correct ones
+            directionsRenderer.setPanel(document.getElementById("sidebar"));
+            newfunc3(directionsService,  directionsRenderer);}}
         };
         document
           .getElementById("start")
@@ -565,7 +535,7 @@
       </div>
     </div>
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNFfhMcLVR35KJ7HrehZG4ui1Bn4yPNXw&callback=initMap&v=weekly"
       defer
     ></script>
   </body>
