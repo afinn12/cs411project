@@ -1,0 +1,7 @@
+<!-- home.html -->
+
+{% if user.is_authenticated %}
+  <p>Welcome, {{ user.username }}! <a href="{% url 'map' %}">Go to Map</a></p>
+{% else %}
+  <p><a href="{% url 'social:begin' 'google-oauth2' %}">Login with Google</a></p>
+{% endif %}

@@ -4,6 +4,26 @@ from rest_framework import status
 from .serializers import get_roadtrip_serializer
 from .locations import locations_file, googlemaps_key
 import json
+from django.shortcuts import render, redirect
+
+def login(request):
+    return render(request, 'login.html')
+
+def logout(request):
+    return render(request, 'logout.html')
+
+def home(request):
+    return render(request, 'home.html')
+
+def map(request):
+    user_info = None
+    if request.user.is_authenticated:
+        user_info = {
+            'username': request.user.username,
+            'email': request.user.email,
+            # Add other user information as needed
+        }
+    return render(request, 'map.html', {'user_info': user_info})
 
 class get_roadtrip_APIView(APIView):
     def post(self, request, *args, **kwargs):

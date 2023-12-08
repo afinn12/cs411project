@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+from . import google_oauth_client_id
+from . import google_oauth_client_secret
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,8 +39,24 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "corsheaders"
+    "corsheaders",
+    'social_django',
+    'cs411project_app'
 ]
+
+AUTHENTICATION_BACKENDS = (
+    'social_core.backends.google.GoogleOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = google_oauth_client_id.google_oauth_client_id
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = google_oauth_client_secret.google_oauth_client_secret
+LOGIN_URL = 'login'
+LOGOUT_URL = 'logout'
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
+SOCIAL_AUTH_REDIRECT_URI = "/auth/complete/google-oauth2/"
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = 'home'
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

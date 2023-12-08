@@ -1,0 +1,24 @@
+<!-- map.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Page</title>
+</head>
+<body>
+    <h1>Welcome to the Map Page</h1>
+
+    {% if user_info %}
+        <p>User Information:</p>
+        <ul>
+            <li>Username: {{ user_info.username }}</li>
+            <li>Email: {{ user_info.email }}</li>
+            <!-- Add other user information as needed -->
+        </ul>
+    {% else %}
+        <p>User information not available.</p>
+    {% endif %}
+</body>
+</html>
