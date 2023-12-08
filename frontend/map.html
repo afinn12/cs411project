@@ -35,6 +35,9 @@
       function initMap() {
         //make map functions and map
         const directionsRenderer = new google.maps.DirectionsRenderer();
+        const directionsRenderer2 = new google.maps.DirectionsRenderer();
+        const directionsRenderer3 = new google.maps.DirectionsRenderer();
+        const directionsRenderer4 = new google.maps.DirectionsRenderer();
         const directionsService = new google.maps.DirectionsService();
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 7,
@@ -46,6 +49,12 @@
         //initialize 
         directionsRenderer.setMap(map);
         directionsRenderer.setPanel(document.getElementById("sidebar"));
+        directionsRenderer2.setMap(map);
+        directionsRenderer2.setPanel(document.getElementById("sidebar"));
+        directionsRenderer3.setMap(map);
+        directionsRenderer3.setPanel(document.getElementById("sidebar"));
+        directionsRenderer4.setMap(map);
+        directionsRenderer4.setPanel(document.getElementById("sidebar"));
         
 
         const control = document.getElementById("floating-panel1");
@@ -55,13 +64,19 @@
 
       //map the fastest route with cheap hotels
         const quickcheap = function () {
-          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim() !==""&&dateRegex.test(document.getElementById("date").value.trim()) && checkdate(document.getElementById("distance").value)/*&& document.getElementById("mode").value.trim()!==""*/) {
+          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim() !==""&&dateRegex.test(document.getElementById("date").value.trim()) /*&& document.getElementById("mode").value.trim()!==""*/) {
             if(document.querySelector('#route input[name="choice"]:checked').value =="quick" && document.querySelector('#hotel input[name="choice"]:checked').value =="cheap"){
             //erase other routes and set map for the right route
             directionsRenderer.setMap(map);
+            directionsRenderer2.setMap(null);
+            directionsRenderer3.setMap(null);
+            directionsRenderer4.setMap(null);
             
             //erase other directions and display the correct ones
             directionsRenderer.setPanel(document.getElementById("sidebar"));
+            directionsRenderer2.setPanel(null);
+            directionsRenderer3.setPanel(null);
+            directionsRenderer4.setPanel(null);
             //calculate and display the route 
             calculateAndDisplayRoute(directionsService,  directionsRenderer);}}
         };
@@ -85,14 +100,19 @@
           
       //map the fastest map with close hotels
         const quickclose = function () {
-          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!=="" && dateRegex.test(document.getElementById("date").value.trim())  && checkdate(document.getElementById("distance").value)) {
+          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!=="" && dateRegex.test(document.getElementById("date").value.trim())) {
             if(document.querySelector('#route input[name="choice"]:checked').value =="quick" && document.querySelector('#hotel input[name="choice"]:checked').value =="close"){
-               //erase other routes and set map for the right route
-            directionsRenderer.setMap(map);
-            
-            //erase other directions and display the correct ones
-            directionsRenderer.setPanel(document.getElementById("sidebar"));
-              newfunc(directionsService, directionsRenderer);}}
+              directionsRenderer.setMap(null);
+              directionsRenderer2.setMap(map);
+              directionsRenderer3.setMap(null);
+              directionsRenderer4.setMap(null);
+
+              
+              directionsRenderer.setPanel(null);
+              directionsRenderer2.setPanel(document.getElementById("sidebar"));
+              directionsRenderer3.setPanel(null);
+              directionsRenderer4.setPanel(null);
+              newfunc(directionsService, directionsRenderer2);}}
         };
 
         document
@@ -114,14 +134,19 @@
 
       //map the city-based route with cheap hotels
       const citycheap = function () {
-          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!==""&& dateRegex.test(document.getElementById("date").value.trim()) && checkdate(document.getElementById("distance").value)) {
+          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!==""&& dateRegex.test(document.getElementById("date").value.trim())) {
             if(document.querySelector('#route input[name="choice"]:checked').value =="city" && document.querySelector('#hotel input[name="choice"]:checked').value =="cheap"){
-              //erase other routes and set map for the right route
-            directionsRenderer.setMap(map);
-            
-            //erase other directions and display the correct ones
-            directionsRenderer.setPanel(document.getElementById("sidebar"));
-              newfunc2(directionsService, directionsRenderer);}}
+              directionsRenderer.setMap(null);
+              directionsRenderer2.setMap(null);
+              directionsRenderer3.setMap(map);
+              directionsRenderer4.setMap(null);
+
+              
+              directionsRenderer.setPanel(null);
+              directionsRenderer2.setPanel(null);
+              directionsRenderer3.setPanel(document.getElementById("sidebar"));
+              directionsRenderer4.setPanel(null);
+              newfunc2(directionsService, directionsRenderer3);}}
         };
 
         document
@@ -143,15 +168,20 @@
 
         //map the city-based route with close hotels
         const cityclose = function () {
-          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim() !=="" && dateRegex.test(document.getElementById("date").value.trim()) && checkdate(document.getElementById("distance").value)/*&& document.getElementById("mode").value.trim()!==""*/) {
+          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim() !=="" && dateRegex.test(document.getElementById("date").value.trim())/*&& document.getElementById("mode").value.trim()!==""*/) {
             if(document.querySelector('#route input[name="choice"]:checked').value =="city" && document.querySelector('#hotel input[name="choice"]:checked').value =="close"){
               console.log("cityclose!!")
-              //erase other routes and set map for the right route
-            directionsRenderer.setMap(map);
-            
-            //erase other directions and display the correct ones
-            directionsRenderer.setPanel(document.getElementById("sidebar"));
-            newfunc3(directionsService,  directionsRenderer);}}
+              directionsRenderer.setMap(null);
+              directionsRenderer2.setMap(null);
+              directionsRenderer3.setMap(null);
+              directionsRenderer4.setMap(map);
+
+              
+              directionsRenderer.setPanel(null);
+              directionsRenderer2.setPanel(null);
+              directionsRenderer3.setPanel(null);
+              directionsRenderer4.setPanel(document.getElementById("sidebar"));
+              newfunc3(directionsService,  directionsRenderer4);}}
         };
         document
           .getElementById("start")
@@ -190,7 +220,6 @@
       
       const depdate = function (event) {
           //if the user hits enter, execute this code
-          document.getElementById("date").style.backgroundColor = "white";
           if (event.key === "Enter") {
             //take the input and remove spaces from the ends
             const inputDate = this.value.trim();
@@ -243,7 +272,6 @@
                 } }
             }else{
               //plot the route based on the selected route if given a valid date
-              document.getElementById("date").style.backgroundColor = "lightgreen";
               plotall();
           }
           }};
@@ -259,24 +287,17 @@
           if (event.key === "Enter") {
             const inputdist = this.value.trim();
             console.log(inputdist);
-            if (checkdate(inputdist)) {
-              plotall();
-            }else {
+            if (!distregex.test(inputdist)) {
               alert("Please enter a valid distance");
               return
+            }else if(inputdist<100 || inputdist>1500){
+              alert("Please enter a valid distance");
+              return
+          }else {
+            plotall();
           }
         }
       }
-
-      const checkdate = function(d){
-        if (!distregex.test(d) ||d<100 || d>1500 || d == "" ) {
-              document.getElementById("distance").style.backgroundColor = "white";
-              return false;
-            }else { 
-              document.getElementById("distance").style.backgroundColor = "lightgreen";
-              return true;
-      }
-    }
 
       document
           .getElementById("distance")
@@ -286,9 +307,24 @@
       //plot markers for hotels/events
       //const randcoor = { lat: 34.0549, lng: -118.2426 };
 
-      addMarker( { lat: 34.0549, lng: -118.2426 }, map, "1");
-      addMarker( { lat: 41.0549, lng: -90.2426 }, map, "2");
-      addMarker( { lat: 42.0549, lng: -76.2426 }, map, "3");
+      //markers for hotels
+      hotels.forEach((hotel, index) => {
+        if (hotel) {
+          const hotelPosition = { lat: hotel.latitude, lng: hotel.longitude };
+          const hotelMarker = addMarker(hotelPosition, map, 'H${index + 1}');
+          const hotelInfoWindow = new google.maps.InfoWindow({
+            content: '<strong>${hotel.name}</strong><br>${hotel.roomInfo.description}<br>Price: ${hotel.price.total}',
+          });
+
+          //info pops up on hover
+          hotelMarker.addListener("mouseover", () => { hotelInfoWindow.open(map, hotelMarker); });
+
+          //close info when mouse out of marker
+          hotelMarker.addListener("mouseout", () => { hotelInfoWindow.close(); });
+        }
+      });
+
+      //markers for events
   
       }
 
@@ -409,6 +445,8 @@
           map.setZoom(8);
           map.setCenter(marker.getPosition());
         });
+        
+        return marker;
       }
 
       //function calculates and displays route
@@ -648,7 +686,7 @@
       </div>
     </div>
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNFfhMcLVR35KJ7HrehZG4ui1Bn4yPNXw&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly"
       defer
     ></script>
   </body>
