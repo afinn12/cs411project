@@ -54,17 +54,28 @@
 
 
       //map the fastest route with cheap hotels
-        const quickcheap = function () {
-          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim() !==""&&dateRegex.test(document.getElementById("date").value.trim()) && checkdate(document.getElementById("distance").value)/*&& document.getElementById("mode").value.trim()!==""*/) {
-            if(document.querySelector('#route input[name="choice"]:checked').value =="quick" && document.querySelector('#hotel input[name="choice"]:checked').value =="cheap"){
-            //erase other routes and set map for the right route
-            directionsRenderer.setMap(map);
-            
-            //erase other directions and display the correct ones
-            directionsRenderer.setPanel(document.getElementById("sidebar"));
-            //calculate and display the route 
-            calculateAndDisplayRoute(directionsService,  directionsRenderer);}}
+       
+  const quickcheap = function () {
+    if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!=="" && dateRegex.test(document.getElementById("date").value.trim())  && document.getElementById("distance").value != "") {
+          if(checkstart(document.getElementById("start").value)){
+            if(checkend(document.getElementById("end").value)){
+              if(checkdate(document.getElementById("date").value)){
+                if(checkdist(document.getElementById("distance").value)){
+                  if(document.querySelector('#route input[name="choice"]:checked').value =="quick" && document.querySelector('#hotel input[name="choice"]:checked').value =="cheap"){
+                      //erase other routes and set map for the right route
+                      directionsRenderer.setMap(map);
+                      //erase other directions and display the correct ones
+                      directionsRenderer.setPanel(document.getElementById("sidebar"));
+                      //calculate and display the route 
+                      calculateAndDisplayRoute(directionsService,  directionsRenderer);
+                  }
+                }
+              }
+            }
+          }
+        }   
         };
+        
         document
           .getElementById("start")
           .addEventListener("change", quickcheap);
@@ -84,15 +95,24 @@
         
           
       //map the fastest map with close hotels
-        const quickclose = function () {
-          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!=="" && dateRegex.test(document.getElementById("date").value.trim())  && checkdate(document.getElementById("distance").value)) {
-            if(document.querySelector('#route input[name="choice"]:checked').value =="quick" && document.querySelector('#hotel input[name="choice"]:checked').value =="close"){
-               //erase other routes and set map for the right route
-            directionsRenderer.setMap(map);
-            
-            //erase other directions and display the correct ones
-            directionsRenderer.setPanel(document.getElementById("sidebar"));
-              newfunc(directionsService, directionsRenderer);}}
+        const quickclose = function () { if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!=="" && dateRegex.test(document.getElementById("date").value.trim())  && document.getElementById("distance").value != "") {
+          if(checkstart(document.getElementById("start").value)){
+            if(checkend(document.getElementById("end").value)){
+              if(checkdate(document.getElementById("date").value)){
+                if(checkdist(document.getElementById("distance").value)){
+                  if(document.querySelector('#route input[name="choice"]:checked').value =="quick" && document.querySelector('#hotel input[name="choice"]:checked').value =="cheap"){
+                      //erase other routes and set map for the right route
+                      directionsRenderer.setMap(map);
+                      //erase other directions and display the correct ones
+                      directionsRenderer.setPanel(document.getElementById("sidebar"));
+                      //calculate and display the route 
+                      calculateAndDisplayRoute(directionsService,  directionsRenderer);
+                  }
+                }
+              }
+            }
+          }
+        }   
         };
 
         document
@@ -114,14 +134,24 @@
 
       //map the city-based route with cheap hotels
       const citycheap = function () {
-          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!==""&& dateRegex.test(document.getElementById("date").value.trim()) && checkdate(document.getElementById("distance").value)) {
-            if(document.querySelector('#route input[name="choice"]:checked').value =="city" && document.querySelector('#hotel input[name="choice"]:checked').value =="cheap"){
-              //erase other routes and set map for the right route
-            directionsRenderer.setMap(map);
-            
-            //erase other directions and display the correct ones
-            directionsRenderer.setPanel(document.getElementById("sidebar"));
-              newfunc2(directionsService, directionsRenderer);}}
+        if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!=="" && dateRegex.test(document.getElementById("date").value.trim())  && document.getElementById("distance").value != "") {
+          if(checkstart(document.getElementById("start").value)){
+            if(checkend(document.getElementById("end").value)){
+              if(checkdate(document.getElementById("date").value)){
+                if(checkdist(document.getElementById("distance").value)){
+                  if(document.querySelector('#route input[name="choice"]:checked').value =="quick" && document.querySelector('#hotel input[name="choice"]:checked').value =="cheap"){
+                      //erase other routes and set map for the right route
+                      directionsRenderer.setMap(map);
+                      //erase other directions and display the correct ones
+                      directionsRenderer.setPanel(document.getElementById("sidebar"));
+                      //calculate and display the route 
+                      calculateAndDisplayRoute(directionsService,  directionsRenderer);
+                  }
+                }
+              }
+            }
+          }
+        }   
         };
 
         document
@@ -143,15 +173,24 @@
 
         //map the city-based route with close hotels
         const cityclose = function () {
-          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim() !=="" && dateRegex.test(document.getElementById("date").value.trim()) && checkdate(document.getElementById("distance").value)/*&& document.getElementById("mode").value.trim()!==""*/) {
-            if(document.querySelector('#route input[name="choice"]:checked').value =="city" && document.querySelector('#hotel input[name="choice"]:checked').value =="close"){
-              console.log("cityclose!!")
-              //erase other routes and set map for the right route
-            directionsRenderer.setMap(map);
-            
-            //erase other directions and display the correct ones
-            directionsRenderer.setPanel(document.getElementById("sidebar"));
-            newfunc3(directionsService,  directionsRenderer);}}
+          if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!=="" && dateRegex.test(document.getElementById("date").value.trim())  && document.getElementById("distance").value != "") {
+          if(checkstart(document.getElementById("start").value)){
+            if(checkend(document.getElementById("end").value)){
+              if(checkdate(document.getElementById("date").value)){
+                if(checkdist(document.getElementById("distance").value)){
+                  if(document.querySelector('#route input[name="choice"]:checked').value =="quick" && document.querySelector('#hotel input[name="choice"]:checked').value =="cheap"){
+                      //erase other routes and set map for the right route
+                      directionsRenderer.setMap(map);
+                      //erase other directions and display the correct ones
+                      directionsRenderer.setPanel(document.getElementById("sidebar"));
+                      //calculate and display the route 
+                      calculateAndDisplayRoute(directionsService,  directionsRenderer);
+                  }
+                }
+              }
+            }
+          }
+        }   
         };
         document
           .getElementById("start")
@@ -190,11 +229,25 @@
       
       const depdate = function (event) {
           //if the user hits enter, execute this code
-          document.getElementById("date").style.backgroundColor = "white";
+          
           if (event.key === "Enter") {
             //take the input and remove spaces from the ends
             const inputDate = this.value.trim();
-            const [year, month, day] = inputDate.split('-');
+   //        console.log(inputDate);
+            //check format
+           if(checkdate(inputDate)){
+              //plot the route based on the selected route if given a valid date
+              document.getElementById("date").style.backgroundColor = "lightgreen";
+                plotall();
+            }else{
+              //plot the route based on the selected route if given a valid date
+              document.getElementById("date").style.backgroundColor = "white";
+              return;
+          }
+          }};
+
+          const checkdate = function(d){
+            const [year, month, day] = d.split('-');
             // Get the current and convert to compare
             const currentDate = new Date().toISOString().split('T')[0]; 
             
@@ -207,46 +260,50 @@
             const months31 = ['01', '03', '05', '07', '08', '10', '12'];
             const months30 = ['04', '06', '09', '11'];
 
-            //check format
-            if (!dateRegex.test(inputDate)) {
+            if (!dateRegex.test(d)) {
+              document.getElementById("date").style.backgroundColor = "white";
               alert("Please enter the date in the format YYYY-MM-DD");
-              return;
+              return false;
             //check if too early/late
-            }else if (inputDate < currentDate) {
+            }else if (d < currentDate) {
+              document.getElementById("date").style.backgroundColor = "white";
               alert("Please enter a date that is today or later");
-              return;
-            }else if (inputDate > maxDate) {
+              return false;
+            }else if (d > maxDate) {
+              document.getElementById("date").style.backgroundColor = "white";
               alert("Please enter a date that is a year away or less");
-              return;
+              return false;
             //check if month is valid
             }else if(month<1 || month>12){
+              document.getElementById("date").style.backgroundColor = "white";
               alert("Please enter a valid month");
-              return
+              return false;
             //check if day is valid depending on month
             }else if(months31.includes(month) && (day < 1 || day > 31)){
+              document.getElementById("date").style.backgroundColor = "white";
               alert("Please enter a valid day");
-              return
+              return false;
             }else if(months30.includes(month) && (day < 1 || day > 30)){
+              document.getElementById("date").style.backgroundColor = "white";
               alert("Please enter a valid day");
-              return
+              return false;
             }else if (month==2){
               //check for leap year
               if(year%4==0){
                 if(day<1||day>29){
+                  document.getElementById("date").style.backgroundColor = "white";
                   alert("Please enter a valid day");
-                  return
+                  return false;
                 }
               }else{
                 if(day<1||day>28){
+                  document.getElementById("date").style.backgroundColor = "white";
                   alert("Please enter a valid day");
-                  return
+                  return false;
                 } }
-            }else{
-              //plot the route based on the selected route if given a valid date
-              document.getElementById("date").style.backgroundColor = "lightgreen";
-              plotall();
-          }
-          }};
+          }else{
+            return true;
+          }}
 
          //calls depdate when a key is pressed
         document
@@ -258,8 +315,7 @@
           //if the user hits enter, execute this code
           if (event.key === "Enter") {
             const inputdist = this.value.trim();
-            console.log(inputdist);
-            if (checkdate(inputdist)) {
+            if (checkdist(inputdist)) {
               plotall();
             }else {
               alert("Please enter a valid distance");
@@ -268,7 +324,38 @@
         }
       }
 
-      const checkdate = function(d){
+      var citiesArray = [
+       "Akron, OH", "Albuquerque, NM", "Anaheim, CA", "Arlington, TX", "Arlington, VA", "Atlanta, GA", "Aurora, CO", "Austin, TX", "Bakersfield, CA", "Baltimore, MD", "Baton Rouge, LA", "Birmingham, AL", "Boston, MA", "Buffalo, NY", "Chandler, AZ", "Charlotte, NC", "Chesapeake, VA", "Chicago, IL", "Chula Vista, CA", "Cincinnati, OH", "Cleveland, OH", "Colorado Springs, CO", "Columbus, OH", "Corpus Christi, TX", "Dallas, TX", "Denver, CO", "Detroit, MI", "Durham, NC", "El Paso, TX", "Fort Wayne, IN", "Fort Worth, TX", "Fresno, CA", "Garland, TX", "Gilbert, AZ", "Glendale, AZ", "Greensboro, NC", "Henderson, NV", "Hialeah, FL", "Houston, TX", "Indianapolis, IN", "Irvine, CA", "Jacksonville, FL", "Jersey City, NJ", "Kansas City, MO", "Laredo, TX", "Las Vegas, NV", "Lexington, KY", "Lincoln, NE", "Long Beach, CA", "Los Angeles, CA", "Louisville, KY", "Lubbock, TX", "Madison, WI", "Memphis, TN", "Mesa, AZ", "Miami, FL", "Milwaukee, WI", "Minneapolis, MN", "Nashville, TN", "New Orleans, LA", "New York, NY", "Newark, NJ", "Norfolk, VA", "North Las Vegas, NV", "Oakland, CA", "Oklahoma City, OK", "Omaha, NE", "Orlando, FL", "Philadelphia, PA", "Phoenix, AZ", "Pittsburgh, PA", "Plano, TX", "Portland, OR", "Raleigh, NC", "Reno, NV", "Riverside, CA", "Sacramento, CA", "San Antonio, TX", "San Diego, CA", "San Francisco, CA", "San Jose, CA", "Santa Ana, CA", "Scottsdale, AZ", "Seattle, WA", "St. Louis, MO", "St. Paul, MN", "St. Petersburg, FL", "Stockton, CA", "Tampa, FL", "Toledo, OH", "Toronto, ON", "Tucson, AZ", "Tulsa, OK", "Vancouver, BC", "Virginia Beach, VA", "Washington, DC", "Wichita, KS", "Winston-Salem, NC"
+    ];
+
+    const checkstart = function(c){
+      console.log(c);
+      console.log(citiesArray.includes(c));
+        if (citiesArray.includes(c)){
+          document.getElementById("start").style.backgroundColor = "lightgreen";
+          return true;
+        }else{
+          document.getElementById("start").style.backgroundColor = "white";
+          alert("Enter a city from the list")
+          return false;
+        }
+      }
+      
+      const checkend = function(c){
+        console.log(c);
+        console.log(citiesArray.includes(c));
+        if (citiesArray.includes(c)){
+          document.getElementById("end").style.backgroundColor = "lightgreen";
+          return true;
+        }else{
+          console.log(citiesArray.includes(c));
+          document.getElementById("end").style.backgroundColor = "white";
+          alert("Enter a city from the list")
+          return false;
+        }
+      }
+
+      const checkdist = function(d){
         if (!distregex.test(d) ||d<100 || d>1500 || d == "" ) {
               document.getElementById("distance").style.backgroundColor = "white";
               return false;
@@ -648,7 +735,7 @@
       </div>
     </div>
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNFfhMcLVR35KJ7HrehZG4ui1Bn4yPNXw&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly"
       defer
     ></script>
   </body>
