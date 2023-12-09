@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from .views import get_roadtrip_APIView, get_google_apikey, get_sample_roadtrip_APIView, home, login, logout, map
+from .views import get_roadtrip_APIView, get_google_apikey, get_sample_roadtrip_APIView, home, login, logout, map, test_map
 from django.contrib.auth.views import LoginView
 
 urlpatterns = [
@@ -25,6 +25,7 @@ urlpatterns = [
     path('get_google_apikey/', get_google_apikey.as_view(), name='get_google_apikey'),
     path('get_sample_roadtrip/', get_sample_roadtrip_APIView.as_view(), name='get_sample_roadtrip'),
     path('map/', map, name='map'),
+    path('test_map/', test_map, name='test_map'),
     path('login/', LoginView.as_view(template_name='login.html'), name='login'),
     path('auth/', include('social_django.urls', namespace='social')),
     path('home/', home, name='home')

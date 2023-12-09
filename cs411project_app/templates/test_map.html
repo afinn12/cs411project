@@ -1,19 +1,22 @@
 <!DOCTYPE html>
+
+{% load static %}
+
 <!--
  @license
  Copyright 2019 Google LLC. All Rights Reserved.
  SPDX-License-Identifier: Apache-2.0
 -->
 
-<!-- View this page quickly: http://127.0.0.1:8000/static/frontend/test_map.html -->
+<!-- View this page quickly: http://localhost:8000/cs411project_app/test_map/ -->
 
 <html>
 
 <head>
   <title>Displaying Text Directions With setPanel()</title>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <script src="http://localhost:8000/static/frontend/get_apikey.js"></script>
-  <script src="http://localhost:8000/static/frontend/get_route.js"></script>
+  <script src="{% static 'cs411project_app/get_apikey.js' %}" type="application/javascript"></script>
+  <script src="{% static 'cs411project_app/get_route.js' %}" type="application/javascript"></script>
   <script>
     /**
      * @license

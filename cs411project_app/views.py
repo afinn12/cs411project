@@ -25,6 +25,16 @@ def map(request):
         }
     return render(request, 'map.html', {'user_info': user_info})
 
+def test_map(request):
+    user_info = None
+    if request.user.is_authenticated:
+        user_info = {
+            'username': request.user.username,
+            'email': request.user.email,
+            # Add other user information as needed
+        }
+    return render(request, 'test_map.html', {'user_info': user_info})
+
 class get_roadtrip_APIView(APIView):
     def post(self, request, *args, **kwargs):
         serializer = get_roadtrip_serializer(data=request.data)
