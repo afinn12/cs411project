@@ -18,6 +18,10 @@
   <script src="{% static 'cs411project_app/get_apikey.js' %}" type="application/javascript"></script>
   <script src="{% static 'cs411project_app/get_route.js' %}" type="application/javascript"></script>
   <script>
+    console.log("User Email:", "{{ user_info.email }}");
+    console.log("User Username:", "{{ user_info.username }}");
+  </script>
+  <script>
     /**
      * @license
      * Copyright 2019 Google LLC. All Rights Reserved.
@@ -153,7 +157,7 @@
 
       get_sample_roadtrip_output()
         .then(data => {
-          console.log("Testing");
+          // console.log("Testing");
           console.log(data);
 
           var route_data = data["close_hotel_route"]["route"];
@@ -162,7 +166,7 @@
 
           // Create a decoded path from the overview polyline
           const path = google.maps.geometry.encoding.decodePath(overviewPolyline);
-          console.log(path);
+          // console.log(path);
 
           // Assuming 'map' is your Google Map instance
           const polyline = new google.maps.Polyline({

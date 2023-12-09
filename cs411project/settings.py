@@ -57,6 +57,7 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 SOCIAL_AUTH_REDIRECT_URI = "/auth/complete/google-oauth2/"
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = 'home'
+LOGIN_REQUIRED = True
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

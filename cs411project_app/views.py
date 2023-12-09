@@ -5,6 +5,7 @@ from .serializers import get_roadtrip_serializer
 from .locations import locations_file, googlemaps_key
 import json
 from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
 
 def login(request):
     return render(request, 'login.html')
@@ -25,6 +26,7 @@ def map(request):
         }
     return render(request, 'map.html', {'user_info': user_info})
 
+@login_required
 def test_map(request):
     user_info = None
     if request.user.is_authenticated:
