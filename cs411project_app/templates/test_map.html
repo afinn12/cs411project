@@ -185,6 +185,32 @@
 
           // Fit the map to the bounds of the polyline
           map.fitBounds(bounds);
+
+          // Save user activity using a PUT request
+          const csrfToken = document.cookie
+                .split('; ')
+                .find(row => row.startsWith('csrftoken='))
+                .split('=')[1];
+
+          fetch('/cs411project_app/save_user_activity/', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': csrfToken
+                },
+                body: JSON.stringify({ result: {
+                  start: start,
+                  end: end,
+                  data: data
+                } }),
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data.message);
+                })
+                .catch(error => {
+                    console.error('Error saving user activity:', error);
+                });
         })
         .catch(error => {
           console.error('Error:', error);

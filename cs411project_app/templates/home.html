@@ -1,8 +1,45 @@
 <!-- home.html -->
 
 {% if user.is_authenticated %}
-  <p>Welcome, {{ user.username }}! <a href="{% url 'map' %}">Go to Map</a></p>
-  <p>or, <a href="{% url 'test_map' %}">go to Test Map</a></p>
+  <p>Welcome, {{ user.username }}! </p>
+    <a href="{% url 'test_map' %}">Get a new roadtrip.</a>
+  <p> Or, view your past roadtrips:</p>
+
+    {% block content %}
+    <!-- <h1>User Information</h1> -->
+
+    <div id="userActivityContainer">
+        <!-- User activity will be displayed here -->
+    </div>
+
+    <script>
+        // Fetch user activity using AJAX
+        fetch('/cs411project_app/get_user_activity/')
+            .then(response => response.json())
+            .then(data => {
+                const userActivityContainer = document.getElementById('userActivityContainer');
+                const userActivities = data.user_activities;
+
+                if (userActivities && userActivities.length > 0) {
+                    // Display user activities
+                    const ul = document.createElement('ul');
+                    userActivities.forEach(activity => {
+                        const li = document.createElement('li');
+                        li.textContent = `${activity.result.start} to ${activity.result.end}, created on ${activity.date_created}`;
+                        ul.appendChild(li);
+                    });
+                    userActivityContainer.appendChild(ul);
+                } else {
+                    // Display a message if no user activities found
+                    userActivityContainer.innerHTML = '<p>No user activity found.</p>';
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching user activity:', error);
+            });
+    </script>
+{% endblock %}
+
 {% else %}
   <p><a href="{% url 'social:begin' 'google-oauth2' %}">Login with Google</a></p>
 {% endif %}
