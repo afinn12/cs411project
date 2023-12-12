@@ -1,0 +1,246 @@
+<!-- saved_map.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Map Details</title>
+</head>
+<body>
+
+<h1>Saved Map Details</h1>
+
+<script>
+    // Retrieve the "result" data from localStorage
+    const resultDataString = localStorage.getItem('resultData');
+
+    // Check if the data is available
+    if (resultDataString) {
+        // Parse the JSON string into an object
+        const resultData = JSON.parse(resultDataString);
+
+        // Display the result data as needed
+        console.log('Result Data:', resultData);
+
+        // Example: Displaying the start and end values
+        document.body.innerHTML += `<p>Start: ${resultData.start}</p>`;
+        document.body.innerHTML += `<p>End: ${resultData.end}</p>`;
+    } else {
+        // Handle the case when the data is not available
+        console.error('Result data not found.');
+    }
+</script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+
+{% load static %}
+
+<!--
+ @license
+ Copyright 2019 Google LLC. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+-->
+
+<!-- View this page quickly: http://localhost:8000/cs411project_app/saved_map/ -->
+
+<html>
+
+<head>
+    <title>Displaying Saved Roadtrip</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="{% static 'cs411project_app/get_apikey.js' %}" type="application/javascript"></script>
+    <script src="{% static 'cs411project_app/get_route.js' %}" type="application/javascript"></script>
+    <script>
+        console.log("User Email:", "{{ user_info.email }}");
+        console.log("User Username:", "{{ user_info.username }}");
+    </script>
+    <script>
+        /**
+         * @license
+         * Copyright 2019 Google LLC. All Rights Reserved.
+         * SPDX-License-Identifier: Apache-2.0
+         */
+
+        function displayRoute(directionsRenderer, map) {
+            // Retrieve the "result" data from localStorage
+            const resultDataString = localStorage.getItem('resultData');
+
+            // Check if the data is available
+            if (resultDataString) {
+                // Parse the JSON string into an object
+                const data = JSON.parse(resultDataString)['data'];
+                console.log(data);
+
+                var route_data = data["close_hotel_route"]["route"];
+                // Extract the overview polyline from the response
+                const overviewPolyline = route_data["routes"][0]["overview_polyline"]["points"];
+
+                // console.log(overviewPolyline);
+
+                if (google.maps.geometry && google.maps.geometry.encoding) {
+                    // Create a decoded path from the overview polyline
+                    const path = google.maps.geometry.encoding.decodePath(overviewPolyline);
+                    // console.log(path);
+
+                    // Assuming 'map' is your Google Map instance
+                    const polyline = new google.maps.Polyline({
+                        path: path,
+                        strokeColor: '#3366cc',
+                        strokeOpacity: 0.8,
+                        strokeWeight: 4,
+                    });
+
+                    polyline.setMap(map);
+                    directionsRenderer.setDirections(route_data);
+
+                    // Get bounds for the polyline
+                    const bounds = new google.maps.LatLngBounds();
+                    path.forEach(point => bounds.extend(point));
+
+                    // Fit the map to the bounds of the polyline
+                    map.fitBounds(bounds);
+                }
+                else { console.error('Google Maps geometry library not available'); }
+            } else {
+                // Handle the case when the data is not available
+                console.error('Result data not found.');
+            }
+        }
+
+        function initMap() {
+            //make map functions and map
+            const directionsRenderer = new google.maps.DirectionsRenderer();
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 7,
+                center: { lat: 41.85, lng: -87.65 },
+                disableDefaultUI: true,
+            });
+
+            //initialize
+            directionsRenderer.setMap(map);
+            directionsRenderer.setPanel(document.getElementById("sidebar"));
+
+            const control = document.getElementById("floating-panel");
+
+            map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
+
+            displayRoute(directionsRenderer, map);
+        }
+
+        function loadGoogleMaps() {
+            get_google_apikey()
+                .then(apikey => {
+                    const scriptElement = document.createElement('script');
+                    scriptElement.src = `https://maps.googleapis.com/maps/api/js?key=${apikey}&libraries=geometry&v=weekly`;
+                    scriptElement.async = true;
+                    scriptElement.defer = true;
+
+                    // Attach an event listener to execute initMap when the script is loaded
+                    scriptElement.addEventListener('load', initMap);
+
+                    document.body.appendChild(scriptElement);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+
+        // Listen for the DOMContentLoaded event before loading Google Maps
+        document.addEventListener('DOMContentLoaded', loadGoogleMaps);
+
+    </script>
+    <style>
+        /**
+       * @license
+       * Copyright 2019 Google LLC. All Rights Reserved.
+       * SPDX-License-Identifier: Apache-2.0
+       */
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            height: 100%;
+            display: flex;
+        }
+
+        #sidebar {
+            flex-basis: 15rem;
+            flex-grow: 1;
+            padding: 1rem;
+            max-width: 30rem;
+            height: 100%;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+
+        #map {
+            flex-basis: 0;
+            flex-grow: 4;
+            height: 100%;
+        }
+
+        #floating-panel {
+            position: absolute;
+            top: 10px;
+            left: 25%;
+            z-index: 5;
+            background-color: #fff;
+            padding: 5px;
+            border: 1px solid #999;
+            text-align: center;
+            font-family: "Roboto", "sans-serif";
+            line-height: 30px;
+            padding-left: 10px;
+        }
+
+        #floating-panel {
+            background-color: #fff;
+            border: 0;
+            border-radius: 2px;
+            box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+            margin: 10px;
+            padding: 0 0.5em;
+            font: 400 18px Roboto, Arial, sans-serif;
+            overflow: hidden;
+            padding: 5px;
+            font-size: 14px;
+            text-align: center;
+            line-height: 30px;
+            height: auto;
+        }
+
+        #map {
+            flex: auto;
+        }
+
+        #sidebar {
+            flex: 0 1 auto;
+            padding: 0;
+        }
+
+        #sidebar>div {
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="map"></div>
+        <div id="sidebar"></div>
+    </div>
+    <div style="display: none">
+        <div id="floating-panel"></div>
+    </div>
+</body>
+
+</html>

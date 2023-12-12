@@ -1,5 +1,16 @@
 <!-- home.html -->
 
+<style>
+    .viewDetailsLink {
+        /* Style for the "View Details" link */
+        display: inline-block;
+        margin-left: 10px;  /* Adjust the margin as needed */
+        color: blue;        /* Link color */
+        text-decoration: underline;  /* Underline the link */
+        cursor: pointer;    /* Show a pointer cursor on hover */
+    }
+</style>
+
 {% if user.is_authenticated %}
   <p>Welcome, {{ user.username }}! </p>
     <a href="{% url 'test_map' %}">Get a new roadtrip.</a>
@@ -26,6 +37,20 @@
                     userActivities.forEach(activity => {
                         const li = document.createElement('li');
                         li.textContent = `${activity.result.start} to ${activity.result.end}, created on ${activity.date_created}`;
+
+                        // Create a hyperlink and set its attributes
+                        const link = document.createElement('a');
+                        link.textContent = '(view map)';
+                        link.className = 'viewDetailsLink';  // Apply the custom styling
+                        link.href = "{% url 'saved_map' %}"
+                        link.onclick = function() {
+                            // Pass the result data to the next page using localStorage
+                            localStorage.setItem('resultData', JSON.stringify(activity.result));
+                        };
+
+                        // Append the link to the li element
+                        li.appendChild(link);
+
                         ul.appendChild(li);
                     });
                     userActivityContainer.appendChild(ul);

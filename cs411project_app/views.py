@@ -42,6 +42,18 @@ def test_map(request):
 
 
 @login_required
+def saved_map(request):
+    user_info = None
+    if request.user.is_authenticated:
+        user_info = {
+            'username': request.user.username,
+            'email': request.user.email,
+            # Add other user information as needed
+        }
+    return render(request, 'saved_map.html', {'user_info': user_info})
+
+
+@login_required
 @require_http_methods(["PUT"])
 def save_user_activity(request):
     try:

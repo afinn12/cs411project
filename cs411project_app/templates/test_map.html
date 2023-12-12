@@ -13,7 +13,7 @@
 <html>
 
 <head>
-  <title>Displaying Text Directions With setPanel()</title>
+  <title>Displaying New Roadtrip</title>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <script src="{% static 'cs411project_app/get_apikey.js' %}" type="application/javascript"></script>
   <script src="{% static 'cs411project_app/get_route.js' %}" type="application/javascript"></script>
@@ -188,29 +188,31 @@
 
           // Save user activity using a PUT request
           const csrfToken = document.cookie
-                .split('; ')
-                .find(row => row.startsWith('csrftoken='))
-                .split('=')[1];
+            .split('; ')
+            .find(row => row.startsWith('csrftoken='))
+            .split('=')[1];
 
           fetch('/cs411project_app/save_user_activity/', {
-                method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-CSRFToken': csrfToken
-                },
-                body: JSON.stringify({ result: {
-                  start: start,
-                  end: end,
-                  data: data
-                } }),
+            method: 'PUT',
+            headers: {
+              'Content-Type': 'application/json',
+              'X-CSRFToken': csrfToken
+            },
+            body: JSON.stringify({
+              result: {
+                start: start,
+                end: end,
+                data: data
+              }
+            }),
+          })
+            .then(response => response.json())
+            .then(data => {
+              console.log(data.message);
             })
-                .then(response => response.json())
-                .then(data => {
-                    console.log(data.message);
-                })
-                .catch(error => {
-                    console.error('Error saving user activity:', error);
-                });
+            .catch(error => {
+              console.error('Error saving user activity:', error);
+            });
         })
         .catch(error => {
           console.error('Error:', error);
