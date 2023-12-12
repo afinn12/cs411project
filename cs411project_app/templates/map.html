@@ -84,6 +84,7 @@
             })
                 .then(response => response.json())
                 .then(data => {
+                    alert("Saved!");
                     console.log(data.message);
                 })
                 .catch(error => {
