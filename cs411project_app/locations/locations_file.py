@@ -8,7 +8,7 @@ import json
 import datetime
 
 HOTEL_SEARCH_RADIUS = 25
-EVENT_SEARCH_RADIUS = 10   
+EVENT_SEARCH_RADIUS = 20   
 
 # combine the 3 APIs to get a roudtrip plan
 # origin and destination are names of cities in the list of 100

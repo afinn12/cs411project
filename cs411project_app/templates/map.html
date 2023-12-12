@@ -442,7 +442,8 @@
                 if (event.key === "Enter") {
                     //take the input and remove spaces from the ends
                     const inputDate = document.getElementById("date").value.trim();
-                    //        console.log(inputDate);
+                          
+                           //console.log(checkdate(inputDate));
                     //check format
                     if (checkdate(inputDate)) {
                         //plot the route based on the selected route if given a valid date
@@ -466,7 +467,7 @@
                 max.setFullYear(max.getFullYear() + 1);
                 const maxDate = max.toISOString().split('T')[0];
                 //check if its valid format and beyond our days
-
+               
                 const months31 = ['01', '03', '05', '07', '08', '10', '12'];
                 const months30 = ['04', '06', '09', '11'];
 
@@ -504,12 +505,16 @@
                             document.getElementById("date").style.backgroundColor = "white";
                             alert("Please enter a valid day");
                             return false;
+                        }else{
+                            return true;
                         }
                     } else {
                         if (day < 1 || day > 28) {
                             document.getElementById("date").style.backgroundColor = "white";
                             alert("Please enter a valid day");
                             return false;
+                        }else{
+                            return true;
                         }
                     }
                 } else {
