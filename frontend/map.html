@@ -379,9 +379,9 @@
       hotels.forEach((hotel, index) => {
         if (hotel) {
           const hotelPosition = { lat: hotel.latitude, lng: hotel.longitude };
-          const hotelMarker = addMarker(hotelPosition, map, 'H${index + 1}');
+          const hotelMarker = addMarker(hotelPosition, map, 'Hotel');
           const hotelInfoWindow = new google.maps.InfoWindow({
-            content: '<strong>${hotel.name}</strong><br>${hotel.roomInfo.description}<br>Price: ${hotel.price.total}', });
+            content: getContentString(hotel), });
 
           //info pops up on hover
           hotelMarker.addListener("mouseover", () => { hotelInfoWindow.open(map, hotelMarker); });
@@ -396,9 +396,8 @@
         if (dayEvents) {
           Object.values(dayEvents).forEach((event) => {
             const eventPosition = { lat: event.latitude, lng: event.longitude };
-            const eventMarker = addMarker(eventPosition, map, "E");
-            const eventInfoWindow = new google.maps.InfoWindow({
-            content: '<strong>${event.name}</strong><br>${event.description}<br>Time: ${event.time_start}', });
+            const eventMarker = addMarker(eventPosition, map, 'Event');
+            const eventInfoWindow = new google.maps.InfoWindow({ content: getContentString(event), });
 
           //info pops up on hover
           eventMarker.addListener("mouseover", () => { eventInfoWindow.open(map, eventMarker); });
@@ -525,12 +524,45 @@
           title: "Click to zoom",
         });
 
+        
+
         marker.addListener("click", () => {
           map.setZoom(8);
           map.setCenter(marker.getPosition());
         });
 
         return marker;
+      }
+
+      function getContentString(data) {
+        let content = `<strong>${data.name}</strong><br>`;
+
+        if (data.checkInDate && data.checkOutDate) {
+          content += `Check-in: ${data.checkInDate}<br>`;
+          content += `Check-out: ${data.checkOutDate}<br>`;
+        }
+
+        if (data.roomInfo && data.roomInfo.description) {
+          content += `Room Info: ${data.roomInfo.description}<br>`;
+        }
+
+        if (data.price && data.price.total) {
+          content += `Price: ${data.price.total}<br>`;
+        }
+
+        if (data.description) {
+          content += `Description: ${data.description}<br>`;
+        }
+
+        if (data.event_site_url) {
+          content += `Event Site: <a href="${data.event_site_url}" target="_blank">${data.event_site_url}</a><br>`;
+        }
+
+        if (data.time_start) {
+          content += `Time: ${data.time_start}<br>`;
+        }
+
+        return content;
       }
 
       //function calculates and displays route
