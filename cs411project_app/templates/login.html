@@ -13,12 +13,14 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            background-color: #f1f1f1;
+            background-image: url("https://static.vecteezy.com/system/resources/previews/000/640/062/original/white-on-red-dotted-world-map-vector.jpg");
+            background-size: 350px;
             font-family: 'Arial', sans-serif;
+            animation: moveBackground 20s linear infinite; 
         }
 
         .login-container {
-            background-color: #fff;
+            background-color: #ea8585;
             border-radius: 8px;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -28,12 +30,12 @@
         }
 
         h1 {
-            color: #9e0000;;
+            color: #ffffff;;
         }
 
         p {
             margin-top: 20px;
-            color: #666;
+            color: #ffffff;
         }
 
         a {
@@ -52,6 +54,14 @@
         a:hover {
             background-color: #d00d0d;;
         }
+        
+        @keyframes moveBackground {
+            from {
+                background-position: 0 0; /* Start position of the background */
+            }
+            to {
+                background-position: 100% 0; /* End position of the background */
+            }
     </style>
 </head>
 <body>
