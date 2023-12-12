@@ -16,9 +16,11 @@ def login(request):
 def logout(request):
     return render(request, 'logout.html')
 
+@login_required
 def home(request):
     return render(request, 'home.html')
 
+@login_required
 def map(request):
     user_info = None
     if request.user.is_authenticated:

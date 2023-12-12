@@ -4,14 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logout</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f1f1f1;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .logout-container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #4285f4;
+        }
+
+        p {
+            margin-top: 20px;
+            color: #666;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #3367d6;
+        }
+    </style>
 </head>
 <body>
-    <h1>Logout</h1>
-    {% if user.is_authenticated %}
-        <p>Welcome, {{ user.username }}! <a href="{% url 'social:begin' 'google-oauth2' %}">Login with Google</a></p>
-        <p><a href="{% url 'logout' %}">Logout</a></p>
-    {% else %}
-        <p><a href="{% url 'social:begin' 'google-oauth2' %}">Login with Google</a></p>
-    {% endif %}
+    <div class="logout-container">
+        <h1>Logout</h1>
+        {% if user.is_authenticated %}
+            <p>Welcome, {{ user.username }}! <a href="{% url 'social:begin' 'google-oauth2' %}">Login with Google</a></p>
+            <p><a href="{% url 'logout' %}">Logout</a></p>
+        {% else %}
+            <p><a href="{% url 'social:begin' 'google-oauth2' %}">Login with Google</a></p>
+        {% endif %}
+    </div>
 </body>
 </html>

@@ -1,70 +1,133 @@
-<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
 
-<style>
-    .viewDetailsLink {
-        /* Style for the "View Details" link */
-        display: inline-block;
-        margin-left: 10px;  /* Adjust the margin as needed */
-        color: blue;        /* Link color */
-        text-decoration: underline;  /* Underline the link */
-        cursor: pointer;    /* Show a pointer cursor on hover */
-    }
-</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f1f1f1;
+            font-family: 'Arial', sans-serif;
+        }
 
-{% if user.is_authenticated %}
-  <p>Welcome, {{ user.username }}! </p>
-    <a href="{% url 'test_map' %}">Get a new roadtrip.</a>
-  <p> Or, view your past roadtrips:</p>
+        .home-container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
 
-    {% block content %}
-    <!-- <h1>User Information</h1> -->
+        p {
+            margin-top: 20px;
+            color: #666;
+        }
 
-    <div id="userActivityContainer">
-        <!-- User activity will be displayed here -->
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #3367d6;
+        }
+
+        .viewDetailsLink {
+            /* Style for the "View Details" link */
+            display: inline-block;
+            margin-left: 10px;
+            /* Adjust the margin as needed */
+            color: blue;
+            /* Link color */
+            text-decoration: underline;
+            /* Underline the link */
+            cursor: pointer;
+            /* Show a pointer cursor on hover */
+        }
+
+        ul {
+            list-style-type: none;
+            /* Remove bullet points for unordered list */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home-container">
+        {% if user.is_authenticated %}
+        <p>Welcome, {{ user.username }}! </p>
+        <a href="{% url 'test_map' %}">Get a new roadtrip</a>
+        <p> Or, view your past roadtrips:</p>
+
+        {% block content %}
+        <!-- <h1>User Information</h1> -->
+
+        <div id="userActivityContainer">
+            <!-- User activity will be displayed here -->
+        </div>
+
+        <script>
+            // Fetch user activity using AJAX
+            fetch('/cs411project_app/get_user_activity/')
+                .then(response => response.json())
+                .then(data => {
+                    const userActivityContainer = document.getElementById('userActivityContainer');
+                    const userActivities = data.user_activities;
+
+                    if (userActivities && userActivities.length > 0) {
+                        // Display user activities
+                        const ul = document.createElement('ul');
+                        userActivities.forEach(activity => {
+                            const li = document.createElement('li');
+                            li.textContent = `${activity.result.start} to ${activity.result.end}, created on ${activity.date_created}`;
+
+                            // Create a hyperlink and set its attributes
+                            const link = document.createElement('a');
+                            link.textContent = '(view map)';
+                            link.className = 'viewDetailsLink';  // Apply the custom styling
+                            link.href = "{% url 'saved_map' %}"
+                            link.onclick = function () {
+                                // Pass the result data to the next page using localStorage
+                                localStorage.setItem('resultData', JSON.stringify(activity.result));
+                            };
+
+                            // Append the link to the li element
+                            li.appendChild(link);
+
+                            ul.appendChild(li);
+                        });
+                        userActivityContainer.appendChild(ul);
+                    } else {
+                        // Display a message if no user activities found
+                        userActivityContainer.innerHTML = '<p>No saved roadtrips yet.</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching user activity:', error);
+                });
+        </script>
+        {% endblock %}
+
+        <p><a href="{% url 'logout' %}">Logout</a></p>
+
+
+        {% else %}
+        <p><a href="{% url 'social:begin' 'google-oauth2' %}">Login with Google</a></p>
+        {% endif %}
     </div>
+</body>
 
-    <script>
-        // Fetch user activity using AJAX
-        fetch('/cs411project_app/get_user_activity/')
-            .then(response => response.json())
-            .then(data => {
-                const userActivityContainer = document.getElementById('userActivityContainer');
-                const userActivities = data.user_activities;
-
-                if (userActivities && userActivities.length > 0) {
-                    // Display user activities
-                    const ul = document.createElement('ul');
-                    userActivities.forEach(activity => {
-                        const li = document.createElement('li');
-                        li.textContent = `${activity.result.start} to ${activity.result.end}, created on ${activity.date_created}`;
-
-                        // Create a hyperlink and set its attributes
-                        const link = document.createElement('a');
-                        link.textContent = '(view map)';
-                        link.className = 'viewDetailsLink';  // Apply the custom styling
-                        link.href = "{% url 'saved_map' %}"
-                        link.onclick = function() {
-                            // Pass the result data to the next page using localStorage
-                            localStorage.setItem('resultData', JSON.stringify(activity.result));
-                        };
-
-                        // Append the link to the li element
-                        li.appendChild(link);
-
-                        ul.appendChild(li);
-                    });
-                    userActivityContainer.appendChild(ul);
-                } else {
-                    // Display a message if no user activities found
-                    userActivityContainer.innerHTML = '<p>No user activity found.</p>';
-                }
-            })
-            .catch(error => {
-                console.error('Error fetching user activity:', error);
-            });
-    </script>
-{% endblock %}
-
-{% else %}
-  <p><a href="{% url 'social:begin' 'google-oauth2' %}">Login with Google</a></p>
-{% endif %}
+</html>
