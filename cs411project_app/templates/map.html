@@ -552,7 +552,7 @@
             }
 
             const checkend = function (c) {
-                if (citiesArray.includes(document.getElementById("start").value)) {
+                if (citiesArray.includes(document.getElementById("end").value)) {
                     document.getElementById("end").style.backgroundColor = "lightgreen";
                     return true;
                 } else {
@@ -695,7 +695,7 @@
 
         #floating-panel1,
         #floating-panel2 {
-            margin-top: 50px;
+            margin-top: 10px;
             left: 27%;
             z-index: 5;
             color: white;
@@ -733,15 +733,34 @@
         }
 
         #backButton {
-            position: fixed;
             top: 10px;
-            left: 10px;
+            right: 10px;
+            color: white;
+            position: absolute;
+            padding: 10px;
+            background-color: #9e0000;
+            border: 5px solid #420202;
+            border-radius: 20px;
+            box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+            font: Roboto;
+            font-size: 15px;
+            text-align: center;
+            
         }
 
         #saveButton {
-            position: fixed;
             top: 10px;
-            left: 150px;
+            right: 170px;
+            color: white;
+            position: absolute;
+            padding: 10px;
+            background-color: #9e0000;
+            border: 5px solid #420202;
+            border-radius: 20px;
+            box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+            font: Roboto;
+            font-size: 15px;
+            text-align: center;
         }
 
         #overlay {

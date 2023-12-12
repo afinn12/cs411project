@@ -61,8 +61,8 @@
         {% if user.is_authenticated %}
         <p>Welcome, {{ user.username }}! </p>
         <a href="{% url 'map' %}">Get a new roadtrip</a>
-        <p> </p>
-        <a href="{% url 'test_map' %}">Get a new (test) roadtrip</a>
+        <!-- <p> </p>
+        <a href="{% url 'test_map' %}">Get a new (test) roadtrip</a> -->
         <p> Or, view your past roadtrips:</p>
 
         {% block content %}
