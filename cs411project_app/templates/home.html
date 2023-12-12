@@ -12,7 +12,7 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            background-image: url("map.img");
+            background-image: url("https://static.vecteezy.com/system/resources/previews/000/640/062/original/white-on-red-dotted-world-map-vector.jpg");
             background-size: 350px;
             font-family: 'Arial', sans-serif;
             animation: moveBackground 20s linear infinite; 
@@ -78,6 +78,7 @@
 
 <body>
     <div class="home-container">
+        
         {% if user.is_authenticated %}
         <p>Welcome, {{ user.username }}! </p>
         <a href="{% url 'map' %}">Get a new roadtrip</a>
