@@ -12,12 +12,14 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            background-color: #f1f1f1;
+            background-image: url("map.img");
+            background-size: 350px;
             font-family: 'Arial', sans-serif;
+            animation: moveBackground 20s linear infinite; 
         }
 
         .home-container {
-            background-color: #fff;
+            background-color: #ea8585;
             border-radius: 8px;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -28,21 +30,29 @@
 
         p {
             margin-top: 20px;
-            color: #666;
+            color: #ffffff;
+            font-size: 30px;
+            font: Roboto;
+            font-weight: 1000;
         }
 
         a {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #4285f4;
+            background-color: #9e0000;;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s;
+            border: 5px solid #420202;
+            border-radius: 20px;
+            box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+            font-size: 20px;
+            font-weight: 750;
         }
 
         a:hover {
-            background-color: #3367d6;
+            background-color: #d00d0d;
         }
 
         ul {
@@ -53,6 +63,16 @@
         li {
             padding-bottom: 10px
         }
+  
+        
+        @keyframes moveBackground {
+            from {
+                background-position: 0 0; /* Start position of the background */
+            }
+            to {
+                background-position: 100% 0; /* End position of the background */
+            }
+}
     </style>
 </head>
 
