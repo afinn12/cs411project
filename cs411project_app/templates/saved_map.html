@@ -28,17 +28,118 @@
          * SPDX-License-Identifier: Apache-2.0
          */
 
-        function displayRoute(directionsRenderer, map) {
+        let markers = [];
+
+        //function to add markers to map
+        function addMarker(randcoor, map, name) {
+            const marker = new google.maps.Marker({
+                position: randcoor,
+                label: name,
+                map,
+                title: "Click to zoom",
+            });
+
+
+
+            marker.addListener("click", () => {
+                map.setZoom(8);
+                map.setCenter(marker.getPosition());
+            });
+
+            markers.push(marker);
+            return marker;
+        }
+        //markers for hotels
+        function displayHotels(hotels, map) {
+            hotels.forEach((hotel, index) => {
+                if (hotel) {
+                    const hotelPosition = { lat: hotel.latitude, lng: hotel.longitude };
+                    const hotelMarker = addMarker(hotelPosition, map, 'Hotel');
+                    const hotelInfoWindow = new google.maps.InfoWindow({
+                        content: getContentString(hotel),
+                    });
+
+                    //info pops up on hover
+                    hotelMarker.addListener("mouseover", () => { hotelInfoWindow.open(map, hotelMarker); });
+
+                    //close info when mouse out of marker
+                    hotelMarker.addListener("mouseout", () => { hotelInfoWindow.close(); });
+                }
+            });
+        }
+
+        //markers for events
+        function displayEvents(events, map) {
+            events.forEach((dayEvents, day) => {
+                if (dayEvents) {
+                    Object.values(dayEvents).forEach((event) => {
+                        const eventPosition = { lat: event.latitude, lng: event.longitude };
+                        const eventMarker = addMarker(eventPosition, map, 'Event');
+                        const eventInfoWindow = new google.maps.InfoWindow({ content: getContentString(event), });
+
+                        //info pops up on hover
+                        eventMarker.addListener("mouseover", () => { eventInfoWindow.open(map, eventMarker); });
+
+                        //close info when mouse out of marker
+                        eventMarker.addListener("mouseout", () => { eventInfoWindow.close(); });
+                    });
+                }
+            });
+        }
+        function getContentString(data) {
+            let content = `<strong>${data.name}</strong><br>`;
+
+            if (data.checkInDate && data.checkOutDate) {
+                content += `Check-in: ${data.checkInDate}<br>`;
+                content += `Check-out: ${data.checkOutDate}<br>`;
+            }
+
+            if (data.roomInfo && data.roomInfo.description) {
+                content += `Room Info: ${data.roomInfo.description}<br>`;
+            }
+
+            if (data.price && data.price.total) {
+                content += `Price: ${'$' + data.price.total}<br>`;
+            }
+
+            if (data.description) {
+                content += `Description: ${data.description}<br>`;
+            }
+
+            if (data.event_site_url) {
+                content += `Event Site: <a href="${data.event_site_url}" target="_blank">${data.event_site_url}</a><br>`;
+            }
+
+            if (data.time_start) {
+                content += `Time: ${data.time_start}<br>`;
+            }
+
+            return content;
+        }
+
+        let polylines = [];
+
+        function displayRoute(directionsRenderer, map, route_choice, hotel_choice) {
             // Retrieve the "result" data from localStorage
             const resultDataString = localStorage.getItem('resultData');
 
             // Check if the data is available
             if (resultDataString) {
+                // Clear current markers
+                markers.forEach(function (marker) {
+                    marker.setMap(null);
+                });
+
+                // Clear polylines
+                polylines.forEach(function (polyline) {
+                    polyline.setMap(null);
+                });
+
                 // Parse the JSON string into an object
-                const data = JSON.parse(resultDataString)['data'];
+                const data = JSON.parse(resultDataString)['data'][route_choice];
                 console.log(data);
 
-                var route_data = data["close_hotel_route"]["route"];
+                var route_data = data[hotel_choice]["route"];
                 // Extract the overview polyline from the response
                 const overviewPolyline = route_data["routes"][0]["overview_polyline"]["points"];
 
@@ -57,6 +158,7 @@
                         strokeWeight: 4,
                     });
 
+                    polylines.push(polyline);
                     polyline.setMap(map);
                     directionsRenderer.setDirections(route_data);
 
@@ -66,6 +168,10 @@
 
                     // Fit the map to the bounds of the polyline
                     map.fitBounds(bounds);
+
+                    // plot hotels and events
+                    displayEvents(data['close_hotel_route']['events'], map);
+                    displayHotels(data['close_hotel_route']['hotels'], map);
                 }
                 else { console.error('Google Maps geometry library not available'); }
             } else {
@@ -91,7 +197,23 @@
 
             map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
 
-            displayRoute(directionsRenderer, map);
+            const displayRouteEvent = function() {
+                if (document.querySelector('#route input[name="choice"]:checked')!== null && document.querySelector('#hotel input[name="choice"]:checked') !== null){
+                    const route_choice = document.querySelector('#route input[name="choice"]:checked').value;
+                    const hotel_choice = document.querySelector('#hotel input[name="choice"]:checked').value;
+                    if (route_choice == 'quick' && hotel_choice == 'cheap') {displayRoute(directionsRenderer, map, "direct_routes", "cheap_hotel_route")}
+                    else if (route_choice == 'city' && hotel_choice == 'cheap') {displayRoute(directionsRenderer, map, "city_routes", "cheap_hotel_route")}
+                    else if (route_choice == 'quick' && hotel_choice == 'close') {displayRoute(directionsRenderer, map, "direct_routes", "close_hotel_route")}
+                    else if (route_choice == 'city' && hotel_choice == 'close') {displayRoute(directionsRenderer, map, "city_routes", "close_hotel_route")}
+                }
+            }
+
+            document
+                .getElementById("route")
+                .addEventListener("change", displayRouteEvent);
+            document
+                .getElementById("hotel")
+                .addEventListener("change", displayRouteEvent);
         }
 
         function loadGoogleMaps() {
@@ -199,17 +321,58 @@
             top: 10px;
             left: 10px;
         }
+
+        #floating-panel2 {
+            margin-top: 50px;
+            left: 27%;
+            z-index: 5;
+            color: white;
+            position: absolute;
+            background-color: #9e0000;
+            border: 5px solid #420202;
+            border-radius: 20px;
+            box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+            font: Roboto;
+            overflow: hidden;
+            padding: 8px;
+            font-size: 15px;
+            text-align: center;
+            line-height: 30px;
+            height: auto;
+            margin-left: 5px;
+
+        }
+
+        #floating-panel2 {
+            margin-left: 10px;
+        }
     </style>
 </head>
 
 <body>
+    <div id="floating-panel2">
+        <b>Select Route: </b>
+        <form id="route">
+            <input type="radio" name="choice" value="quick">
+            <label>Quickest Route</label>
+            <input type="radio" name="choice" value="city">
+            <label>City-Based Route</label><br>
+        </form>
+        <b>Select Hotels: </b>
+        <form id="hotel">
+            <input type="radio" name="choice" value="cheap">
+            <label>Cheapest Hotels</label>
+            <input type="radio" name="choice" value="close">
+            <label>Closest Hotels</label><br>
+        </form>
+    </div>
     <div id="container">
         <div id="map"></div>
         <div id="sidebar"></div>
     </div>
-    <div style="display: none">
+    <!-- <div style="display: none">
         <div id="floating-panel"></div>
-    </div>
+    </div> -->
     <button id="backButton">Go Back to Home</button>
 </body>
 <script>

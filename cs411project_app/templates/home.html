@@ -21,8 +21,8 @@
             border-radius: 8px;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: flex;
-            width: 100%;
+            max-width: 400;
+            width: 50%;
             text-align: center;
         }
 
@@ -60,7 +60,9 @@
     <div class="home-container">
         {% if user.is_authenticated %}
         <p>Welcome, {{ user.username }}! </p>
-        <a href="{% url 'test_map' %}">Get a new roadtrip</a>
+        <a href="{% url 'map' %}">Get a new roadtrip</a>
+        <p> </p>
+        <a href="{% url 'test_map' %}">Get a new (test) roadtrip</a>
         <p> Or, view your past roadtrips:</p>
 
         {% block content %}

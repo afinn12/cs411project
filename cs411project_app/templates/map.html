@@ -1,26 +1,893 @@
-<!-- map.html -->
+<!DOCTYPE html>
+
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Map Page</title>
-    <script src="{% static 'cs411project_app/get_route.js' %}" type="application/javascript"></script>
-</head>
-<body>
-    <h1>Welcome to the Map Page</h1>
 
-    {% if user_info %}
-        <p>User Information:</p>
-        <ul>
-            <li>Username: {{ user_info.username }}</li>
-            <li>Email: {{ user_info.email }}</li>
-            <!-- Add other user information as needed -->
-        </ul>
-    {% else %}
-        <p>User information not available.</p>
-    {% endif %}
+<!--
+ @license
+ Copyright 2019 Google LLC. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+-->
+<html>
+
+<!-- quick link: http://localhost:8000/cs411project_app/map/ -->
+
+<head>
+    <title>Displaying Text Directions With setPanel()</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="{% static 'cs411project_app/get_apikey.js' %}" type="application/javascript"></script>
+    <script src="{% static 'cs411project_app/get_route.js' %}" type="application/javascript"></script>
+    <!-- <script>
+        console.log("User Email:", "{{ user_info.email }}");
+        console.log("User Username:", "{{ user_info.username }}");
+    </script> -->
+    <script>
+        /**
+         * @license
+         * Copyright 2019 Google LLC. All Rights Reserved.
+         * SPDX-License-Identifier: Apache-2.0
+         */
+
+
+        /*
+        add routes with correct directions
+        add markers with correct locations
+  
+        add information about markers (what, when, cost, etc)
+        add info window for hotels and events
+            when hover over (use marker.addListener("mouseover", () => {
+                                    infoWindow.open(map, marker);
+                                  });
+          overall cost for route?
+          
+        optional: fix overlap with menu when zoom, also overlap with map and menu
+          
+        */
+
+        function showLoading() {
+            document.getElementById('overlay').style.display = 'flex';
+        }
+
+        function hideLoading() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+        let direct_routes = null;
+        let city_routes = null;
+        let completionCounter = 0;
+        function save_user_roadtrip() {
+            if (city_routes === null || direct_routes === null) {
+                alert("Please get a roadtrip first");
+                return;
+            }
+            // Save user activity using a PUT request
+            const csrfToken = document.cookie
+                .split('; ')
+                .find(row => row.startsWith('csrftoken='))
+                .split('=')[1];
+
+            fetch('/cs411project_app/save_user_activity/', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': csrfToken
+                },
+                body: JSON.stringify({
+                    result: {
+                        start: document.getElementById("start").value,
+                        end: document.getElementById("end").value,
+                        data: {
+                            direct_routes: direct_routes,
+                            city_routes: city_routes
+                        }
+                    }
+                }),
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data.message);
+                })
+                .catch(error => {
+                    console.error('Error saving user activity:', error);
+                });
+        }
+
+        function initMap() {
+            //make map functions and map
+            const directionsRenderer = new google.maps.DirectionsRenderer();
+            const directionsService = new google.maps.DirectionsService();
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 7,
+                center: { lat: 41.85, lng: -87.65 },
+                disableDefaultUI: true,
+                gestureHandling: "greedy",
+            });
+
+            //initialize 
+            directionsRenderer.setMap(map);
+            directionsRenderer.setPanel(document.getElementById("sidebar"));
+
+
+            const control = document.getElementById("floating-panel1");
+
+            map.controls[google.maps.ControlPosition.TOP_LEFT].push(control);
+
+            // let direct_routes = null;
+            // let city_routes = null;
+            // let completionCounter = 0;
+
+
+            // compute the routes
+            function calculateRoute(is_directed_route) {
+                const start = document.getElementById("start").value;
+                const end = document.getElementById("end").value;
+                const distance_limit = document.getElementById("distance").value;
+                const start_date = document.getElementById("date").value;
+                console.log("Calculating route...");
+                console.log(start, end, distance_limit, start_date);
+                showLoading();
+
+                get_roadtrip_output(start, end, is_directed_route, distance_limit, start_date)
+                    .then(data => {
+                        if (is_directed_route) { direct_routes = data; console.log(direct_routes); }
+                        else { city_routes = data; console.log(city_routes); };
+                        console.log("Finished calculating route");
+                        completionCounter++;
+                        checkCompletion();
+                        return data;
+                    })
+                    .catch(error => {
+                        hideLoading();
+                        console.error('Error:', error);
+                    });
+            }
+
+            const calcRouteUpdater = function () {
+                if (document.getElementById("start").value.trim() !== "" && document.getElementById("end").value.trim() !== "" && dateRegex.test(document.getElementById("date").value.trim()) && document.getElementById("distance").value != "") {
+                    if (checkstart(document.getElementById("start").value)) {
+                        if (checkend(document.getElementById("end").value)) {
+                            if (checkdate(document.getElementById("date").value)) {
+                                if (checkdist(document.getElementById("distance").value)) {
+                                    completionCounter = 0;
+                                    calculateRoute(true);
+                                    calculateRoute(false);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            document
+                .getElementById("start")
+                .addEventListener("change", calcRouteUpdater);
+            document
+                .getElementById("end")
+                .addEventListener("change", calcRouteUpdater);
+            document
+                .getElementById("date")
+                .addEventListener("change", calcRouteUpdater);
+            document
+                .getElementById("distance")
+                .addEventListener("change", calcRouteUpdater);
+
+            function checkCompletion() {
+                if (completionCounter === 2) {
+                    hideLoading();
+                    quickcheap();
+                    quickclose();
+                    citycheap();
+                    cityclose();
+                }
+            }
+
+            //markers for hotels
+            function displayHotels(hotels) {
+                hotels.forEach((hotel, index) => {
+                    if (hotel) {
+                        const hotelPosition = { lat: hotel.latitude, lng: hotel.longitude };
+                        const hotelMarker = addMarker(hotelPosition, map, 'Hotel');
+                        const hotelInfoWindow = new google.maps.InfoWindow({
+                            content: getContentString(hotel),
+                        });
+
+                        //info pops up on hover
+                        hotelMarker.addListener("mouseover", () => { hotelInfoWindow.open(map, hotelMarker); });
+
+                        //close info when mouse out of marker
+                        hotelMarker.addListener("mouseout", () => { hotelInfoWindow.close(); });
+                    }
+                });
+            }
+
+            //markers for events
+            function displayEvents(events) {
+                events.forEach((dayEvents, day) => {
+                    if (dayEvents) {
+                        Object.values(dayEvents).forEach((event) => {
+                            const eventPosition = { lat: event.latitude, lng: event.longitude };
+                            const eventMarker = addMarker(eventPosition, map, 'Event');
+                            const eventInfoWindow = new google.maps.InfoWindow({ content: getContentString(event), });
+
+                            //info pops up on hover
+                            eventMarker.addListener("mouseover", () => { eventInfoWindow.open(map, eventMarker); });
+
+                            //close info when mouse out of marker
+                            eventMarker.addListener("mouseout", () => { eventInfoWindow.close(); });
+                        });
+                    }
+                });
+            }
+
+            let polylines = [];
+
+            // display the routes
+            function displayRoute(directionsRenderer, map, data, hotel_choice) {
+                // console.log(data);
+                // console.log(direct_routes);
+                // console.log(city_routes);
+                var route_data = data[hotel_choice]["route"];
+                // Extract the overview polyline from the response
+                const overviewPolyline = route_data["routes"][0]["overview_polyline"]["points"];
+
+                // Create a decoded path from the overview polyline
+                const path = google.maps.geometry.encoding.decodePath(overviewPolyline);
+                // console.log(path);
+
+                // Assuming 'map' is your Google Map instance
+                const polyline = new google.maps.Polyline({
+                    path: path,
+                    strokeColor: '#3366cc',
+                    strokeOpacity: 0.8,
+                    strokeWeight: 4,
+                });
+
+                polylines.push(polyline);
+
+                polyline.setMap(map);
+                directionsRenderer.setDirections(route_data);
+
+                // Get bounds for the polyline
+                const bounds = new google.maps.LatLngBounds();
+                path.forEach(point => bounds.extend(point));
+
+                // Fit the map to the bounds of the polyline
+                map.fitBounds(bounds);
+
+                // plot hotels and events
+                displayEvents(data[hotel_choice]['events']);
+                displayHotels(data[hotel_choice]['hotels']);
+            }
+
+            //map the fastest route with cheap hotels
+
+            const quickcheap = function () {
+                if (document.getElementById("start").value.trim() !== "" && document.getElementById("end").value.trim() !== "" && dateRegex.test(document.getElementById("date").value.trim()) && document.getElementById("distance").value != "") {
+                    if (checkstart(document.getElementById("start").value)) {
+                        if (checkend(document.getElementById("end").value)) {
+                            if (checkdate(document.getElementById("date").value)) {
+                                if (checkdist(document.getElementById("distance").value)) {
+                                    if (document.querySelector('#route input[name="choice"]:checked').value == "quick" && document.querySelector('#hotel input[name="choice"]:checked').value == "cheap") {
+                                        //erase other routes and set map for the right route
+                                        // Clear markers
+                                        markers.forEach(function (marker) {
+                                            marker.setMap(null);
+                                        });
+
+                                        // Clear polylines
+                                        polylines.forEach(function (polyline) {
+                                            polyline.setMap(null);
+                                        });
+                                        directionsRenderer.setMap(map);
+                                        //erase other directions and display the correct ones
+                                        directionsRenderer.setPanel(document.getElementById("sidebar"));
+                                        //calculate and display the route 
+                                        displayRoute(directionsRenderer, map, direct_routes, "cheap_hotel_route");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            document
+                .getElementById("route")
+                .addEventListener("change", quickcheap);
+            document
+                .getElementById("hotel")
+                .addEventListener("change", quickcheap);
+
+
+            //map the fastest map with close hotels
+            const quickclose = function () {
+                if (document.getElementById("start").value.trim() !== "" && document.getElementById("end").value.trim() !== "" && dateRegex.test(document.getElementById("date").value.trim()) && document.getElementById("distance").value != "") {
+                    if (checkstart(document.getElementById("start").value)) {
+                        if (checkend(document.getElementById("end").value)) {
+                            if (checkdate(document.getElementById("date").value)) {
+                                if (checkdist(document.getElementById("distance").value)) {
+                                    if (document.querySelector('#route input[name="choice"]:checked').value == "quick" && document.querySelector('#hotel input[name="choice"]:checked').value == "close") {
+                                        //erase other routes and set map for the right route
+                                        // Clear markers
+                                        markers.forEach(function (marker) {
+                                            marker.setMap(null);
+                                        });
+
+                                        // Clear polylines
+                                        polylines.forEach(function (polyline) {
+                                            polyline.setMap(null);
+                                        });
+                                        directionsRenderer.setMap(map);
+                                        //erase other directions and display the correct ones
+                                        directionsRenderer.setPanel(document.getElementById("sidebar"));
+                                        //calculate and display the route 
+                                        displayRoute(directionsRenderer, map, direct_routes, "close_hotel_route");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            document
+                .getElementById("route")
+                .addEventListener("change", quickclose);
+            document
+                .getElementById("hotel")
+                .addEventListener("change", quickclose);
+
+
+            //map the city-based route with cheap hotels
+            const citycheap = function () {
+                if (document.getElementById("start").value.trim() !== "" && document.getElementById("end").value.trim() !== "" && dateRegex.test(document.getElementById("date").value.trim()) && document.getElementById("distance").value != "") {
+                    if (checkstart(document.getElementById("start").value)) {
+                        if (checkend(document.getElementById("end").value)) {
+                            if (checkdate(document.getElementById("date").value)) {
+                                if (checkdist(document.getElementById("distance").value)) {
+                                    if (document.querySelector('#route input[name="choice"]:checked').value == "city" && document.querySelector('#hotel input[name="choice"]:checked').value == "cheap") {
+                                        //erase other routes and set map for the right route
+                                        // Clear markers
+                                        markers.forEach(function (marker) {
+                                            marker.setMap(null);
+                                        });
+
+                                        // Clear polylines
+                                        polylines.forEach(function (polyline) {
+                                            polyline.setMap(null);
+                                        });
+                                        directionsRenderer.setMap(map);
+                                        //erase other directions and display the correct ones
+                                        directionsRenderer.setPanel(document.getElementById("sidebar"));
+                                        //calculate and display the route 
+                                        displayRoute(directionsRenderer, map, city_routes, "cheap_hotel_route");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            document
+                .getElementById("route")
+                .addEventListener("change", citycheap);
+            document
+                .getElementById("hotel")
+                .addEventListener("change", citycheap);
+
+            //map the city-based route with close hotels
+            const cityclose = function () {
+                if (document.getElementById("start").value.trim() !== "" && document.getElementById("end").value.trim() !== "" && dateRegex.test(document.getElementById("date").value.trim()) && document.getElementById("distance").value != "") {
+                    if (checkstart(document.getElementById("start").value)) {
+                        if (checkend(document.getElementById("end").value)) {
+                            if (checkdate(document.getElementById("date").value)) {
+                                if (checkdist(document.getElementById("distance").value)) {
+                                    if (document.querySelector('#route input[name="choice"]:checked').value == "city" && document.querySelector('#hotel input[name="choice"]:checked').value == "close") {
+                                        //erase other routes and set map for the right route
+                                        // Clear markers
+                                        markers.forEach(function (marker) {
+                                            marker.setMap(null);
+                                        });
+
+                                        // Clear polylines
+                                        polylines.forEach(function (polyline) {
+                                            polyline.setMap(null);
+                                        });
+                                        directionsRenderer.setMap(map);
+                                        //erase other directions and display the correct ones
+                                        directionsRenderer.setPanel(document.getElementById("sidebar"));
+                                        //calculate and display the route 
+                                        displayRoute(directionsRenderer, map, city_routes, "close_hotel_route");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            document
+                .getElementById("route")
+                .addEventListener("change", cityclose);
+            document
+                .getElementById("hotel")
+                .addEventListener("change", cityclose);
+
+
+            //plot the route depending on the route selected
+            // function plotall() {
+            //     if (document.querySelector('#route input[name="choice"]:checked').value == "quick") {
+            //         if (document.querySelector('#hotel input[name="choice"]:checked').value == "cheap") {
+            //             quickcheap();
+            //         } else if (document.querySelector('#hotel input[name="choice"]:checked').value == "close") {
+            //             quickclose();
+            //         }
+            //     } else if (document.querySelector('#route input[name="choice"]:checked').value == "city") {
+            //         if (document.querySelector('#hotel input[name="choice"]:checked').value == "cheap") {
+            //             citycheap();
+            //         } else if (document.querySelector('#hotel input[name="choice"]:checked').value == "close") {
+            //             cityclose();
+            //         }
+
+            //     }
+            // }
+
+            //valid date format
+            const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+            const distregex = /^[01]?[0-9]00$/;
+
+            // const depdate = function (event) {
+            //     //if the user hits enter, execute this code
+
+            //     if (event.key === "Enter") {
+            //         //take the input and remove spaces from the ends
+            //         const inputDate = this.value.trim();
+            //         //        console.log(inputDate);
+            //         //check format
+            //         if (checkdate(inputDate)) {
+            //             //plot the route based on the selected route if given a valid date
+            //             document.getElementById("date").style.backgroundColor = "lightgreen";
+            //             plotall();
+            //         } else {
+            //             //plot the route based on the selected route if given a valid date
+            //             document.getElementById("date").style.backgroundColor = "white";
+            //             return;
+            //         }
+            //     }
+            // };
+
+            const checkdate = function (d) {
+                const [year, month, day] = d.split('-');
+                // Get the current and convert to compare
+                const currentDate = new Date().toISOString().split('T')[0];
+
+                //get max date and increment, then convert to compare
+                const max = new Date();
+                max.setFullYear(max.getFullYear() + 1);
+                const maxDate = max.toISOString().split('T')[0];
+                //check if its valid format and beyond our days
+
+                const months31 = ['01', '03', '05', '07', '08', '10', '12'];
+                const months30 = ['04', '06', '09', '11'];
+
+                if (!dateRegex.test(d)) {
+                    document.getElementById("date").style.backgroundColor = "white";
+                    alert("Please enter the date in the format YYYY-MM-DD");
+                    return false;
+                    //check if too early/late
+                } else if (d < currentDate) {
+                    document.getElementById("date").style.backgroundColor = "white";
+                    alert("Please enter a date that is today or later");
+                    return false;
+                } else if (d > maxDate) {
+                    document.getElementById("date").style.backgroundColor = "white";
+                    alert("Please enter a date that is a year away or less");
+                    return false;
+                    //check if month is valid
+                } else if (month < 1 || month > 12) {
+                    document.getElementById("date").style.backgroundColor = "white";
+                    alert("Please enter a valid month");
+                    return false;
+                    //check if day is valid depending on month
+                } else if (months31.includes(month) && (day < 1 || day > 31)) {
+                    document.getElementById("date").style.backgroundColor = "white";
+                    alert("Please enter a valid day");
+                    return false;
+                } else if (months30.includes(month) && (day < 1 || day > 30)) {
+                    document.getElementById("date").style.backgroundColor = "white";
+                    alert("Please enter a valid day");
+                    return false;
+                } else if (month == 2) {
+                    //check for leap year
+                    if (year % 4 == 0) {
+                        if (day < 1 || day > 29) {
+                            document.getElementById("date").style.backgroundColor = "white";
+                            alert("Please enter a valid day");
+                            return false;
+                        }
+                    } else {
+                        if (day < 1 || day > 28) {
+                            document.getElementById("date").style.backgroundColor = "white";
+                            alert("Please enter a valid day");
+                            return false;
+                        }
+                    }
+                } else {
+                    return true;
+                }
+            }
+
+            //calls depdate when a key is pressed
+            // document
+            //     .getElementById("date")
+            //     .addEventListener("keypress", depdate);
+
+
+            // const distfunc = function (event) {
+            //     //if the user hits enter, execute this code
+            //     if (event.key === "Enter") {
+            //         const inputdist = this.value.trim();
+            //         if (checkdist(inputdist)) {
+            //             plotall();
+            //         } else {
+            //             alert("Please enter a valid distance");
+            //             return
+            //         }
+            //     }
+            // }
+
+            var citiesArray = [
+                "Akron, OH", "Albuquerque, NM", "Anaheim, CA", "Arlington, TX", "Arlington, VA", "Atlanta, GA", "Aurora, CO", "Austin, TX", "Bakersfield, CA", "Baltimore, MD", "Baton Rouge, LA", "Birmingham, AL", "Boston, MA", "Buffalo, NY", "Chandler, AZ", "Charlotte, NC", "Chesapeake, VA", "Chicago, IL", "Chula Vista, CA", "Cincinnati, OH", "Cleveland, OH", "Colorado Springs, CO", "Columbus, OH", "Corpus Christi, TX", "Dallas, TX", "Denver, CO", "Detroit, MI", "Durham, NC", "El Paso, TX", "Fort Wayne, IN", "Fort Worth, TX", "Fresno, CA", "Garland, TX", "Gilbert, AZ", "Glendale, AZ", "Greensboro, NC", "Henderson, NV", "Hialeah, FL", "Houston, TX", "Indianapolis, IN", "Irvine, CA", "Jacksonville, FL", "Jersey City, NJ", "Kansas City, MO", "Laredo, TX", "Las Vegas, NV", "Lexington, KY", "Lincoln, NE", "Long Beach, CA", "Los Angeles, CA", "Louisville, KY", "Lubbock, TX", "Madison, WI", "Memphis, TN", "Mesa, AZ", "Miami, FL", "Milwaukee, WI", "Minneapolis, MN", "Nashville, TN", "New Orleans, LA", "New York, NY", "Newark, NJ", "Norfolk, VA", "North Las Vegas, NV", "Oakland, CA", "Oklahoma City, OK", "Omaha, NE", "Orlando, FL", "Philadelphia, PA", "Phoenix, AZ", "Pittsburgh, PA", "Plano, TX", "Portland, OR", "Raleigh, NC", "Reno, NV", "Riverside, CA", "Sacramento, CA", "San Antonio, TX", "San Diego, CA", "San Francisco, CA", "San Jose, CA", "Santa Ana, CA", "Scottsdale, AZ", "Seattle, WA", "St. Louis, MO", "St. Paul, MN", "St. Petersburg, FL", "Stockton, CA", "Tampa, FL", "Toledo, OH", "Toronto, ON", "Tucson, AZ", "Tulsa, OK", "Vancouver, BC", "Virginia Beach, VA", "Washington, DC", "Wichita, KS", "Winston-Salem, NC"
+            ];
+
+            const checkstart = function () {
+                if (citiesArray.includes(document.getElementById("start").value)) {
+                    document.getElementById("start").style.backgroundColor = "lightgreen";
+                    return true;
+                } else {
+                    document.getElementById("start").style.backgroundColor = "white";
+                    alert("Enter a city from the list")
+                    return false;
+                }
+            }
+
+            const checkend = function (c) {
+                if (citiesArray.includes(document.getElementById("start").value)) {
+                    document.getElementById("end").style.backgroundColor = "lightgreen";
+                    return true;
+                } else {
+                    console.log(citiesArray.includes(c));
+                    document.getElementById("end").style.backgroundColor = "white";
+                    alert("Enter a city from the list")
+                    return false;
+                }
+            }
+
+            const checkdist = function (d) {
+                if (!distregex.test(d) || d < 100 || d > 1500 || d == "") {
+                    document.getElementById("distance").style.backgroundColor = "white";
+                    return false;
+                } else {
+                    document.getElementById("distance").style.backgroundColor = "lightgreen";
+                    return true;
+                }
+            }
+
+            document
+                .getElementById("start")
+                .addEventListener("change", checkstart);
+            document
+                .getElementById("end")
+                .addEventListener("change", checkend);
+            document
+                .getElementById("distance")
+                .addEventListener("keypress", checkdist);
+        }
+
+        let markers = [];
+
+        //function to add markers to map
+        function addMarker(randcoor, map, name) {
+            const marker = new google.maps.Marker({
+                position: randcoor,
+                label: name,
+                map,
+                title: "Click to zoom",
+            });
+
+
+
+            marker.addListener("click", () => {
+                map.setZoom(8);
+                map.setCenter(marker.getPosition());
+            });
+
+            markers.push(marker);
+            return marker;
+        }
+
+        function getContentString(data) {
+            let content = `<strong>${data.name}</strong><br>`;
+
+            if (data.checkInDate && data.checkOutDate) {
+                content += `Check-in: ${data.checkInDate}<br>`;
+                content += `Check-out: ${data.checkOutDate}<br>`;
+            }
+
+            if (data.roomInfo && data.roomInfo.description) {
+                content += `Room Info: ${data.roomInfo.description}<br>`;
+            }
+
+            if (data.price && data.price.total) {
+                content += `Price: ${'$' + data.price.total}<br>`;
+            }
+
+            if (data.description) {
+                content += `Description: ${data.description}<br>`;
+            }
+
+            if (data.event_site_url) {
+                content += `Event Site: <a href="${data.event_site_url}" target="_blank">${data.event_site_url}</a><br>`;
+            }
+
+            if (data.time_start) {
+                content += `Time: ${data.time_start}<br>`;
+            }
+
+            return content;
+        }
+
+
+        //create list of cities to choose from 
+        document.addEventListener('DOMContentLoaded', function () {
+            var citiesArray = [
+                "Akron, OH", "Albuquerque, NM", "Anaheim, CA", "Arlington, TX", "Arlington, VA", "Atlanta, GA", "Aurora, CO", "Austin, TX", "Bakersfield, CA", "Baltimore, MD", "Baton Rouge, LA", "Birmingham, AL", "Boston, MA", "Buffalo, NY", "Chandler, AZ", "Charlotte, NC", "Chesapeake, VA", "Chicago, IL", "Chula Vista, CA", "Cincinnati, OH", "Cleveland, OH", "Colorado Springs, CO", "Columbus, OH", "Corpus Christi, TX", "Dallas, TX", "Denver, CO", "Detroit, MI", "Durham, NC", "El Paso, TX", "Fort Wayne, IN", "Fort Worth, TX", "Fresno, CA", "Garland, TX", "Gilbert, AZ", "Glendale, AZ", "Greensboro, NC", "Henderson, NV", "Hialeah, FL", "Houston, TX", "Indianapolis, IN", "Irvine, CA", "Jacksonville, FL", "Jersey City, NJ", "Kansas City, MO", "Laredo, TX", "Las Vegas, NV", "Lexington, KY", "Lincoln, NE", "Long Beach, CA", "Los Angeles, CA", "Louisville, KY", "Lubbock, TX", "Madison, WI", "Memphis, TN", "Mesa, AZ", "Miami, FL", "Milwaukee, WI", "Minneapolis, MN", "Nashville, TN", "New Orleans, LA", "New York, NY", "Newark, NJ", "Norfolk, VA", "North Las Vegas, NV", "Oakland, CA", "Oklahoma City, OK", "Omaha, NE", "Orlando, FL", "Philadelphia, PA", "Phoenix, AZ", "Pittsburgh, PA", "Plano, TX", "Portland, OR", "Raleigh, NC", "Reno, NV", "Riverside, CA", "Sacramento, CA", "San Antonio, TX", "San Diego, CA", "San Francisco, CA", "San Jose, CA", "Santa Ana, CA", "Scottsdale, AZ", "Seattle, WA", "St. Louis, MO", "St. Paul, MN", "St. Petersburg, FL", "Stockton, CA", "Tampa, FL", "Toledo, OH", "Toronto, ON", "Tucson, AZ", "Tulsa, OK", "Vancouver, BC", "Virginia Beach, VA", "Washington, DC", "Wichita, KS", "Winston-Salem, NC"
+            ];
+
+            var citiesDatalist = document.getElementById('cities');
+
+            citiesArray.forEach(function (city) {
+                var option = document.createElement('option');
+                option.value = city;
+                citiesDatalist.appendChild(option);
+            });
+        });
+
+
+
+        //call function to make map
+        window.initMap = initMap;
+    </script>
+    <style>
+        /**
+       * @license
+       * Copyright 2019 Google LLC. All Rights Reserved.
+       * SPDX-License-Identifier: Apache-2.0
+       */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            height: 100%;
+            display: flex;
+        }
+
+        #sidebar {
+            flex-basis: 15rem;
+            flex-grow: 1;
+            padding: 1rem;
+            max-width: 30rem;
+            height: 100%;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+
+        #map {
+            flex-basis: 0;
+            flex-grow: 4;
+            height: 100%;
+        }
+
+
+        #floating-panel1,
+        #floating-panel2 {
+            margin-top: 50px;
+            left: 27%;
+            z-index: 5;
+            color: white;
+            position: absolute;
+            background-color: #9e0000;
+            border: 5px solid #420202;
+            border-radius: 20px;
+            box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+            font: Roboto;
+            overflow: hidden;
+            padding: 8px;
+            font-size: 15px;
+            text-align: center;
+            line-height: 30px;
+            height: auto;
+            margin-left: 5px;
+
+        }
+
+        #floating-panel2 {
+            margin-left: 10px;
+        }
+
+        #map {
+            flex: auto;
+        }
+
+        #sidebar {
+            flex: 0 1 auto;
+            padding: 0;
+        }
+
+        #sidebar>div {
+            padding: 0.5rem;
+        }
+
+        #backButton {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+
+        #saveButton {
+            position: fixed;
+            top: 10px;
+            left: 150px;
+        }
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            /* Semi-transparent white background */
+            display: none;
+            /* Initially hidden */
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            /* Higher z-index than your content */
+        }
+
+        #loading {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="overlay">
+        <div id="loading" class="spinner"></div>
+    </div>
+    <!-- floating panel where user enters their input  -->
+
+    <div id="floating-panel1">
+        <strong>Start:</strong>
+        <input type="text" list="cities" id="start" />
+        <datalist id="cities"></datalist>
+        <br />
+        <strong>End:</strong>
+        <input type="text" list="cities" id="end" />
+        <datalist id="cities"></datalist>
+        <br />
+        <Strong>Departure Date (YYYY-MM-DD)</Strong>
+        <input type="text" id="date" />
+        <br />
+        <strong>Daily Distance Limit:</strong>
+        <input type="text" list="dist" id="distance" />
+        <datalist id="dist">
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="300">300</option>
+            <option value="400">400</option>
+            <option value="500">500</option>
+            <option value="600">600</option>
+            <option value="700">700</option>
+            <option value="800">800</option>
+            <option value="900">900</option>
+            <option value="1000">1000</option>
+            <option value="1100">1100</option>
+            <option value="1200">1200</option>
+            <option value="1300">1300</option>
+            <option value="1400">1400</option>
+            <option value="1500">1500</option>
+        </datalist>
+
+        <!-- floating panel where user selects the route to view -->
+    </div>
+    <div id="floating-panel2">
+        <b>Select Route: </b>
+        <form id="route">
+            <input type="radio" name="choice" value="quick">
+            <label>Quickest Route</label>
+            <input type="radio" name="choice" value="city">
+            <label>City-Based Route</label><br>
+        </form>
+        <b>Select Hotels: </b>
+        <form id="hotel">
+            <input type="radio" name="choice" value="cheap">
+            <label>Cheapest Hotels</label>
+            <input type="radio" name="choice" value="close">
+            <label>Closest Hotels</label><br>
+        </form>
+    </div>
+    <div id="container">
+        <div id="map"></div>
+        <div id="sidebar"></div>
+    </div>
+    <div style="display: none">
+        <div id="floating-panel1">
+            <strong>Start:</strong>
+            <input type="text" list="cities" id="start" />
+            <datalist id="cities"></datalist>
+            <br />
+            <strong>End:</strong>
+            <input type="text" list="cities" id="end" />
+            <datalist id="cities"></datalist>
+        </div>
+    </div>
+    <button id="backButton">Go Back to Home</button>
+    <button id="saveButton">Save These Roadtrips</button>
+    <script>
+        // Ensure the document is fully loaded before accessing elements
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the button element by its ID
+            var saveButton = document.getElementById('saveButton');
+
+            // Attach an event listener to the button
+            saveButton.addEventListener('click', function () {
+                // Call the save_user_roadtrip function when the button is clicked
+                save_user_roadtrip();
+            });
+        });
+    </script>
+    <script>
+        get_google_directions_link()
+            .then(apikey => {
+                // Create a script element and set its src attribute
+                var scriptElement = document.createElement('script');
+                scriptElement.src = apikey;
+
+                // Append the script element to the body
+                document.body.appendChild(scriptElement);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    </script>
+    <script>
+        // JavaScript code to handle the button click event
+        document.getElementById('backButton').addEventListener('click', function () {
+            // Navigate back to home.html
+            window.location.href = '/cs411project_app/home/';
+        });
+    </script>
 </body>
+
 </html>
