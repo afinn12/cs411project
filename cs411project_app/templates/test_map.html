@@ -28,6 +28,14 @@
      * SPDX-License-Identifier: Apache-2.0
      */
 
+    function showLoading() {
+      document.getElementById('overlay').style.display = 'flex';
+    }
+
+    function hideLoading() {
+      document.getElementById('overlay').style.display = 'none';
+    }
+
     function initMap() {
       //make map functions and map
       const directionsRenderer = new google.maps.DirectionsRenderer();
@@ -55,7 +63,7 @@
 
       //map the fastest route (default)
       const fastestroute = function () {
-        if (document.getElementById("start").value.trim() !== "" && document.getElementById("end").value.trim() !== "" && document.getElementById("mode").value.trim() !== "") {
+        if (document.getElementById("start").value.trim() !== "" && document.getElementById("end").value.trim() !== "") {
           calculateAndDisplayRoute(directionsService, directionsRenderer, map);
         }
       };
@@ -65,19 +73,20 @@
       document
         .getElementById("end")
         .addEventListener("change", fastestroute);
-      document
-        .getElementById("mode")
-        .addEventListener("change", fastestroute);
     }
 
     //function calculates and displays route
     function calculateAndDisplayRoute(directionsService, directionsRenderer, map) {
       const start = document.getElementById("start").value;
       const end = document.getElementById("end").value;
-      const selectedMode = document.getElementById("mode").value;
+      const is_directed_route = false;
+      const distance_limit = 500;
+      const start_date = '2024-01-15';
+      showLoading();
 
-      get_sample_roadtrip_output()
+      get_roadtrip_output(start, end, is_directed_route, distance_limit, start_date)
         .then(data => {
+          hideLoading();
           // console.log("Testing");
           console.log(data);
 
@@ -240,10 +249,49 @@
       top: 10px;
       left: 10px;
     }
+
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      /* Semi-transparent white background */
+      display: none;
+      /* Initially hidden */
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      /* Higher z-index than your content */
+    }
+
+    #loading {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   </style>
 </head>
 
 <body>
+  <div id="overlay">
+    <div id="loading" class="spinner"></div>
+  </div>
+
   <div id="floating-panel">
     <strong>Start:</strong>
     <input type="text" list="cities" id="start" />
@@ -257,13 +305,6 @@
 
     </datalist>
     <br />
-    <b>Mode of Travel: </b>
-    <select id="mode">
-      <option value="DRIVING">Driving</option>
-      <option value="WALKING">Walking</option>
-      <option value="BICYCLING">Bicycling</option>
-      <option value="TRANSIT">Transit</option>
-    </select>
   </div>
   <div id="container">
     <div id="map"></div>

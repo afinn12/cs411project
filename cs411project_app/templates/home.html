@@ -21,7 +21,7 @@
             border-radius: 8px;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
+            max-width: flex;
             width: 100%;
             text-align: center;
         }
@@ -45,22 +45,13 @@
             background-color: #3367d6;
         }
 
-        .viewDetailsLink {
-            /* Style for the "View Details" link */
-            display: inline-block;
-            margin-left: 10px;
-            /* Adjust the margin as needed */
-            color: blue;
-            /* Link color */
-            text-decoration: underline;
-            /* Underline the link */
-            cursor: pointer;
-            /* Show a pointer cursor on hover */
-        }
-
         ul {
             list-style-type: none;
             /* Remove bullet points for unordered list */
+        }
+
+        li {
+            padding-bottom: 10px
         }
     </style>
 </head>
@@ -92,12 +83,14 @@
                         const ul = document.createElement('ul');
                         userActivities.forEach(activity => {
                             const li = document.createElement('li');
-                            li.textContent = `${activity.result.start} to ${activity.result.end}, created on ${activity.date_created}`;
+                            const dateCreated = new Date(activity.date_created);
+                            // Format the date in a human-readable way
+                            const formattedDate = `${dateCreated.toLocaleDateString()}, ${dateCreated.toLocaleTimeString()}`;
+                            li.textContent = `${activity.result.start} to ${activity.result.end}. Created on ${formattedDate}\t`;
 
                             // Create a hyperlink and set its attributes
                             const link = document.createElement('a');
-                            link.textContent = '(view map)';
-                            link.className = 'viewDetailsLink';  // Apply the custom styling
+                            link.textContent = 'View';
                             link.href = "{% url 'saved_map' %}"
                             link.onclick = function () {
                                 // Pass the result data to the next page using localStorage
