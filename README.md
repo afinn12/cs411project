@@ -1,6 +1,8 @@
 # Roadtrip Planner
 
-## Project structure
+Find the video demo Google Drive link in ```video demo.rtf```.
+
+## Project Structure
 - cs411project: project-scope (google oauth, login/logout/home directories)
 - cs411project_app: app-scope
     - locations: handles API calling and logic for choosing split points / hotels / events
