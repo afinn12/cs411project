@@ -1,19 +1,26 @@
 <!DOCTYPE html>
+
+{% load static %}
+
 <!--
  @license
  Copyright 2019 Google LLC. All Rights Reserved.
  SPDX-License-Identifier: Apache-2.0
 -->
 
-<!-- View this page quickly: http://127.0.0.1:8000/static/frontend/test_map.html -->
+<!-- View this page quickly: http://localhost:8000/cs411project_app/test_map/ -->
 
 <html>
 
 <head>
-  <title>Displaying Text Directions With setPanel()</title>
+  <title>Displaying New Roadtrip</title>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <script src="http://localhost:8000/static/frontend/get_apikey.js"></script>
-  <script src="http://localhost:8000/static/frontend/get_route.js"></script>
+  <script src="{% static 'cs411project_app/get_apikey.js' %}" type="application/javascript"></script>
+  <script src="{% static 'cs411project_app/get_route.js' %}" type="application/javascript"></script>
+  <script>
+    console.log("User Email:", "{{ user_info.email }}");
+    console.log("User Username:", "{{ user_info.username }}");
+  </script>
   <script>
     /**
      * @license
@@ -21,24 +28,13 @@
      * SPDX-License-Identifier: Apache-2.0
      */
 
+    function showLoading() {
+      document.getElementById('overlay').style.display = 'flex';
+    }
 
-    /*
-    //add routes with correct directions
-    //add markers with correct locations
-
-    //add information about markers (what, when, cost, etc)
-        add info window for hotels and events
-        when hover over (use marker.addListener("mouseover", () => {
-                                infoWindow.open(map, marker);
-                              });
-)
-    //overall info window, total cost and time
-      //only add total cost to route, time is shown in side bar
-
-      
-
-
-    */
+    function hideLoading() {
+      document.getElementById('overlay').style.display = 'none';
+    }
 
     function initMap() {
       //make map functions and map
@@ -67,7 +63,7 @@
 
       //map the fastest route (default)
       const fastestroute = function () {
-        if (document.getElementById("start").value.trim() !== "" && document.getElementById("end").value.trim() !== "" && document.getElementById("mode").value.trim() !== "") {
+        if (document.getElementById("start").value.trim() !== "" && document.getElementById("end").value.trim() !== "") {
           calculateAndDisplayRoute(directionsService, directionsRenderer, map);
         }
       };
@@ -77,80 +73,21 @@
       document
         .getElementById("end")
         .addEventListener("change", fastestroute);
-      document
-        .getElementById("mode")
-        .addEventListener("change", fastestroute);
-
-
-      // //map the cheapest route (hotel)
-      //   const cheapestroute = function () {
-      //     if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!=="" && document.getElementById("mode").value.trim()!=="") {
-      //       newfunc(directionsService, directionsRenderer2);}
-      //   };
-
-      //   document
-      //     .getElementById("start")
-      //     .addEventListener("change", cheapestroute);
-      //   document
-      //     .getElementById("end")
-      //     .addEventListener("change", cheapestroute);
-      //   document
-      //     .getElementById("mode")
-      //     .addEventListener("change", cheapestroute);
-
-
-      // //map the most fun route (events)
-      // const otherroute = function () {
-      //     if (document.getElementById("start").value.trim() !=="" && document.getElementById("end").value.trim()!=="" && document.getElementById("mode").value.trim()!=="") {
-      //       newfunc2(directionsService, directionsRenderer3);}
-      //   };
-
-      //   document
-      //     .getElementById("start")
-      //     .addEventListener("change", otherroute);
-      //   document
-      //     .getElementById("end")
-      //     .addEventListener("change", otherroute);
-      //   document
-      //     .getElementById("mode")
-      //     .addEventListener("change", otherroute);
-
-
-
-
-      //plot markers for hotels/events
-      const randcoor = { lat: 34.0549, lng: -118.2426 };
-
-      addMarker({ lat: 34.0549, lng: -118.2426 }, map, "1");
-      addMarker({ lat: 41.0549, lng: -90.2426 }, map, "2");
-      addMarker({ lat: 42.0549, lng: -76.2426 }, map, "3");
-
-    }
-
-    //function to add markers to map
-    function addMarker(randcoor, map, name) {
-      const marker = new google.maps.Marker({
-        position: randcoor,
-        label: name,
-        map,
-        title: "Click to zoom",
-      });
-
-      marker.addListener("click", () => {
-        map.setZoom(8);
-        map.setCenter(marker.getPosition());
-      });
     }
 
     //function calculates and displays route
     function calculateAndDisplayRoute(directionsService, directionsRenderer, map) {
       const start = document.getElementById("start").value;
       const end = document.getElementById("end").value;
-      const selectedMode = document.getElementById("mode").value;
+      const is_directed_route = false;
+      const distance_limit = 500;
+      const start_date = '2024-01-15';
+      showLoading();
 
-      get_sample_roadtrip_output()
+      get_roadtrip_output(start, end, is_directed_route, distance_limit, start_date)
         .then(data => {
-          console.log("Testing");
+          hideLoading();
+          // console.log("Testing");
           console.log(data);
 
           var route_data = data["close_hotel_route"]["route"];
@@ -159,7 +96,7 @@
 
           // Create a decoded path from the overview polyline
           const path = google.maps.geometry.encoding.decodePath(overviewPolyline);
-          console.log(path);
+          // console.log(path);
 
           // Assuming 'map' is your Google Map instance
           const polyline = new google.maps.Polyline({
@@ -178,49 +115,39 @@
 
           // Fit the map to the bounds of the polyline
           map.fitBounds(bounds);
+
+          // Save user activity using a PUT request
+          const csrfToken = document.cookie
+            .split('; ')
+            .find(row => row.startsWith('csrftoken='))
+            .split('=')[1];
+
+          fetch('/cs411project_app/save_user_activity/', {
+            method: 'PUT',
+            headers: {
+              'Content-Type': 'application/json',
+              'X-CSRFToken': csrfToken
+            },
+            body: JSON.stringify({
+              result: {
+                start: start,
+                end: end,
+                data: data
+              }
+            }),
+          })
+            .then(response => response.json())
+            .then(data => {
+              console.log(data.message);
+            })
+            .catch(error => {
+              console.error('Error saving user activity:', error);
+            });
         })
         .catch(error => {
           console.error('Error:', error);
         });
     }
-
-    // function newfunc(directionsService, directionsRenderer) {
-    //   const start = document.getElementById("start").value;
-    //   const end = document.getElementById("end").value;
-    //   const selectedMode = document.getElementById("mode").value;
-
-    //   directionsService
-    //     .route({
-    //       origin: "St. Louis, MO",
-    //       destination: end,
-    //       travelMode: google.maps.TravelMode[selectedMode],
-    //     })
-    //     .then((response) => {
-    //       directionsRenderer.setDirections(response);
-    //     })
-    //     .catch((e) =>
-    //     {}
-    //     );
-    // }
-    // function newfunc2(directionsService, directionsRenderer) {
-    //   const start = document.getElementById("start").value;
-    //   const end = document.getElementById("end").value;
-    //   const selectedMode = document.getElementById("mode").value;
-
-    //   directionsService
-    //     .route({
-    //       origin: "Columbus, OH",
-    //       destination: end,
-    //       travelMode: google.maps.TravelMode[selectedMode],
-    //     })
-    //     .then((response) => {
-    //       directionsRenderer.setDirections(response);
-    //     })
-    //     .catch((e) =>
-    //     {}
-    //     );
-    // }
-
 
     //create list of cities to choose from 
     document.addEventListener('DOMContentLoaded', function () {
@@ -236,9 +163,6 @@
         citiesDatalist.appendChild(option);
       });
     });
-
-
-
 
     window.initMap = initMap;
   </script>
@@ -319,10 +243,55 @@
     #sidebar>div {
       padding: 0.5rem;
     }
+
+    #backButton {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+    }
+
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      /* Semi-transparent white background */
+      display: none;
+      /* Initially hidden */
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      /* Higher z-index than your content */
+    }
+
+    #loading {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   </style>
 </head>
 
 <body>
+  <div id="overlay">
+    <div id="loading" class="spinner"></div>
+  </div>
+
   <div id="floating-panel">
     <strong>Start:</strong>
     <input type="text" list="cities" id="start" />
@@ -336,13 +305,6 @@
 
     </datalist>
     <br />
-    <b>Mode of Travel: </b>
-    <select id="mode">
-      <option value="DRIVING">Driving</option>
-      <option value="WALKING">Walking</option>
-      <option value="BICYCLING">Bicycling</option>
-      <option value="TRANSIT">Transit</option>
-    </select>
   </div>
   <div id="container">
     <div id="map"></div>
@@ -363,6 +325,7 @@
       </datalist>
     </div>
   </div>
+  <button id="backButton">Go Back to Home</button>
   <script>
     get_google_directions_link()
       .then(apikey => {
@@ -376,6 +339,13 @@
       .catch(error => {
         console.error('Error:', error);
       });
+  </script>
+  <script>
+    // JavaScript code to handle the button click event
+    document.getElementById('backButton').addEventListener('click', function () {
+      // Navigate back to home.html
+      window.location.href = '/cs411project_app/home/';
+    });
   </script>
 </body>
 

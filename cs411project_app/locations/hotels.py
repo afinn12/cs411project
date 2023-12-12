@@ -108,7 +108,7 @@ def get_hotels_around_point(token, lat, long, radius, check_in_date, check_out_d
             },
             'guestInfo': offer_details['guests'],
             'price': {
-                'total': '$' + offer_details['price']['total'],
+                'total': float(offer_details['price']['total']),
             }
         }
 

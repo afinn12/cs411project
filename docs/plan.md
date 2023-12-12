@@ -31,5 +31,5 @@
 
 ## DB
 - Also local
-- Mongo
-- Route data is a JSON, so just stick userID, username, and createDate with the route
+- SQL
+- Route data is a JSON, stick email, and data_create with the route

@@ -3,3 +3,5 @@ yelp_key.py
 googlemaps_key.py
 google_oauth_client_id.py
 google_oauth_client_secret.py
+staticfiles/
+db.sqlite3
